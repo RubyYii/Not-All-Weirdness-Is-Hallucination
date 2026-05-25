@@ -1,0 +1,7 @@
+﻿filename 文件名,intended_user 目标用户,contains_gold_or_rater_context 是否包含gold或rater上下文,safe_to_send_to_adjudicator 是否可发给仲裁员,description 说明
+README_for_adjudicators_bilingual.md,adjudicator,No,Yes,Bilingual task instructions.
+prompt_permission_label_guide_v2_bilingual.md,adjudicator,No,Yes,Bilingual v2 guide.
+adjudicator_response_schema_bilingual.md,adjudicator,No,Yes,"Allowed response values, bilingual."
+adjudicator_A_packet_bilingual.csv,adjudicator A,No,Yes,"Blind adjudication CSV, bilingual headers."
+adjudicator_B_packet_bilingual.csv,adjudicator B,No,Yes,"Blind adjudication CSV, bilingual headers."
+adjudicator_package_manifest_bilingual.csv,project lead,No,Yes,Manifest for safe-to-send bilingual package.

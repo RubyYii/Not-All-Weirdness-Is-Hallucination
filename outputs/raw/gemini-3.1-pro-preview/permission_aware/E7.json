@@ -1,0 +1,56 @@
+{
+  "sample_id": "E7",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\E7.png",
+  "evaluation_prompt_text": "No-issue control for Count / Repetition. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A5",
+    "axis_en": "Count / Repetition"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image shows three cups of coffee/tea on a table, which is a normal scene. There is no target anomaly to detect.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image shows three cups of coffee/tea on a table, which is a normal scene. There is no target anomaly to detect.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image shows three cups of coffee/tea on a table, which is a normal scene. There is no target anomaly to detect.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EjQKMgEMOdbHBUqP3GrhsZ0OMAae3nydtaoo143q2CUcouYGkUyKVEvTOw3nB016yfvgjZLY"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 83,
+      "totalTokenCount": 1533,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "mjQKarbuF_Dm7M8PgIO6wAo"
+  }
+}

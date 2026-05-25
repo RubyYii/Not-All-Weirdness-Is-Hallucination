@@ -1,0 +1,57 @@
+{
+  "sample_id": "B3_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B3.png",
+  "evaluation_prompt_text": "An abstract experimental poster using illegible dreamlike typography. The distorted letter-like marks are intended as visual texture rather than readable text.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text-like shapes is a required element of the image and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text-like shapes is a required element of the image and not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text-like shapes is a required element of the image and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "ErALCq0LAQw51sc8DUcOz0eTwfwYiS2WXl454WFvsVhzBJUaslWHO+jVf4RUF3S6oAOon317VDdK+GISMGM/UcWn9n0CTHIAzJq2Fu/tB5yIryDksAlvBtUycy3MIgcH2On4h2NEj1ojfROxxV566G04oPOvfvcj9TWyXrLvXAwUdl2jLuxmRxOHcOSRWVJI8AKj+sYKdxWR3rhDelXGcUUFpA1f2L/8DBOQ/2LIGd7TCROX/2KZ+tjDJUE2KEYEzdm3n+lQIpD8RIm8UbDcuZ5UZm1k+U54A0pCvb84rX/pXoAsaf5UmcPxgRsMOHhpEJycZ70xW9im7BYZAQ5O+YaPu62eLjN9IKzl35MEQyi9uFSHGZ3t52KdGDbe9+s1ef1Jgcp9IL27tPy6ys4z7HIVSAt0ZgPn438v85v9VR8dagaa6PJKLpTfPsiUeSCkJXmUtxA5T6q7LsTB3zKQo4duu4c0k63AR7wONtVNl3vFJnK1eiVrpsRZK1vUBIs7MAojsQgVJk/3WdsI3ljjnbau+4htvHFJPbuawvv7t3upig6JgQyTqR/IlxSa1M2auwtIuu47FtuQchnvVTEGVZ5OU0BEhG8q1yAV4SbVySPQ1i1TYH1LvMGFmSm2lJLAwKrYYnbfsxddffxkOI1kbLZISg/q0mwBLKMrDHma3LCTk1joAY+4UAozz5Jh2rRiKpfhLZdXs4BsbTRJp5gYfaP9hBeljXjxVXRG7Q2velxN+/MCgrRFcSjWzIW/lWPBdArnnisd6TTq2lgSOnsJTbHuEV5nZRPcxoD/VtjHoXSnSfuUY7N0GxfP00iFrtfFAXAulctzMXJxp47QFJzRJHZeejKAbwFvdQxy+LF4Umo7Lg+x+VRaYDd+Jwa/kjvf2irPmhgdL8ilvjdHLmbCpRnA3bKzsQS9tsKpOuy5XASp2v7FNNCG3tzlpmidnVFpNHC4WRt+qe+Q2gOD7KdhL8hjbzWP+Bfg/X0reYuZsDIa9ThHZoZBxzw6cyA3tyR7DzimeHwPHfAsSCuzNDjSZWcHaum1JNPU1TWIETmsSNsQj7CLgeMZDvAoZJhEyfl6Uge7uXTovzcDKE+wS4a45L5e+VJDB/MTHFxapiyI2daLeLdjFMZkRTQ0E5mVdr6n2cDAeDpSBGaxYSKoAcW3/AGWs1RYMIQhtmbx+x9ok3jK+9zaOkBN/ajYyOhP52bNqfQjfmzR0WHYs8gx8nV6IlV7cM3s4ySWChOL3O48uR475RR8ikABcT5r2ycRLMuEQYqVfNDyOnq+MQ+vW9rrj8YpMwmeH4Lxittckwe4rzSB64U9RHgigH65ksHvtT12THpC1FEHmiAIbSh2MEQ9SlGwo0mZEHSRl08xMNVrggf3ZyWR54s/Zk22Pvg3yfTR+dCwom1+bV1SRcQaLCszLU63c4F+2Y/i5z1hPIGz8Zlz4GVi5DMTvXBpjXamPEyOBAJWVRcaPgSBdnfthL1yzTvRqFmWCJZkI4dGEhyVg7sjazNMgu0PSeMWdfb7A74ggn40+rqYyN7HL3+XT+WcmweV4vtLFvAmKKR2hjvLNRXCnOC5chFcz9g3+0MtU6Y+HogkQ+YZ+jyInBAXrTBLe6jWfhrCDOsEWU/P9+DzC2LER2Il6oZSuBwqdLiL6QGwLDlvhu1VpWTJZshlE346twJ9J+THT1IcQ52qIycJHu9D+Fvzf35H28CA7R2uGVhG8T8m5wW5vOsF5DUkiIsCY+UcTexGNdVAye/aaOOwbtNytJkJTvBTNxHosrSwBVNavs8pZJDFaUzEvngJZK7QXhYSWENsPYKYwGNxWl6+R+a42HM/5HM8eUPNRZ5Kc/im0vjfTs2Dy1IoNn/fAV1+9WSPLQw2hqo2wOu2rsLBrggb+jWtAvYBFZLfmAtsLuj331mg2FRnTuyjvPorcl5FJ8lO5A=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1474,
+      "candidatesTokenCount": 103,
+      "totalTokenCount": 1886,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 385
+        }
+      ],
+      "thoughtsTokenCount": 309,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "zzIKavOIBZSbvdIPu--OoA4"
+  }
+}

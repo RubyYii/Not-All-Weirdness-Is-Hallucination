@@ -1,0 +1,57 @@
+{
+  "sample_id": "G8",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G8.png",
+  "evaluation_prompt_text": "No-issue control for Scale / Proportion. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image does not contain any obvious scale or proportion anomalies. The objects in the foreground and the people in the midground and background appear to be in normal proportion to each other given the perspective of the scene.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image does not contain any obvious scale or proportion anomalies. The objects in the foreground and the people in the midground and background appear to be in normal proportion to each other given the perspective of the scene.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image does not contain any obvious scale or proportion anomalies. The objects in the foreground and the people in the midground and background appear to be in normal proportion to each other given the perspective of the scene.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1447,
+      "candidatesTokenCount": 98,
+      "totalTokenCount": 2290,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 358
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 745,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "PD8KapvzLtX_nsEPm87NgQ0"
+  }
+}

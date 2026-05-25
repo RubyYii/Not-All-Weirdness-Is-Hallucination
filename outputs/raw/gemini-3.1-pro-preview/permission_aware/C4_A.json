@@ -1,0 +1,57 @@
+{
+  "sample_id": "C4_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C4.png",
+  "evaluation_prompt_text": "A strange poetic landscape with unusual water movement and dreamlike atmosphere.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly shows water flowing upwards in massive, gravity-defying waves on either side. This directly fulfills the prompt's request for 'unusual water movement' and contributes to the 'strange poetic landscape' and 'dreamlike atmosphere'. Therefore, it is a permitted stylistic choice and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image clearly shows water flowing upwards in massive, gravity-defying waves on either side. This directly fulfills the prompt's request for 'unusual water movement' and contributes to the 'strange poetic landscape' and 'dreamlike atmosphere'. Therefore, it is a permitted stylistic choice and not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly shows water flowing upwards in massive, gravity-defying waves on either side. This directly fulfills the prompt's request for 'unusual water movement' and contributes to the 'strange poetic landscape' and 'dreamlike atmosphere'. Therefore, it is a permitted stylistic choice and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 119,
+      "totalTokenCount": 1981,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 412,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "fjMKatSeDb2hkdUP-Mzp8Q0"
+  }
+}

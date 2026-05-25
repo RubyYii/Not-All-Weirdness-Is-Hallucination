@@ -1,0 +1,57 @@
+{
+  "sample_id": "G6",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G6.png",
+  "evaluation_prompt_text": "No-issue control for Scale / Proportion. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The spoon resting on the saucer is disproportionately small compared to the size of the cup and saucer, creating a clear scale and proportion anomaly. Since the prompt specifies that the image should not contain the target anomaly, this violates the prompt.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The spoon resting on the saucer is disproportionately small compared to the size of the cup and saucer, creating a clear scale and proportion anomaly. Since the prompt specifies that the image should not contain the target anomaly, this violates the prompt.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The spoon resting on the saucer is disproportionately small compared to the size of the cup and saucer, creating a clear scale and proportion anomaly. Since the prompt specifies that the image should not contain the target anomaly, this violates the prompt.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1447,
+      "candidatesTokenCount": 104,
+      "totalTokenCount": 2300,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 358
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 749,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "nDUKaoLsEdiKvdIPxvfG8Qg"
+  }
+}

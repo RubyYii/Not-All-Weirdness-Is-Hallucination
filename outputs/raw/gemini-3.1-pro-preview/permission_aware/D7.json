@@ -1,0 +1,57 @@
+{
+  "sample_id": "D7",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D7.png",
+  "evaluation_prompt_text": "No-issue control for Object Fusion. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image displays a normal wooden chair in an art gallery setting. There are no unusual visual elements or object fusion anomalies present.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image displays a normal wooden chair in an art gallery setting. There are no unusual visual elements or object fusion anomalies present.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image displays a normal wooden chair in an art gallery setting. There are no unusual visual elements or object fusion anomalies present.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EogGCoUGAQw51sfGeOO6xnJNd07kwg3fggKg9qpGTKIfldmTPqahXeESh4a+NZVZSgJajy04QOxT9yZRsr5BMwuH6Oy+rfg91O39nbBZdmYZGaF99+YWhhl36pXaWqMug/ynaHmEbouWe7c3Bh4NnaVNGrOIAL+JMZvwKKSRw+15unKKN7ZB3T+0B6SS/vC7Jgbo7qpd1/idQanWRhK8g6EAce/fVA0WVTn0PcXabBn9c1equlLI34HAdYOHwLQ1Dwf6wqaztvv0RiIs26OYkjvf4GG+HoBirQHQbcjV2Jvo25mvjMvhdebCdBV1LQR9FErwMMPZj6i1+OR14OhMTqPnxFWd/bzPslTffJj5nMfsbgEgCYyxN9bUHLR16vpIybj9hgoQGRDuqdXp8T05iLQaH5YHOA7Lqh43CMcjwsoxrRwS+NBvUB/ErP3iWDwhil1E6+g/qj0HlbvcVrOcA/CsAxYgkR49Gap/pCLTxBf6KYBlvxkyWgmCiIwJVgdSSsF9C0qagjELz9u/xiMs7wBW8/oUMuYGBgMOdQyrKuCi8NrfpRZasAVTYfBsrDQ5qTADx1J9GX6F6gHPP55fvEXWVkXTWmzlsFa2cdW+Le5JkOILS/2IRRD8RXSYpyGRJKf/r1tndZPj2EFILUef/dDf/XYJ9YRc+FxJfkAYT81WfluCShX6be/KTjkMNO9iYAFyK+mUHRvkbCMBimqPdlRf149bGeosmVu8s3jdz/tXL4uBxB3Vv8kYslvyFPQzUzqOCa4aWAwB8ASRy2T1Q7VGSIPaZ7CgjLtyKpFUqXz0uyBhEyUDZ9iHjLiSlXBBAtEYNh4201vLWN9yNr8lu4W8hq42zeVcK4lVKkAI741OevaukXB3wjUXLRN1Xibfd71exw47jdESH0289DODvPXiEtRKoptyZqvg7yo4lE+n5qviGL7i+W6kz/9W1K36eq4Q3vWyaqjn6OcNpLNz8XWu2kGAHmN970MJx9AGV2ahv32CT2dezrOWGnGAsZ/bSVOYa/Xfjp8k03U="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1444,
+      "candidatesTokenCount": 81,
+      "totalTokenCount": 1690,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 355
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 165,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "JjQKaqPHBfzn7M8P67KRsAo"
+  }
+}

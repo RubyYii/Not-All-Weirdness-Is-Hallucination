@@ -1,0 +1,9 @@
+model,audit_prompt_type,axis_code,n_total,n_parseable,n_parse_error,parse_error_rate,PBA,FHR_intended,MVR_violating,ACR,Creative_Preservation,Defect_Sensitivity
+claude-sonnet-4-6,permission_aware,A1,18,18,0,0.0,0.7222222222222222,0.2,0.0,0.0,0.8,1.0
+claude-sonnet-4-6,permission_aware,A2,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0
+claude-sonnet-4-6,permission_aware,A3,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0
+claude-sonnet-4-6,permission_aware,A4,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0
+claude-sonnet-4-6,permission_aware,A5,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0
+claude-sonnet-4-6,permission_aware,A6,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0
+claude-sonnet-4-6,permission_aware,A7,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0
+claude-sonnet-4-6,permission_aware,A8,18,18,0,0.0,0.7222222222222222,0.0,0.0,0.0,1.0,1.0

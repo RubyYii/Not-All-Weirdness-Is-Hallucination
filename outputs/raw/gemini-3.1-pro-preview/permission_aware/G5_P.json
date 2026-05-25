@@ -1,0 +1,57 @@
+{
+  "sample_id": "G5_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G5.png",
+  "evaluation_prompt_text": "A surreal scene with tiny people and a giant teacup. The extreme scale distortion is intentional and central to the image.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EtcJCtQJAQw51sdoKXXJ7Guro5sZKxm23Iylt2UpM5njDowntVFyBozTJ2BPGyQ+WPEmW5xQOObASYmijvGHZJXl1Bn0ijxb/puO8nK3qD5uhNYajlDTp7tRi5Ip/reO7/kRvcE7EwN03bI+mxgL+z/qgYG6EHM2sqP3v2/LWWG3Y2J4RddgBe9hB9FlyPppS8TiPzYQMV12F/fPKoc9Zy+VvSyhWMBvIcA+CLtXTqN6s9QJj/l9oSEBQSwXw5iGW6lXKCOU2vRKDvJ6Jwocp/+8Dr4w3WLPPCgL/oldwd+P1K7KWycArAsz6STaiBqB3Mxh1BuYWA5Th9tMPesTh4Gy/OA6xl3xkE4FWlDFCVfJN3mflLdxDjbd5UgerZnTX+iUtt2v4DNyhVyg+avwTTSGCG3JfaXahwVlIL9HuMFy2fgIJfL/gnLferZ8WfE7jj3LpTvKdXkEIRLmf3GhMqp1cvgVg0AZi/U1ZRdkbM7Il4jUk1si9mi2vUaXkHhWkaIqwSshuekfTkBewFPZp7iu/hRB2JgGTffWzpJIIWoBXnpDC8ZC3Lhvgo+Wv7zBrL5/Pko4xazPcreuW3/4sJY5noEKcgIYtilrysDJ5XqKnwfQn6xq632nlQQ6uUI5mF5bOnjoDfi4AFpb13tYcFrK2jikOO0PYM+zsNFViHMP+SPjMcDheIjliCQEe5v+B6SDqijmvIbF4FbSIz6pFydzit2yUMcINQ5UJ20ZIzakEZc+epr9Mp5I1G2AvvwroIlHgLFKJoet+vl8D4QVDXGFpxHupN3czQAZdMtFcvYupjJf1uizjzkqM2YVuZtYWQ+VnV5O9+RDafMfM0yT5P75SlcPmbPX5hHEDG6u3Tj7TdF/lpA9ZCeG+/XL/D0Dw2gcuIf2UZGcfdSFgNwu1x+X4KMPXOEpVgDDw1v9kmwafmOXwUPhRpIkE9Js4QcWvSSPVwPHE7vD3zpUJbt6DBLCssczcKbnklEoQ9wWxn6P3RcRDfkpaiTxNjk0878gP9Z2qL8PmZGcKtuFx9Py5vEcn/UkW7c/ZCIMMphL6Q69GItoFYYjbMbC94a4bPgjoTP0xVKj9n6OmnvS6NfwNXKVgLf+kEnjOfk+Po8SiB6RCN7m9G9UFVoBPQ/565QyI9N6D+BEb5ZOJ4ES/ASR/DkWruALUbGC4RehNTSiQPYNnkcnbIO5CeAyYLcZToyrRRLmcjHDkCZbpa2cHCTcDNRlGKXwdkPQ2+gBn9gy71zFEjLH3aYxuZUQjw16d6AKmDRXk01Q+sHdHm11ks1iGtzqb59slrC7Ehb5dA1uaUvho+i7Ckg1d2szhhEO9qc19501POyn1/67VBvMhEPakYgbL+QQJjex/jFh6Mw/Bvx0yGK2mKPPOxB8zo0KUHDkZzc3Daamy5YG+oUZCQFFsaSJXmaFYABeihDoe4PoilAcrwEx7rpz/Z62vumcp4Ith8SOJsG+fC7cU4wIZTqhwiEzXLwoRZhZASvsvyWyT/HT/i7EOJtxprlCWsWTy75EdAkVSWcFeZ95UeVWeyfTA8nqPvLnZ8WLoLZkMh03Oo7uPdJ7ZiIF/J4ySfqTqOwAPvnpbOCPMyH8Xytsuq848d5hChrsvCPCetIR6taaMCDEghrSdDrVc3m+"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1471,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1821,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 382
+        }
+      ],
+      "thoughtsTokenCount": 264,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "jjUKaq36MbT8vdIPysf5qA4"
+  }
+}

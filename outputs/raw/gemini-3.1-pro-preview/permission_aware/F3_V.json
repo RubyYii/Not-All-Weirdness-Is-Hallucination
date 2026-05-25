@@ -1,0 +1,57 @@
+{
+  "sample_id": "F3_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F3.png",
+  "evaluation_prompt_text": "A realistic interior room with normal perspective, physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features highly surreal, Escher-like architecture with curving floors that transition into walls and ceilings, upside-down doors, and stairs leading nowhere. This directly contradicts the prompt's explicit requirements for 'physically possible architecture', 'straight walls', and 'no impossible geometry'.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image features highly surreal, Escher-like architecture with curving floors that transition into walls and ceilings, upside-down doors, and stairs leading nowhere. This directly contradicts the prompt's explicit requirements for 'physically possible architecture', 'straight walls', and 'no impossible geometry'.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features highly surreal, Escher-like architecture with curving floors that transition into walls and ceilings, upside-down doors, and stairs leading nowhere. This directly contradicts the prompt's explicit requirements for 'physically possible architecture', 'straight walls', and 'no impossible geometry'.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 115,
+      "totalTokenCount": 1899,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 314,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "0DQKaqPRGb7pkdUPv9qtgQ0"
+  }
+}

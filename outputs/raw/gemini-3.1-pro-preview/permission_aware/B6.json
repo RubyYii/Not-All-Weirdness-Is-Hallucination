@@ -1,0 +1,57 @@
+{
+  "sample_id": "B6",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B6.png",
+  "evaluation_prompt_text": "No-issue control for Text. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image is a control sample and does not contain any target anomalies. The text 'PURE WATER' is rendered correctly and the overall image is coherent.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image is a control sample and does not contain any target anomalies. The text 'PURE WATER' is rendered correctly and the overall image is coherent.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image is a control sample and does not contain any target anomalies. The text 'PURE WATER' is rendered correctly and the overall image is coherent.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EtMGCtAGAQw51sc1oqPJxjY6peW4ujQgm6xax8WOm4PZdVuIMTV84PGlWqJaBuKWzzT49M4uqhBfytvkhj7ZMQPkwlmGkfI/MtI9vEpKWgXewbglvWsUTerZrgo7R9GbTZ+8BP0CNxsHScr/5w9QZZnv/2Jn1xXc9AnYre0rEyEbMsZu/FNEteOsrO8EIgj+bxaQlKs8lYMzN/pYyBkI4scHBvl0t7l+RB9BIr8mFS5PkyZMqbOylHp6q8ZgYpYhBEUGfnLTNPQIDTZBn0AlEBpxW1ma1pnXqE6L5qlhe+k1DsncxmFkPdfhkBRtPVcUWD07VDOVlglUGSTKhCfIdAzrHUn+ppcHGYnlHUrnPJkR+zUoX1SCT89dpSZ1XJhh1j9KHAdfs6frv5LEj69BjwqGa2adzOKZV+2v08AVVUBfYAI5sLR3z4FHRRvvwSNwoa5xfoU5PMgAnju/05zJJqSTh/VvelqQzxIqeyjfEEYhUh3+M9E6cKWPl1Lt8wSGIhk5bgIH7JA0hDI9Pq//ltzBs3VjeR/4EhYS7JFLE5SJySOqAeSXU7sR3y7B+cCmpVrkUfEcr58d2vuWYtYL+FR/NvMGu909/5y2jYZsp7px6CZjF2NDK+X+ChAtezzKANRqtrfaJktzz4E5zt4GGDju/fyIJFEMaSAhEP5iV5qTWgBKFJOI+68rBNOWFZorTe9Dm4RZBa2R+cP090SEhMlHWl7fzTbzni22y7vCF1gSgFYqdd3PgeOlYvUolFvdY8AlWCxsGfz8HhljYgiz1QoFwFfHfFlwrKTWm9bhWO2ygNd0J3IwO+boHH4Dh97tEqV02FZwdqZdlNFodBtlXg3SERHpe4aDzq9ia8sE505AZvE58bnv9YMHx68A4BEaPJ/Nz3QtCM9Ba/qKgd8h33ESyRS7EQF+de+E07raGQM35qj9ITzF04/pFHiIQ3tB11q5kEjxx4MD+2af/IusL/YdcbvcitO8Fy+Hq6VV7iYxkdJQy/bAtzb7+YLgmp0+xUODWUX6NjsRhYoiMsCJq1BW735QVCJAiWNmFK/Kj/n3vf/XQ45wC8G1PNvW2ENKTZV38DPgM1bkA8Xchl7JTpJTH1ekE1ZD9MlgibTPU+6sdrBss88="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1441,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1707,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 352
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 180,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "BDMKasKaJYTensEPjLuWwA0"
+  }
+}

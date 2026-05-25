@@ -1,0 +1,57 @@
+{
+  "sample_id": "D4_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D4.png",
+  "evaluation_prompt_text": "An artistic scene of a person and chair forming an unusual visual relationship.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly depicts the person's body fusing with the material and structure of the chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between the person and the chair, so it is a permitted artistic interpretation rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image clearly depicts the person's body fusing with the material and structure of the chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between the person and the chair, so it is a permitted artistic interpretation rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly depicts the person's body fusing with the material and structure of the chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between the person and the chair, so it is a permitted artistic interpretation rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1446,
+      "candidatesTokenCount": 111,
+      "totalTokenCount": 1960,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 357
+        }
+      ],
+      "thoughtsTokenCount": 403,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "-zMKauTfM9iFvdIPlNybuA4"
+  }
+}

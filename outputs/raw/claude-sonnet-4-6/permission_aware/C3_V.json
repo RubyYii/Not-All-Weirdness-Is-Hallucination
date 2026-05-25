@@ -1,0 +1,48 @@
+{
+  "sample_id": "C3_V",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C3.png",
+  "evaluation_prompt_text": "A realistic landscape with normal gravity and physically plausible water movement. Rivers, rain, and waterfalls should move naturally downward.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "```json\n{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image clearly shows rain droplets suspended in mid-air in elongated vertical strings, with many droplets appearing to travel upward or remain stationary rather than falling downward. The rain does not follow natural downward gravity as required by the prompt. The droplets are arranged in ways inconsistent with physically plausible rainfall — they appear frozen, rising, or suspended, directly violating the prompt's requirement for normal gravity and physically plausible downward water movement.\",\n  \"confidence\": \"high\"\n}\n```",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image clearly shows rain droplets suspended in mid-air in elongated vertical strings, with many droplets appearing to travel upward or remain stationary rather than falling downward. The rain does not follow natural downward gravity as required by the prompt. The droplets are arranged in ways inconsistent with physically plausible rainfall — they appear frozen, rising, or suspended, directly violating the prompt's requirement for normal gravity and physically plausible downward water movement.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_01LwNpyGuMstAhq1zKYaAELr",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image clearly shows rain droplets suspended in mid-air in elongated vertical strings, with many droplets appearing to travel upward or remain stationary rather than falling downward. The rain does not follow natural downward gravity as required by the prompt. The droplets are arranged in ways inconsistent with physically plausible rainfall — they appear frozen, rising, or suspended, directly violating the prompt's requirement for normal gravity and physically plausible downward water movement.\",\n  \"confidence\": \"high\"\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1937,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 163,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    }
+  }
+}

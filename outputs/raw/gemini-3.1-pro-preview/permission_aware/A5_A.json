@@ -1,0 +1,57 @@
+{
+  "sample_id": "A5_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\A5.png",
+  "evaluation_prompt_text": "An imaginative portrait of a mysterious performer with unusual hands and an artistic studio atmosphere.",
+  "target_anomaly": "six fingers / extra fingers",
+  "axis": {
+    "axis_code": "A1",
+    "axis_en": "Anatomy / Hands"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual hands'. The presence of six fingers on each hand directly fulfills this stylistic requirement and is therefore not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'unusual hands'. The presence of six fingers on each hand directly fulfills this stylistic requirement and is therefore not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual hands'. The presence of six fingers on each hand directly fulfills this stylistic requirement and is therefore not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EvUJCvIJAQw51seQy6qqL1z4xq3vsqGIFLZqmYj1ks3VbITVwDSxSgzFvGyeRV9ayGS/yonzVSchPULXn0TU14fajSbN3eAKNuM1x5eGchXPIFa5eLzuzxPVUNfwyMNWQ3WrpDSysQyjL3Fev4Mn7au4o0RCsXmKP2S+zfkGtOWtx6Io0O8WlkqzlwXFFr/4UjXxs6EOQrtDx13+OaT4osD/r4edQosjH/aZr1rcsDnIXpSexW4s/1M5nUEmLcr5GK9/Fz70x0JrP71cPK4ZTPXHRMPDVQuWeTgaaFgd4qnVZg3R4+8/N+mmzlMwb5pwNbnI+ENPsXH06p49OSKls12Ms0Rmvfu4rUCDfaX2E2GWIXRDzJtfjtfhI9QRMztqqzz1ezPVBDA6pqjlRX2+YzyG/3R4t5ovMAFeoAgsVCM6oc7BxY0PC70Ktv3SGQklDTA5kfpcrjZ/hIDy6p1JbugUxls/dOEVjUqqf+fC84UIKKPojvbCr73Sy9dfgeEB74BRfq+SM1ntiGOPIvln+AJxF8xl7O0X3kPma0KWW+2y0JCGY0ps+iQTLSiEg6f3KTH192T63CvcPANKFdQ6d3Oem9Cqm2eOAGjeTPQWUQE2z438DbSHImJ6JTKxIpNAHESdE1Vw5CKWCeCIIn4/xniBg1SsMcxi9gnUnoSruvmAe+8hhAxqfK4+0HEo3Dc9FupYH5ImpcQoUFb3/GoP+bgwVZMOywz0vg/uoaFYt9/pNP8oN2WN/ws0xngCbqSTDbBK1RA9L99CVV3M1i6AmP99IGLUHXZAO03jyYvzUd4cDcPDKRrj7qdlqlPdb89R6Ub3LQmgGyNOHh2eYmTPhUqk4qTYhKJEfwsUkqMsmS1A9UnMOJPlwO1v02rb4r6hzNSqWlsr2cCJPLq1CPqEhi5pJD3aNjWUvMk7Nz9ZUzfBwakauQ0q69qoqtHy9eNsPt3+y++Jy2+Ao59NrqXrBVDTxZiusE5BCvQ8clyvwtMP6vxjYEvEf37Dj5TMY+iaLkN6cG6He5Cf0GgmMYWSdR4ZIgy88HnWK8bslT/bZIwY2BGtDombq0gj8poZNLmYCXk4u3ta7ngA3EX6KXsN3W+m6kneMLr+zjsK/9du0QxOpdpexhcBipLnfxSwTqMpSHWR567S+x/Knwk1VmtifiY0kffa9L1ujEH9VO/wDAJPAMIKZ6V3ENH/FvrgqzVjQPGtqAMrLIaN+qcsotPcq+nutVsvvsf5a3HgdTpueLD6PZi9biTCcrcOEXz0qQV+cD7yCirWS7+tduxHPzdfySOkJ+GEarEr0ouJqOgUeeG+sNdQ5MzXjy+qXrX0LlNiAVPrRmUbC1Se+ognGeEDVsK7ndd8XlD0OzHQXiTQXp4AN1HTxH2MUvqIVM06iAJWUN6oTJFqdrRzYrtG9lhnIDEoEzjb5g49mP7suKYtaQWIBmhjQ7tZzH8ExMdxUFPPRf2N1mt5T6P0fe04iCTCv6BOxOZr+ia3UhezQt97I4pLAoeWSQnJ0j4WiVe+edcQTtd2cZEzpO8orGa/JZZe2LAiOTjU2PtUt2VhXuJGiQvzJbItj/YRHc0Fyt/10G/CLtoDEiCD8+kZNVlVC66rfwHQSk6Em9JAzJMA/wgc6i5FX9oE1izxrSqt9jvqnBIktKDHJP7Lnkb5qMUpN9sTA1oWZ/PN5JmQ"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1453,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1802,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 364
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 263,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "cjIKaueWIsia28oPz9O70A4"
+  }
+}

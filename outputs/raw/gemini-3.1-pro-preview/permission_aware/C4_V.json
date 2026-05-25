@@ -1,0 +1,57 @@
+{
+  "sample_id": "C4_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C4.png",
+  "evaluation_prompt_text": "A realistic landscape with normal gravity and physically plausible water movement. Rivers, rain, and waterfalls should move naturally downward.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image shows massive walls of water curving upwards into the sky, which clearly depicts upward-flowing water or reversed gravity. This directly violates the prompt's explicit requirement for normal gravity and physically plausible water movement where water moves naturally downward.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image shows massive walls of water curving upwards into the sky, which clearly depicts upward-flowing water or reversed gravity. This directly violates the prompt's explicit requirement for normal gravity and physically plausible water movement where water moves naturally downward.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image shows massive walls of water curving upwards into the sky, which clearly depicts upward-flowing water or reversed gravity. This directly violates the prompt's explicit requirement for normal gravity and physically plausible water movement where water moves naturally downward.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 104,
+      "totalTokenCount": 1868,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 294,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "cDMKasrbJZOakdUPjMnwuAQ"
+  }
+}

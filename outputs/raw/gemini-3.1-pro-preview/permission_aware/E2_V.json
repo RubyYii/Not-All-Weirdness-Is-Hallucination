@@ -1,0 +1,57 @@
+{
+  "sample_id": "E2_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\E2.png",
+  "evaluation_prompt_text": "A realistic tabletop photograph with exactly three white cups and no additional cups.",
+  "target_anomaly": "duplicated cups / excessive repetition",
+  "axis": {
+    "axis_code": "A5",
+    "axis_en": "Count / Repetition"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests exactly three white cups and no additional cups, but the image contains a large number of duplicated cups, violating the prompt's constraint.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests exactly three white cups and no additional cups, but the image contains a large number of duplicated cups, violating the prompt's constraint.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests exactly three white cups and no additional cups, but the image contains a large number of duplicated cups, violating the prompt's constraint.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EoQECoEEAQw51sdPU+wxtN5QeAnE2rRiSunc/Kfgi6LizblnDzjNqqf6uYS/bZuRTz5UEtWrTAql2jFOSQ2+AmGjPu+zTND6RPDL8oBh4K30NocOSugeRPXyzldqT2k3pExSHYGwuzZL4sk1LwOeqkCEtActJrZHqhmOnfMGcYrhRhvBT5NbWbIJVoQpMgzBWBOe6PBp/UMeKL8e+gWBVuXWI+AgeutmbTNz5R9BVSzfmRMjh3CtlEIUdN7YXNL8bFK+1fIkvkPo47MfBltqnVAjzPDYFi4TBjMx75iHnGfZYn2p45DfrBb8pvRZ0dLxi8TqbAuyiU+1DyON13xzuaTwqDpTAxyd/dC4AavbHIowBszhmHXI4fs7dMN9liXzCMXuKNOAiK/+7vbcXG5ZyOMwlJMmKKNhofuZ99D9R6PZNMOsz7VLe+L6eTw83/2cqw11SbdiMKsyBo5vkbMIxyddfel+KvLXHCg2XazhivwcOKRr2evr7okq2f1bVSHqRqOXpjduQcy2T1+uqzGgWtFn9J6QL0lG4M1g0iZgfM04DZpxVMPaTqibtemJRwYJfEH9H6VwTHFghOGWrqrMAuKmVL0QC3Gk1XgMH44cVQj9JccG1tNALZCtHtd2s8cL9H4iPrYDeXULi/8A/XMpF0zpLuVPwVct8WIi/Rb4lbfYKVoHTXzL"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 88,
+      "totalTokenCount": 1631,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 93,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "SzQKasqhN-G1nsEP8eyi4A4"
+  }
+}

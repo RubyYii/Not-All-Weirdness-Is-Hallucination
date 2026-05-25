@@ -1,0 +1,48 @@
+{
+  "sample_id": "D2_V",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D2.png",
+  "evaluation_prompt_text": "A realistic office or interior scene where a person and a chair are clearly separate objects, with normal body posture and normal furniture structure.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "```json\n{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image clearly shows a human-chair fusion where the chair's structure appears to be made of or merged with human body parts (legs, torso, skin texture), blending seamlessly with the seated person. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements.\",\n  \"confidence\": \"high\"\n}\n```",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image clearly shows a human-chair fusion where the chair's structure appears to be made of or merged with human body parts (legs, torso, skin texture), blending seamlessly with the seated person. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_019VqKUTbSzztozX469mcoxp",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image clearly shows a human-chair fusion where the chair's structure appears to be made of or merged with human body parts (legs, torso, skin texture), blending seamlessly with the seated person. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements.\",\n  \"confidence\": \"high\"\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1929,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 145,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    }
+  }
+}

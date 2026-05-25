@@ -1,0 +1,57 @@
+{
+  "sample_id": "D2_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D2.png",
+  "evaluation_prompt_text": "An artistic scene of a person and chair forming an unusual visual relationship.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly depicts a fusion between the person's body and the chair, with shared textures and structural elements. The prompt explicitly requests an 'unusual visual relationship' between a person and a chair. The human-chair fusion is a direct and creative interpretation of this request, making it semantically and stylistically permitted by the prompt.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image clearly depicts a fusion between the person's body and the chair, with shared textures and structural elements. The prompt explicitly requests an 'unusual visual relationship' between a person and a chair. The human-chair fusion is a direct and creative interpretation of this request, making it semantically and stylistically permitted by the prompt.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly depicts a fusion between the person's body and the chair, with shared textures and structural elements. The prompt explicitly requests an 'unusual visual relationship' between a person and a chair. The human-chair fusion is a direct and creative interpretation of this request, making it semantically and stylistically permitted by the prompt.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1446,
+      "candidatesTokenCount": 124,
+      "totalTokenCount": 2089,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 357
+        }
+      ],
+      "thoughtsTokenCount": 519,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "0jMKatP9ENCCkdUPw_GwmAo"
+  }
+}

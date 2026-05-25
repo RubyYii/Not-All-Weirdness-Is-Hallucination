@@ -1,0 +1,57 @@
+{
+  "sample_id": "C1_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C1.png",
+  "evaluation_prompt_text": "A dream world with reversed gravity, where water flows upward and physical laws are intentionally inverted.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly shows a massive column of water flowing upwards from the river into the sky, which directly fulfills the prompt's explicit requirement for 'water flows upward' and 'reversed gravity'.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The image clearly shows a massive column of water flowing upwards from the river into the sky, which directly fulfills the prompt's explicit requirement for 'water flows upward' and 'reversed gravity'.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly shows a massive column of water flowing upwards from the river into the sky, which directly fulfills the prompt's explicit requirement for 'water flows upward' and 'reversed gravity'.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EvkJCvYJAQw51scubQADnaS/DP7gZ5MJ/vfeOn20lzQXi7SAZLJSqPLqzUpydVEoQeg0CM7indmToDU+qOEiOvbRecNsDW0kyjOIn7fweCpMOl8BwEkgAFwnX/PUxp8Sx7gGQP2u5+9z9tE+0LUsLjUt5SW26H5RWYtpLnVRP8e5EkiaZBgc28I7QYpigIIKYns5qpBEH0T4/6s/T5S4BfV1jGgSvmiD1XiiWhrxd4LVO1gM09uFXMAUJ8fjtWIKVGteFVsYJLblLQ7oIo7/boLbz4VtL6w5Wq1SaOuWN4mz1u7GztYwVE91ewEd9X9XZXYdrAs5sKN/V66A1YIbnnwd9Zsx+J9sHAatpQPakTGnL4IIi939TgPPf1QxEhftlLoD2bUgmBfttzHpLfHc18a6saRWPAQn47S+MFIvWycuEPAiUtIVKOPtMa7fnWDRF3R2oe8OvRKggTqvZJLZV1EhNy1i3rtMsd/WE8S+csIvewqhT7GGisgAo6hWIpACcVL20SmbfFT4zUG1JaB9kR/lrqUsQjGHq7D8KLksqFI/uhTEUojTklG9dYhazLfoepRNMQEyXDAG7DlLfRuLP4oz0mEnag4Jg3ZIGPepHaNiMrqhLETPfOnmvssnGaCF09SIdhkWjIitxfSqlki5VylNYLt5GYs1SY5bUZ+AkLCEcm/oG2BZHp/oP29FD7GIgDcChvsyxy9Go+D42DhgPMZ2ZwVDt7/Mjj3pjHLpp01ebJ/nRI21Wz8wmh0KX65tgZ4C5DAM9ZPncnL4CrppBCNpJmSqVrEmAqDvySSLfscfTcTyUbyWSD/qdAGCP+EuWL5VHlFpIiyoE2/F3PU/03ceE7AHLT2EB7N645iHwzovW51bLP4BxAhkm8bz+95qacKBnUEhlOlZPGkiziw8QMUUs+xYWrfwpTHRhjO7ONPTxw5aygF4IERh+GAtYJjYrgyY9vRAdlyekU0IcegNs+BbfFYySFb+PcuPEnX1L03DpmQeJYI815xaAebuiEwyiHfW4Zevt0YrMQ5IBDMc++n+l+miN5XGOy46lgXOPcvwSd7ht9Im9k0SrX1YvoEP6ef3IAqxdabn9qYNr3xAplIigyhtDsqgtifw74sfsFPVZlZBQYj7TQXXk8Ego1Syd4Qh+f3oXPFbq3p3YG/l8GYrvZ4BGzLAZot4JLhfry8U7uPjKKxe8w/RSzrBr08hkY/dw89fKFkNo5Y+Q7dnGMcclPhN7i3GHRwSzRWux/Xln9Mw53M1TPdUKEdrYANRh1DUNp/l9PUv1VNWXvaJskRMiDFASbtlulZU/Ak6ReZjwQlSGW9q2NZU+6+I9yNSCscx7fJHHVobddbaBv+S69E1y1NUIjzWsbsXqlS9vTrOAjWJYhEqM5PUozjWjj74RN3pEfEO9Dji9Tu3N2kWcq9XnALlbpwQGNaec5pZtwUdMo4wsPgjDBXm+GmJA7pPnMbpte8TMh0iBSpv8RuG883V+eydQWN6kLFd1HOqIiMFpoPdnnzPrkGbGJZAVot+sYB8pTQlEU+KmKA7Cidz1mdBFYj2/RtydcqL8uc9wgjBJdb0bw4AimBOBeHVtQa2cPZP74YQa3Hf1WQn+T+HhyTK4aUeHoW+MGwPC5w+pxZsIOYELYfTx4TqCcIQ70vJC53TbcltiLFYjwR96LOd3M30aPYI3xB6ztkQqw=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1460,
+      "candidatesTokenCount": 95,
+      "totalTokenCount": 1824,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 371
+        }
+      ],
+      "thoughtsTokenCount": 269,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "HDMKat2RKJXgkdUP_aaZsAo"
+  }
+}

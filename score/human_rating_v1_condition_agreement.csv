@@ -1,0 +1,5 @@
+﻿condition,n,permission_all_agree_count,permission_all_agree_rate,anomaly_visible_all_agree_count,anomaly_visible_all_agree_rate,binary_hallucination_all_agree_count,binary_hallucination_all_agree_rate,majority_matches_metadata_gold_count,majority_matches_metadata_gold_rate,no_majority_count
+ambiguous,40,0,0.0,30,0.75,21,0.525,0,0.0,6
+no_issue,24,0,0.0,0,0.0,16,0.6666666666666666,3,0.125,6
+permitted,40,35,0.875,36,0.9,36,0.9,39,0.975,0
+violating,40,34,0.85,29,0.725,34,0.85,39,0.975,0

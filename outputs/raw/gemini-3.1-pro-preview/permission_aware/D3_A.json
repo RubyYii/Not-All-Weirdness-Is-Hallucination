@@ -1,0 +1,57 @@
+{
+  "sample_id": "D3_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D3.png",
+  "evaluation_prompt_text": "An artistic scene of a person and chair forming an unusual visual relationship.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly depicts a fusion between a human torso and a chair. This directly satisfies the prompt's request for an 'artistic scene' featuring an 'unusual visual relationship' between a person and a chair. Therefore, it is a valid interpretation and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image clearly depicts a fusion between a human torso and a chair. This directly satisfies the prompt's request for an 'artistic scene' featuring an 'unusual visual relationship' between a person and a chair. Therefore, it is a valid interpretation and not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly depicts a fusion between a human torso and a chair. This directly satisfies the prompt's request for an 'artistic scene' featuring an 'unusual visual relationship' between a person and a chair. Therefore, it is a valid interpretation and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1446,
+      "candidatesTokenCount": 113,
+      "totalTokenCount": 2010,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 357
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 451,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "5jMKavrMCNrYxN8P89HRyA4"
+  }
+}

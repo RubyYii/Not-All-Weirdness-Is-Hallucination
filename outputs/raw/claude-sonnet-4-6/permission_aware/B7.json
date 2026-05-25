@@ -1,0 +1,48 @@
+{
+  "sample_id": "B7",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B7.png",
+  "evaluation_prompt_text": "No-issue control for Text. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "```json\n{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"This is a no-issue control sample where the target anomaly is 'none'. The image displays a standard summer sale promotional graphic with clear, correctly spelled text ('SUMMER SALE'), tropical beach background, palm leaves, and bright colors. No unusual or anomalous visual elements are present. The text is legible and properly rendered.\",\n  \"confidence\": \"high\"\n}\n```",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "This is a no-issue control sample where the target anomaly is 'none'. The image displays a standard summer sale promotional graphic with clear, correctly spelled text ('SUMMER SALE'), tropical beach background, palm leaves, and bright colors. No unusual or anomalous visual elements are present. The text is legible and properly rendered.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_01Eo5YAPoR9YjD8KyRCfbncw",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"This is a no-issue control sample where the target anomaly is 'none'. The image displays a standard summer sale promotional graphic with clear, correctly spelled text ('SUMMER SALE'), tropical beach background, palm leaves, and bright colors. No unusual or anomalous visual elements are present. The text is legible and properly rendered.\",\n  \"confidence\": \"high\"\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1899,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 135,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    }
+  }
+}

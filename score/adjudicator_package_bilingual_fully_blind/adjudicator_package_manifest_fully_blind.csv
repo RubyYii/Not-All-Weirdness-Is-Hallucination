@@ -1,0 +1,7 @@
+﻿filename 文件名,intended_user 目标用户,contains_gold_or_rater_context 是否包含gold或rater上下文,safe_to_send_to_adjudicator 是否可发给仲裁员,description 说明
+README_for_adjudicators_fully_blind.md,adjudicator,No,Yes,Fully blind bilingual task instructions.
+prompt_permission_label_guide_v2_fully_blind.md,adjudicator,No,Yes,Fully blind bilingual v2 guide.
+adjudicator_response_schema_fully_blind.md,adjudicator,No,Yes,Allowed response values.
+adjudicator_A_packet_fully_blind.csv,adjudicator A,No,Yes,"Fully blind A packet, 79 rows."
+adjudicator_B_packet_fully_blind.csv,adjudicator B,No,Yes,"Fully blind B packet, 79 rows."
+adjudicator_package_manifest_fully_blind.csv,project lead,No,Yes,Manifest for the fully blind package.

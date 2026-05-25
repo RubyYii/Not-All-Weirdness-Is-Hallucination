@@ -1,0 +1,57 @@
+{
+  "sample_id": "A2_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\A2.png",
+  "evaluation_prompt_text": "A realistic studio portrait of a human performer with natural anatomy. Both hands should be visible and each hand should have exactly five fingers.",
+  "target_anomaly": "six fingers / extra fingers",
+  "axis": {
+    "axis_code": "A1",
+    "axis_en": "Anatomy / Hands"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests a human performer with natural anatomy and exactly five fingers on each hand. The generated image features a non-human entity, and the hand holding the neck of the instrument clearly has six digits, directly violating the prompt's constraints.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests a human performer with natural anatomy and exactly five fingers on each hand. The generated image features a non-human entity, and the hand holding the neck of the instrument clearly has six digits, directly violating the prompt's constraints.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests a human performer with natural anatomy and exactly five fingers on each hand. The generated image features a non-human entity, and the hand holding the neck of the instrument clearly has six digits, directly violating the prompt's constraints.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1473,
+      "candidatesTokenCount": 107,
+      "totalTokenCount": 2235,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 384
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 655,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "-jEKas3WKPGP28oP1PSp8Qs"
+  }
+}

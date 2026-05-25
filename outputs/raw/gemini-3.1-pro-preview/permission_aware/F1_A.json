@@ -1,0 +1,57 @@
+{
+  "sample_id": "F1_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F1.png",
+  "evaluation_prompt_text": "A strange interior scene with an unusual spatial composition.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as the upside-down chair and stairs leading nowhere, directly fulfills this stylistic requirement and should not be considered a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as the upside-down chair and stairs leading nowhere, directly fulfills this stylistic requirement and should not be considered a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as the upside-down chair and stairs leading nowhere, directly fulfills this stylistic requirement and should not be considered a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1438,
+      "candidatesTokenCount": 102,
+      "totalTokenCount": 1976,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 349
+        }
+      ],
+      "thoughtsTokenCount": 436,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "sDQKarWgNKvpnsEPpPue4AU"
+  }
+}

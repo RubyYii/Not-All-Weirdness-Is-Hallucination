@@ -1,0 +1,57 @@
+{
+  "sample_id": "B2_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B2.png",
+  "evaluation_prompt_text": "A creative poster using expressive typography and distorted letterforms.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms' and 'expressive typography', which directly accounts for the illegible and distorted text present in the generated poster. Therefore, it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'distorted letterforms' and 'expressive typography', which directly accounts for the illegible and distorted text present in the generated poster. Therefore, it is not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms' and 'expressive typography', which directly accounts for the illegible and distorted text present in the generated poster. Therefore, it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1442,
+      "candidatesTokenCount": 97,
+      "totalTokenCount": 1889,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 353
+        }
+      ],
+      "thoughtsTokenCount": 350,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "vzIKapKbJZ2wxN8Pgt-omQw"
+  }
+}

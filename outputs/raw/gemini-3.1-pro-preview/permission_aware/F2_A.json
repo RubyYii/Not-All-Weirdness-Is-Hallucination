@@ -1,0 +1,57 @@
+{
+  "sample_id": "F2_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F2.png",
+  "evaluation_prompt_text": "A strange interior scene with an unusual spatial composition.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as stairs leading into walls or confusing floor levels, directly fulfills this stylistic requirement and is therefore not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as stairs leading into walls or confusing floor levels, directly fulfills this stylistic requirement and is therefore not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as stairs leading into walls or confusing floor levels, directly fulfills this stylistic requirement and is therefore not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1438,
+      "candidatesTokenCount": 100,
+      "totalTokenCount": 1859,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 349
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 321,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "xzQKav_UFeG1nsEP8eyi4A4"
+  }
+}

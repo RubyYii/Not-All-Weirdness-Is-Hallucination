@@ -1,0 +1,10 @@
+﻿filename,intended_user,contains_gold_or_rater_context,safe_to_send_to_adjudicator,description
+README_for_adjudicators.md,adjudicator,False,True,Short task instructions for blind adjudicators.
+prompt_permission_label_guide_v2_adjudicator.md,adjudicator,False,True,"Clean v2 label guide with decision tree, examples, mistakes, and hallucination mapping."
+adjudicator_A_packet.csv,adjudicator A,False,True,Blind adjudication sheet with 79 unresolved rows and blank answer fields.
+adjudicator_B_packet.csv,adjudicator B,False,True,Blind adjudication sheet with same 79 unresolved rows and blank answer fields.
+adjudicator_response_schema.md,adjudicator,False,True,Allowed response values for adjudicator answer columns.
+coordinator_only_adjudication_context.csv,project lead / coordinator only,True,False,"Contains metadata gold, rater labels, and majority context. Not blind."
+merge_adjudicator_results_plan.md,project lead / coordinator,False,True,Plan for merging adjudicator A/B results later without v1 majority override.
+adjudicator_package_manifest.csv,project lead / coordinator,True,False,Manifest listing package files and send-safety status.
+adjudicator_package_creation_summary.md,project lead / coordinator,True,False,Package creation summary and quality checks.

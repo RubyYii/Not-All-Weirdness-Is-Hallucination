@@ -1,0 +1,57 @@
+{
+  "sample_id": "F2_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F2.png",
+  "evaluation_prompt_text": "A non-Euclidean impossible room where normal spatial rules break down and the architecture intentionally forms paradoxical geometry.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests an impossible room with paradoxical geometry, which is exactly what the image depicts with its nonsensical staircases and spatial layout.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests an impossible room with paradoxical geometry, which is exactly what the image depicts with its nonsensical staircases and spatial layout.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests an impossible room with paradoxical geometry, which is exactly what the image depicts with its nonsensical staircases and spatial layout.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EocJCoQJAQw51segvekoHCvvS0uyooMGw+S1ASd/Vdf8nGlMTDqe7Ds+GDYllPobKZn/pem7K/PNriKJ/PD7gVTHw41yV7LzV171AeXbaT0oo12CqyYwCfbUTQgJaKsoluPh19hxAvknKDibpuq/gCcjchBudlMt/1PgkMUVKh+LKCIlt8/uRBsLk1r9Tv0EDG2NT4mKUPMUxf+oPvzCpezhE/njDGTjSoXaz0bs8tn9oCu0UA6kiEJ9sKvMZgsNrJMRfAdXG6/snO0jrZMksAlLHBg9BdDOoqT08U0YqnI25su5m1fLZ6mkOn6Es6lS1zSa40OASs8sMSJ/sUMenM//KviA3N4fAnVrQzrf0YTMIOO8lduX6+Mn6xld6ObcxIIgftjZxofEH9Ct2uIuroWdz8HhQ9grexkTKhUDFarZDz5kXBbSNwSaVfeSBwY+lTfkTRUN3d7L2RqruUukbRy02gMC0SmdyKhW1ziXlL1tzFiEM321zLSpLZiD37scQGbU0y/TcSopEXaEziz7im/4dMZoTt/LvY8Br/ClnIjp18HGdJq7ABh1upB2FiDJsQC3n2NKGhHIYa46NC3IKBVYFNV2NoTYbUJGHpB9ylgUqOY4EufU5skk6VWXeLaM/XdwqqRd5Pio1Hx4eLNyDyAdqh+MNW088f8+ZQK8bwRKzKKAWoqisMjGTgAiKfbd6DXpic3hIaJ2cB0cTHSv83Nd7RafH0VglC87fVvNjbzt6OzRrlXOUuFx4ECQrjsEdWilScbUexkpd4RJX34d+CG3PKJH4GbLthMMA1q2Ht3wS1T44HcGiqAJa1qVDFr1ZpLFlqEG5vfLW3/qPsk9BLvazU7vguct4WnT2CIrUcOLnm7K7rH4x3394A4zYVzX444+Y7BMtV5tzNVTdBec5ULnLeE21URpo2MWZh2lYf6qXh4XAUWdb+ERv/GNqIh/u7E3eSGr0lgMwDw0p4dFHhOvhhldTECmjzVfQbYi6J88RTXDx/y32NiphLJZKUvsXl10z5hCxKOj8Q1K4VbSTnd2N5NMYLgOI7VJg+xRvnnItmugwB8MyDAkDZ3Hnm4F/LA/Z6fxj6b01Y6jdXwjgHtzRBZJpGc9U5UNDzvyVME22XEU8VPjt5u6wvBTQQOTcm3+xEG0YKoTaUmd9TRyLYVq5q/Cau4OdQFyNSmO9VeNHsNkrI7pigLab7pkiV0ASBZPJFC0RZp2T88f1LrxZkkDetiN1geWfGYV2mJ6QktCzmlp/yFfSUPkZGcdXgu0MseuLanby4g0eontPAFqV7S6ui4dr0SXH07+KJ4NYYUFgVLqheqbuqVu5a5s1INENqyG3BmLVcQmtHYCMRL2x3HXQ76EL5GxZbI3S3ZTAl0t1S1rPZYCN5n/xW3K41DT8tTezs3XBqhcBKYpRZO0obrzo9JbdVE26TeBGmuij3ZfeQ0nVKC17h+Ue8HHld+WccmyEqLZFNZp+twgFu56EbKvFqyF4eXha3454h3KCTk4uBXxkOl4InRnoyaeXsTZ81EjHgUBqzh8LA=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1460,
+      "candidatesTokenCount": 84,
+      "totalTokenCount": 1776,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 371
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 232,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "wTQKatiqGeDk7M8PnuDZ4Qs"
+  }
+}

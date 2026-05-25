@@ -1,0 +1,57 @@
+{
+  "sample_id": "H5_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\H5.png",
+  "evaluation_prompt_text": "A realistic still-life or public scene with solid functional clocks. The clocks should be intact, rigid, and not deformed.",
+  "target_anomaly": "soft melting clocks / deformed clocks",
+  "axis": {
+    "axis_code": "A8",
+    "axis_en": "Artistic Deformation"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests solid, intact, rigid, and not deformed clocks, but the image features soft, melting clocks that directly contradict these instructions.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests solid, intact, rigid, and not deformed clocks, but the image features soft, melting clocks that directly contradict these instructions.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests solid, intact, rigid, and not deformed clocks, but the image features soft, melting clocks that directly contradict these instructions.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EsMGCsAGAQw51scfPl1R4WYXWao6+S3uxIAeEI1d96np/nnSJKZROTkbL1sP4O/IeA/YbBHSO1201dx8CwV94CNs2d6gzN8ChIszzrsqVggRJNiaUqm9UEVGj8NnBWMCnMCEw3dEnVy+0U69JB8JdamR2/pjjeVcTxPiSP4Hd2BR5AKi1YIxScg5FsqZqxkhS1/5Mz9QGDyp+0eCQIGRg0Qcz06ETdhLYHh/lF0QalMQbTfSb4DtElcefwkBQVBG+uUeAkM534htSYvNQP013muOin1L7lBYeb5Y1ujOwHtiQpsZcBpSPiolwP2vGzXfd8VsZ1l0NEvQtzJVFiqoRyMKyLV6cd5EEOO/QAGflF/ZLAdRuIG4rzA+vifiQWub5KEJNiZTe2YcBB2xjG6cKTXzCcU4eT0x8SvDcndIgMCxo4NfyUcJiDorkImjMu2r29TKqM8txrT9Pqh9EYlKqmcFzNhW2rinh+JHt3KlVRiJJ9qFBqUdh6GJw4ennjLm/mqbcfAQJEtFAKQxYAP7OnKo2BYhwXRq174dBYxPlI4wfUjAE4M0bn8vPT1cyFNaGfjbrVUFvrco96Qu7SAKwjfzTU1hlGhksFtZL+XSFRwpJ+MkmC4fyoVxNg+EWDvjTJNfXa+ozApsDESyHyH2YQs2IHNKgV9feBpN04/wpZQMEdomGl7Lt4s9n7eD8of4PCxINJ1CAeQgWPIo14Qzstw4fQEjk0JJkxA6Lgo1mUNfdjtj5p+ShPh1hZJDKbAFD5fvM3rHaCE+sHFa14iVAYcq/F4ttaxUefJig4kz1kuLIwP0E+pH7vl0qSN+GxsLLLz9X4/jRkDnPZbZ1LzYOCm0bJpOlyqXbq/TtaklrrJc/p1hn7zWGY759d5L6+JW1MJgFtJm9L48DDj1zDh78+9aqwmCZySE8AWCuSzOFY7rVeM8GhhvqdQr5CalQgur3snw0RkeYskRJbaHqKYJs57A3yYSoJRL7ON+QBLToJklM83h/0WyjMNYXlOd40BfGPShd/TYE2cK6yG8xL4Y+UILNawIFxy4pHRZV5dSy5lPKoyaBTgD9gZ641P04gfL1EB8QFt8MpGiVIUxNSnaEvq/0YsAqg=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1472,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1727,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 383
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 169,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "CzYKatvRL_HR28oP9ofW8As"
+  }
+}

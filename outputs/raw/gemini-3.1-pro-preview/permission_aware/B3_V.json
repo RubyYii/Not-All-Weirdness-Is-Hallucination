@@ -1,0 +1,57 @@
+{
+  "sample_id": "B3_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B3.png",
+  "evaluation_prompt_text": "A clean professional advertisement poster with large readable text. The text should be clear, correctly formed, and easy to read.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests clear, readable, and correctly formed text. The image contains abstract black shapes that either represent completely distorted and illegible text or a total absence of text, directly violating the prompt's instructions.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests clear, readable, and correctly formed text. The image contains abstract black shapes that either represent completely distorted and illegible text or a total absence of text, directly violating the prompt's instructions.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests clear, readable, and correctly formed text. The image contains abstract black shapes that either represent completely distorted and illegible text or a total absence of text, directly violating the prompt's instructions.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1468,
+      "candidatesTokenCount": 100,
+      "totalTokenCount": 2071,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 379
+        }
+      ],
+      "thoughtsTokenCount": 503,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "xjIKavX-IcXmxN8Pk9yM4Q0"
+  }
+}

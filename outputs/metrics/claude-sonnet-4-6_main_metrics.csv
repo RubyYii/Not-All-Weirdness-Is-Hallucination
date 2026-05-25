@@ -1,0 +1,2 @@
+model,audit_prompt_type,n_total,n_parseable,n_parse_error,parse_error_rate,PBA,FHR_intended,MVR_violating,ACR,Creative_Preservation,Defect_Sensitivity
+claude-sonnet-4-6,permission_aware,144,144,0,0.0,0.7222222222222222,0.025,0.0,0.0,0.975,1.0

@@ -1,0 +1,57 @@
+{
+  "sample_id": "H8",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\H8.png",
+  "evaluation_prompt_text": "No-issue control for Artistic Deformation. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A8",
+    "axis_en": "Artistic Deformation"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image displays a normal clock on a table with no apparent artistic deformation or anomalies.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image displays a normal clock on a table with no apparent artistic deformation or anomalies.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image displays a normal clock on a table with no apparent artistic deformation or anomalies.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EtUQCtIQAQw51seDdZ5pu2hln8DADe5HDeCvNFC1ok7TBS8v5mhpgHtfVEEp7PhNKfHkrW6XVAtWxoxig5XDP3ztJxUHobia+v7FsJ/A776ISWy4FmeuhLuqL0mPZEifCssDCQCaczqQ7QV5vq/LMjnkmvlASC3LLL7GM+WYH3LvcURCPgNwmVay8o9ZdPzOchQN27koRj1oGVcqcU/vvkLQbjO4QGkHxYUm3KSnmHNddOl81zHxCVWO4hYSyN0+EnH9kVzPmEBZtbE643/Dd5HOlKOEHwY7I5mlEsOfK9wCITGpgeQYfkod6RUFdiT02zGSKg+uPyb60t11cbGL991wdlqS5YZJsfMgBRdbabx5sQGLxctoVD9/8ERXiqYjnpdTY76IiTq0AG27aynhYSxfMcxWuGdBDRWxhuhs39UMrYBAADqH/D/l6QWV5P7NY3H7AZn12hHF+VUhqmKmkj1Q3i4yll6d4kPn4hRSLd+CNkd4s4xt5bSXBRQCcR64dMYv+t7E6FjV9XnXnKqXviJVLAwBwRZMnK9akk1b5yZC0at7kOuLZ8YCiG203qBIVsC1eDmnq629YkBwkGvk1StDphEc3Ad3VtLAZNBcXdXlKZ9Z5rgQU8ICr8SbJ2RVY5BonbIzUxEgI1NNOnBg+PMVXfBaH0adkz7+h99bwfnIqOt6x4GlxPY5RzU+nLINB63QNk7uZEdYTLkWd32PhWvmLCHqEXA7ydNvARTU6t80jK2OqdtM5lMXzymhS/hjofmnzkhwS2zjEZmg8kOp2ZfrEOjx7Llusm2ppGVG2HgDgycrSRZak70rFlTcSmocYzo1t3b3iHRBLa9fJzF1pPSLF3cjDkeqX8NT9NBBR6tirJaM+ngGxBMkJOqze3NnEbPmx+Qma3CxiOSRyp6Gw6A43KMOoYgexxIuNMvIP7uH7K0Mkg6cMCMeSIk5d9S6NUPExP50kQbNs63CQiaA97ZdeQojk1LxDgVigHO2ESNT0oZyPk+6JRfKAUaUPxdFO2ooiLv8SwsZIrKw1z1U2AqwNSP7m/RruNXNLvFXFcoOnBtmPsywoFIpRcdVlOb/d8/KMbNkvMdoi4OeX8Ih8CB8d2jaN++4Pl4uBLb0trcbxZixf7jrsfn9i/HmWL++yv322mz+FffoqEvUMm7kkwokhcrzTrH+P6t21p7YvHPpfbXGBgzYs8pEpnQT4Th9fpJXgwXOfHfwAAkGbqoPTPFreS7zjzdpEjX4IdbOJ6I4qbWhOgoPTE/7kFwsZkvt50CV+9i61msOi6kJwMtM1qa1p2l7Fs0q/G26WOJbJe1PAGvS89Yr2eFA+u3aorvGAHjtaj4MGNre4peURXEZNDxHvOfj7Efw3jjEm5dRnksQvQ7tNc7wfhTKc6NZL57dRB6c6+Xmd0XOG9wYmUBVL9KJfy1fJE+pw4Bc7fkKb3pagt5HzFctHTPj+ACy4C2KZ+Z7kl0ysXPvbtHIJh7aBw7olWK9IVSoW4vUIEEfajcsWwxHDpK0sVtHQxqHDIGX3A2PriRWLqwBMpUqRFm+KrdMBctRlmydAfBHPDd2/+YkR3FI6BcaMuYvVh0Aug9xAaQf/cO9lsjtdsNwYMeCRIJkImvCXrKGmGHOj7uRrxOJ6RK6vRyNfkjg6BparVr05AviqooPDqo2oAvlePWsodd1xI7TvHSujusIclpNQAd8mrpJPC+6kOAY546pL5TnpgtE+5yDfwkt5dvLre5bkgc5Zy4TACyHlwVW5DSvWlye6l2gnPTzlXHDCvr7aBv/myoa3Rridlqi0PcXzqib2w4a5A5ewv9GNO6nzFAjAjg5HgioFgo9XQmlBpJCyF28TrjgVmBObfWAU9XaxGDx3KPy6ukIFMl5Q7S9qqsWKwaRNyKXiT09C4TAePY+xw5EiM/O3XBs5V2QixMSfx0JA+KlaRQ3gPLrRv1tHPWUOt2FksdP9fPpVmZQ4RBB3GnZzyoDeEFRsxr5jtH+UHM25vJSkF7gbzNcAl3Y22DyGd5HhhjWgUuCaI8UVsxc05CqztaMWDsKy/B7SwFxdZrktvRoFOv4m01oq/UPQRgbWwntOqwdOyp0fwg2xROfbOkkcInl+Hs85b6kfaLzLGBRqOQcCpnGVwYA4LubVv7G+YSo7umOvGvY+FCeUWHkh9197P1SQdl8UkaSWOzVOfRXfqgNfdUlqv6FZuusa7Q9OyidBKYMMJL6EwAeiJVEPvwXf6+9cnblkFHjLiEP63HUMvCVOORUeFCUIT0oy1Jr+WdhyddDsp8joEx6jxuphnG2GHiwspnJn1ev/+kbeBbZuMpynxbpbPxVN2CsG0SAPn5FY705LsAnxl2KMz1H2zTEUv8I9XGWxVrJDUFNvfv/UHWUSSho8vitm24Hxd6a7kQi69BsvO3dULJbt2MCalg01h8cSaiLyKIbbTNeoHztdi9qZ3Bt6ZE0P8zFtG/H6kSoVhuwoJ2nP4o2O2G2V17LoCPROtJoN6iirSHpgJKLHiZSSiXTYu1np1goUEhJFnXks9xAHmPzUR6+KBt/gbSem2gyPfzg5hjF7jY4hwuAI9n81JvgG2nmLtC+tCaGGMGRPhpF4hedPKmCEYtc81mP3g477eFJ6TT3vzBEUJFwh1zk+RHQZhSerjAu2Y816knuYkJE0y/69hOJVUcE38tH6Xlh1Csf97xrWTYK3piE35oJnrXop6/MCjIgAqrP75AEdgS7WNLrxpsiH5bt9zy0RkRvJ1WkRAnOi+rNQNHvMNh7QUf++gtdbltm/9asTOAjPaM3MDZ4mykZQRzSIPerjScUPqv9tzcCyjLXIqOngiuVxbhp1Nkb"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1444,
+      "candidatesTokenCount": 73,
+      "totalTokenCount": 2312,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 355
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 795,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "MzYKapWWL7CU28oP1ZHaiQY"
+  }
+}

@@ -1,0 +1,25 @@
+You are auditing a generated image. Do not label unusual content as hallucination merely because it looks strange.
+
+Text prompt:
+{evaluation_prompt_en}
+
+Target unusual visual element:
+{target_anomaly_en}
+
+First decide whether the target element is:
+- explicitly required by the prompt,
+- stylistically or semantically permitted by the prompt,
+- violating or contradicting the prompt,
+- ambiguous under the prompt,
+- or not an issue.
+
+Only label the target element as hallucination if it violates or is not permitted by the prompt.
+
+Return valid JSON only:
+{
+  "target_anomaly_detected": true,
+  "permission_status": "prompt_required | prompt_permitted | prompt_violating | ambiguous | no_issue",
+  "should_label_as_hallucination": "yes | no | uncertain",
+  "reason": "...",
+  "confidence": "high | medium | low"
+}

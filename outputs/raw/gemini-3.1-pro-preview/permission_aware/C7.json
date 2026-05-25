@@ -1,0 +1,57 @@
+{
+  "sample_id": "C7",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C7.png",
+  "evaluation_prompt_text": "No-issue control for Physics. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image depicts a natural-looking waterfall with no apparent physics anomalies. The water falls downwards as expected, creating mist at the bottom, and the surrounding rocks and vegetation appear normal.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image depicts a natural-looking waterfall with no apparent physics anomalies. The water falls downwards as expected, creating mist at the bottom, and the surrounding rocks and vegetation appear normal.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image depicts a natural-looking waterfall with no apparent physics anomalies. The water falls downwards as expected, creating mist at the bottom, and the surrounding rocks and vegetation appear normal.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "ErUFCrIFAQw51sf3C2V6U/jvL8Fmn5VnIcDm9vfSu5HtlEhDVIzxGPJNP+DQ2lZ1U0IcsWPA89OJqsguKtKvfznNmpcFCPgjPv0k8r5c3CJkgrov+k12TXw7PgHdBSNOXQkjQd6fGSzY4w3AmLZpFQC8zHu+1Mhp1ss38rh1MupuQ9Q9Oha3yq77d8O9F25rPVV9K1eSsy5s5BTTTJCUXimz8wcixC/KC0N0/kFUmm05lUyzCzatnPSJGT+lNmTUC6D09QX1eNBMOCrQnZo6tD07OV5zIAoQR3agLPL+kq6YB/7JbiVSyYeqkShdcjqkEBZiIUUsLJi8ybZ/ylk2ebPFpOQ/5ZwAsLGbfhUhPlMk/JH3U8alqi8CYqZRQ4xredSRnjLpeC/iIj5P/7p58CL1kg/BpobyZt7+xQKUTmt0uSiLVnWLIep95is1m+6NffGLBDeE3C++fK9/8N30rCcwQ9UJ8hV3cMeVsxAj6zNhwZ/ibxwWePxJobsnPq5bD0TPcqh8d2otcRIGU0guigUl6ypfLcObXIaLFqk+XCxgim5hdMtM0+YYOSPEEyofOGlLuyEtNwFlAxwLKdRe9JWZXjFAk0dEyWCL52xtvtOPKv4baOLovHDz7L8Z2XWR7dtfGrY0MAMbCb06LjHHLjfmJh559JMZZlVP5J8PU53nTP+K8fO9SEk88KrXH6C3jA9oBOBHM5QLmCI+O5c2a6BPkaP0uKpbRFVJXaQB9uZxW/WXf5BQodyf5FuYKUjmaRO/l4YrIPcbct3AxgV/qKEH7j6y0xPEEs6Xl5EAPbRaufX9z/Ty60vMdDgvg+uH1DTPhy5xwLz3Kt0plcHGcBsqWIXF1lB5PciSXQx0SgZ472SKM65JaQyeFwzlPxWzyEjA0k60fd/go0lVcwPUvV/zent1jIib"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1441,
+      "candidatesTokenCount": 92,
+      "totalTokenCount": 1678,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 352
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 145,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "nDMKau6HLbnX7M8Pl4WQuAE"
+  }
+}

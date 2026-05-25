@@ -1,0 +1,57 @@
+{
+  "sample_id": "E4_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\E4.png",
+  "evaluation_prompt_text": "A dreamlike tabletop scene filled with repeated duplicated cups. The many copies of the cup are an intentional surreal repetition effect.",
+  "target_anomaly": "duplicated cups / excessive repetition",
+  "axis": {
+    "axis_code": "A5",
+    "axis_en": "Count / Repetition"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a dreamlike scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a dreamlike scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a dreamlike scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "ErsKCrgKAQw51scckoiSe2SHQHPm9336LGT1vFHvrbgVzXPZzy2mjEYNLTvYcOlsRPUiGVRXNrF7pLsHeqa/qcDl6haenYRw6UR271vgMy9gc2EWRROEg2EenF3mss9dw8deSqBmt4T8rrust9taosmz4g7p5+FdogseL1U6e70L4le+nfcPSqw4MrYLvL2f/EJ+crKw0LvyPfbs5fZezQdGINXIZqLC5BeMVmHX/Gqzq3AyDh9J2QiBjD3AUqNU+tc0B+r/qKCKxhda6RpEKn8dap34opxIEFpeKKKIVMqs0s1DH+f5hloXAaqEe5BlmqS9C8j76ffDaPNeN0q0vjp2ky1RTNeHgaVSsnHtsjn8esN1iFTIvIt0mb7c1hKSpZs279eEe3QcNrzjW6VdfadCNQpMr/+08s+Z+kCA2rqRbC8MAtPAgkU63gakBSUlnATcI91vGXZiHHrkfsPeW/8a1TlyABl0iTyRG6jBFIXXmHYhs+DjAhVyXISzN0bhmrAbXa0P+J5kR4yuDFeZbSKvFBuIpoyKaqngzwVRLa9pUKnDEAhBMmOCj/b61dAwRiGM7Irfkz9Br4tsL1pdNFKp/8UMgUzXJ3Xhi5PXs6K7WQqb1QasN1TPQyvMeZ4B30UzxY273ucfX2FAhp/XCPzqYkdeyxKvP1GwmKjpTiG68aXJ1+O9rzC601ABec0qR/1yqZBNSX+5h+QSNv1r+56VIwU09fONeCsPY9TeZGbFkdaHGNRz+jDYJNjZIvgh9d1vugTuu6CNxhRHAT3W68qy3FFMODPb8y8Qr0bwtxfla4t+op9Ays8MAFymMjoiiWqLu/wHahENfRUpqIGkQiUodyPH44wjvu0Nsz4/vRYKssOLYhhkoOD47dXOh+pjylkcbp0doEFti6E6VpX1IXJWoBO6ogWDNN7Blgrx/Pjt7bDtxGI3QvKWCMCLgIaZfkXzs/rx+aGpPGnIeK3vp915v2n70uZsaGJvh0Nt61etbP2xvMorhrwwe1+3f5pItj7oBO3p1mtL3TQANRh2y8pvAeiB8EFxILcQigzu1FARbvGxDIH9kLfFV4W635MlN7lw2qS//CpjwTpN4U4L+b0nL4CtBl6pjKD7o5iivRROU2ZMcX1Y1iaFXdnEISY6DRdl3NwdtBP7GAKFidOEwzFWFWqpBTlowPXiijWckn/Qe2QGM+TU/UouvHIqT3O95FWaOBAetcN+Cofzoatvbrb8RgVKItjJYDArlLyO/rGYKjWOtrvQ9qeBNhFBZ+Czx0e/D3g+Eh6UxV8hq7BurvKmPeGj5TkvtOzxiNn9ncBX4rC6PGGL4jXa9+3XYV0LfCAEGjZGF5JDKCmOxSiKD+vJw5goO5UMJlbHl6y/9wESA34ZvmG39jzDhh9qvoZUxofCmIEGrKqwrAQnkXJRVzeTnqYWdfpENID6v9ty0KXtgk92nNDLPk/QSNJMOwhjgkF/htT6kYYxeo20ClNWGecu1e3Y12P0nCAbkj/ZNKx/tclK0s1P54oFxUQSdm4HgDIblBErJ5/DT2gAkW069n6j0d8HcXRVTqnplwlnkukqVGSX4k130+UzF30e2U/u+CJ3923Rk5B+y1U7z6XG+W/IOEYcyhzISZ+odAoBX++W7NF26fovBQbD3zqm0xm7Vl/zDK5NgC8iXJpXwN5VHsr1W7F43Q+FS80X6RItpz4ZeRe2aH7drnXW0wU5Vjy1TKN+Xu0owJlYgl7nFsLAjiE/LfhYXZ/ksTdyBmWUyVEmHtUhoMUzLIBQ0+WZsA=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 83,
+      "totalTokenCount": 1826,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        }
+      ],
+      "thoughtsTokenCount": 273,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "djQKavaZMMaZkdUPwqPEoQc"
+  }
+}

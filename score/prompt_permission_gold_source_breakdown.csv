@@ -1,0 +1,7 @@
+﻿gold_source,final_label_available,condition,count
+excluded_uncertain,False,ambiguous,40
+excluded_uncertain,False,no_issue,24
+excluded_uncertain,False,permitted,4
+excluded_uncertain,False,violating,11
+metadata_stable,True,permitted,36
+metadata_stable,True,violating,29

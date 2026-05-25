@@ -1,0 +1,48 @@
+{
+  "sample_id": "D7",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D7.png",
+  "evaluation_prompt_text": "No-issue control for Object Fusion. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "```json\n{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt specifies a no-issue control with no target anomaly. The image shows a straightforward wooden Windsor-style chair placed in an art gallery setting. There is no object fusion or unusual visual merging of objects present. The chair is rendered normally with clean boundaries, and the background artworks and gallery environment appear standard. No anomaly is detected.\",\n  \"confidence\": \"high\"\n}\n```",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt specifies a no-issue control with no target anomaly. The image shows a straightforward wooden Windsor-style chair placed in an art gallery setting. There is no object fusion or unusual visual merging of objects present. The chair is rendered normally with clean boundaries, and the background artworks and gallery environment appear standard. No anomaly is detected.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_01H7NS41SrzMhQ6aFFeoAMN3",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt specifies a no-issue control with no target anomaly. The image shows a straightforward wooden Windsor-style chair placed in an art gallery setting. There is no object fusion or unusual visual merging of objects present. The chair is rendered normally with clean boundaries, and the background artworks and gallery environment appear standard. No anomaly is detected.\",\n  \"confidence\": \"high\"\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1905,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 138,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    }
+  }
+}

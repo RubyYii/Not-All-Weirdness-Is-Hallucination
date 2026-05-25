@@ -1,0 +1,57 @@
+{
+  "sample_id": "A5_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\A5.png",
+  "evaluation_prompt_text": "A surreal portrait of an alien-human performer with six elegant fingers on each hand. The unusual hands are an intentional part of the character design.",
+  "target_anomaly": "six fingers / extra fingers",
+  "axis": {
+    "axis_code": "A1",
+    "axis_en": "Anatomy / Hands"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'six elegant fingers on each hand'. The image accurately reflects this requirement, so the extra fingers are an intended design element and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'six elegant fingers on each hand'. The image accurately reflects this requirement, so the extra fingers are an intended design element and not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'six elegant fingers on each hand'. The image accurately reflects this requirement, so the extra fingers are an intended design element and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1479,
+      "candidatesTokenCount": 90,
+      "totalTokenCount": 1915,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 390
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 346,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "azIKapyIEKL8vdIPxvvB-Qo"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "sample_id": "A6",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\A6.png",
+  "evaluation_prompt_text": "No-issue control for Anatomy / Hands. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A1",
+    "axis_en": "Anatomy / Hands"
+  },
+  "response_text": "```json\n{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"This is a no-issue control sample where no target anomaly is specified. The hands in the image appear anatomically normal — correct finger count, natural proportions, realistic joint structure, and plausible positioning while holding a ceramic cup. No hallucinated anomaly is present.\",\n  \"confidence\": \"high\"\n}\n```",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "This is a no-issue control sample where no target anomaly is specified. The hands in the image appear anatomically normal — correct finger count, natural proportions, realistic joint structure, and plausible positioning while holding a ceramic cup. No hallucinated anomaly is present.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_01B5R7d7fHy3cxxk3SyiiHDF",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"This is a no-issue control sample where no target anomaly is specified. The hands in the image appear anatomically normal — correct finger count, natural proportions, realistic joint structure, and plausible positioning while holding a ceramic cup. No hallucinated anomaly is present.\",\n  \"confidence\": \"high\"\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1911,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 123,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "G1_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G1.png",
+  "evaluation_prompt_text": "A whimsical street scene with unusual scale relationships between people and everyday objects.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and the relatively tiny people in the street scene directly fulfill this requirement, making it a permitted and intended element rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and the relatively tiny people in the street scene directly fulfill this requirement, making it a permitted and intended element rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and the relatively tiny people in the street scene directly fulfill this requirement, making it a permitted and intended element rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1451,
+      "candidatesTokenCount": 102,
+      "totalTokenCount": 1981,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 362
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 428,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "PjUKasqZF6vpnsEPpPue4AU"
+  }
+}

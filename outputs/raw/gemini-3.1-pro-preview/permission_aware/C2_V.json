@@ -1,0 +1,57 @@
+{
+  "sample_id": "C2_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C2.png",
+  "evaluation_prompt_text": "A realistic landscape with normal gravity and physically plausible water movement. Rivers, rain, and waterfalls should move naturally downward.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features a massive, surreal column of water connecting the lake to the clouds, which defies normal gravity and physically plausible water movement. This directly contradicts the prompt's explicit instructions for a realistic landscape where water moves naturally downward.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image features a massive, surreal column of water connecting the lake to the clouds, which defies normal gravity and physically plausible water movement. This directly contradicts the prompt's explicit instructions for a realistic landscape where water moves naturally downward.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features a massive, surreal column of water connecting the lake to the clouds, which defies normal gravity and physically plausible water movement. This directly contradicts the prompt's explicit instructions for a realistic landscape where water moves naturally downward.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EpccCpQcAQw51scFTEwQKnBEq9Xm9worWgFKJAWQUnEVeCLkcIvnhSxG2mhMh1zuuvuwFYmToiktlY5kpP4uD3Z8VVeveHDQeOx+Y1iQu66s8CRVpZ9rtzCghsOcN4nlZatu4yLQI5iGuV3E3pxb9P551czSMQN5Owg4ksg4zOAjL2Zux/ASLN25a8batM5JvgNttJEQXLvknf4HxQmLNjPSOLO9VtQr6MknsNGq0PQTzJpY1ZUwhDeErxdrgkk8O7CsFNlAkrHC14GUJ6pgWJn6aH3i4ddJMWGrAEZHJlVSdZbQJqZMmJ3Z5pju+Uyqu2bULVr8lr/F8EncT/p4lW6xQgk/0MARIjzpbH+/bOo103QjsEHcuz5g898qPSl8tjaXC7R6wZuFaeQZdmosmke2GbG2X5e3C5GRwuR4yc+9/CON8fe0pT7S03LJgjtPhf1QRwBm1K0RYcygYokvMfFZaS1Z+V5uxSD7adrlxdxwu638tOzkgtLs4rlhenU8TVF9ypay0aWe7zNdXWmG/X6nqK40s97i8Jdy2IoOcKMS5OY104p78CDoQIo7deEK6wrulzliSHzRxOO60CK+kroNoMFv7K+fZj4j2mezgem+6n6eAxF/doSYRHG5PwYOYWH9PgfLuavAkuHqjPV8prCP50TWniXPUwTD9i8l9Y0VI8vJymhHipSRJez9/LXEVNEKLDten0IbEmCQhy1SHm6UguEkvHUsFslrDzeq3zKHTp98tWlqundHREoIOzASUrmSEHy95Z+sANM0glCwesd48x43uQB0mIpRclEwJo0GjnNREKAZ6Fl0LrFiNtx48qmNiJwaPWIeEhdPcWg3lc3ZbATNrIXmsDR7EFFJUuVa8AqJVC25SbFVX9jcCY7Mey2HnZ1NqgYRWsBDP8qPmMIj8BhzWCwkTgXMVK2EJVG5AewuY11FoJXJ8rjl0u/nOodWI/B95Uy5icEBrC1ihwg5JWihwWJLcIU/OOHd3Ls+f7lBQEqcfR6xYXwbHQnT8aXPFTvubPltOWhWWXQKlyazznN8XdBa4++ddjgfekBOfY7dc4dNFMTSgW1mKN6DKUDu9bJACz48iJ3X3KrmHqmgLP/8OiLZ3ne8Bie95PaOBs4hiTPpxqXuFr3DzKPdvzUuL6j8IPdZjntk/8FOzIBmkWnzbTYcSKzu7tbgTrSv/HH0WBdcXc/6awbcF3h5OgrcAXMBiegQWKJQghdkkAWcTMa+Cj0vbqHAv22P9ifBNJ3FhAVj3l/YLpNcjQUNKsL+S1HI5bGpOFzZ0uoU0Rnhyr0zVIilaBSpP41FdjrMZU4UKaMWRwbpsv54fCzeIIP88cp2cQf7+2WGNLnAMFXHF7Zse7eiNt/WHaN9/1VNugx8+qeTT9hQ/ntRP7u4KbZrMksxKOIf4xDRiewnocZV9OU8jRb+wrWMAh6n4CmwC7Rc5LgV0hzrViAFh45u7mtgM+es6NOL1h63XEVDSb4rZz9EDWuNZLa51suCoCRAawjNZSJ4BhvSwuqTEFB1HEQuhqexFrgJdScJAp5JwjAB5+vlJomwlCThayfX9sXStSOxGJyoU0uX6+W3jEs1RmMbmQbj8gQ3JqQYXLoIupCWL3rmiUBlnj/daGRfVq8XBWXopxMosLap8Qy5DPdjl+i+frvFrJAAQ1cdMpko0a/k6sdudLLCo4dwHz35orroofCfprcOd3MNOfMFJg7pCACsGRVqweLfn3ywS7v+A/tudvLmxZy/8Y7oywsXD/0ihe7f0PhzD6Gi+xFeldNdeUcc2NHGouSo235VQm8JgKDbqBqwBS//Uk67ejXdT7i5VyjgNXRGIvLaLFI9uXaRDveJuLWSWx8P4TAe64ee72pigbUxoELzcyf/ocMBt8RnycV0yd9wC3K0eiLCa2aAivqz4VbGC4N7zUEnBvg4pOfhimC9eNC1ZR7Lm7Th/iCJgOA5mmcTooPwYDKKzNxyeU7Z2haFTsfLXmvm5m5AhuCWHp7g8dDDDUeXp+yV352iE+b1PBSJ94TH1ERqB+gf6KT39nBZevOoUCWXkCtjX27r8W2s0sYeTKtGem16FEIPJ7xJmNFC7OunoVUVYc+a2uHda7EgMZgfcWxIXP53Q1cVYtSE1XFIyCJwFoqQz/NVa3sd0kGCifv5kGJRgPNywNO1xdd5FcakzIjTOnZpFD/nl1RzZ4fZyNsC6lgk6jq3mhq4AMync1jkHUfjSFVmPVOWuQJ9F2RyT1KgqYdern0/e+u+NJsKHsdK+ijLho/DV4a+RnlcqqpAPrtRDDf/tRQ6L6ZaOS2QUYfd34bEsOVgqodraf0ikGZ7f5VsipgZmR27VW5Z6ZOjOyzdtVXnpEQwQSg6tXLCRpTUjmxi4W8mdvokBnJUHB1xEfeQD8dnTzPuamHNe+RzTMeIS5gfnvYvZDwG1J8BR/uADfyx4Ue/iJvzguHp6ik/ZoKsqualTDQKLzFUPC+TWSB/c8JDzY2MQdZGfgkYP9iLCMGQt+hhlHs1GgygPqyr/DzmlNshtkmMiubanBzuapoi4Ewz09FfbP/1PDgC9ax3wI8Isr3rE5Xtth4XV9I6RNt51qANG62UdK5JxQoFpu1pZwxWTaPRK8Lua8gI2cny+dIqLvbsgPKLEAt5cPIzSNHgyVD7ENcnho20jRCrqATIQzcQrOxDgL6X43Q3BVjTjOCVI2uMG6ADtaR35+Ty2YmTbmHmMEi981jUK2OJRKvNWqeP7bpN7vqWQB1zeaDxdCfIHG9RwAldmGqSBpYB9xkZbpV1v/2nXmVOyy3VR0Z7JSJz6kacbXWRjM51gXnyYAIGCD7hjmxpBoAwMSASBKfXfYHLxfFieHb+Yvf5Tf8T4q0MUEN8koYRWgttAyCyejyrea443qPbo5jFckAqSJyuro1tQu3NT1xqa4W1BcfBzyxLm8vkCIpsyo8zJxrCnfT4euYVlPoBZOcw2Fy1r7FeyYeROiedXBUxYaibK92FIS39432l7P+66Co4OVPeu2hHWLmtWKHK+9dij6DlgFx3c+M87rmTRN2b1oIGbv085Qs9FJcHQ+ImqQeBc5tq7zuK2biV3JqXQDPVzi7buF1RKLhT7qabql26Cerr5L+SLozGDsHqy+rGUMC6ewwCXssjQ8D/jHskonDuWyg6Y6MsKY5SW3PG5L6yVIDVUN5YpqHIwOI754iM+G3Fii67QCXOOFohw1XyrY8fKG0LjB8oZXwb91Ijlu0s9/c7PQSzjbmNZ33Rz2+/aQLfu0XyamUo8ek9LO03FmaUAlhuYjAp/rEYgfk0pxqxmIj3PL+rbyPOby1F+IzOnP81dHuLkuqpb17oIxMJ4yLMe+QCQHVm7RZLpOl337vngNrKAFwLNzG6rU1dAv8pXCMy75H6Sor1Yopm5+LIxTvfyrc9G7pGQynPvA0X9moLK1zJppE2329vl/nsUve5QaXfM/d0m4PWxGCQ0wc1U3dA6NdxzpIZGxRe+CrTeo2/opE6nlo5jI6k0aB0wGag5SoyimRwDrlleJuAjj6QTBlbExfFNlZqTuHTPvE8qWeHKxKmCWPBVpfAqBM5uU03gR38AcA+w2+ALUodNBj9y/rvhnp7MWAdgjdvFbxcP+to6QlACKh/x6BBZ+xllgm8sVwt+qCHd+PSVghT/wPgHEb8ysAmW9w2VQwGcdUqEGcqVGHEPDa+oShdVdW3ZAdzaXl03jFaDA2ljHYCTQJwhTPgEiTtx3pfr+e0RUASGFze0hlpnTRhDF6a8OowDcombMMiebYYYNcHLjtEfsRRnRs9a+Ya/u8vIVIruY1evsR8ExLJb7/Zw8On6S/JsPE4RUtsSstHInB2y1CIsBq3lnHQmY1Am8ZiVgT2GEh4pVZIc61RqVQ4D7ocuXB6REKt2zFKVkaW5UA8rbKyBaU2oHWvAv2TKcrULI5ucr9LlodfOuqlJ9EbnhUX3boZSMYLruGqS1gYLPSSu5PvwwoRXGqMCFvBCqoA6HFKl81IIYDHXxctCgrIiyhjzM2sszC8HiYFLOIwLBNwknLaED5bkADbtydkQWEjOecOl+h48raFjkgZRqp8Rry2lPbaB8nXpuOzt16ZRbA0FWmpRtb9a6Wfnrmm9zsFkkmjvJjDhnC71kgFDeWkfsFxNF9mc4QVTdCxwDZphvtqXNwt+4Trc3RwbiQeHZ9bk/Gc+QrURLn6zlnW5Cf3YGAwpXVOMysKHIzIgVCWF099iMsUJLJodqfqql9ThfwqRyNqd/tdCP8FKnKWD5IWrQzinBdznZhoNE3P3P2KkkcdeHXZZSE+ZiQIvBPr95GvscCshqmWQyP0X4/1frJK8+oUcc+7r5YfW2lVgspblmrAWmZm0slRftU9pgRkLBCFAS1w36faLiR1Tz755jx4y8TngP8GVOvzbZ3RlmRR0c7TYRX7wrIp3QSwU9bE1fUjwaoFFnslac3FmtvNCj2w4oQmuaywaaGHV4iqNZc1ZvY0OaeoqFzSovLzDfU2ssbjS3dWhhe1ELIc8NsAhbz9GAOAK+oSv/qBnGr8NWzR6s5XWhLM4Jih/hyzErNRNZA0NRD7NUQ3dZFrn6r2x5SeEtVpj/UKJdLhKeGLD2dRjH3CcU5NVYKPVhYnU9KfeKPEW3xPn9WPOWw+3fQzB5nBhm+UsQNR1eShLv38vQ10mwJ1lFtZID9Xa/vYZGsyFicjTxxOEm3pUhuqjL9nQfyoqCEMl9uJCyDz68qpsVfhc9ZJq/iehBcTFFR2lcHP69mcuhi+6ValikvzKM8xVpaLXgGLZO3f/l0SBJSWgQ=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 103,
+      "totalTokenCount": 2301,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        }
+      ],
+      "thoughtsTokenCount": 728,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "KjMKatK6KJfp7M8PkJX76AQ"
+  }
+}

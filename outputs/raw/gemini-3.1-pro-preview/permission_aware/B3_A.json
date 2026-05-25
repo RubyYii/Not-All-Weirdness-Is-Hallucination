@@ -1,0 +1,57 @@
+{
+  "sample_id": "B3_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B3.png",
+  "evaluation_prompt_text": "A creative poster using expressive typography and distorted letterforms.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms', which directly accounts for the highly distorted and illegible text-like shapes seen in the image.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'distorted letterforms', which directly accounts for the highly distorted and illegible text-like shapes seen in the image.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms', which directly accounts for the highly distorted and illegible text-like shapes seen in the image.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EvMHCvAHAQw51sdPSkQfJYXzTalLfyxYr0Lg9HehhzfwZtTBS6IZfyib57GfHSPXPFYyfOT59yGrj6x1c5X8u4AzARM8BLaeJ9fNlCA2TzPE0FDHhcfmtZPhuEl+79Z1a/FvBJ22Ag13HERLVGjd2RxQOHiM9osYoHkWvsuFk+Y19n/d2/Dd0I+ou0QsqT3NPBlWPFD9rK65h0XYO9BNRQPb8DKMa0lidxD3LyhbCjqIXL332ZgXgYPHbOLn6to5IKAhgxkWl4PH9VLLSpRlrcmWiRQsqkz8bFOJXmbu/M4dK/PAdV8e02YTCa8XweJwbP6rYuDHUJo5smppyMgeb8SpoDU5G64CmN/ynmKTw/rC35Z/6B4uKsmNvOCB4qV7i7VEqpRISfm7VQChi8Fw3OiQf0X2stHQg20ZHLEEureLAg0duL/UeRpkoTozdZbMAMVPlCKjQSTvzMdwaxmOdbttIFv9RySXzY6YKdt/ODm3w7k3Hv6wMzNgQY/Tr1aCeeJ2VLLtM6VgFYKBuuyc5tgFHZd+8vs2ZN2ADMDRxC/J6k1rJ8ca0CMGrDbH5B2+0n9bQyVTMOSo6+Kt5jOb6lg+0oLKrXuPGOhw7ffxwcn4J+nwj6rI20iWKnt5zHurhM1Qf72LbAX6km13vtSQ90aE7V9eHyAGAeFL2sE/nCh9HhE0Spzoet/IyqifOvm3iiEo0QfDJZWGQj7BBvt8qu+YE4tGAjHjAXAAbjpl3c3N8x/gBFWcl7U9lqlqUFF0Qaa7pJuDeLuQZS2f3Hx1/phvRXEZy35ztN6OU+0OfKMw8e52CBTYT5r7qKiNtxdG3emi2C0piZn7H+Ztc/vMOfzKjxQeJRiJbq1RYzewSA/5jXY/WrCtZ0oGZx8PiwYTKhY2w2dlRxL/7MJdjG6R99fLehwjXCKJKTiNX/z8ag+YuSWsjhgjwBIyzdIk0xQyxARSYjz5zpXwd78cHZi3peu5mGTwhWDkCB9XQ6QRTWTXqjfcotSA9ahAVLngmSF3DSdvXRE5cph9q3e52OcwtVMdeLJykAuIwmb9KHye9tDnD/2MMsa75UW8vZynVSoB/0pmiTsb0xUbqC7phNe6aw8TaImglC0xKa1G40LJO3lzVcbIBp2oPA87cS9Qj3XjqoXSqGrOsSNwjgEc0neQl1/CI/UNQY0g0xRenU8IKNud6hW3PSQpk9rQtLK30nD/HVjuezBgDOJcxaxgzT6pq1QtORy3icstyQFcwQ0UL6cO+mkYQBfk6hK5n4gOMFZLgN8vqLZbPLaAXtCfzIKZWra6KzKZqoL8+XRLpP+nU1VTpPJSU4GZXuhbEEWVhVz3NoUWQUNN"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1442,
+      "candidatesTokenCount": 85,
+      "totalTokenCount": 1738,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 353
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 211,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "1jIKaum-DKn3xN8PuuDfmQw"
+  }
+}

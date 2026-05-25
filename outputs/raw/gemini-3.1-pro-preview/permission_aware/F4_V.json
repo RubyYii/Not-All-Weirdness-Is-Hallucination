@@ -1,0 +1,57 @@
+{
+  "sample_id": "F4_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F4.png",
+  "evaluation_prompt_text": "A realistic interior room with normal perspective, physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features highly complex, Escher-like impossible geometry with multiple gravity orientations and intersecting planes. This directly contradicts the prompt, which explicitly requests a realistic room with physically possible architecture and no impossible geometry.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image features highly complex, Escher-like impossible geometry with multiple gravity orientations and intersecting planes. This directly contradicts the prompt, which explicitly requests a realistic room with physically possible architecture and no impossible geometry.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features highly complex, Escher-like impossible geometry with multiple gravity orientations and intersecting planes. This directly contradicts the prompt, which explicitly requests a realistic room with physically possible architecture and no impossible geometry.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 98,
+      "totalTokenCount": 1906,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 338,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "5zQKavjXApXgkdUP_aaZsAo"
+  }
+}

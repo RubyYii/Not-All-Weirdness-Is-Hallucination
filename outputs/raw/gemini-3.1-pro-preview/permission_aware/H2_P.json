@@ -1,0 +1,57 @@
+{
+  "sample_id": "H2_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\H2.png",
+  "evaluation_prompt_text": "A surreal dream scene with soft melting clocks. The deformed clocks intentionally symbolize distorted time.",
+  "target_anomaly": "soft melting clocks / deformed clocks",
+  "axis": {
+    "axis_code": "A8",
+    "axis_en": "Artistic Deformation"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks', which are clearly depicted in the image. Therefore, this unusual visual element is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'soft melting clocks' and 'deformed clocks', which are clearly depicted in the image. Therefore, this unusual visual element is not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks', which are clearly depicted in the image. Therefore, this unusual visual element is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EvgHCvUHAQw51scSHRyzKjNh/4YEhDV3vX9s7SxnpTT03JK1/YycWieI33nrjJGWbcPxhmI8iXfeYQyA5/eRQJQIlI3oAysxLuFFTBgHk1TVXU+c6vk1f6KohdszKJCSYqhjZ6v/YkPkBb6qc2dj0aBbeYYTGquJM1kbwEpHQcOfUdjVoSIsputg3VheOlVWPW0J7OH+N9ytfArHb/Bmt9aTkKNsXu/cNBZX82gzhBC08nnNJe1rQGwEUKcun7V50Jh7lsc7lZvP5TQEd35CVLpP0GNq4Ol9ZU+CnQNd01lU2QfTyLNJc6bIJ7gh4ngmX06mXNNbimJ1Gc7ORNZYBaHN0gsAzKgSvEzC9Qt0gbKmH9CaSIuoqfxIGknpYZL6uTTFvy7vGeWRtUAaKRy38rMgXuLQMd02337v3uIWECtw6LFgiTllNJ6CtcyfVA4J4G+Dg2JCTCAjuROBnzsrcnchDsuTW8LpcOsH7pgwBv3Tny/SvFcuyEGYZfGxBknvXmXSiUUS5DC5Rm6ZJMc+IN2qO8SgdPev74fSacMj4JtCVszeZnS+J97lKL7VhS5bVOi3x6g1k7QisCg9kOEdcjtD3rb+XK0jQh26PM0CxTvqYRtAIhzGs8p7VOnJy8J+rjn3qJ3R7W4MIskKIIHuP5VFB/kd2ZC17thzwI/TANEjcazChbdn+1TRkT+HuZ+yCIoLwk7mCGyNeZGzr44o7TGU0Um7ADtz8KFenWusVaYZcFjeCy7CfGhmNaBQBaJ/brIi5BrSyja3dHzIgUEtfiAZuqwjIotHEzpDkrE/MAbO/EZsXPUauT6rb9qV3hxF2xQU/JmfzULrV6HIGf7sGpnT+TsJkP3Zct0xeeuyfUm4JlQynwNfQjjomPkA7OLsbvW9SMFw85VdqQcF2dge5LFxqItMCpV5l4pR1bb3rziSF9o/TB7eMXyzu4eHVrwsz8aGPx3VMo62M+d6j6Z4Z8GTzb6Xqu6pCGiBvq7tqt5NBWG0Tx+TWXnF3OY8PveDbBJh4T2Jq7DE9I3hm1p2/VCA+R01ajL1bphoovyn+aC7g7rM66GWzkWbPAcT/2m84/Fqu1Us91uXXm8FBkpjGeD4kMcb7SQvB+iTSULaGKfRT95WWQ2OtoNys5Mk8gfBOYY26QjbbnityY/+9tHFgV/O4CZpTwnO+mupgY0eyorBlMKWvf541DbpS88P9dR77DyYmFjvZ4poGvw6uhqqDI+UGXs+pphDOrORzqjVaRukwq2j0WqupCPXLsTBFB9bZ8j5D5loL7PaFnby6OEzdXmjPXO1eHHPve1ms+zfCI1YD14fLfx4EoRl7z1kDxXuySlyRlMN/jpfsXQ="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1456,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 1770,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 367
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 223,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "2jUKatPMDtyFvdIP7O7R2Qo"
+  }
+}

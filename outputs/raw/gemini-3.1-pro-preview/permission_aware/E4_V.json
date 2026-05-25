@@ -1,0 +1,57 @@
+{
+  "sample_id": "E4_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\E4.png",
+  "evaluation_prompt_text": "A realistic tabletop photograph with exactly three white cups and no additional cups.",
+  "target_anomaly": "duplicated cups / excessive repetition",
+  "axis": {
+    "axis_code": "A5",
+    "axis_en": "Count / Repetition"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly specifies 'exactly three white cups and no additional cups'. The image contains a large number of cups, far exceeding the requested count, which directly violates the prompt.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly specifies 'exactly three white cups and no additional cups'. The image contains a large number of cups, far exceeding the requested count, which directly violates the prompt.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly specifies 'exactly three white cups and no additional cups'. The image contains a large number of cups, far exceeding the requested count, which directly violates the prompt.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 92,
+      "totalTokenCount": 1875,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 333,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "bzQKaofVA4efnsEP4ufv6Ao"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "A3_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\A3.png",
+  "evaluation_prompt_text": "A surreal portrait of an alien-human performer with six elegant fingers on each hand. The unusual hands are an intentional part of the character design.",
+  "target_anomaly": "six fingers / extra fingers",
+  "axis": {
+    "axis_code": "A1",
+    "axis_en": "Anatomy / Hands"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'six elegant fingers on each hand', which is accurately depicted in the image. Therefore, the extra fingers are an intended feature, not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'six elegant fingers on each hand', which is accurately depicted in the image. Therefore, the extra fingers are an intended feature, not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'six elegant fingers on each hand', which is accurately depicted in the image. Therefore, the extra fingers are an intended feature, not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1479,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 2120,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 390
+        }
+      ],
+      "thoughtsTokenCount": 550,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "ODIKapysDMrXxN8PmLDZ4Ao"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "G2_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G2.png",
+  "evaluation_prompt_text": "A whimsical street scene with unusual scale relationships between people and everyday objects.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly asks for unusual scale relationships between people and everyday objects, which is exactly what the giant teacup and tiny people depict.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly asks for unusual scale relationships between people and everyday objects, which is exactly what the giant teacup and tiny people depict.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly asks for unusual scale relationships between people and everyday objects, which is exactly what the giant teacup and tiny people depict.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EuYECuMEAQw51sc3ArT8OgG8IYLikq5nOAlCpCKvHYizNAC0Osf/+5vXRveetmL7o7eQ4XRnjXQYNyB2VTer8Rorbp2aOoyt0ybeGqgMCKQ0UTO+2NCZTXtwpE+6AUHZCG6RsuOLA3E7XCvQ5Oj1QW+mGq4qVw84jlwtLV+ygM2mVPw2JS5hiWLQ/2wEPmHL609UHHBVXD4z9d8vk5iaRqOwiVL/MNynCzK3X/H0GhGsapbnyQq5UwgFRoV8yfRK+PLur3YPLlvchgMR4sN1jRXH0mI0ECiS9n1mxoDM5J29BWmEdzrET91cwU5MRP1ZZ1DQ4aQ8KfbJ+gChWfEPNVvzhsVkklVbhUD1tlMvcFkotp/hpMQSJcR7EMVpCssFjyWiXpqqmUZFkmqjekaMt2Q8j/wD5YQ2bcqhO6vqygJZnxhKpbZAflaytcY+H1tC9tPhdr/XCmP7/w2RG9W3H0E2JF0jrnoroTRoNmXECjHTtFQvrix0dZqw6MDMh401wvR/oNQMp05z133861uyku/pmtPVjfBatl5yZes22bsFNtrdDUHnP+o/Mj8P+TdHfDKWEe2/vGKMxA8YGKyrW8lLAskHZiPstkwd+3+SnLQWL33CctpiLkAtelDQKCFGS9gf/5UZZ6QnNHHP90W2Cp0o5RCmFf2gba60OcahrpnbAv9w7GL+YZSHIW1JMfMviiP8YC2Fd2ZXlS1FsFyt+zZDvi8W6ZGZwiIecf4r3Z3zCoGVpYh9gzjumJguCkFzN07TVInHD8LjO6/Yo9BsMHEKzWqFnBefyMvi7dW+PPScDWTncFU3WN8="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1451,
+      "candidatesTokenCount": 83,
+      "totalTokenCount": 1647,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 362
+        }
+      ],
+      "thoughtsTokenCount": 113,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "UjUKau-lMKvpnsEPpPue4AU"
+  }
+}

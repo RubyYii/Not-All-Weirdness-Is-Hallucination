@@ -1,0 +1,57 @@
+{
+  "sample_id": "F2_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F2.png",
+  "evaluation_prompt_text": "A realistic interior room with normal perspective, physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image contains multiple instances of impossible geometry, such as stairs that lead into solid walls, confusing floor levels that do not align logically, and Escher-like structural transitions. This directly violates the prompt's explicit requirements for 'physically possible architecture', 'coherent floor-wall transitions', and 'no impossible geometry'.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image contains multiple instances of impossible geometry, such as stairs that lead into solid walls, confusing floor levels that do not align logically, and Escher-like structural transitions. This directly violates the prompt's explicit requirements for 'physically possible architecture', 'coherent floor-wall transitions', and 'no impossible geometry'.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image contains multiple instances of impossible geometry, such as stairs that lead into solid walls, confusing floor levels that do not align logically, and Escher-like structural transitions. This directly violates the prompt's explicit requirements for 'physically possible architecture', 'coherent floor-wall transitions', and 'no impossible geometry'.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 122,
+      "totalTokenCount": 2152,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        }
+      ],
+      "thoughtsTokenCount": 560,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "uDQKauCqMeDk7M8PnuDZ4Qs"
+  }
+}

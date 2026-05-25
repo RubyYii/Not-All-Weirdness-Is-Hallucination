@@ -1,0 +1,57 @@
+{
+  "sample_id": "H5_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\H5.png",
+  "evaluation_prompt_text": "An artistic scene about time and memory with deformed clock-like objects in a dreamlike setting.",
+  "target_anomaly": "soft melting clocks / deformed clocks",
+  "axis": {
+    "axis_code": "A8",
+    "axis_en": "Artistic Deformation"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EosJCogJAQw51sfH8CqG6WkLSoKO2TfwXVDOeMsN+yiq6jHguDYrCpTIR5Wz6P0lW9o1ut7twCH6CZwyqWf6rGJCqgT9+euMVeXIoGplRhoKUElODchpstxXWmSgBgJhjxPYQ0pE3doHgrHCqtfoRsVCAo+zG36XwJMN/cAPjon0lNgQxU7wLfjFabhOEpPqAl/hb6kNDyI7lBFvuGTLLqr9wUuHbDYCSJN6InCGmHPOWThsNqCGh5S/D6k6Fd9RWe3EXNLi0xGvMfDj0ROthwj2jLYa9EhmMQGm68cgSF8yZJcfD5qbimaEAtCbJVmV8holzSc9VbiNAHvQ2fpp8gsD00uCWCweLuaU1hfQt4dz5/aeYQOu1O4FwKNHQhzQUIT8sVff7cj14bAwRmTJqUOKUQPouvFSckam7Zd142V8a2dbyg5CtIhkBh65cQLOxRdGHY6bGHqVhkr+L7HWpQJXsV2Fmp4G/VQX5ShxHauODYa4ub1IHgYXjPoefri58+wqHWBYjk/SEv2MHa/qOV1H+ITq8NQf+kj6sfck5ONmAi8GWheRQ6BHtOWvuLwH3uggFKEXO4PA06ZF1fsHEmJAQG4Dd9vjd6pIyPPlXeJNltPmok35TLTGVREKv68v6p4Lp8Jei9dW50oqWiSfE4sfcQoSot62qRtLuMJwRb5kvWU+NVLIsV2sPls+IWPOmpNG6RKLxDkjoy0JDislGZMelYrAsVwpPaWIm/cWTFwCs9Wafh7dX9n25d/Ktu06gubbNzYylwPwQlv8mGZx3K/mzgL4LwiwDJOU+Pkd8FUlB0tBOItX8kCFnxwCblq0YrIgAYLQxUMdl/cjMz1Cq7KERMcY/MhLVtPmsS1X1PgnWPRu9NgN7Y53LfdWthU6+T5dUxTuzu71M39Ni4G69Yc/EZJ74zR/r/YlOCwR9np9MYT2fwA/5Hk23SlzKEsfmfxjUWjuHGoBByYoHKzimSXo4xi99+b6yLnwBe0ONuIUEZvtwUzmtMfr4UsFMpnqsEOckCU9NtXjQ8EAW5LJpZo9lnSDymiEUsdQLNoJBaZc3pkl6f9ThibsnYaJ9XKEQxzZyeOFZjaGGov3LeCLGAhYXJ3IUVhlk6uxJyVyRIL+ukCWq63CgXzz4xO0Q6I9ltHYZva39oJ3GOx8wwnDc01J7uNoZR1GX5V4ZUcsgYtSkTh1Y3GHAAqsJgiNK0gRjujxIUnSFoID8r0Ze8KzZfgrt63IGlIn6pUI3o0Fhiz3IRiJNC9pqHXDJuYbwjpZn8+9coGyHKs3dvodFsDFnYB1Lz0aviPF/ZrO0zRE3RGez+9l86SpE/rF37bg94diU9PE0d/jzPVc94/BpLmgdT27gZocON6MetvDrntGloKFSbQnieVv9MHXlnkPuceyE4q42V9mmWQHbRS43eRZ0XtJoFuFRE58uAWcwzVnIRlyMYVbRm6rtNQt0BumXuN0tgGFJsEdZQ83K6TUo9jlXU2PNEaiJm9473YzzLAVueHpLbRuxeJmh5FN9l8fsLQ4evGFMy4EFb7NQqTOeU8="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1460,
+      "candidatesTokenCount": 96,
+      "totalTokenCount": 1800,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 371
+        }
+      ],
+      "thoughtsTokenCount": 244,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "FzYKaoOpOdSXxN8P39fYwQY"
+  }
+}

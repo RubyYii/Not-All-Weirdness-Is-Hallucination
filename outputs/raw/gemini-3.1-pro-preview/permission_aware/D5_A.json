@@ -1,0 +1,57 @@
+{
+  "sample_id": "D5_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D5.png",
+  "evaluation_prompt_text": "An artistic scene of a person and chair forming an unusual visual relationship.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image shows a human figure and a chair made of the same glossy, marble-like material, visually blending their forms. This fusion directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair, and is therefore permitted.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image shows a human figure and a chair made of the same glossy, marble-like material, visually blending their forms. This fusion directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair, and is therefore permitted.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image shows a human figure and a chair made of the same glossy, marble-like material, visually blending their forms. This fusion directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair, and is therefore permitted.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1446,
+      "candidatesTokenCount": 110,
+      "totalTokenCount": 2019,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 357
+        }
+      ],
+      "thoughtsTokenCount": 463,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "ETQKaqWBKt2CvdIP-OHnsAk"
+  }
+}

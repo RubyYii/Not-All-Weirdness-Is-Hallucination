@@ -1,0 +1,57 @@
+{
+  "sample_id": "C2_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C2.png",
+  "evaluation_prompt_text": "A strange poetic landscape with unusual water movement and dreamlike atmosphere.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly shows a massive column of water flowing upwards from the lake into the clouds, which matches the target anomaly of upward-flowing water. The prompt explicitly asks for 'unusual water movement' in a 'strange poetic landscape' with a 'dreamlike atmosphere'. The upward-flowing water is a direct and valid interpretation of this prompt, making it a permitted stylistic choice rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image clearly shows a massive column of water flowing upwards from the lake into the clouds, which matches the target anomaly of upward-flowing water. The prompt explicitly asks for 'unusual water movement' in a 'strange poetic landscape' with a 'dreamlike atmosphere'. The upward-flowing water is a direct and valid interpretation of this prompt, making it a permitted stylistic choice rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image clearly shows a massive column of water flowing upwards from the lake into the clouds, which matches the target anomaly of upward-flowing water. The prompt explicitly asks for 'unusual water movement' in a 'strange poetic landscape' with a 'dreamlike atmosphere'. The upward-flowing water is a direct and valid interpretation of this prompt, making it a permitted stylistic choice rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 137,
+      "totalTokenCount": 2021,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 434,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "PTMKaperOo-lkdUP7ZjGwA0"
+  }
+}

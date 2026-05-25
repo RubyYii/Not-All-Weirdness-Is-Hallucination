@@ -1,0 +1,57 @@
+{
+  "sample_id": "B1_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B1.png",
+  "evaluation_prompt_text": "A clean professional advertisement poster with large readable text. The text should be clear, correctly formed, and easy to read.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests clear, readable, and correctly formed text. The generated image contains abstract, distorted, and completely illegible characters, directly violating the prompt's instructions.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests clear, readable, and correctly formed text. The generated image contains abstract, distorted, and completely illegible characters, directly violating the prompt's instructions.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests clear, readable, and correctly formed text. The generated image contains abstract, distorted, and completely illegible characters, directly violating the prompt's instructions.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EqgLCqULAQw51sdoVcuPACIayevqSuxwVayweU/HkoOd3ZhjJQtTLmK1eH9B0n7/OtSMVehnDvRhyiGo4cA0PsBsnhxuGhdtA6R+rwEbXyfQwP/YIG0iHJ7sWRM5lSI0BY5X/5WNKZ1xdPo0DcSUmPZiuj3X5rsSiL/DbT+vhNIcfXGiysP5woZHI3LBr2LRNOQ9ko6OE4J6OyP+GgZVAGGIPRsBNz1SlBroZDM9ARuxGwtOykg34b3yMyvE077tDWmPleQNqVxUTQOepsOXGyxpvQgJbLEYSu26BMYcFh5ir0SeP4o+4TS66k7IuiKM57ZEfyTDRNfmO7YkFyTTJBekT1nvxWa2dF15hrVtd4NoAGL1ISbe2k2OOd3Y62ylRMJisgQunYAeYpRU+RvbA2SpYGYVsz69kKqsphCl2wFbdFWODse8j3Z66R9N8BrffLph057ybjk3gRmqdC7bM4cTgcnUOR9dFeB5nErq957UoAGbypgDi0mZeiLyM96oi0nHPDWGyhy2bosDOnbURDBDUYqG4iBWmgoBCgGPs0+K8Dy+zeNupAy9VHyRz8roAvn1yXQLtWZlJ0F0E9xOkdkUZVS1P4aVvQee3VLKarnDmE8xlLp4e1fS7BHVwDob472Di79mIQi/5XIbOcG+Jnc3Xtit3fNqjxLyEbyoMPIODZLIIPYGWJYv+BETMUFO3ux7/ahooR+YHamAuEpG+bmvDQ0/4woOfMpOZIMl6oYLjddfrjNXuyYc+zuTE+7PWVvRTU+C5NWVPh7ImccyZYl9op7T4ffmqxn70kiG6WFVRfaIfxhzG2g41I0fWjIbzd597iOZ6XIwzzjZdHIjzA+EdLUjbxsgWpJUSWFMSyNbHQXUYHkVe5nTGpU6eW1Igbf+2MtybjtAdLe1i5srV0IGnDOM2UdBqhAUy2vezkP1tykEY+smMSwKr3TVasWARavOwd1wLHa2nTY4cXvIDP3SuFzHaKRu6QRfHXsnPueGOjisxKJg312lDcY4Qjo047SSB8EByCIVE61f6JPxTUH6hini5FxWYihkLNkhHv7UwC8JM70Bmt7fXrlxvUy0/DS6vwjBd9mhOlLRGmVK73ActKp2fYebWxI0Avo48oFSALlX/0U/nrw1pnQk/5We99/K8f0qHwbdthzDpvR2OOeH8LhM7n4rsL+1MbKBAodKfYUAZs70JbntBtbVJArP5SoCCZIYqZKgijM1jPkp4BGjydnlt1cUC8krSQ4P2cUHaJj+b4ETeA7bw7zjUPk9VMpUX+hAjWjEC435l6UrgdwcIxM4+ACLYvh1bhhTEWaFjuBKwJwjAvWXkGA6eTlrmgFS+2VZy+Q0QpSj/CL9JyjU5W4Tw+Hsx5BLhmTjJNJoPhGHKjw/mcIi7lw7OxvuifdLI8sRXG/V4r7kx+fozjbnf/iJaKVitacrUeXF+OtDYd75trDlU84UagdRZ49AtI6T/0BdLTNSEM9IG+atD9QPUO1CzTd/V0EJK5jhxY73fsVXbMCPvAGNa54+2EIxfAT9gdEAyIvZPuCVb7S8F2IrgMyuP83z07y+57wHl6uYL71+SuSxTgQ3YTGolM5oN9a5fZIK7eyybTPnFi7S2PwUS2ghhnfkWRKye0wFXQo3TWoZwG9aGnE6k4N5J1UX8YnK33S9MmCxUPInqiHFhIQ0D9QdvzX+MbKd8iP7t4kKrFzxen+GiV7RzMlCLNqpyBHV2DZyA6v0hjZ0frW4+1d2b4DG6yFIYCaO7Ik1Va95bkz8ZfRLmMnw7wm5bSCLQKeCV7OxN+3/9dq1+/HbJEYXImvgKZiVh+hr40aekLK5yCDE26acYnvmNhbB5Nxlpr4Nr6dftMwE+fHHHaNuzBygbYos88TlTVbyrAkmNKtFjL04Ii8sHdCaG7tut5eyhacD0IlMNw7VDes="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1468,
+      "candidatesTokenCount": 92,
+      "totalTokenCount": 1861,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 379
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 301,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "nzIKat6XDtmJvdIPsvqa8Qs"
+  }
+}

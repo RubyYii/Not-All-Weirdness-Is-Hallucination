@@ -1,0 +1,48 @@
+{
+  "sample_id": "H2_A",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\H2.png",
+  "evaluation_prompt_text": "An artistic scene about time and memory with deformed clock-like objects in a dreamlike setting.",
+  "target_anomaly": "soft melting clocks / deformed clocks",
+  "axis": {
+    "axis_code": "A8",
+    "axis_en": "Artistic Deformation"
+  },
+  "response_text": "```json\n{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' as part of an artistic scene about time and memory. The melting/soft clocks visible in the image are a direct fulfillment of this requirement, evoking the Surrealist tradition (à la Dalí). These elements are not anomalous or hallucinatory — they are precisely what the prompt calls for.\",\n  \"confidence\": \"high\"\n}\n```",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' as part of an artistic scene about time and memory. The melting/soft clocks visible in the image are a direct fulfillment of this requirement, evoking the Surrealist tradition (à la Dalí). These elements are not anomalous or hallucinatory — they are precisely what the prompt calls for.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_015oWyxHkXgoN9urgVkkj8zk",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' as part of an artistic scene about time and memory. The melting/soft clocks visible in the image are a direct fulfillment of this requirement, evoking the Surrealist tradition (à la Dalí). These elements are not anomalous or hallucinatory — they are precisely what the prompt calls for.\",\n  \"confidence\": \"high\"\n}\n```"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 1929,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 153,
+      "service_tier": "standard",
+      "inference_geo": "global"
+    }
+  }
+}

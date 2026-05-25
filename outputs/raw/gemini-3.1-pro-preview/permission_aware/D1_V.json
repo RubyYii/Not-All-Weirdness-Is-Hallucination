@@ -1,0 +1,57 @@
+{
+  "sample_id": "D1_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D1.png",
+  "evaluation_prompt_text": "A realistic office or interior scene where a person and a chair are clearly separate objects, with normal body posture and normal furniture structure.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests a realistic scene where the person and the chair are clearly separate objects with normal structure. The image shows a surreal fusion of a human and a chair, directly contradicting the prompt.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests a realistic scene where the person and the chair are clearly separate objects with normal structure. The image shows a surreal fusion of a human and a chair, directly contradicting the prompt.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests a realistic scene where the person and the chair are clearly separate objects with normal structure. The image shows a surreal fusion of a human and a chair, directly contradicting the prompt.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EuYJCuMJAQw51sdfv7qkHQjVc2pG88JuFpFaw63b39EKp49XXLdH1kWmJZq5qc+JKTCW4o14i5iZ+9Zn61D31qA4Tex9m1Mmv3KGPklge6nrw+5SzeoISwF4FFTQkEnjPvfrH06rRPus9eMbKWFrtw/5xbGB954dvYyLURTCxaLyI6vufKwtHsDNbIJ/TGdzJmGh82ERFMn83OYtIzdJhzdaNadKavlVh6KNxZ44KlWzaQdpOnxuNMzW8YoxTU6qAbDG3AFtNaL6gn1XY6I/X/nZ5/3VJH10dtcrvCauGezQefzzGVa1VgrPFMRnw6ACn8dXn+3qhkSnXWzlczUBB1eYuv3vjCzJKLNBKSXC6pnyW3hWzd00QUeb2KeSTMpb++sXdfoiXgYBPG8K/BJirMtHzLG0yVqiu/VV5mUUbq82Da4f0bJQ6wlPfSm0M5TTxa9YfuBCwJyhvZhLXa6R/IlQm1lcw0Qw+Qptdrw4a9tGngs5RcJF0LQQJumqHmzJbCF0cjxBZLtrJi1vUeknVpN/g/xL/M6RevDF3gegu3QCzNjdUfu1Nn841rZWxfep41kuqEBUK93Z9idq2gtLJPYHJGNHyKK3JzY4fnflGN6GzaIdxgaCpTzYuVm7k0aJ0urilZYFz/xVm76Ne9Y0FqtYhRVETELcfNj/Z2nqM7FWi/o9EH0PSVXfHGaYpXnCyb7tDDwPvruBL1FFKZtzkzQBQebIrPO30F5J5RJwjv+ufuP5VUBxkahvLB8dI0hOyGZktgb9fLeQyPqRiAgO+bFFlkXkTtCRwxmO6Z13qAgCL2za+yp8yjIrjUx6utGpqPoEE3sA3Gzj4EZt8AIQqoDvoKluY8hLOyzzq4D7ZS3pePgG1GeHrDLvFERG09w0Hc6ZciAHlwVUo0xtbfRZ+CU1vplEdnu5jcLo+D9A6/GDZP6Sgw7CN6EMBt1lXFi/SUjp2obbZMzGCWrGWSuaBhC15bZvTtqNyj4QgL5quc15uLYD9fiTXNOuOv1eP7JB64nhLrhZqIO0ibfd9ZAcJnj1lXS4ZhodM91Yxs9jJUawbLfkUxaw8vLB5w7KqUj9z6gp+JHB3RA+eqSzdMPVZgvniaKsr7MaOb/I59uxoH5SkOI+BAPk8KxBKRTjHNBlf14kdiWBu5JKCr2fOBAQDMuRwODav9HO3Iot5+u6FxY1jJSD7YZvfpSKKK9Gv+OlPCmUJ7onO50ML+g3mOFWNKyk6cD/Jf5vjvRnzRWpkdfq/iFAhr4/UDwFyLMdmrRnU57aOlbX+Y5g8eDAnqBUr59c8fFPJ7Fbv9H3/pnYI0z4siv6O0lgaCc6b3ILlF9WIs1bnQ3wQVgdcGDz4sgzOttSRPO6EGMzydh+FvBXsbt/mbFEmA2WUKUJ+++hII4F7cHFWPqdDThjblHy2tB+fz1YL+Sa6kJVho42gFK5IIcbg8pxuzCFLRZcI+WbUz9PFBo3NbAtXkC4bJHxapB/B2gqbA7Nzwzd1pc411TzPdSSpGHgro3SHsMDJHZiHy/Hy9rcm1Kf+DXvhttOrlLqRnTBuE42+quP8MAlzrfqOQ1FjARAEhKpn9va8b+zY7jOZ92+jwTa0cBEB1HvaSpDxz6YNdN9v0g+9pWFU73NuDugfek5YJdmsJypcvrr7oy1U0EpMgL/kwH4"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 97,
+      "totalTokenCount": 1817,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 250,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "rjMKarr_EIubkdUP5cnp2AE"
+  }
+}

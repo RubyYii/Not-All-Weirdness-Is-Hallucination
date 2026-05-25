@@ -1,0 +1,57 @@
+{
+  "sample_id": "C5_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C5.png",
+  "evaluation_prompt_text": "A realistic landscape with normal gravity and physically plausible water movement. Rivers, rain, and waterfalls should move naturally downward.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features a massive column of water flowing upwards from the fountain into the sky, directly contradicting the prompt's explicit instructions for normal gravity and physically plausible, downward water movement.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image features a massive column of water flowing upwards from the fountain into the sky, directly contradicting the prompt's explicit instructions for normal gravity and physically plausible, downward water movement.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features a massive column of water flowing upwards from the fountain into the sky, directly contradicting the prompt's explicit instructions for normal gravity and physically plausible, downward water movement.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EpMKCpAKAQw51se/IDVLEYSKRa9MI6zhpEoi3gGblLkSW9P5/V25NIbeBxhu/Oc/2s0QhLy9wSfN0F79W7ZshScrdCIE1IllxigN4n1GWCHGmoevpJvM0Vgi8YgecMYdvToPR/KQ0c2go/vJT+fGII7fnMgYBrmzcQ2od2FHBiZTsUS6M8+YmP/w7sLeFi5mfyJpYIpD/b+njpo1KTEHs2mzLw/INf53AlURpXsZl84HsLxTxNtO0SbdVEfx8G306yGV2LTXRCDNRtcJqVAH9yVtI1Myf4uf7ynC8MEd4c7ywhAaca/jDDaffHq90mWUmi2KaaB+NGewFLlENRSnQ/qh7y24ZcFAxPgIfJCatLxcgEGU3jPKo69cvlhyCy4fiEs/MFANWyIPkQhtM7TV4/9VOZq1MgTuLEZCszSRF66+tydeZJcXVrXXsevCUq92khPhM/ZAgun1TYdFZm5GWVVYXvw26fEK42EMLVIJV/1pfyUeNtdWZ6Wf/yjVlwEinvjsO3jQAdN+NEMPfGglYmbxH2PwGMJnbd+ABV4COG6I1I8aAbNM3oQCMzLM+F9TU+maMfWL/MYjwk9gRBqQhHthpFX57IdOW8RHX+j2BJ6/EV4qPPOTVUjqQXKQk4MpxH91o8XxHsxMuTbY9uZyi7iQLIAy0f456I1QePsqFoT6PUfWpBUcaZFZWlTWFPujkhefJMhIpu8x997IiQgj8ez70DARVwxaMbeokbRQ62oAHAx2ZkkhmfLAqmP7Cx1PEIdwosn/3sTzCixXwxEXr7goidICJ4YaPxjKnyG2nI9zWr0TnyndF5r+D2841R7MP2d/pT3dV3fn6kkrD+FtQBLQG0g+3UhmQ8iutrp7CI2QC6x/DHuNnH8a1KM490rH52DEpbUrm0OJ+Rr5EVLHU0ke/YRaYdx6vbuKGO72r//KEWgtLstWgyw2keBENjZX4IKORsU30UR6F29KV7skvwSaAqimSLaWv7fCCaXqgwpjmJBG+VOfnzkOvrGyXNmnrUIefRR+it85dnw07XTlAGEbGP/VXG7BHiRvkObLfp4q+B2fWomuSzEh8Rl+l+nqIfABAZZ02zQLIJu4Obd25j+wHRSbF0NnShTINCXhBkTAaQuAD/4b4xDNeY5uOChmIS2Ij3fnNvPVgl14okYv2QjUBBAJDdlFKFsivXapzNehTnRmY56GRKMV/9U2Q4W4TxpN16SXKwGXfYsy6LRs8noLJiYloKcLnNSfpYFVQpofimAcPYDMuY28xzIbTE5wggzoPFQRzlmDmOOv/HjI/11R+fDi7Pjo47+F900DRM6IwVcwdeAuMW7w6V4QNA2K4/GyU+yxaySW0SqnnLkFzur93aQytRwZmkplDTqVNhPmvFs3plvnkCO5se3uWPotuBmBzJ3SYZ+sua15YurajztJEcw8vK95KtIZE5WEFgdmpiLH2TGtWIgs1uOeklGMq8nmaDKHFeKwsx95khL4riKSsrzV6ZDxguDChl7xrUQNm4CdCZrIA8oSoQS1F4uO0Ovri+X025TaS6Mk1m3B93TLh8rQ7EHe+Nt5noh2pwLPHupe/RH17mcssnm0sZRjXSzu3Z+62+pvVxX28SKoP1s6U4RMfrjl6exa1HrWH1UrNS1oUV+8PUFJn7BkEa/qMWmj2kVg53i9rKfiP1Y5yDN1mWJkqEdPcMa6w9n5xfGYOrCiRuMlFRgQp/f12nmWUBwiwPcb"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1470,
+      "candidatesTokenCount": 93,
+      "totalTokenCount": 1824,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 381
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 261,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "hTMKaqT8G8T3kdUP0aeMgQw"
+  }
+}

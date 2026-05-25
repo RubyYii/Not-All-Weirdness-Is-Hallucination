@@ -1,0 +1,57 @@
+{
+  "sample_id": "E2_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\E2.png",
+  "evaluation_prompt_text": "A stylized tabletop scene with repeated cup-like shapes and visual rhythm.",
+  "target_anomaly": "duplicated cups / excessive repetition",
+  "axis": {
+    "axis_code": "A5",
+    "axis_en": "Count / Repetition"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EosJCogJAQw51sd7X3cKJgK3ceyjW1PmY2b3m+ptDJMOb+P5N1wJiCCsVnx8+FlH6KWjmdc+kqEZ1qrMjHUpxDpEX665bydqnetvsr26AI/QefKnzKMi+lKzOX1dYEMbiu/xgfxfqu/qbiVodrsSF5pWPkKapvdOVc7ttqJEOnw38XP6cXP2lcVlVTeIVfnOJCM/1Rf8KSYGR06tlobRfta2WbznB2VzAIfxzNAxg32GAiPcY5xQi/N+UuJyK0GeMYft6iXvTJKCThP5hWLWW71jtMwfMwsMdYBLAnOQDdGHgytPzaB77nPFjhKDj/fGbHIbpkV08M/DgRRg9N/eDAcvpLb/2LJlqMiEIl8NU3PicUoeeVH0QAo4pv+HHq1PV7Ro+YRPzQTlABZ6PYAnem2eoX1gxdNdjS1MhpgJ5tll6kLyZhSpntN+BttgzisS8MfBl3ghon6cDtsBbN+YCA2av5KEmcGVW6hOuNErebbmDxH+9yH3PT4Rph/mXVFE3We06GTWPu+St90xgA7G0wzh72GAG+KsR8gskrSiuz977/FQKuI//E/rJ83XpPCE3/jMUZEwvLUR8PoKCfdE3XJQZbzt2Na1Jxl0hGEADXS+Bol3VNezfhVogz7sMzl+UYJgWyWsb0wYHrCe7EhBYzHJlSiEVm/ly4rH8/hQCMLw5nvvPzjlUn633uGKyT3SzUW51G2Hwlxv4uBuajhwTtUEqPvFLIJh85VOloBYn3qnvrUfwKrRkXfXyxbMTdUkM63Jopt+4QEY7M8UIcZaVYjdZWzNRVpqj59+k5dCMTXBKdtktPp0kXrVp46ZF1brGUXasc4bxTihD1DE6kwYyjqCovbMBMzfr4bBhY34Zs33d8yCW4fq6lILzgXNwx9N4Yx0qOgNN8pCZogO8bj5voZ4Dv/Tu1/RbZqUXCkaiSm/Z959Li991fXU33Ytk7czw2uWVDogczjByp8Q4Sm3mMQQvUJKVlwZhwcGMOonneDgWyD7pIpwc6yGNCAXfpo5q5KHKgkdt2ou7ViNESSCgBwlpfMVou1n/KGLlC9NzQ5Asn3Qj39PQcpwfBVwBd4ErTqp3p19UrkeRdSwB3e+1O2pFb292foB3Sp5Zh/9SBaksaBbHt9fEjk6JUZn+xbi3skuWQ06WfiK2bxxsqaQELyV4vPrc6y4ZAgr7TOOVPvceTF/0tph0mmanVh7A50z/N1N+1hgTfiQE+ryYPesWQOq9ENgNu057ypl4oqCMrrYMHP5hvxf1yYWBJVjd/2IOTqMLQFHJQlp/KXdHpEV51kQpM0GLrAsyLtDGh+dY3vg4RWX5yibNZLHq3f1FmLouIf05OR6ibLjkpokoGKiqEb4mTaAL8Akl3ahCjOhBfkWK2xIeuXpIy1Q2gSh8AkUiVRYhR4iUmHRM1xRAP8U47JlwGln14skszpyvSrvCenPp/xZqsIdqu8SjB4zDiSgjv6N/7Mk66qx6+zMRCNCKDx5E/lESqH83ldmQ65VWKeVWEThUtLPcZep5Bk0Pkmk95NtHqoBD8mv3NJTwKo="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1781,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 245,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "VjQKas-NCZfp7M8PkJX76AQ"
+  }
+}

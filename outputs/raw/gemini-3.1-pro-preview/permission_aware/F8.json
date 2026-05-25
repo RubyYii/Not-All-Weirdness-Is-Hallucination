@@ -1,0 +1,57 @@
+{
+  "sample_id": "F8",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F8.png",
+  "evaluation_prompt_text": "No-issue control for Spatial / Impossible Geometry. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image depicts a normal home office with consistent perspective and geometry. There are no spatial or impossible geometry anomalies detected, which aligns with the prompt's request for a no-issue control.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image depicts a normal home office with consistent perspective and geometry. There are no spatial or impossible geometry anomalies detected, which aligns with the prompt's request for a no-issue control.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image depicts a normal home office with consistent perspective and geometry. There are no spatial or impossible geometry anomalies detected, which aligns with the prompt's request for a no-issue control.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Eq0LCqoLAQw51sfKRTMVQoyTKMjEj94M7/f4Ikv3NHzrxNLfjoS+yufxxtdHfHWdDCvuXwB0+E7T9Ka64Bin6cnpta34ooAPiO6koHrM4nl58YRdTPX7F++lwWJYRGLaob0glayZH2KImzrY7YQXE5iZRIipKLaglVK9/jKThjvFguWZwXm0OPQKbOJ2YfZ6GHj4lxnmH+oc48ZaD2PgmeZeF/VYpOuBzFhfpYl4MEDmga+QYmE2G5uqpu5ZlbLLxtFMC1AUu5UIEZZnp2vL1nAnXpAbTWQ61PlyssRkZAlQ2eRbmwWw2cq0ZqbNHCc6scW8wvpYayvtGbQmXYreITH4dAIWJ6bax3ZMFrRrB3SFbR6plEehYQ1jE+4HZpXExGuNoUNHXsRUOKyxjpzH4gttHBkkI43/LGXjdiBlbxeqK+M1NLaiJiRpImHfVomQtA5SkaI4naT5XjEbR4OaA4FYaxhPgffg3YXqdf0nOoealDn6RNyXHPY1q+yMw0H0Vr1P/1I6JtwUIFV2VN1PvwhQNJwkzsttk2tD2nNLbGse5RbqSCr1kDMl5ZrUjMhVUwd54GAa04ivs0cVhR+SMZKfJNSTuC+VgHHyibKG5CuASoY7EvSIOwIi2v3SwYZ7SUa51Jso69IsjIlPymzdUX6b45O8uRlNNf3dkvsglPrGYeN78SzSqcW3zDfVnG9F6Wovq0WXyNrlGsulYTjKltr6cEBiOw/KgL4vLFsOnjBdrm+ML4ue6MivMJvH5TIplqFf0W5dO6Tv9A2UMVWNq+9mhRP/k72MShYSCqh53uNucGhQdF9SrLBtAmhJnkbqc/uRGFCAqR5cAiTj08Nyb/2YEip5VrUTBOyi5dqPSoxRasudSA+O46lJZSoapBx0o+dk58UnXBJv8Ut8f2b4dw2tVaeWaEp4EDWw8quzZDuM11epxJG7ups0RQ7DuWgd34BB4eZMWsiIPUFiN9eYmlCpZ8rOUswSyhldLhrrz1nnxnF4SgclrxGWnZcocjyzeWpFs3J0Y7QC8OolOurS7QOn+aJy5shTY3a6vp5W+VbxfEq4v52kVDjhKz+VFWl7+jPS9K9hBv2bF3b9rYAMw22wpH53UZp+TtOKvy9+N4P2BR8QLZ7VyQsQm6hQiOUBxFQgbacnyEZaGSgaM9PDo7/IrxYcEXZLvHCjg/wiMgc2tn9aY8bcmu5sqb9N93jVzFfUuvY4bHszb589Jezm252vVvNrpqVF4iEpkzzAPMClR6SVVx7lXdJoMQI+sGmBjGXsb2Bc3kxLrvat252FUpupOkjJ2awqARBDmYJO0rpe0NlWu/cE7P5b3eqDgLLIggOxeNz1OzY7rDcG36P44G9RikYelOBm3rwM6j6ozqXkH0oVsXz5rUEz5dZWuQODLvRq+btBodHKZYnYrNtCL8INpi5WpH1glcrkeaJB8m4QAIjF6NGJSPorcRfMDjAcrB2efWPcTeh0S262j82TymvRxA3Jmmt/6Qadhg3WWT/8uqmuI7uHzNdxhsHJ1NJKc6qmsL3Ah5GFfFdihD5gmKCNIyhX/2Thorb7D0nb6czlbY8aFI4mkB1CY0OV8Cjn+fuedNwH002H0dspxedBK7meo0UY1H3gvf0DyUDfY6/9qDsrPEzhOXeX0jSJN20kaGWj0Lc7xi2GkdFFTyVK/ElhiNrluxc+Gc1pQiAjqh+pIMeWjeSD5kWwdigtnjYZoWr82qbhDcu5rkrwFDmG20OzjU4qBpeUNy7B3IMixc4K8Zo3X1xfOPupp0Vzo8HBP3HzN/5KlZafOghgNNvEau8jyPsEsAzDNGZ3XBv2idKuLkUagIwxphkmW2hEuKolIgrJ1VcbjdWzxLexoq/41bMW/ynBA9JwtKgcVfKwJO/rBlLBf7eHrU16JKBFNviElg9fGRYt9lK9fRW5myt95w=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 94,
+      "totalTokenCount": 1896,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 352,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "KTUKapyVHODk7M8PnuDZ4Qs"
+  }
+}

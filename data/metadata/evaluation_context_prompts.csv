@@ -1,0 +1,33 @@
+axis_code,condition,sample_suffix,evaluation_prompt_en,evaluation_prompt_zh,permission_gold,hallucination_gold
+A1,violating,V,"A realistic studio portrait of a human performer with natural anatomy. Both hands should be visible and each hand should have exactly five fingers.","真实影棚人像，人物应具有自然人体结构。双手可见，每只手应正好五根手指。",prompt_violating,yes
+A1,permitted,P,"A surreal portrait of an alien-human performer with six elegant fingers on each hand. The unusual hands are an intentional part of the character design.","超现实外星人-人类混合表演者肖像，每只手有六根优雅的手指。异常手部是角色设计的有意部分。",prompt_required,no
+A1,ambiguous,A,"An imaginative portrait of a mysterious performer with unusual hands and an artistic studio atmosphere.","具有艺术影棚氛围的神秘表演者想象肖像，人物有奇特的手部。",ambiguous,uncertain
+A1,no_issue,,"No-issue control for Anatomy / Hands. The image should not contain the target anomaly.","手部/身体异常的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A2,violating,V,"A clean professional advertisement poster with large readable text. The text should be clear, correctly formed, and easy to read.","干净专业的广告海报，包含大号可读文字。文字应清晰、正确成形、易于阅读。",prompt_violating,yes
+A2,permitted,P,"An abstract experimental poster using illegible dreamlike typography. The distorted letter-like marks are intended as visual texture rather than readable text.","抽象实验海报，使用不可读的梦境式字体。扭曲的类字母符号被设计为视觉纹理，而非可读文字。",prompt_required,no
+A2,ambiguous,A,"A creative poster using expressive typography and distorted letterforms.","使用表现性字体和扭曲字形的创意海报。",ambiguous,uncertain
+A2,no_issue,,"No-issue control for Text. The image should not contain the target anomaly.","乱码文字/不可读文字的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A3,violating,V,"A realistic landscape with normal gravity and physically plausible water movement. Rivers, rain, and waterfalls should move naturally downward.","真实风景，具有正常重力和物理合理的水流。河流、雨水和瀑布应自然向下运动。",prompt_violating,yes
+A3,permitted,P,"A dream world with reversed gravity, where water flows upward and physical laws are intentionally inverted.","反重力梦境世界，水流向上运动，物理规律被有意反转。",prompt_required,no
+A3,ambiguous,A,"A strange poetic landscape with unusual water movement and dreamlike atmosphere.","具有梦境氛围的奇异诗意风景，水流运动不同寻常。",ambiguous,uncertain
+A3,no_issue,,"No-issue control for Physics. The image should not contain the target anomaly.","物理不合理/反重力的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A4,violating,V,"A realistic office or interior scene where a person and a chair are clearly separate objects, with normal body posture and normal furniture structure.","真实办公室或室内场景，人物和椅子应是清楚分离的对象，人体姿势和家具结构正常。",prompt_violating,yes
+A4,permitted,P,"A surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.","超现实人椅混合雕塑，人体与椅子被有意融合为一个艺术形体。",prompt_required,no
+A4,ambiguous,A,"An artistic scene of a person and chair forming an unusual visual relationship.","一个人物和椅子形成不寻常视觉关系的艺术场景。",ambiguous,uncertain
+A4,no_issue,,"No-issue control for Object Fusion. The image should not contain the target anomaly.","人-物融合的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A5,violating,V,"A realistic tabletop photograph with exactly three white cups and no additional cups.","真实桌面摄影，桌上应正好有三个白色杯子，没有其他杯子。",prompt_violating,yes
+A5,permitted,P,"A dreamlike tabletop scene filled with repeated duplicated cups. The many copies of the cup are an intentional surreal repetition effect.","梦境式桌面场景，充满重复复制的杯子。大量杯子副本是有意的超现实重复效果。",prompt_required,no
+A5,ambiguous,A,"A stylized tabletop scene with repeated cup-like shapes and visual rhythm.","具有视觉节奏的风格化桌面场景，包含重复的杯状形体。",ambiguous,uncertain
+A5,no_issue,,"No-issue control for Count / Repetition. The image should not contain the target anomaly.","数量/重复异常的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A6,violating,V,"A realistic interior room with normal perspective, physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry.","真实室内房间，具有正常透视、物理上可能的建筑结构、笔直墙面、连贯的地面-墙面过渡，不能有不可能几何。",prompt_violating,yes
+A6,permitted,P,"A non-Euclidean impossible room where normal spatial rules break down and the architecture intentionally forms paradoxical geometry.","非欧几里得的不可能房间，正常空间规则被打破，建筑有意形成悖论式几何结构。",prompt_required,no
+A6,ambiguous,A,"A strange interior scene with an unusual spatial composition.","具有不寻常空间构图的奇异室内场景。",ambiguous,uncertain
+A6,no_issue,,"No-issue control for Spatial / Impossible Geometry. The image should not contain the target anomaly.","空间关系/不可能几何的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A7,violating,V,"A realistic street or cafe scene with people, furniture, and a teacup all shown at physically normal scale.","真实街道或咖啡馆场景，人物、家具和茶杯都应呈现物理正常尺度。",prompt_violating,yes
+A7,permitted,P,"A surreal scene with tiny people and a giant teacup. The extreme scale distortion is intentional and central to the image.","超现实场景，包含微小人物和巨型茶杯。极端尺度扭曲是有意设计，也是图像核心。",prompt_required,no
+A7,ambiguous,A,"A whimsical street scene with unusual scale relationships between people and everyday objects.","一个异想天开的街景，人物和日常物体之间有不寻常的尺度关系。",ambiguous,uncertain
+A7,no_issue,,"No-issue control for Scale / Proportion. The image should not contain the target anomaly.","尺度/比例异常的正常控制样本。图像中不应包含目标异常。",no_issue,no
+A8,violating,V,"A realistic still-life or public scene with solid functional clocks. The clocks should be intact, rigid, and not deformed.","真实静物或公共场景，包含坚固且功能正常的时钟。时钟应完整、坚硬，不能变形。",prompt_violating,yes
+A8,permitted,P,"A surreal dream scene with soft melting clocks. The deformed clocks intentionally symbolize distorted time.","超现实梦境场景，包含柔软融化的时钟。变形时钟被有意用来象征扭曲的时间。",prompt_required,no
+A8,ambiguous,A,"An artistic scene about time and memory with deformed clock-like objects in a dreamlike setting.","关于时间与记忆的艺术场景，梦境环境中有变形的类时钟物体。",ambiguous,uncertain
+A8,no_issue,,"No-issue control for Artistic Deformation. The image should not contain the target anomaly.","艺术性形变/融化时钟的正常控制样本。图像中不应包含目标异常。",no_issue,no

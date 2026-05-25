@@ -1,0 +1,57 @@
+{
+  "sample_id": "D1_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D1.png",
+  "evaluation_prompt_text": "A surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this fusion, so it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this fusion, so it is not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this fusion, so it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EtgJCtUJAQw51sfx9GFeHz8cYd/njwmQofPafHTWyvvhoOXj62uEbW0DQ2CXkmktMH2kH/Jz+2jFpvbNQDGqgGRTv0v5Yb49nlcv6kP3ZizgjY2szS382Vj5+sOPvhv/djkuwREVJ8btmQ62Iar0za2ZSDIoOczq7LzzMZQrBCWALR1oAkE4noREHzfj/VlbeV1rZsFYrlzamPSDKUk/z2ZrdvaI15f0/QnkIRb9mtNYp0pyH6YS6smRiK54lE7YT6QQnqphJVIzBBSJPhK1NqICrMGzPVwneKo/PWT2pqGlDREgrKHxNeH3BszAxkORwRcNLP+xVLLRgdZL+6/4sCqJsgtIM0hKzPf6o+ANiUZaCNPBR17JBZMU7S5KqY5GHvDiM4cr06FFC12A/NSDokqRRT8Br9BR88LmS6Uncp9xoPYc+v3B2IQzqkJXutQRuBNKwuOU1GBDKcnDfR8MOCTdVTaeHmHc2H+E/ziPoPcUSx/BOsJN4PdZfu16mg252m8xnJOybm+iwmLAyH7lslX33l/DUysq4iSOnVSKITCzHfHRLHVXyiWtCiNanz2ElGW7l7FJE1l12u797wEPjC2HpdlnuCgtF7TQ90sK+Mk/1xT0ZBjOwOE34veCGccEcTrjHJJZiS/dLJIhGVf5AdlJ0oYpysUWl43LH4/syVmuLOvEf7liQFIYemELNntXzfzcg6YHEFCQgSliP19ew8UD62h92mKJnndpBboGmcsULAvwWVpQZmYk2RiNuKKOciCnOT9ReCodkqYgd/O7Nx9ZtQ2k39vlgAq+q5LUbhfrgJ5BKBfeaKKQdD630JgyQ1jcY5Y1699/uQ6ZiePhCmERDjt47uzPBENkVeIr060mCmnqNhDayNLGB9KNVbd4FK5xVdkwMBuiYaAYP8fOwOI6KiDsbLxz3oSOp1Prp482Tl+dnEDcksredcEdbA8I3CbF/Kp/ajraDzf9kVuvY5VuWdoxL61eYq+tdE9lJRGjcz9OklPBW6xPcanqz2dzvjV1/ra3hn31860TEygfvYysu5kkpK73doAx8OnDWl06zmWrQUlB2Wd0dfBuiMj4FqT8uJLYeQYEXKxIBO6BiHBwBWj13zww92+644pimC72R4X1yP5MCA9z9XcMC0DWxg3UPBO3qfiMqpOZn1oFxvAJPBY+/kNUEYcm+8I+2uPEWGEurZdVAAWSf0XKBtU6YdcsP5CYo76Q43V7WNnrDJRNeCIBYhGIdX4FYYKEaty8uBhrLXsOv4EUanGDp39tD82LuxlcdMj/W6dKS1KuACt2emLtbJqhcLMuYSYGF0iM8UiW4I8YzLOvTQc3m4kw7JbV8U9/1ZWN1kTWX3hu5cqbWTOWIgYdLta23SZou+N/NK3wExqUy14bt9ENd6SrMP6wjL3erGWYUzgRwLIx/6QITWYdytIKAe0NztmoQFd+GO2wiI4hMlocvmvPGwL03EcQN1gYMiURN/dtD7ypEktFNsi7ah4oL0ohBqBBUrI5oG9V1b3uSGBKqpcHHOOF80FNMAQyP6O433ba0/gm/aX3nb9IiGJa0JuQ5kN9OyT4cWo+KnVM/QAwDPcZ6Ra7NZPp7QU/FmXhnJ+XAvUHj+Dunx/VH8axJWDK58ViyPC0sIwsF49gbjzAbQ=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1462,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 1826,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 373
+        }
+      ],
+      "thoughtsTokenCount": 273,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "tDMKaqTrFPalkdUPoIitwAM"
+  }
+}

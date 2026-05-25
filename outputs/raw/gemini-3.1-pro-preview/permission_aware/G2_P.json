@@ -1,0 +1,57 @@
+{
+  "sample_id": "G2_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G2.png",
+  "evaluation_prompt_text": "A surreal scene with tiny people and a giant teacup. The extreme scale distortion is intentional and central to the image.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a surreal scene with a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Eo4KCosKAQw51se9LOf1qFudEKV29HcTMIbNe7r8zmg6+xyMa/aP4c4quJCbqXm4GZuPancwGr7HufPZIZX75NsXoSPqluXPnbk46uWTAmmK3Q8BC8eiK4vtY6U3QcoshXGyHT94CUYLge6H17EkR6kgpwkcgyTXWb/PhpZRRyAFPLuT8Nt4lnpGvd4iUvk779XmgEP+xNSeF/hTwGgThk0XXAfJ5bjNFN/SFJjSEjTW2Y1M03ddfm4RW7ldNt8dfjPqKE5O3q7im7X074j6bvGB5eVCij6YIU+YmKsq/1S0cBCFCZ/mLBt26DCOcoevpDAvzdQMhXI1/z6kJ+4XjvhOy631DN/Cbxsje7QkPHZZiHpDiO+1gohlMdeRO5XPS3dWns5AQ2+FhKsJ64EBiG0Yow2VQxHcxTw4o6mfK46xu4SUZhFjyuo0MvCCVmzMiCp27wXDvSaupdGUisbd+FdTQPhkllRfDSxG0v5FYplPGxrafSV9Wtk/7DyepzLo6IcSnRqF/bIXD6MS+Vr6LHSZaTX9e4VFOX8A93YytCVNu6UqkOwJI+f6sPqTYp2gnEP4MnPBSKyCyqZ5buFd/i/9NhO0Xvgu6CESw046gbyiOG4PVl49rYG2VlyZVUWDqfarFxzb/e2HNBXrXW2de+lAId+WklL9LONJxdcmT9AVjgNGjvCreJY+B055t3dqmfN9xnSejjTaMv+6Z2rDAoJZyi+Sdz6eB+1ZGprPac7D6tWP1AkSnG9F6LhhHcQy0Q41Fx1yKCQSNUpA41karLlkyjf7kE7Epn/5SLB2HxEqCPGkFU/7WYTA5Q35fQL+QMQfDDqWax0q6Oeka85amAj012pDITcZXPGznlz2PIbgTPcBEuD+dsvIxtnQsMUdEV4HoypL8+l8Ba8ojTBqD9TTn8IMAG3Aq3m13dbKofPSGuJRFzOH/Rn2M+GaOSrUUztlm0ySPA1+hfCqYGfxciRhXtv2JAEJbGncDKFuFEU5KclJqxHf1odsegLJa47Gqzw536jW1N9svL5I4IjQuzfK5LnR+PYUIcnmJPfmHIu87aVrOsyNSJhM/a+giTe+QSy9NJwQmGkLcUfQoGgH/+4tbF0oc1e/Nn0AP6hRHxuHCMYnplwJtun27ARYHArv/BX1ESTBELgZDAMLhpahYLb+d/MLSKUROVCCF0bHqHN6dqOpTZN3Ci5SPtqdXpFyzO0HkiZoMw9YR92SwhwD6NEkxdpbQlYRjOYDRlBEiKn1Ttj9j9yB05BORiyYlL9Kj1ZX/wAQTJfOkUBi1T2pOMm4Clf7N2ZNuNXA0h7DwjW1U9pQkGtd4yStXYWeOaTi75AjnQHsuDJL75mFACR2sZGeAkStz5iLkyyUBVj9C3bGh6tzZK11vI8bIPLZ7UxufuicT9RwoUYhzlzLe8vnxwBlhwigCnTRwSYZhLXAN2s96L6/A62ijyhdd/hWJl0w3899p64WZaFIdnxm125rkYeyiuO9gzlAeABTPgZksJOsmrFo6yNK2z/uEo88DA+/J8O0s4etQCiJH99tuQxJUF7o650TAdEALCuiDh2g+MTw6Jv5R4t4ozdID1kfqh4DElsH8N1VWWxyA3IuFcn3wTuvnASYo6edEd5N5q52VKXkfdGXzmOeAqAJi+QiUme6I0Orrbk/DuwkdC5xfIuMMgqWhGIWeL5j/cMxFt+tkzvfPYR+Sx2nexGp9Zg9MltBOw=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1471,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1835,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 382
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 278,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "TDUKavOUHYTensEPjLuWwA0"
+  }
+}

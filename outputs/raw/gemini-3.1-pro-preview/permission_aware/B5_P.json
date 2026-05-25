@@ -1,0 +1,57 @@
+{
+  "sample_id": "B5_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B5.png",
+  "evaluation_prompt_text": "An abstract experimental poster using illegible dreamlike typography. The distorted letter-like marks are intended as visual texture rather than readable text.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt's instructions and should not be considered a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt's instructions and should not be considered a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt's instructions and should not be considered a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1474,
+      "candidatesTokenCount": 106,
+      "totalTokenCount": 1927,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 385
+        }
+      ],
+      "thoughtsTokenCount": 347,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "9jIKapykC_jmxN8PkcPpqAI"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "C3_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C3.png",
+  "evaluation_prompt_text": "A strange poetic landscape with unusual water movement and dreamlike atmosphere.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image features water droplets that appear to be suspended or moving upwards, defying normal gravity. This directly fulfills the prompt's request for 'unusual water movement' within a 'dreamlike atmosphere', so it is a permitted stylistic choice rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image features water droplets that appear to be suspended or moving upwards, defying normal gravity. This directly fulfills the prompt's request for 'unusual water movement' within a 'dreamlike atmosphere', so it is a permitted stylistic choice rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image features water droplets that appear to be suspended or moving upwards, defying normal gravity. This directly fulfills the prompt's request for 'unusual water movement' within a 'dreamlike atmosphere', so it is a permitted stylistic choice rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 109,
+      "totalTokenCount": 2034,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 475,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "7j4KasvYLZT4kdUPr4zz0A8"
+  }
+}

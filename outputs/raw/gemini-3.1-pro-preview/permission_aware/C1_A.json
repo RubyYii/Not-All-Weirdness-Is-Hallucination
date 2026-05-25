@@ -1,0 +1,57 @@
+{
+  "sample_id": "C1_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C1.png",
+  "evaluation_prompt_text": "A strange poetic landscape with unusual water movement and dreamlike atmosphere.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image features a prominent column of water flowing upwards from the river into the sky, which clearly represents upward-flowing water or reversed gravity. The prompt explicitly requests 'unusual water movement' within a 'strange poetic landscape' and 'dreamlike atmosphere'. The upward-flowing water is a direct and creative fulfillment of this request, making it permitted by the prompt and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The image features a prominent column of water flowing upwards from the river into the sky, which clearly represents upward-flowing water or reversed gravity. The prompt explicitly requests 'unusual water movement' within a 'strange poetic landscape' and 'dreamlike atmosphere'. The upward-flowing water is a direct and creative fulfillment of this request, making it permitted by the prompt and not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image features a prominent column of water flowing upwards from the river into the sky, which clearly represents upward-flowing water or reversed gravity. The prompt explicitly requests 'unusual water movement' within a 'strange poetic landscape' and 'dreamlike atmosphere'. The upward-flowing water is a direct and creative fulfillment of this request, making it permitted by the prompt and not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 134,
+      "totalTokenCount": 1969,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 385,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "IjMKavuAOb6lkdUPtfXWiQ8"
+  }
+}

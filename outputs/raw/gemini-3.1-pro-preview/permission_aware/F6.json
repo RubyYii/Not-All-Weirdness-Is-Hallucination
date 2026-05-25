@@ -1,0 +1,57 @@
+{
+  "sample_id": "F6",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F6.png",
+  "evaluation_prompt_text": "No-issue control for Spatial / Impossible Geometry. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image depicts a normal living room with consistent and possible geometry. No spatial anomalies are detected.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image depicts a normal living room with consistent and possible geometry. No spatial anomalies are detected.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image depicts a normal living room with consistent and possible geometry. No spatial anomalies are detected.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EvEICu4IAQw51sdUXSl+/J/aWGsIRwDq5oOjI9MYe8p4Nwsntp+ByZ/5aczHVHlEmC7+NaO7iqybfKURH4EUUPmhFCXoTD+qsVkFOcitOa01u6JlrQH+12G5agyVm1q3bU6N0qN3NhpwSnEXpNLKmMNXgVpr8N9wEOcvb5hjaKNF9TeKSd6/GnmtWEkW0VrboSo59vC4PCJNqsQWS3VsVLodLxZPv7ZHqzGGRzBwCjWkr3dtRLgjYnpeK88i5Te23wlctU2KSWhnxvoiec2RKvf88N0RbKrdd4oEwUfODsOUs0LEfpHw7tSSKop7FmEeS3VpooqUN0W1Rt/3EXD4hrAyvxlzJJm+XubUAtTiWiIGEg8zVE8OaVb9TBJLEOyhnlaL+9KMIfotnvWIxUvXBfRaWRnUKxyEBFSQ3+9ATaXKniUbTAdIJ5Vin/FQxnVW3t1rnFEJtBe/HIeAHmZNVD66EZFwEo0YmzLetqinpv6f1awXsv2EMAxXrZrIi8ZI8TK46spT95nQLK7z7qbHXh8DXnNhymhj8AQozB4X/6sU4+em9K139A+jH2ch9FrsV5oFkIYy7BRaYi8WMDcBsturS7VJp6ojdUizfrRetFZHvOuGqcCMYb638MTbJpST+H32qJii9SkkqnneseiMaJaBY68Yx1kqHrCx+vrptVj2RgVpYPP7u0vLYJjxonZZq46Hb/pgSplDhDBi5an0IMoV1rdhDaF+MzDqMIVXHdIgZ71Hj8ztG0ZAA7f5MOpO18sUaYsj7P4Reww6Gbqk1N6376pM2p1kz5N436qPf6uALKJL04QB8tYNlrBKzrQUGFhq0OmKEsw62GvZ96HvKk8XAtXf2kTlXHJKTbbBKv2FeSnVKHq+JQeJF7QB+u+S1zUQWng4duYiUbR0TylFdG0ZoSWuEnorVaiZZnO5SCc67x44VD3X8Icw4xPXxKRpywLJOWQgDDAG7LuZueCb64XbEbCX/DoLeeV5pGugrWvci4rVc5C0vVbTjN2cBDXlxKARTA7TS3R/QRYIxhLQ0pQrpHD/cXEiMbl9ajpJH/IVV30lEx1RIQBDDkFCCJXiiwcS+mBDpueZgebdlYLbihAVq90z82b8kmi3VvneyE+YPjc+2M2kxM5Z1HaW9p4oO740/rKCFnjADowpImiIgZG0k6qj7Z0nmf2GrpPzRALnjgnHKy4+FXx05aNATcpg6OBNZtA0GoveZ9HsC3Hoo+RWayF05rJMS2AjM8XIoL8YXERV/Yqq2bgQu9kI+cmuShvUiGGAVohNN2foM28rMjyShpKY3oLKGuvU9GR0bEzPzMPWQ4P9smrxjQy7kBqDnF8Vu+I0DJvFZCRwDu7kH3gwnSUTOtsdiU5nTW2RdaavyytH+8BEg+gdxsHxK8+5Im+jKDDe1K/32kKW0RpTdj8cvLLtZ52N4x5AIMC8mIKA3cO8Wjkjwu/wa0T2GtbqP5iwD0SVdnolMwcSyn/mH1LLZ6CQegISwTj8mY6aI4NeRFXY"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 75,
+      "totalTokenCount": 1788,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 263,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "FjUKau6kM_-bkdUPouSLoQo"
+  }
+}

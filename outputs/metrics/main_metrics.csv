@@ -1,0 +1,2 @@
+model,audit_prompt_type,n_total,n_parseable,n_parse_error,parse_error_rate,PBA,FHR_intended,MVR_violating,ACR,Creative_Preservation,Defect_Sensitivity
+gpt-5.4,permission_aware,144,144,0,0.0,0.7152777777777778,0.0,0.025,0.0,1.0,0.975

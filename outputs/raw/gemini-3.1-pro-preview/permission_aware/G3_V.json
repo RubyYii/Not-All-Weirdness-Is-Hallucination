@@ -1,0 +1,57 @@
+{
+  "sample_id": "G3_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G3.png",
+  "evaluation_prompt_text": "A realistic street or cafe scene with people, furniture, and a teacup all shown at physically normal scale.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests that the teacup and people be shown at a physically normal scale. The image features a giant teacup, which directly contradicts the prompt's instructions.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The prompt explicitly requests that the teacup and people be shown at a physically normal scale. The image features a giant teacup, which directly contradicts the prompt's instructions.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The prompt explicitly requests that the teacup and people be shown at a physically normal scale. The image features a giant teacup, which directly contradicts the prompt's instructions.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1467,
+      "candidatesTokenCount": 92,
+      "totalTokenCount": 1904,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 378
+        }
+      ],
+      "thoughtsTokenCount": 345,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "WTUKauDuMZT4kdUPr4zz0A8"
+  }
+}

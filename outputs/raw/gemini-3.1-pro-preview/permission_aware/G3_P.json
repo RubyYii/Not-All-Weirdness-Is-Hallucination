@@ -1,0 +1,57 @@
+{
+  "sample_id": "G3_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G3.png",
+  "evaluation_prompt_text": "A surreal scene with tiny people and a giant teacup. The extreme scale distortion is intentional and central to the image.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EokKCoYKAQw51sfChGrMIhHUmGbqhDPy6IZmNQi6WyvAZ0kckOpShHfoUGWUV+7EMUwswtVfgBuO1v4yDcp3MPy9p8d5TqEbGeFcaTnTXLADOV0GSaGA8TMlpEk3zah2r26cd+d193UGogLbzWQspI2LxS2YsNdHSY7UZcQrbq0iw+bTnSo8qWqhMwOHOgXOK/e9kFop5nOiS0WzSEaSddaIH9tt061tKML08jboGThObsg4uOS4lCiFCOfMrFQIe+e8lswM+hsnhq4ZX71vdLFU9HGH7cs59yK+2CGcaxIuLYVYHj7uFjkKOlIbTrqvCWjOxkZZXDkXIP0eTzl0ogbHftRWKqPxAC1Souejd4U2t/dm6FRh2vn8okXvaKDPdDevT+Pk7QejL6AGzhXeZ5vmm7RYQqdgDz8JeSROgXJsbozUg10ql9Uncr3BOZV+u4XIL5FPTfaVLxyVxPYlX0uG6RLZqaELkIM1wHx/Nl8euvBJkByg1djqoQ3nMF7uh4uBBK9N2vf8vGcyppRteM4mwT5ctqHgT1U06UGR6/oRDoRFYQrMi1Ve3n00bhF8quMXKpZF5hz5L3Hi0V0jII567bJtUYBfdWbMBTJjk6hkNeif3fk9tXoCFPe7h1A3TPQRR4ELXHPqy5cmHYeEQn014E9w+YrkmXqO3HdtOcCXrx4BesXB9WgkKXOubDXOw/ehS63wiz2dWRgZsoqNHGPOMSRJ3Jf93uFxZ59E18rHDlV8IBjYbaTGohl9sOvcoI9Js57BshvDPleRJW97xAf8RWOz+tHltiFll7ZmFBQqYbYFLrsWNFn31oThnzfEkxR9DfrLIUHaTc3gmw0QGiVZlaXZvQITN5Ud3D+O+2WMWIQD+daOoNiPNCjXvGGcTITTGotGARmGty3xermkTFpAdbtKZ1so0rVKUhaXMS6Li5+HbcousHXf4/hU3Gbv0korOgiH65P//BmWQZKMlLyHpuCMVSdIc3ZAmjrZcwFV7QCHG+hOVvJSa3yEUrWlOQ0cOVAQTTaG/DWPCElwRhlwgjYdzKi3vIB3ijhK4ii1jZcPvFvnJbyHVmg3BMXzildBHEx8jrsHu86AIHMrPTomyev+M+hZ1KCuOmdooMVHO8Hs3JWQqNKAG5pdOXeTf6QzFPwKYQvOPGFU9tA6JfB+boepBXqOIygyPoo9GPTH9xP5D/EXjdaAd1LhWzLvhT3ZABl93xy2d0C9XSzo7sAa1S43jwumJpiXpiHI9uDWyfIeNOout0tPzXUmsZGmZZQO9oz6qV1I0BysFleycYxCx6g6wxbhQxxxUUlrVO9YUiuSyTqmvRoaJ4yHcE1PP/op/I2Xyx6PLCzMvu4gsxAlfxzOusLWVIpvC2YVNawldd3G+7wvyVSN5EtUcbbVuOesHAJ4EPkUJwziQ1v+eBslB4/vb6CUEAhGiNioKT9XfIPJUq/9c4l+y5U3t8lAfIEXz9j8BOprh9LTsdx8xIgQzAg5T2WAfoCn8YOvEJe1dg/R+HhoJoQOcN3dS8fAQIO12kxwmQIAXdpSXHNDRae7Ez7NSajAt5TMRAc6rmqi7jeBbRr/F97eGeHhhEuSJo7NIy6QVUfWGcmT6c1Eb39gcZsMozpmOZHnf76iySXSMV+sfVhAgCagDY8jYpVRvsTmqk0xh5678Wk4j3/DU9EWNxWFivF7fo/jEYhC2BLIjNXUuXq4tN3p9GE="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1471,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1845,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 382
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 288,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "ZDUKave3CZT4kdUPr4zz0A8"
+  }
+}

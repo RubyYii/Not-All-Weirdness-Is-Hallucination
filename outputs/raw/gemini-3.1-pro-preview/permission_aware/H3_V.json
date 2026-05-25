@@ -1,0 +1,57 @@
+{
+  "sample_id": "H3_V",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\H3.png",
+  "evaluation_prompt_text": "A realistic still-life or public scene with solid functional clocks. The clocks should be intact, rigid, and not deformed.",
+  "target_anomaly": "soft melting clocks / deformed clocks",
+  "axis": {
+    "axis_code": "A8",
+    "axis_en": "Artistic Deformation"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features melting and deformed clocks, which directly contradicts the prompt's explicit requirement for the clocks to be solid, intact, rigid, and not deformed.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_violating",
+    "should_label_as_hallucination": "yes",
+    "reason": "The image features melting and deformed clocks, which directly contradicts the prompt's explicit requirement for the clocks to be solid, intact, rigid, and not deformed.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_violating\",\n  \"should_label_as_hallucination\": \"yes\",\n  \"reason\": \"The image features melting and deformed clocks, which directly contradicts the prompt's explicit requirement for the clocks to be solid, intact, rigid, and not deformed.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Ep0LCpoLAQw51sd6y45kl542bcm+VRb2lcP+/GvlbCxFoPo3Adp21mMmJT+PGxPnrztINlUpKmB0YJNNw/02NWKb3n5gntLZ2E7WXHMrfFXWjU1N9AFWxhdVsi4YuxrtvK+WOLB7R+T59uOBQA4RhePbLbP51VwQopb9/tXpquRz4KFQDmdhqnB0ezPZBXucLQgpHjuLfBdBvBTHHgfjOkbijZyEWxU5D+fPdEZ2VC5zXWiAfF4hLDlzoGkEnJEwG8+hWCGWCrWqLxXEbSg204xqyzi5V5TnXBlj0lpyAtwwthkwzgfLNGtWjDG870MB0JAZyW1N8Jqa5tIqVjjsBnVC20uD/XQvoXQlS4wBB8mCsNDqhRr4DGQJ6YW0xUZV2FCBhonlRs8NVtLG+8pSfrJOnJ3sRth/Dpf9OviONL3p4/7LV9cmpNtZDCXgIwD4WXeuJNc4FmFUTnYE5yqC7DCYKeEYIeRWNCoM0GwKy9WMzby0TgDJTtUzYs+/hh4KEPS+dCMsiACuKMxgVq+o9AKSARlV51AuTMq1lfVITWtNfSgwopD5CUwv+rz5PekILsgTw8ZOfKUmXEFBk3+N4EFp7vuREguAX78EBJ+H5GSRUhbHadMHxrcjd9smbsoHJN/yME/cP3JC3ejn80Kb0UeMuVJWS6wOKf2XCZUHI0RCRhOgSaDrUjkYvWvpaq02djve3DdPkotpENlTRvNnh5Pw2QG2Bs3P/4td3gzgQ3p9DlCbbDQ0opwSzSv55LXZqq+CeObskqBzvT9nbNo6LKBxwJdNc84cZTJrC46EeB4G1xwiN0OAHcyeND2j7qDTC0/Tf4LD4oWOmRsfkJplLvmEb7jbix9ciqUZnScwLgZ4vmlxKpQw1AocP9x7WIUQNiDxHakv9u5Qxi2zP5z8JJgg9a3hR/yqDid3jr1XFeHxdFsK2BrHgB5RuF2BZh/Pya/yQN2EK28VFTKVWV9GSQ2LgwgFM+JfqKIWzVW1MoXuA4Bx5owOzCp4tw44WTmV4BzBGheoLna0a0wizsrs2ZsWP/yiYgDuEK8GICMHj+J7MwUzOPDMNnNWzfq5Bs0C9FGqKUbrfQDOKL1I9RtKRSMcvTpFr+cg8Pj//GZr7g3VyO9klypsj2QHcK2sRVXI7G+DHpFJnmyTVBzAMqyAno29bE69d1gPLdLwgFy6XNqZi5+JnarSJd+Y1gfhj3qs/pMvbW6usRe6IjLEMwf5o8vUGVZLts7bOzRuaMRqt6XLuSmMPAnx16pfU865BVmZriHwicIJZGdBLEoYkVY0HKH7diOCP5yD6roZNdih8lE+7ak7b84hN6+9uaAvdM5uHslJmH8/3Z6IjnOOhfMAojn9qedBUpu8B1JEFA+sKX2q2zKKpNOg3i2HmkIrgJEKJFD0WtTtVWfdxUc/lzTOZRVcQs7TqJPVVHMsdmht29D47MIyJOveBM9Ol0sSyLmGzMvetuzZW809bHWO++GTSVP1g+Ycbat/fHpPCEQuLvK5N1gm+fM2zUPSltcnObhWnGJC0731jnhhhilJduCFF13PxBQ5xg3wRAtCn2gLG/1K8p8nRhdRJe8rFU5bYau1VczXpFsFl60u9xE6ZlA3FTu0HfHVmkieEy8AdYOB2Tg05IX8/ljv25JpreJCYyZybCgAhfIkwzXp9VM2l5ExTS63rM2Fjul/UuoxVKHUaX7DEeZN7Jh9kChfl9KrHTBeRErV6l1e7i01U7TdA5pkBbtmsXEgM6c1G2hpIgSTFcBnPX6FCzdeyuUxfWAb4VIvsoHL5+TUTaqizswwxDA4EQj786CHZWSHwQZi5wS8jNpELjKS1vwjtzmAo2CFbn4Gvcf7PfLMDRXc6lK/6BGTZrFxrCPfycKnfnp21vFqtqiStEw+kBLMRVQsXA0PdrRA"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1472,
+      "candidatesTokenCount": 89,
+      "totalTokenCount": 1860,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 383
+        }
+      ],
+      "thoughtsTokenCount": 299,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "5jUKaoT9Ip2HxN8PwJ_4kAk"
+  }
+}

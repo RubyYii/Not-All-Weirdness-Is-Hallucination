@@ -1,0 +1,57 @@
+{
+  "sample_id": "B7",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B7.png",
+  "evaluation_prompt_text": "No-issue control for Text. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image contains clear, correctly spelled text ('SUMMER SALE') with no anomalies.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image contains clear, correctly spelled text ('SUMMER SALE') with no anomalies.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image contains clear, correctly spelled text ('SUMMER SALE') with no anomalies.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Ev0ECvoEAQw51scq1EHFhXLVNBKhEMLds2KqylprfSszhDnCo942yuzA8kl+m+ERuhZFnzorCe3Iyyx0KaWy5aO7ks/A1e0OcqC2RhlaWIJ6fFOpNxGcZ6ZgH+qXYhieYb657A6hReasjEVOU62d7KqZ/B1VkP4Jit9EQfZzDcRCQMw5AziNdRO7LGUe390203xpe2Tt23RrNlDofYOJLhbcsfa1yWoPdAaERzQoshbtWooef2iG4IHvUzrM+WZkssuIvsK/+ka8Rd/7JeAwjplHKyacJ0RTxvZUH3nKz8hHGUkw/MkDPRu79pwc0gUZ5RqgPcFcJ6F1ktPFTO11ds4n8B4/W8abU5z51onBjbJ73k/TD3tDKnDhEG7+pLen75XG9VPx3DwvgKwVB6DoInV4rcyRaE2Ufnt7/eF1DbFpeA5YeRDZcIdao0wRJKZg2+rcQya+8v6t+qipOgNXmLVNjkFLcjer1jMdKYNcYOBMYypjEZADlFyrN6cCOMNiYyHaKm1Y0ZLFWrNCK0HmSB1E+Cq0H23mO7rXIfZeMBIEomwbb+N4EhRg2ZILQSpXw29rXDSS5Jt5KJ1M6ZTzEgzJGg2iJgPWGygihnPNJPPRViJFdvdsy/5Mn6NdZ7VbZIuW92wwHFpNwrDi+RMp3tfrXCx1l5RXGXY+M+aT7XnzH1NTWeVFvXzYa6eZi3eRawOwEG0FIeZkSC8UKmHR2d73LmsK873OXwMQpZ1DftCiswy4O8MlJxf3SQpTwHmd3sehJpIiJQIcJjlSILAMbP9255gXc1rvssHwAQ3H4W25HETbp1qdmxEcFULu4iouyTvPR2TPWRbNSKvfrO7KeQ=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1441,
+      "candidatesTokenCount": 73,
+      "totalTokenCount": 1661,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 352
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 147,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "CTMKaoqUN76lkdUPtfXWiQ8"
+  }
+}

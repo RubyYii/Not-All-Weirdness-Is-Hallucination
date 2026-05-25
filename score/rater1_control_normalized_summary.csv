@@ -1,0 +1,5 @@
+﻿comparison,permission_agreement,matches,n
+rater1_control_norm_vs_gold,0.7222222222222222,104,144
+gpt-5.4_vs_rater1_control_norm,0.6875,99,144
+claude-sonnet-4-6_vs_rater1_control_norm,0.7430555555555556,107,144
+gemini-3.1-pro-preview_vs_rater1_control_norm,0.6944444444444444,100,144

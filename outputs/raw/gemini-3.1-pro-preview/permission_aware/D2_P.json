@@ -1,0 +1,57 @@
+{
+  "sample_id": "D2_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\D2.png",
+  "evaluation_prompt_text": "A surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.",
+  "target_anomaly": "human-chair fusion",
+  "axis": {
+    "axis_code": "A4",
+    "axis_en": "Object Fusion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a 'human-chair hybrid sculpture' where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a 'human-chair hybrid sculpture' where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a 'human-chair hybrid sculpture' where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Er4LCrsLAQw51sc2Ploe5L2mMUezULShdu/A7DmYz3CEo9/VdbzYACpm8dOln1gMlGJG/Um6rS+D2JimN42pkYgWChMamc2e/Pe/1zFCVx2JMjLHuCmwfQ2gKnl/o/Oxwzd8w2TOSqXGMKQ0k+cJzXFNGq8DdCIykcekAPprrH5tVHu0npUD2ZNIOGvoZ3YtL5P/X143Z0+vY/RQAWrFDfltZR2cOmVf/1v9nPFxg2ubucStRzcMMG4Z6FB7qbBcD6kwTtBIzeOTZ3Az03/QYD3NePBaFRd+TXBmhZOyfDkBLDjo8H3HAz5oZl4Y6iandJnBVod5wf5qmmIrCRT9h0IWIAOC280RkTtZ0hvFQpPHyqKCW1yRyvf6aMuH9k8moON2nmouuYoqH02Eg4VeV9TTuMvEiZWB/rSpKHfYpJyKnzKuxLIovhkGdms2tq2YjRjtl+yTTa1TFUrTCBBsvboIovQHavbMjmsYW1Jr75DIvjmZFy7aV3TLH3IBC78Ti/0iBtpLcLYXfVjL3hcBBVSRe3RNW1djM7OuG15OaBvRDeRuaJ7GofjGGR+2ifhCb+iOqZIiBmLYP9kLN+9ik894uKu1eB4H4qTZIR3jEpmN1ScmIS+VcqHDif1ZvWFadx4M+br+8/5oenVQSYp7rQT3ed4pToJckxK8cZTUDS+2haODQx5AhGnRHYnlaabtzo1jHWeko9efpOZPgzmG+oZ//uVpEiG4tWTUhibOuUFewocU4eN2LIh4Bj2L5ltqPfngakYsCYUCR/iJHQ5caonyPS1TSHE0yO6/1K/Jj103jYuoldMtS2B7z0vhGm+TKP2sRCnxKFSzBPRv2QwsNqHM7H74qGPPaDWTUmNfA1lUaigYPtDfFOKGmhGmIBF0uv25vpXdia8HF+VKnws48LiOEfa9l+rfXD8M7TjVMt4GNzWMXlCF9H86Eq8AZcliFoohxi750dyKrnhcO/xLCdYE9Iyb+RZqNnUVOF26LRDFND3oimRlunuzandRmGCBxBIq0gk9rp1mkAF9bXhSNnsDLAhVk3JG8ThbwsxgmXO2ZFhY41IeSHaa6oM2Ml5EVFauQVcwLMOiLaqaeszaeJmHACD1dYqi+LW227DOvGTrfLgo57CQHTIGgm1/7YAZb8GIwko/QQTtGmWqj6jaZNnXc5og1d/qlurE0CyCsMfObWGcTVww7FXHkSjPAiZ3i5BrlGbao1ynOOFbpii6u7yQsSyFxLfPB7nmyXirzjWbpZ0a67qBIPHwsUe6MScQHqTDhmlkQmx2TXGXbmrcQFhz4CwDy3A3xTcufhAAagd/Bkij+JtrBJg9yj6mHIq0vTOo6RsGDX3TcHmmqrLeQFQ2Ez6WQfgqKbG+8UnovQKfPXOXYkN2uTuI1SMlCae3NrKKuNGYsPIDGkeLKc1hu7HPZYT5RL83tWhCN0m5ihP0hUh0kvU6SAnUOkuRb8rZjyXjulD0hoJdY7FjCcOnBIEgZC4KS8NUAaYBRxV/yuYkemFJsqLm1TzoyrPdk1/lRyBt2kTWSHsTXMzqXGtJSWxj3NMD5K3R8DSKTQi7NuNpcH8c8fMHvsRWQYpRM9Mk9xxfzL0vkTiH4zLWzUfPFHLcHN0gfeIHk2JxixRHzQMRS+MTwDelqQIl3vRGxcIoVDk0TiAvqRQ5teZrH0wBAeEYfiFhIDXwcTVxMoxmMvRMxWxUE7SCWZg89v7gKrDbU8BPvAe0SQcSmIROQy6GHp8L8+GhoHrdqUqwJck8KhdJjU8SPXORFhF1XLQ0iVYC9rq+cxt3MwiXOC8FjALZU0Ln0zFk7LYiuNErYDYgj+yFZYNj0NSc7vZmDTzWZr5priOs/AeTr3nDfnxTHQRJbRMeROT4HRVcpNOuSJeCrg+ht/Ii0liFcMYPx3varOyHmBF5J0S6TcyLlJlzusYXv5KosZLCYo1jCaqnH5ifkrhH"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1462,
+      "candidatesTokenCount": 97,
+      "totalTokenCount": 1885,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 373
+        }
+      ],
+      "thoughtsTokenCount": 326,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "yzMKape3JOiikdUPmKjgwQw"
+  }
+}

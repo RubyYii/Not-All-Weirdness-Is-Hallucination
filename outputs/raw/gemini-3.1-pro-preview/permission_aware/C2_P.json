@@ -1,0 +1,57 @@
+{
+  "sample_id": "C2_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C2.png",
+  "evaluation_prompt_text": "A dream world with reversed gravity, where water flows upward and physical laws are intentionally inverted.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a dream world with reversed gravity where water flows upward, which is exactly what is depicted in the image.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a dream world with reversed gravity where water flows upward, which is exactly what is depicted in the image.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a dream world with reversed gravity where water flows upward, which is exactly what is depicted in the image.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Eq8JCqwJAQw51seJuJNn4IQBzU8Te1mYrebv0tR3Jd7tvJL5QQ9c6ZVnAuAtUK1T25B/hmNbPQOeVwcfACevSk4yBo5ereYVvuwhJMxetyp+iKqsyO4fCvZ+t3cAenUPvM12Sez6gvMJdKAizzpTzDPEnE1giXBToEaZy98C7auCp5CvbTtEG665vjJhd4sYsgYnZDYHyJDTHLc6HA0jcd+4ATKh8RuD8Sfel1fIjkPI1lZaIw9hVr/X0s+b+45EZqrcewdHB2Hk14sOa3az5GNj/9LXrEqUQcdmGIarr8YI3kGr1s+n/XNmzrN4kyS0J8LPmACf8+y7Cwr4onhqF81TQ5sHaPoYe03RKkdLUB1qmqCFf1Cp97UkVRSLRxYYK0dyYDjPHVwbdpboTNcckBPofdAvCa0MtsALGG2UVn91Hg81pHXJQ2aS9R2avB+16VAxbz2DGABJM9BIj7g67/fvphS4AL3X4kiieAwx8zyQFhjms06KBob6P5ZtTvir6FA9d2XgSL4Mbl/JGgID8oVK4r2IkKjxhhFEFjisR9yQDLyhk//WeAC956/5w7m451bQP1nvkXfSM4xUyvD6CfFDAHoMU9sLyLDSkArpR+Oe1h/owb7J5IpOu8kmrT7XWnjtm2SwcClU19CFtBMQAwngDjPN80BvInU+OTGK1ctTvhVX0G/+fW3Q3UK3uCgsQMpF7ZGGdqw0J9X66ucOLq1gZXs4EhXR3TxPOz9q6uX67V/iqC7N9O2BDE993oM3tFnDBxg5ryNQ0GSGmxxxNUOPtjMv6unATDpfYhxFSE5MkDKMk1NsJFBv6ZpBOTaTuL7jSMzB1w2IvduQZCNLAcvjlfP6Hk7oEF94VAlbGzrTHcV95NdGaz9xP+rUTdmXeNpjWDyDCIijrJGK7+sEtziIFGBIPFFSCG+TSGY/Gc2C0ir/QMGhtnSN7up+vEUyetGvQnqbPEYh8Jjiph3kwBSfFSde61eJggeHOqb7QU/8Gbah1PLG1pxd8ue/FDB+Ls8uhInek/n9v3/zFVlI8KQhTTtKUrUBHzAAdhtaEFSq53C65XMUhnwy5HSiXALpTsz87CT2XKiAo96+t1ZDy9cUis/jLQvWlEPxqtWfVv/VVlvxTEPdvCW+wgoj0qiOkQ7NQPgqnl3EbjBSSAV02j+LfWuHoC05XwU2sHkG3cfii4RdQmBvIGJhZPhbGmQJP891Ew8tCF0SyEhNTndxJm22NeyCNXDLotvXXWk6PIDsZPcTJV/oAOP5lX5v6ToJbelNdivuPywCKCG29Kr41z071qdgGpRhDhBOYaCbxb3SQsU1UzLPT39SrRE7n/aaIfjQQS7DPVQGp2EJRqFle3+8u+I67+Y+11GjG6EPWR9KS1pLxCbtzHrqjk+KRnvdruGEQLwO06ngm85ckSm9j/BHMGlrnmpIcg9IC0MFn0zkIaZhYHGkv58vVKKcvVgUctSceR6koStKgyb4J6bdkIpMIlF3PXp+talgA/a847JvXByHsv5EjFVGar3Gz7698X8fZNpwEvLpKm5OrbM+nFCVPVfGXVgLKhMSGouQm3bCU/C+kvzz3E28T0Vpz4fxZuk="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1460,
+      "candidatesTokenCount": 81,
+      "totalTokenCount": 1806,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 371
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 265,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "NzMKaru8BcaZkdUPwqPEoQc"
+  }
+}

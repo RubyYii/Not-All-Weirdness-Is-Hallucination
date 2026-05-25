@@ -1,0 +1,1297 @@
+line_number,sample_id,image_id,axis_code,condition,model,audit_setting,target_anomaly_detected,permission_status_pred,hallucination_pred,confidence,reason,parse_error,output_path,raw_response
+1,A1_A,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly calls for 'unusual hands,' which semantically permits anatomical deviations such as extra or elongated fingers. The image depicts hands with claw-like, elongated fingers that appear to exceed the normal count, consistent with the fantastical, otherworldly aesthetic requested. This is a deliberate artistic choice aligned with the prompt's intent rather than an unintended generation error.",,outputs\raw\claude-sonnet-4-6\permission_aware\A1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'unusual hands,' which semantically permits anatomical deviations such as extra or elongated fingers. The image depicts hands with claw-like, elongated fingers that appear to exceed the normal count, consistent with the fantastical, otherworldly aesthetic requested. This is a deliberate artistic choice aligned with the prompt's intent rather than an unintended generation error."",
+  ""confidence"": ""high""
+}
+```"
+2,A1_P,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires six fingers on each hand as an intentional character design element for the alien-human performer. The image shows hands with elongated, claw-like fingers that appear to have extra digits beyond the typical five, consistent with the requested six-fingered design. Since extra fingers are explicitly called for in the prompt, this is not a hallucination but a successfully rendered required feature.",,outputs\raw\claude-sonnet-4-6\permission_aware\A1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires six fingers on each hand as an intentional character design element for the alien-human performer. The image shows hands with elongated, claw-like fingers that appear to have extra digits beyond the typical five, consistent with the requested six-fingered design. Since extra fingers are explicitly called for in the prompt, this is not a hallucination but a successfully rendered required feature."",
+  ""confidence"": ""high""
+}
+```"
+3,A1_V,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires natural human anatomy with exactly five fingers per hand. The image clearly shows hands with more than five fingers — multiple elongated, claw-like digits are visible on both hands, with at least six or more per hand. This directly contradicts the prompt's specification of exactly five fingers and natural anatomy.",,outputs\raw\claude-sonnet-4-6\permission_aware\A1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires natural human anatomy with exactly five fingers per hand. The image clearly shows hands with more than five fingers — multiple elongated, claw-like digits are visible on both hands, with at least six or more per hand. This directly contradicts the prompt's specification of exactly five fingers and natural anatomy."",
+  ""confidence"": ""high""
+}
+```"
+4,A2_A,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly calls for 'unusual hands,' which directly permits and even encourages anatomical deviations such as extra or elongated fingers. The figure displays hands with what appear to be six or more elongated fingers, which is consistent with the 'unusual hands' requirement. This is not an unintended generation artifact but rather a fulfillment of the prompt's stated creative directive.",,outputs\raw\claude-sonnet-4-6\permission_aware\A2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'unusual hands,' which directly permits and even encourages anatomical deviations such as extra or elongated fingers. The figure displays hands with what appear to be six or more elongated fingers, which is consistent with the 'unusual hands' requirement. This is not an unintended generation artifact but rather a fulfillment of the prompt's stated creative directive."",
+  ""confidence"": ""high""
+}
+```"
+5,A2_P,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires six elegant fingers on each hand as an intentional character design element for the alien-human performer. The image shows hands with elongated, extra fingers consistent with this requirement. The extra fingers are not a generation error but a fulfillment of the prompt's specification.",,outputs\raw\claude-sonnet-4-6\permission_aware\A2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires six elegant fingers on each hand as an intentional character design element for the alien-human performer. The image shows hands with elongated, extra fingers consistent with this requirement. The extra fingers are not a generation error but a fulfillment of the prompt's specification."",
+  ""confidence"": ""high""
+}
+```"
+6,A2_V,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,The prompt explicitly requires a human performer with natural anatomy and exactly five fingers on each hand. The generated image shows hands with more than five fingers — the visible hand on the neck of the violin appears to have six or more elongated fingers. This directly contradicts the prompt's requirement of exactly five fingers per hand and natural human anatomy.,,outputs\raw\claude-sonnet-4-6\permission_aware\A2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires a human performer with natural anatomy and exactly five fingers on each hand. The generated image shows hands with more than five fingers — the visible hand on the neck of the violin appears to have six or more elongated fingers. This directly contradicts the prompt's requirement of exactly five fingers per hand and natural human anatomy."",
+  ""confidence"": ""high""
+}
+```"
+7,A3_A,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a subject with 'unusual hands,' which directly permits and even requires anatomical abnormalities such as extra or unusual fingers. The image shows hands with what appear to be six or more fingers, which satisfies the prompt's explicit requirement for unusual hands. This is not a hallucination but rather a successful fulfillment of the prompt's intentional directive.",,outputs\raw\claude-sonnet-4-6\permission_aware\A3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a subject with 'unusual hands,' which directly permits and even requires anatomical abnormalities such as extra or unusual fingers. The image shows hands with what appear to be six or more fingers, which satisfies the prompt's explicit requirement for unusual hands. This is not a hallucination but rather a successful fulfillment of the prompt's intentional directive."",
+  ""confidence"": ""high""
+}
+```"
+8,A3_P,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires six fingers on each hand as part of the alien-human character design. The image shows hands with what appears to be extra fingers (more than five), which aligns with the prompt's intentional requirement. Since the prompt mandates this anatomical feature, it is not a hallucination but rather a successful generation of the requested element.",,outputs\raw\claude-sonnet-4-6\permission_aware\A3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires six fingers on each hand as part of the alien-human character design. The image shows hands with what appears to be extra fingers (more than five), which aligns with the prompt's intentional requirement. Since the prompt mandates this anatomical feature, it is not a hallucination but rather a successful generation of the requested element."",
+  ""confidence"": ""high""
+}
+```"
+9,A3_V,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires each hand to have exactly five fingers. Examining the image, both hands appear to have more than five fingers visible — the left hand in particular shows what appears to be six fingers. This directly violates the explicit anatomical constraint stated in the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\A3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires each hand to have exactly five fingers. Examining the image, both hands appear to have more than five fingers visible — the left hand in particular shows what appears to be six fingers. This directly violates the explicit anatomical constraint stated in the prompt."",
+  ""confidence"": ""high""
+}
+```"
+10,A4_A,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests a subject with 'unusual hands,' which semantically permits and even encourages anatomical deviations such as extra or six fingers. The visible elongated, extra-fingered hands in the image directly fulfill this prompt requirement rather than violating it.",,outputs\raw\claude-sonnet-4-6\permission_aware\A4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a subject with 'unusual hands,' which semantically permits and even encourages anatomical deviations such as extra or six fingers. The visible elongated, extra-fingered hands in the image directly fulfill this prompt requirement rather than violating it."",
+  ""confidence"": ""high""
+}
+```"
+11,A4_P,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires six fingers on each hand as an intentional character design element for an alien-human performer. The image shows hands with what appear to be extra or unusually elongated fingers, consistent with the prompt's requirement. The unusual finger count is not a generation error but a deliberately requested anatomical feature.",,outputs\raw\claude-sonnet-4-6\permission_aware\A4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires six fingers on each hand as an intentional character design element for an alien-human performer. The image shows hands with what appear to be extra or unusually elongated fingers, consistent with the prompt's requirement. The unusual finger count is not a generation error but a deliberately requested anatomical feature."",
+  ""confidence"": ""high""
+}
+```"
+12,A4_V,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,medium,"The prompt explicitly requires exactly five fingers on each hand with natural human anatomy. Examining the visible hands in the image, particularly the upper hand holding the paintbrush, there appear to be more than five fingers visible — approximately six digits can be counted. This directly violates the prompt's explicit requirement of exactly five fingers per hand and natural anatomy.",,outputs\raw\claude-sonnet-4-6\permission_aware\A4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires exactly five fingers on each hand with natural human anatomy. Examining the visible hands in the image, particularly the upper hand holding the paintbrush, there appear to be more than five fingers visible — approximately six digits can be counted. This directly violates the prompt's explicit requirement of exactly five fingers per hand and natural anatomy."",
+  ""confidence"": ""medium""
+}
+```"
+13,A5_A,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly calls for 'unusual hands,' which directly permits anatomical anomalies such as extra or six fingers. The presence of extra fingers on both hands is therefore not a hallucination but a fulfillment of the prompt's stated requirement for unusual hands in an imaginative, artistic context.",,outputs\raw\claude-sonnet-4-6\permission_aware\A5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'unusual hands,' which directly permits anatomical anomalies such as extra or six fingers. The presence of extra fingers on both hands is therefore not a hallucination but a fulfillment of the prompt's stated requirement for unusual hands in an imaginative, artistic context."",
+  ""confidence"": ""high""
+}
+```"
+14,A5_P,,A1,,claude-sonnet-4-6,permission_aware,False,prompt_required,yes,high,"The prompt explicitly requires six fingers on each hand as an intentional character design element. However, the image shows hands with the standard five fingers per hand. The required anomaly (six fingers) is absent, meaning the image fails to fulfill the prompt's specification. Since the prompt mandated this feature and it was not generated, this constitutes a failure to render the required element — which can be treated as a hallucination-by-omission or generation failure.",,outputs\raw\claude-sonnet-4-6\permission_aware\A5_P.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires six fingers on each hand as an intentional character design element. However, the image shows hands with the standard five fingers per hand. The required anomaly (six fingers) is absent, meaning the image fails to fulfill the prompt's specification. Since the prompt mandated this feature and it was not generated, this constitutes a failure to render the required element — which can be treated as a hallucination-by-omission or generation failure."",
+  ""confidence"": ""high""
+}
+```"
+15,A5_V,,A1,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,medium,"The prompt explicitly requires each hand to have exactly five fingers and natural anatomy. Examining the image, the left hand (viewer's right) appears to show six fingers/digits rather than five, violating the explicit anatomical requirement stated in the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\A5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires each hand to have exactly five fingers and natural anatomy. Examining the image, the left hand (viewer's right) appears to show six fingers/digits rather than five, violating the explicit anatomical requirement stated in the prompt."",
+  ""confidence"": ""medium""
+}
+```"
+16,A6,,A1,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The hands in the image appear anatomically normal — correct finger count, natural proportions, realistic joint structure, and plausible positioning while holding a ceramic cup. No hallucinated anomaly is present.",,outputs\raw\claude-sonnet-4-6\permission_aware\A6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The hands in the image appear anatomically normal — correct finger count, natural proportions, realistic joint structure, and plausible positioning while holding a ceramic cup. No hallucinated anomaly is present."",
+  ""confidence"": ""high""
+}
+```"
+17,A7,,A1,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The image shows a man playing violin with anatomically normal hands. Both hands display correct finger count, natural proportions, and realistic positioning consistent with proper violin playing technique. No hand anatomy anomalies are present.",,outputs\raw\claude-sonnet-4-6\permission_aware\A7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The image shows a man playing violin with anatomically normal hands. Both hands display correct finger count, natural proportions, and realistic positioning consistent with proper violin playing technique. No hand anatomy anomalies are present."",
+  ""confidence"": ""high""
+}
+```"
+18,A8,,A1,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The hands visible in the image appear anatomically normal — the right hand holds a paintbrush with natural finger positioning, and the left hand holds a palette with typical grip. No anatomical anomalies are detectable in the hands.",,outputs\raw\claude-sonnet-4-6\permission_aware\A8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The hands visible in the image appear anatomically normal — the right hand holds a paintbrush with natural finger positioning, and the left hand holds a palette with typical grip. No anatomical anomalies are detectable in the hands."",
+  ""confidence"": ""high""
+}
+```"
+19,B1_A,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The image contains heavily stylized, distorted, and largely illegible characters and calligraphic forms throughout the composition. This is not a hallucination but rather a faithful fulfillment of the prompt's core requirement.",,outputs\raw\claude-sonnet-4-6\permission_aware\B1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The image contains heavily stylized, distorted, and largely illegible characters and calligraphic forms throughout the composition. This is not a hallucination but rather a faithful fulfillment of the prompt's core requirement."",
+  ""confidence"": ""high""
+}
+```"
+20,B1_P,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The image clearly fulfills this requirement with swirling, distorted calligraphic and letter-like marks that are intentionally illegible, serving as abstract visual elements. This is not a hallucination but rather a direct fulfillment of the prompt's core requirement.",,outputs\raw\claude-sonnet-4-6\permission_aware\B1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The image clearly fulfills this requirement with swirling, distorted calligraphic and letter-like marks that are intentionally illegible, serving as abstract visual elements. This is not a hallucination but rather a direct fulfillment of the prompt's core requirement."",
+  ""confidence"": ""high""
+}
+```"
+21,B1_V,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read' for a 'clean professional advertisement poster.' The image instead contains highly stylized, abstract calligraphic forms, distorted pseudo-characters, and illegible text elements that cannot be read as meaningful content. The text throughout the image is neither clear nor correctly formed by any standard script, directly contradicting the prompt's explicit readability requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\B1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read' for a 'clean professional advertisement poster.' The image instead contains highly stylized, abstract calligraphic forms, distorted pseudo-characters, and illegible text elements that cannot be read as meaningful content. The text throughout the image is neither clear nor correctly formed by any standard script, directly contradicting the prompt's explicit readability requirements."",
+  ""confidence"": ""high""
+}
+```"
+22,B2_A,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The poster displays heavily distorted, overlapping, and stylized letterforms in neon pink and blue gradients against a dark background — this is precisely what the prompt demands. The illegibility is a feature, not a flaw.",,outputs\raw\claude-sonnet-4-6\permission_aware\B2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The poster displays heavily distorted, overlapping, and stylized letterforms in neon pink and blue gradients against a dark background — this is precisely what the prompt demands. The illegibility is a feature, not a flaw."",
+  ""confidence"": ""high""
+}
+```"
+23,B2_P,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The image displays exactly that — large, overlapping, distorted letter-like forms in neon pink and blue gradients that are not legibly readable. This is the intended and required output, not a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\B2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The image displays exactly that — large, overlapping, distorted letter-like forms in neon pink and blue gradients that are not legibly readable. This is the intended and required output, not a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+24,B2_V,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read' for a 'clean professional advertisement poster.' The generated image contains heavily distorted, overlapping, grunge-textured typographic elements that are completely illegible — no coherent words or message can be read. This directly contradicts the core textual requirements of the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\B2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read' for a 'clean professional advertisement poster.' The generated image contains heavily distorted, overlapping, grunge-textured typographic elements that are completely illegible — no coherent words or message can be read. This directly contradicts the core textual requirements of the prompt."",
+  ""confidence"": ""high""
+}
+```"
+25,B3_A,,A2,,claude-sonnet-4-6,permission_aware,False,prompt_required,yes,high,"The prompt explicitly requires expressive typography and distorted letterforms, meaning text (even if illegible or heavily distorted) should be present. The image contains only abstract black fluid/drip shapes with no discernible text or letterforms whatsoever. The absence of any typographic elements — distorted or otherwise — constitutes a failure to meet the prompt's core requirement, making this a hallucination by omission.",,outputs\raw\claude-sonnet-4-6\permission_aware\B3_A.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires expressive typography and distorted letterforms, meaning text (even if illegible or heavily distorted) should be present. The image contains only abstract black fluid/drip shapes with no discernible text or letterforms whatsoever. The absence of any typographic elements — distorted or otherwise — constitutes a failure to meet the prompt's core requirement, making this a hallucination by omission."",
+  ""confidence"": ""high""
+}
+```"
+26,B3_P,,A2,,claude-sonnet-4-6,permission_aware,False,prompt_required,no,high,"The prompt explicitly requires illegible or distorted letter-like marks used as visual texture rather than readable text. However, the generated image shows abstract fluid/dripping black forms on a cream background with no discernible letter-like or typographic marks at all — it is purely abstract liquid/paint imagery. The target element (illegible dreamlike typography or distorted letter-like marks) is actually absent from the image, not present. Since the image fails to include the required element rather than adding something prohibited, this is a case of omission rather than hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\B3_P.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires illegible or distorted letter-like marks used as visual texture rather than readable text. However, the generated image shows abstract fluid/dripping black forms on a cream background with no discernible letter-like or typographic marks at all — it is purely abstract liquid/paint imagery. The target element (illegible dreamlike typography or distorted letter-like marks) is actually absent from the image, not present. Since the image fails to include the required element rather than adding something prohibited, this is a case of omission rather than hallucination."",
+  ""confidence"": ""high""
+}
+```"
+27,B3_V,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires a clean professional advertisement poster with large, readable, clearly formed text. The generated image contains no readable text whatsoever — instead it shows an abstract black fluid/ink design on a cream background. The complete absence of text, combined with the presence of only abstract visual elements, directly violates the core requirement of the prompt. While abstract art is not inherently a hallucination, the failure to produce any text (let alone clear, readable text) when text was explicitly required constitutes a prompt violation. The image essentially substitutes an abstract artwork for an advertisement poster with text.",,outputs\raw\claude-sonnet-4-6\permission_aware\B3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires a clean professional advertisement poster with large, readable, clearly formed text. The generated image contains no readable text whatsoever — instead it shows an abstract black fluid/ink design on a cream background. The complete absence of text, combined with the presence of only abstract visual elements, directly violates the core requirement of the prompt. While abstract art is not inherently a hallucination, the failure to produce any text (let alone clear, readable text) when text was explicitly required constitutes a prompt violation. The image essentially substitutes an abstract artwork for an advertisement poster with text."",
+  ""confidence"": ""high""
+}
+```"
+28,B4_A,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The image displays heavily fragmented, overlapping, and abstracted letterforms in black, cream, and terracotta that are intentionally illegible as a design choice. This is not a hallucination but a faithful fulfillment of the prompt's core requirement.",,outputs\raw\claude-sonnet-4-6\permission_aware\B4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The image displays heavily fragmented, overlapping, and abstracted letterforms in black, cream, and terracotta that are intentionally illegible as a design choice. This is not a hallucination but a faithful fulfillment of the prompt's core requirement."",
+  ""confidence"": ""high""
+}
+```"
+29,B4_P,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The image delivers exactly this: large, overlapping, fragmented letterforms in black, cream, and terracotta that are intentionally abstracted and non-readable. This is the core design directive, not an anomaly or hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\B4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The image delivers exactly this: large, overlapping, fragmented letterforms in black, cream, and terracotta that are intentionally abstracted and non-readable. This is the core design directive, not an anomaly or hallucination."",
+  ""confidence"": ""high""
+}
+```"
+30,B4_V,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read' for a 'clean professional advertisement poster.' The image instead contains heavily fragmented, overlapping, and deconstructed letterforms that are illegible and do not form any coherent readable text. The typographic collage aesthetic directly contradicts the prompt's explicit requirement for clear, readable text.",,outputs\raw\claude-sonnet-4-6\permission_aware\B4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read' for a 'clean professional advertisement poster.' The image instead contains heavily fragmented, overlapping, and deconstructed letterforms that are illegible and do not form any coherent readable text. The typographic collage aesthetic directly contradicts the prompt's explicit requirement for clear, readable text."",
+  ""confidence"": ""high""
+}
+```"
+31,B5_A,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The label on the perfume bottle displays heavily stylized, abstracted, and partially illegible typographic forms that blend geometric shapes, calligraphic curves, and fragmented letterforms. This is precisely what the prompt demands, so the distorted/illegible text is not a hallucination but a fulfillment of the prompt's requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\B5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'expressive typography and distorted letterforms,' which directly requires illegible or distorted text. The label on the perfume bottle displays heavily stylized, abstracted, and partially illegible typographic forms that blend geometric shapes, calligraphic curves, and fragmented letterforms. This is precisely what the prompt demands, so the distorted/illegible text is not a hallucination but a fulfillment of the prompt's requirements."",
+  ""confidence"": ""high""
+}
+```"
+32,B5_P,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The label on the perfume bottle displays exactly this: abstract, fragmented, and distorted letter-like marks that appear to blend Arabic calligraphy, geometric forms, and typographic elements into an illegible visual composition. This directly fulfills the prompt's requirement for illegible dreamlike typography as visual texture.",,outputs\raw\claude-sonnet-4-6\permission_aware\B5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires illegible, dreamlike, distorted typography used as visual texture rather than readable text. The label on the perfume bottle displays exactly this: abstract, fragmented, and distorted letter-like marks that appear to blend Arabic calligraphy, geometric forms, and typographic elements into an illegible visual composition. This directly fulfills the prompt's requirement for illegible dreamlike typography as visual texture."",
+  ""confidence"": ""high""
+}
+```"
+33,B5_V,,A2,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read.' The label on the perfume bottle displays abstract, fragmented, and illegible typographic/calligraphic elements that cannot be read as coherent text. The characters appear to be a mashup of distorted letterforms, symbols, and abstract shapes that form no legible words or message, directly contradicting the prompt's requirement for clear and readable text.",,outputs\raw\claude-sonnet-4-6\permission_aware\B5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'large readable text' that is 'clear, correctly formed, and easy to read.' The label on the perfume bottle displays abstract, fragmented, and illegible typographic/calligraphic elements that cannot be read as coherent text. The characters appear to be a mashup of distorted letterforms, symbols, and abstract shapes that form no legible words or message, directly contradicting the prompt's requirement for clear and readable text."",
+  ""confidence"": ""high""
+}
+```"
+34,B6,,A2,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where the target anomaly is 'none'. The image shows a standard water bottle advertisement with clear, legible text reading 'PURE WATER', a plastic water bottle, water splashes, and mountain scenery. No unusual or anomalous visual elements are present that would constitute a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\B6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where the target anomaly is 'none'. The image shows a standard water bottle advertisement with clear, legible text reading 'PURE WATER', a plastic water bottle, water splashes, and mountain scenery. No unusual or anomalous visual elements are present that would constitute a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+35,B7,,A2,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where the target anomaly is 'none'. The image displays a standard summer sale promotional graphic with clear, correctly spelled text ('SUMMER SALE'), tropical beach background, palm leaves, and bright colors. No unusual or anomalous visual elements are present. The text is legible and properly rendered.",,outputs\raw\claude-sonnet-4-6\permission_aware\B7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where the target anomaly is 'none'. The image displays a standard summer sale promotional graphic with clear, correctly spelled text ('SUMMER SALE'), tropical beach background, palm leaves, and bright colors. No unusual or anomalous visual elements are present. The text is legible and properly rendered."",
+  ""confidence"": ""high""
+}
+```"
+36,B8,,A2,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where the target anomaly is 'none'. The image is a standard green tea product advertisement with coherent text ('GREEN TEA', 'NATURAL ANTIOXIDANTS', 'BOOSTS METABOLISM', 'SUPPORTS IMMUNITY', '100% NATURAL', 'PREMIUM QUALITY'), consistent visuals, and no unusual or anomalous elements present. Everything in the image aligns with a typical product marketing image.",,outputs\raw\claude-sonnet-4-6\permission_aware\B8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where the target anomaly is 'none'. The image is a standard green tea product advertisement with coherent text ('GREEN TEA', 'NATURAL ANTIOXIDANTS', 'BOOSTS METABOLISM', 'SUPPORTS IMMUNITY', '100% NATURAL', 'PREMIUM QUALITY'), consistent visuals, and no unusual or anomalous elements present. Everything in the image aligns with a typical product marketing image."",
+  ""confidence"": ""high""
+}
+```"
+37,C1_A,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The image clearly depicts a column of water spiraling upward from a river into the sky, forming a humanoid/elemental shape at the top — a vivid example of reversed gravity or upward-flowing water. The prompt explicitly calls for 'unusual water movement' and a 'dreamlike atmosphere,' and a 'strange poetic landscape.' Upward-flowing water directly satisfies the 'unusual water movement' requirement and is wholly consistent with the dreamlike, fantastical tone requested. This is not a hallucination; it is a faithful and creative realization of the prompt's intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\C1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly depicts a column of water spiraling upward from a river into the sky, forming a humanoid/elemental shape at the top — a vivid example of reversed gravity or upward-flowing water. The prompt explicitly calls for 'unusual water movement' and a 'dreamlike atmosphere,' and a 'strange poetic landscape.' Upward-flowing water directly satisfies the 'unusual water movement' requirement and is wholly consistent with the dreamlike, fantastical tone requested. This is not a hallucination; it is a faithful and creative realization of the prompt's intent."",
+  ""confidence"": ""high""
+}
+```"
+38,C1_P,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The image clearly depicts a column of water flowing upward from a river at the base, spiraling and rising into the sky, culminating in a luminous figure-like form at the top. This directly fulfills the prompt's explicit requirement of reversed gravity and upward-flowing water in a dream world. The visual element is not a hallucination but rather a faithful rendering of the described physics inversion.",,outputs\raw\claude-sonnet-4-6\permission_aware\C1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly depicts a column of water flowing upward from a river at the base, spiraling and rising into the sky, culminating in a luminous figure-like form at the top. This directly fulfills the prompt's explicit requirement of reversed gravity and upward-flowing water in a dream world. The visual element is not a hallucination but rather a faithful rendering of the described physics inversion."",
+  ""confidence"": ""high""
+}
+```"
+39,C1_V,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image clearly depicts a massive column of water spiraling upward from a river or lake into the sky, forming a figure-like shape at the top. This directly contradicts the prompt's requirement for 'normal gravity and physically plausible water movement' where 'rivers, rain, and waterfalls should move naturally downward.' Water rising vertically into the sky in a tornado-like vortex is a fundamental violation of the stated physics constraints. While a waterfall is visible on the right side flowing downward (compliant), the dominant central element is explicitly anti-gravitational water movement.",,outputs\raw\claude-sonnet-4-6\permission_aware\C1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly depicts a massive column of water spiraling upward from a river or lake into the sky, forming a figure-like shape at the top. This directly contradicts the prompt's requirement for 'normal gravity and physically plausible water movement' where 'rivers, rain, and waterfalls should move naturally downward.' Water rising vertically into the sky in a tornado-like vortex is a fundamental violation of the stated physics constraints. While a waterfall is visible on the right side flowing downward (compliant), the dominant central element is explicitly anti-gravitational water movement."",
+  ""confidence"": ""high""
+}
+```"
+40,C2_A,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The image depicts a column of water falling vertically from the clouds down into a mountain lake — this appears to be a sky-to-ground waterfall, which is physically unusual but not strictly 'upward-flowing.' However, the prompt explicitly calls for 'unusual water movement' and a 'dreamlike atmosphere,' and 'strange poetic landscape.' A water column descending from clouds (as if the sky is the source) is a surreal, physics-defying water movement that is directly permitted and even encouraged by the prompt's language. The element serves the dreamlike and poetic intent of the prompt rather than contradicting it.",,outputs\raw\claude-sonnet-4-6\permission_aware\C2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a column of water falling vertically from the clouds down into a mountain lake — this appears to be a sky-to-ground waterfall, which is physically unusual but not strictly 'upward-flowing.' However, the prompt explicitly calls for 'unusual water movement' and a 'dreamlike atmosphere,' and 'strange poetic landscape.' A water column descending from clouds (as if the sky is the source) is a surreal, physics-defying water movement that is directly permitted and even encouraged by the prompt's language. The element serves the dreamlike and poetic intent of the prompt rather than contradicting it."",
+  ""confidence"": ""high""
+}
+```"
+41,C2_P,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The image depicts a vertical column of water flowing upward from a lake into the clouds, which directly fulfills the prompt's explicit requirement of reversed gravity and upward-flowing water in a dream world with inverted physical laws. This is not a hallucination but rather the intended and required visual element.",,outputs\raw\claude-sonnet-4-6\permission_aware\C2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a vertical column of water flowing upward from a lake into the clouds, which directly fulfills the prompt's explicit requirement of reversed gravity and upward-flowing water in a dream world with inverted physical laws. This is not a hallucination but rather the intended and required visual element."",
+  ""confidence"": ""high""
+}
+```"
+42,C2_V,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image clearly depicts a massive column of water falling downward from the clouds into a lake, which might initially seem like a downward waterfall. However, the water originates from the clouds above and descends vertically — this is physically implausible as a natural phenomenon (waterfalls require a cliff or elevated terrain source, not clouds). More critically, the prompt specifies 'normal gravity and physically plausible water movement' in a 'realistic landscape.' A water column descending from clouds with no visible source terrain directly violates physical plausibility. The water movement itself appears downward, but its origin from clouds with no physical source structure makes it a gravity/physics violation. The prompt explicitly requires physically plausible behavior, which this image contradicts.",,outputs\raw\claude-sonnet-4-6\permission_aware\C2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly depicts a massive column of water falling downward from the clouds into a lake, which might initially seem like a downward waterfall. However, the water originates from the clouds above and descends vertically — this is physically implausible as a natural phenomenon (waterfalls require a cliff or elevated terrain source, not clouds). More critically, the prompt specifies 'normal gravity and physically plausible water movement' in a 'realistic landscape.' A water column descending from clouds with no visible source terrain directly violates physical plausibility. The water movement itself appears downward, but its origin from clouds with no physical source structure makes it a gravity/physics violation. The prompt explicitly requires physically plausible behavior, which this image contradicts."",
+  ""confidence"": ""high""
+}
+```"
+43,C3_A,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The image clearly shows raindrops appearing to fall in suspended, unusually large, and stylized vertical streams — with some visual suggestion of upward or reversed flow given the crystalline, slow-motion appearance of the droplets. The prompt explicitly calls for 'unusual water movement and dreamlike atmosphere,' which directly permits physics-defying or stylized water behavior. The reversed or suspended gravity effect on the water droplets is well within the semantic scope of the prompt and serves its poetic, surreal intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\C3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows raindrops appearing to fall in suspended, unusually large, and stylized vertical streams — with some visual suggestion of upward or reversed flow given the crystalline, slow-motion appearance of the droplets. The prompt explicitly calls for 'unusual water movement and dreamlike atmosphere,' which directly permits physics-defying or stylized water behavior. The reversed or suspended gravity effect on the water droplets is well within the semantic scope of the prompt and serves its poetic, surreal intent."",
+  ""confidence"": ""high""
+}
+```"
+44,C3_P,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires a dream world with reversed gravity and upward-flowing water. The image clearly depicts raindrops/water droplets appearing to fall upward (or suspended in upward streaks), which directly fulfills the prompt's requirement for inverted physical laws. The visual presentation of water droplets moving upward is the intended and required anomaly, not a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\C3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires a dream world with reversed gravity and upward-flowing water. The image clearly depicts raindrops/water droplets appearing to fall upward (or suspended in upward streaks), which directly fulfills the prompt's requirement for inverted physical laws. The visual presentation of water droplets moving upward is the intended and required anomaly, not a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+45,C3_V,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image clearly shows rain droplets suspended in mid-air in elongated vertical strings, with many droplets appearing to travel upward or remain stationary rather than falling downward. The rain does not follow natural downward gravity as required by the prompt. The droplets are arranged in ways inconsistent with physically plausible rainfall — they appear frozen, rising, or suspended, directly violating the prompt's requirement for normal gravity and physically plausible downward water movement.",,outputs\raw\claude-sonnet-4-6\permission_aware\C3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly shows rain droplets suspended in mid-air in elongated vertical strings, with many droplets appearing to travel upward or remain stationary rather than falling downward. The rain does not follow natural downward gravity as required by the prompt. The droplets are arranged in ways inconsistent with physically plausible rainfall — they appear frozen, rising, or suspended, directly violating the prompt's requirement for normal gravity and physically plausible downward water movement."",
+  ""confidence"": ""high""
+}
+```"
+46,C4_A,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The image shows massive waves curling upward and inward in a physically impossible tunnel-like formation, with water appearing to defy gravity by rising and curving overhead. The prompt explicitly calls for 'unusual water movement and dreamlike atmosphere,' which directly permits and even encourages physics-defying water behavior. The reversed or upward-flowing water is a fulfillment of the prompt's requirements rather than an unintended deviation.",,outputs\raw\claude-sonnet-4-6\permission_aware\C4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image shows massive waves curling upward and inward in a physically impossible tunnel-like formation, with water appearing to defy gravity by rising and curving overhead. The prompt explicitly calls for 'unusual water movement and dreamlike atmosphere,' which directly permits and even encourages physics-defying water behavior. The reversed or upward-flowing water is a fulfillment of the prompt's requirements rather than an unintended deviation."",
+  ""confidence"": ""high""
+}
+```"
+47,C4_P,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires a dream world where water flows upward and physical laws are inverted. The image depicts massive ocean waves curling dramatically upward and forming arch-like structures that defy normal gravity, with water visibly rising and swirling in ways inconsistent with standard physics. This directly fulfills the prompt's requirement for upward-flowing water and reversed gravity. The element is not a hallucination — it is intentionally generated content matching the prompt's core specification.",,outputs\raw\claude-sonnet-4-6\permission_aware\C4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires a dream world where water flows upward and physical laws are inverted. The image depicts massive ocean waves curling dramatically upward and forming arch-like structures that defy normal gravity, with water visibly rising and swirling in ways inconsistent with standard physics. This directly fulfills the prompt's requirement for upward-flowing water and reversed gravity. The element is not a hallucination — it is intentionally generated content matching the prompt's core specification."",
+  ""confidence"": ""high""
+}
+```"
+48,C4_V,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image shows massive ocean waves curling upward and arching overhead in a physically impossible tunnel/portal formation, with water clearly defying gravity by rising and curling in ways inconsistent with normal gravitational physics. The prompt explicitly requires 'normal gravity and physically plausible water movement' and specifies water should 'move naturally downward.' The giant wave walls curling overhead and the water spout rising vertically in the background directly contradict these requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\C4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image shows massive ocean waves curling upward and arching overhead in a physically impossible tunnel/portal formation, with water clearly defying gravity by rising and curling in ways inconsistent with normal gravitational physics. The prompt explicitly requires 'normal gravity and physically plausible water movement' and specifies water should 'move naturally downward.' The giant wave walls curling overhead and the water spout rising vertically in the background directly contradict these requirements."",
+  ""confidence"": ""high""
+}
+```"
+49,C5_A,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The image clearly shows water spiraling dramatically upward from the fountain basin into the sky, defying normal gravity. The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere,' which directly permits and even encourages physics-defying water behavior. The upward-flowing water vortex is a faithful and creative interpretation of these prompt requirements, not a deviation from them.",,outputs\raw\claude-sonnet-4-6\permission_aware\C5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows water spiraling dramatically upward from the fountain basin into the sky, defying normal gravity. The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere,' which directly permits and even encourages physics-defying water behavior. The upward-flowing water vortex is a faithful and creative interpretation of these prompt requirements, not a deviation from them."",
+  ""confidence"": ""high""
+}
+```"
+50,C5_P,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires reversed gravity and upward-flowing water as central elements of the dream world. The image clearly depicts a dramatic swirling column of water rising upward from the fountain into the sky, which directly fulfills the prompt's requirement for inverted physical laws. This is not a hallucination but rather a successful rendering of the intended surreal physics.",,outputs\raw\claude-sonnet-4-6\permission_aware\C5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires reversed gravity and upward-flowing water as central elements of the dream world. The image clearly depicts a dramatic swirling column of water rising upward from the fountain into the sky, which directly fulfills the prompt's requirement for inverted physical laws. This is not a hallucination but rather a successful rendering of the intended surreal physics."",
+  ""confidence"": ""high""
+}
+```"
+51,C5_V,,A3,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image shows a dramatic spiral/vortex of water rising upward from the fountain into the sky, clearly defying gravity. The prompt explicitly requires 'normal gravity and physically plausible water movement' with water moving 'naturally downward.' The upward-spiraling water column extending high into the clouds directly contradicts these requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\C5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image shows a dramatic spiral/vortex of water rising upward from the fountain into the sky, clearly defying gravity. The prompt explicitly requires 'normal gravity and physically plausible water movement' with water moving 'naturally downward.' The upward-spiraling water column extending high into the clouds directly contradicts these requirements."",
+  ""confidence"": ""high""
+}
+```"
+52,C6,,A3,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The image shows a natural mountain valley with a rocky river, green meadows, trees, and snow-capped peaks under a partly cloudy sky. All physical elements behave consistently with real-world physics: water flows downstream over rocks with realistic turbulence and white water, gravity appears correctly applied, lighting and shadows are consistent, and the landscape elements are naturalistic. No anomalies are present.",,outputs\raw\claude-sonnet-4-6\permission_aware\C6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The image shows a natural mountain valley with a rocky river, green meadows, trees, and snow-capped peaks under a partly cloudy sky. All physical elements behave consistently with real-world physics: water flows downstream over rocks with realistic turbulence and white water, gravity appears correctly applied, lighting and shadows are consistent, and the landscape elements are naturalistic. No anomalies are present."",
+  ""confidence"": ""high""
+}
+```"
+53,C7,,A3,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample with no target anomaly specified. The image depicts a realistic waterfall with physically plausible water flow, mist, rock faces, evergreen trees, and a pool below. All physics appear consistent and normal. There is nothing to flag as a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\C7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample with no target anomaly specified. The image depicts a realistic waterfall with physically plausible water flow, mist, rock faces, evergreen trees, and a pool below. All physics appear consistent and normal. There is nothing to flag as a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+54,C8,,A3,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample with no target anomaly specified. The image depicts a rainy urban street scene with pedestrians carrying umbrellas, wet reflective pavement, cars, and classical architecture. All physics appear consistent and normal: rain falls downward, umbrella shapes are correct, reflections on wet pavement follow expected physics, lighting and shadows are appropriate, and no physically impossible elements are present.",,outputs\raw\claude-sonnet-4-6\permission_aware\C8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample with no target anomaly specified. The image depicts a rainy urban street scene with pedestrians carrying umbrellas, wet reflective pavement, cars, and classical architecture. All physics appear consistent and normal: rain falls downward, umbrella shapes are correct, reflections on wet pavement follow expected physics, lighting and shadows are appropriate, and no physically impossible elements are present."",
+  ""confidence"": ""high""
+}
+```"
+55,D1_A,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which semantically permits and even invites a human-chair fusion. The image depicts a sculpture where the human figure merges organically with a wooden chair, with the lower body transitioning into the chair's wooden material. This is a direct and creative interpretation of the prompt's instruction to form an 'unusual visual relationship' between a person and chair. The fusion is the intended artistic concept, not an unintended artifact.",,outputs\raw\claude-sonnet-4-6\permission_aware\D1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which semantically permits and even invites a human-chair fusion. The image depicts a sculpture where the human figure merges organically with a wooden chair, with the lower body transitioning into the chair's wooden material. This is a direct and creative interpretation of the prompt's instruction to form an 'unusual visual relationship' between a person and chair. The fusion is the intended artistic concept, not an unintended artifact."",
+  ""confidence"": ""high""
+}
+```"
+56,D1_P,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image depicts exactly this: the upper torso and head of a human figure seamlessly transitioning into a wooden chair structure, with the body and chair sharing continuous material and form. This is the intended artistic concept, not a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\D1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image depicts exactly this: the upper torso and head of a human figure seamlessly transitioning into a wooden chair structure, with the body and chair sharing continuous material and form. This is the intended artistic concept, not a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+57,D1_V,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image clearly shows a human-chair fusion where the upper body (head, shoulders, chest) appears realistic and human-like, while the lower body and arms seamlessly merge into wooden chair structure. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements, making it a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\D1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly shows a human-chair fusion where the upper body (head, shoulders, chest) appears realistic and human-like, while the lower body and arms seamlessly merge into wooden chair structure. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements, making it a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+58,D2_A,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'a person and chair forming an unusual visual relationship,' which directly requires and anticipates a fusion or blending between the human figure and the chair. The image delivers exactly this — the chair appears to organically merge with the person's body, sharing skin-like texture and anatomical contours. This is not a hallucination but a faithful and creative fulfillment of the prompt's intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\D2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'a person and chair forming an unusual visual relationship,' which directly requires and anticipates a fusion or blending between the human figure and the chair. The image delivers exactly this — the chair appears to organically merge with the person's body, sharing skin-like texture and anatomical contours. This is not a hallucination but a faithful and creative fulfillment of the prompt's intent."",
+  ""confidence"": ""high""
+}
+```"
+59,D2_P,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The human-chair fusion is explicitly required by the prompt, which calls for a 'surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image clearly depicts this: the chair's back, seat, and base adopt human anatomical forms (musculature, skin texture, limbs), blending seamlessly with the seated human figure. This is precisely what the prompt demands.",,outputs\raw\claude-sonnet-4-6\permission_aware\D2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The human-chair fusion is explicitly required by the prompt, which calls for a 'surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image clearly depicts this: the chair's back, seat, and base adopt human anatomical forms (musculature, skin texture, limbs), blending seamlessly with the seated human figure. This is precisely what the prompt demands."",
+  ""confidence"": ""high""
+}
+```"
+60,D2_V,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image clearly shows a human-chair fusion where the chair's structure appears to be made of or merged with human body parts (legs, torso, skin texture), blending seamlessly with the seated person. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\D2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly shows a human-chair fusion where the chair's structure appears to be made of or merged with human body parts (legs, torso, skin texture), blending seamlessly with the seated person. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements."",
+  ""confidence"": ""high""
+}
+```"
+61,D3_A,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which directly calls for a human-chair fusion or similarly unconventional integration. The sculpture depicted merges a female torso with the structural elements of an armchair — the arms of the figure become the armrests, and the body merges seamlessly with the chair frame. This is precisely the kind of unusual visual relationship the prompt demands, making the human-chair fusion a required element, not a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\D3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which directly calls for a human-chair fusion or similarly unconventional integration. The sculpture depicted merges a female torso with the structural elements of an armchair — the arms of the figure become the armrests, and the body merges seamlessly with the chair frame. This is precisely the kind of unusual visual relationship the prompt demands, making the human-chair fusion a required element, not a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+62,D3_P,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image depicts exactly this: a bronze-toned sculpture where a headless female torso seamlessly integrates with the back, arms, and seat of a chair, forming a unified artistic object. This is a faithful and direct fulfillment of the prompt's requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\D3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image depicts exactly this: a bronze-toned sculpture where a headless female torso seamlessly integrates with the back, arms, and seat of a chair, forming a unified artistic object. This is a faithful and direct fulfillment of the prompt's requirements."",
+  ""confidence"": ""high""
+}
+```"
+63,D3_V,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image shows a sculptural bronze artwork where a human torso is fused with a chair — the arms of the figure form the armrests, and the body merges seamlessly with the chair structure. The prompt explicitly requires 'a person and a chair are clearly separate objects, with normal body posture and normal furniture structure.' This fusion directly contradicts that requirement. The scene is also a gallery setting rather than an office or interior scene as specified.",,outputs\raw\claude-sonnet-4-6\permission_aware\D3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image shows a sculptural bronze artwork where a human torso is fused with a chair — the arms of the figure form the armrests, and the body merges seamlessly with the chair structure. The prompt explicitly requires 'a person and a chair are clearly separate objects, with normal body posture and normal furniture structure.' This fusion directly contradicts that requirement. The scene is also a gallery setting rather than an office or interior scene as specified."",
+  ""confidence"": ""high""
+}
+```"
+64,D4_A,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which directly calls for an abnormal or surreal connection between the two. The human-chair fusion depicted — where the man's body and the armchair appear to merge texturally and structurally — is a natural and faithful interpretation of that instruction. The fusion is not incidental or accidental; it is the central artistic concept the prompt demands.",,outputs\raw\claude-sonnet-4-6\permission_aware\D4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which directly calls for an abnormal or surreal connection between the two. The human-chair fusion depicted — where the man's body and the armchair appear to merge texturally and structurally — is a natural and faithful interpretation of that instruction. The fusion is not incidental or accidental; it is the central artistic concept the prompt demands."",
+  ""confidence"": ""high""
+}
+```"
+65,D4_P,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image clearly depicts this: the man's skin and body texture seamlessly blend with the chair's upholstery and wooden frame, the legs of the chair appear to grow from or merge with the human figure's lower body, and the overall composition presents a unified hybrid form. This is precisely what the prompt demands.",,outputs\raw\claude-sonnet-4-6\permission_aware\D4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image clearly depicts this: the man's skin and body texture seamlessly blend with the chair's upholstery and wooden frame, the legs of the chair appear to grow from or merge with the human figure's lower body, and the overall composition presents a unified hybrid form. This is precisely what the prompt demands."",
+  ""confidence"": ""high""
+}
+```"
+66,D4_V,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image clearly shows a human-chair fusion where the person's body and the armchair are merged into a single entity — the skin texture blends seamlessly into the chair's upholstery, and the chair's legs appear to morph from the person's legs. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\D4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly shows a human-chair fusion where the person's body and the armchair are merged into a single entity — the skin texture blends seamlessly into the chair's upholstery, and the chair's legs appear to morph from the person's legs. The prompt explicitly requires the person and chair to be 'clearly separate objects' with 'normal body posture and normal furniture structure.' This fusion directly contradicts those requirements."",
+  ""confidence"": ""high""
+}
+```"
+67,D5_A,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which directly calls for some form of fusion or unconventional integration. The image depicts a marble/stone sculpture where the human figure and chair are carved from the same material as a unified artwork, blurring the boundary between figure and furniture. This human-chair fusion is not only permitted but is the intended realization of the prompt's requirement for an 'unusual visual relationship.' It is a deliberate artistic choice consistent with the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\D5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'a person and chair forming an unusual visual relationship,' which directly calls for some form of fusion or unconventional integration. The image depicts a marble/stone sculpture where the human figure and chair are carved from the same material as a unified artwork, blurring the boundary between figure and furniture. This human-chair fusion is not only permitted but is the intended realization of the prompt's requirement for an 'unusual visual relationship.' It is a deliberate artistic choice consistent with the prompt."",
+  ""confidence"": ""high""
+}
+```"
+68,D5_P,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image delivers exactly this: a polished marble-like sculpture where a stylized, faceless female figure and an armchair are carved from the same continuous material, seamlessly blending into one unified object. This is faithful execution of the prompt, not a hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\D5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The human-chair fusion is explicitly required by the prompt, which calls for 'a surreal human-chair hybrid sculpture in which the human body and chair intentionally merge into a single artistic form.' The image delivers exactly this: a polished marble-like sculpture where a stylized, faceless female figure and an armchair are carved from the same continuous material, seamlessly blending into one unified object. This is faithful execution of the prompt, not a hallucination."",
+  ""confidence"": ""high""
+}
+```"
+69,D5_V,,A4,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image shows a sculpture where the human figure and the chair are carved from the same continuous material (marble/stone), making them a single fused object. The prompt explicitly requires a realistic office or interior scene where a person and chair are 'clearly separate objects' with 'normal body posture and normal furniture structure.' This image violates that requirement on multiple levels: (1) the figure and chair are materially fused into one unified sculpture, (2) the scene is not a realistic office/interior but rather an artistic sculptural rendering, and (3) the body lacks facial features and has stylized proportions inconsistent with 'normal body posture' in a realistic context.",,outputs\raw\claude-sonnet-4-6\permission_aware\D5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image shows a sculpture where the human figure and the chair are carved from the same continuous material (marble/stone), making them a single fused object. The prompt explicitly requires a realistic office or interior scene where a person and chair are 'clearly separate objects' with 'normal body posture and normal furniture structure.' This image violates that requirement on multiple levels: (1) the figure and chair are materially fused into one unified sculpture, (2) the scene is not a realistic office/interior but rather an artistic sculptural rendering, and (3) the body lacks facial features and has stylized proportions inconsistent with 'normal body posture' in a realistic context."",
+  ""confidence"": ""high""
+}
+```"
+70,D6,,A4,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample with no target anomaly specified. The image depicts a man sitting at a desk working on a computer in a typical office environment. All objects appear correctly rendered and properly separated — the chair, desk, monitor, lamp, plant, and person all maintain distinct boundaries with no object fusion artifacts visible.",,outputs\raw\claude-sonnet-4-6\permission_aware\D6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample with no target anomaly specified. The image depicts a man sitting at a desk working on a computer in a typical office environment. All objects appear correctly rendered and properly separated — the chair, desk, monitor, lamp, plant, and person all maintain distinct boundaries with no object fusion artifacts visible."",
+  ""confidence"": ""high""
+}
+```"
+71,D7,,A4,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"The prompt specifies a no-issue control with no target anomaly. The image shows a straightforward wooden Windsor-style chair placed in an art gallery setting. There is no object fusion or unusual visual merging of objects present. The chair is rendered normally with clean boundaries, and the background artworks and gallery environment appear standard. No anomaly is detected.",,outputs\raw\claude-sonnet-4-6\permission_aware\D7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt specifies a no-issue control with no target anomaly. The image shows a straightforward wooden Windsor-style chair placed in an art gallery setting. There is no object fusion or unusual visual merging of objects present. The chair is rendered normally with clean boundaries, and the background artworks and gallery environment appear standard. No anomaly is detected."",
+  ""confidence"": ""high""
+}
+```"
+72,D8,,A4,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample with no target anomaly specified. The image depicts a man sitting in a chair holding a mug in a well-decorated living room. All objects in the scene are clearly distinct and properly rendered with no object fusion artifacts visible. Boundaries between objects (person, chair, table, lamp, plant, rug) are clean and well-defined.",,outputs\raw\claude-sonnet-4-6\permission_aware\D8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample with no target anomaly specified. The image depicts a man sitting in a chair holding a mug in a well-decorated living room. All objects in the scene are clearly distinct and properly rendered with no object fusion artifacts visible. Boundaries between objects (person, chair, table, lamp, plant, rug) are clean and well-defined."",
+  ""confidence"": ""high""
+}
+```"
+73,E1_A,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'repeated cup-like shapes and visual rhythm,' which directly requires duplication and excessive repetition of cups. The image faithfully renders dozens of identical white cups arranged in a grid pattern on a marble pedestal table, fulfilling the prompt's stated requirement for repetition and visual rhythm. This is not a hallucination but a correct interpretation of the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\E1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'repeated cup-like shapes and visual rhythm,' which directly requires duplication and excessive repetition of cups. The image faithfully renders dozens of identical white cups arranged in a grid pattern on a marble pedestal table, fulfilling the prompt's stated requirement for repetition and visual rhythm. This is not a hallucination but a correct interpretation of the prompt."",
+  ""confidence"": ""high""
+}
+```"
+74,E1_P,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect' in a 'dreamlike tabletop scene.' The image shows exactly this: dozens of identical white cups arranged densely on a marble pedestal table. The excessive repetition is not an anomaly but the core intended visual concept mandated by the prompt.,,outputs\raw\claude-sonnet-4-6\permission_aware\E1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect' in a 'dreamlike tabletop scene.' The image shows exactly this: dozens of identical white cups arranged densely on a marble pedestal table. The excessive repetition is not an anomaly but the core intended visual concept mandated by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+75,E1_V,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires exactly three white cups and no additional cups. The image shows a large marble pedestal table covered with dozens (likely 50+) of identical white cups arranged in a grid pattern. This directly contradicts the specified count of exactly three cups, making the excessive repetition/duplication a clear violation of the prompt's explicit numerical constraint.",,outputs\raw\claude-sonnet-4-6\permission_aware\E1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires exactly three white cups and no additional cups. The image shows a large marble pedestal table covered with dozens (likely 50+) of identical white cups arranged in a grid pattern. This directly contradicts the specified count of exactly three cups, making the excessive repetition/duplication a clear violation of the prompt's explicit numerical constraint."",
+  ""confidence"": ""high""
+}
+```"
+76,E2_A,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'repeated cup-like shapes and visual rhythm,' which directly requires the duplication and excessive repetition of cups visible in the image. The large array of identical ceramic mugs arranged across the table is a faithful and intentional fulfillment of the prompt's requirements, not an anomaly or hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\E2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'repeated cup-like shapes and visual rhythm,' which directly requires the duplication and excessive repetition of cups visible in the image. The large array of identical ceramic mugs arranged across the table is a faithful and intentional fulfillment of the prompt's requirements, not an anomaly or hallucination."",
+  ""confidence"": ""high""
+}
+```"
+77,E2_P,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect.' The image clearly shows a large number of identical ceramic mugs arranged in a grid pattern across a wooden table, directly fulfilling this requirement. The excessive repetition is not a hallucination but rather the core visual element demanded by the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\E2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect.' The image clearly shows a large number of identical ceramic mugs arranged in a grid pattern across a wooden table, directly fulfilling this requirement. The excessive repetition is not a hallucination but rather the core visual element demanded by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+78,E2_V,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires exactly three white cups and no additional cups. The image contains dozens of identical ceramic mugs arranged in a grid pattern across a wooden table, far exceeding the specified count of three. This directly contradicts the prompt's explicit numerical constraint ('exactly three') and its prohibition of additional cups ('no additional cups').",,outputs\raw\claude-sonnet-4-6\permission_aware\E2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires exactly three white cups and no additional cups. The image contains dozens of identical ceramic mugs arranged in a grid pattern across a wooden table, far exceeding the specified count of three. This directly contradicts the prompt's explicit numerical constraint ('exactly three') and its prohibition of additional cups ('no additional cups')."",
+  ""confidence"": ""high""
+}
+```"
+79,E3_A,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes and visual rhythm,' which directly calls for the duplication and excessive repetition of cups visible throughout the image. The hundreds of white cups covering tables, floors, shelves, and the bar counter are a direct fulfillment of the prompt's requirement for repetition and visual rhythm. This is not a hallucination but an on-prompt generation.",,outputs\raw\claude-sonnet-4-6\permission_aware\E3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes and visual rhythm,' which directly calls for the duplication and excessive repetition of cups visible throughout the image. The hundreds of white cups covering tables, floors, shelves, and the bar counter are a direct fulfillment of the prompt's requirement for repetition and visual rhythm. This is not a hallucination but an on-prompt generation."",
+  ""confidence"": ""high""
+}
+```"
+80,E3_P,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect.' The image clearly fulfills this requirement, showing hundreds of white cups covering tables, floors, shelves, and counters throughout the café space. The excessive repetition is not a generation artifact but a direct match to the stated creative intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\E3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect.' The image clearly fulfills this requirement, showing hundreds of white cups covering tables, floors, shelves, and counters throughout the café space. The excessive repetition is not a generation artifact but a direct match to the stated creative intent."",
+  ""confidence"": ""high""
+}
+```"
+81,E3_V,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires exactly three white cups and no additional cups. The image shows hundreds of white cups covering every surface — tables, floors, bar counters, and shelves — which directly and severely violates the count constraint ('exactly three') and the exclusion constraint ('no additional cups'). This is a clear case of excessive repetition contradicting explicit prompt instructions.",,outputs\raw\claude-sonnet-4-6\permission_aware\E3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires exactly three white cups and no additional cups. The image shows hundreds of white cups covering every surface — tables, floors, bar counters, and shelves — which directly and severely violates the count constraint ('exactly three') and the exclusion constraint ('no additional cups'). This is a clear case of excessive repetition contradicting explicit prompt instructions."",
+  ""confidence"": ""high""
+}
+```"
+82,E4_A,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes and visual rhythm,' which directly requires duplication and excessive repetition of cups. The image shows dozens of ceramic cups both on a surface and floating in the air, fulfilling the prompt's stated requirements for repetition and visual rhythm. This is not a hallucination but a faithful execution of the prompt's core directive.",,outputs\raw\claude-sonnet-4-6\permission_aware\E4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes and visual rhythm,' which directly requires duplication and excessive repetition of cups. The image shows dozens of ceramic cups both on a surface and floating in the air, fulfilling the prompt's stated requirements for repetition and visual rhythm. This is not a hallucination but a faithful execution of the prompt's core directive."",
+  ""confidence"": ""high""
+}
+```"
+83,E4_P,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect' in a 'dreamlike tabletop scene.' The image clearly delivers this — dozens of identical ceramic cups are shown both resting on a surface and floating/suspended in mid-air, creating a surreal, dreamlike atmosphere. The excessive repetition is exactly what was requested, not an anomaly.",,outputs\raw\claude-sonnet-4-6\permission_aware\E4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires 'repeated duplicated cups' as an 'intentional surreal repetition effect' in a 'dreamlike tabletop scene.' The image clearly delivers this — dozens of identical ceramic cups are shown both resting on a surface and floating/suspended in mid-air, creating a surreal, dreamlike atmosphere. The excessive repetition is exactly what was requested, not an anomaly."",
+  ""confidence"": ""high""
+}
+```"
+84,E4_V,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,The prompt explicitly requires exactly three white cups and no additional cups. The image contains dozens of ceramic cups — both on the surface and floating in the air — far exceeding the specified count of three. This directly contradicts the prompt's explicit quantity constraint ('exactly three') and its exclusion clause ('no additional cups').,,outputs\raw\claude-sonnet-4-6\permission_aware\E4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires exactly three white cups and no additional cups. The image contains dozens of ceramic cups — both on the surface and floating in the air — far exceeding the specified count of three. This directly contradicts the prompt's explicit quantity constraint ('exactly three') and its exclusion clause ('no additional cups')."",
+  ""confidence"": ""high""
+}
+```"
+85,E5_A,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'repeated cup-like shapes and visual rhythm,' making the extensive repetition of identical cups a direct fulfillment of the prompt's requirements rather than a hallucination. The image faithfully renders a grid-like array of uniformly styled ceramic mugs arranged in a rhythmic pattern on a neutral background, which is precisely what was requested.",,outputs\raw\claude-sonnet-4-6\permission_aware\E5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'repeated cup-like shapes and visual rhythm,' making the extensive repetition of identical cups a direct fulfillment of the prompt's requirements rather than a hallucination. The image faithfully renders a grid-like array of uniformly styled ceramic mugs arranged in a rhythmic pattern on a neutral background, which is precisely what was requested."",
+  ""confidence"": ""high""
+}
+```"
+86,E5_P,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires 'repeated duplicated cups' and describes 'the many copies of the cup' as 'an intentional surreal repetition effect.' The image shows dozens of identical cream/beige ceramic mugs arranged in a grid pattern on a matching surface, perfectly fulfilling the stated requirement. The repetition is not anomalous — it is the core visual concept demanded by the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\E5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires 'repeated duplicated cups' and describes 'the many copies of the cup' as 'an intentional surreal repetition effect.' The image shows dozens of identical cream/beige ceramic mugs arranged in a grid pattern on a matching surface, perfectly fulfilling the stated requirement. The repetition is not anomalous — it is the core visual concept demanded by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+87,E5_V,,A5,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires exactly three white cups and no additional cups. The image contains dozens of identical white ceramic mugs arranged in a repetitive grid pattern, directly contradicting the specified count of three. This is a clear violation of the quantitative constraint in the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\E5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires exactly three white cups and no additional cups. The image contains dozens of identical white ceramic mugs arranged in a repetitive grid pattern, directly contradicting the specified count of three. This is a clear violation of the quantitative constraint in the prompt."",
+  ""confidence"": ""high""
+}
+```"
+88,E6,,A5,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample with no target anomaly specified. The image shows three white mugs on a wooden surface containing different beverages (black coffee, coffee with milk/cream, and tea), which is a normal and coherent scene. No count/repetition anomalies are present.",,outputs\raw\claude-sonnet-4-6\permission_aware\E6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample with no target anomaly specified. The image shows three white mugs on a wooden surface containing different beverages (black coffee, coffee with milk/cream, and tea), which is a normal and coherent scene. No count/repetition anomalies are present."",
+  ""confidence"": ""high""
+}
+```"
+89,E7,,A5,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample with no target anomaly specified. The image shows three ceramic cups/mugs on a wooden table containing what appear to be a matcha latte, black coffee, and a coffee latte with latte art. There are no count/repetition anomalies present — the objects appear normal and consistent. Nothing unusual requires flagging.",,outputs\raw\claude-sonnet-4-6\permission_aware\E7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample with no target anomaly specified. The image shows three ceramic cups/mugs on a wooden table containing what appear to be a matcha latte, black coffee, and a coffee latte with latte art. There are no count/repetition anomalies present — the objects appear normal and consistent. Nothing unusual requires flagging."",
+  ""confidence"": ""high""
+}
+```"
+90,E8,,A5,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The image shows three ceramic mugs/cups in different colors (dark gray, beige/cream, and white), which is a straightforward and coherent composition. There are no count or repetition anomalies present — the three distinct vessels are clearly differentiated and intentionally varied. Nothing in the image violates or contradicts the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\E8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The image shows three ceramic mugs/cups in different colors (dark gray, beige/cream, and white), which is a straightforward and coherent composition. There are no count or repetition anomalies present — the three distinct vessels are clearly differentiated and intentionally varied. Nothing in the image violates or contradicts the prompt."",
+  ""confidence"": ""high""
+}
+```"
+91,F1_A,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'a strange interior scene with an unusual spatial composition.' The impossible room geometry — featuring staircases that lead in contradictory directions, multi-level platforms with ambiguous spatial relationships, curved walls that defy standard architectural logic, and an overall Escher-like layout — directly fulfills both the 'strange' and 'unusual spatial composition' requirements. This is not a hallucination; it is the intended and required content of the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\F1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'a strange interior scene with an unusual spatial composition.' The impossible room geometry — featuring staircases that lead in contradictory directions, multi-level platforms with ambiguous spatial relationships, curved walls that defy standard architectural logic, and an overall Escher-like layout — directly fulfills both the 'strange' and 'unusual spatial composition' requirements. This is not a hallucination; it is the intended and required content of the prompt."",
+  ""confidence"": ""high""
+}
+```"
+92,F1_P,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires a non-Euclidean impossible room with paradoxical geometry. The image delivers multiple staircases going in conflicting directions, curved organic walls that violate standard architectural logic, overlapping spatial levels that defy normal depth relationships, and a lower sunken area whose spatial relationship to the upper levels is ambiguous and contradictory. These are all direct fulfillments of the required impossible geometry, not hallucinations.",,outputs\raw\claude-sonnet-4-6\permission_aware\F1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires a non-Euclidean impossible room with paradoxical geometry. The image delivers multiple staircases going in conflicting directions, curved organic walls that violate standard architectural logic, overlapping spatial levels that defy normal depth relationships, and a lower sunken area whose spatial relationship to the upper levels is ambiguous and contradictory. These are all direct fulfillments of the required impossible geometry, not hallucinations."",
+  ""confidence"": ""high""
+}
+```"
+93,F1_V,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image contains multiple elements of impossible geometry that directly contradict the prompt's requirements. The staircase on the upper left descends from the ceiling/upper area in a physically implausible way, the curved walls create non-Euclidean spatial transitions, staircases lead to destinations that are spatially inconsistent with the overall layout, and the floor-wall transitions are organic/curved rather than coherent and straight. The prompt explicitly required 'physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry,' all of which are violated.",,outputs\raw\claude-sonnet-4-6\permission_aware\F1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image contains multiple elements of impossible geometry that directly contradict the prompt's requirements. The staircase on the upper left descends from the ceiling/upper area in a physically implausible way, the curved walls create non-Euclidean spatial transitions, staircases lead to destinations that are spatially inconsistent with the overall layout, and the floor-wall transitions are organic/curved rather than coherent and straight. The prompt explicitly required 'physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry,' all of which are violated."",
+  ""confidence"": ""high""
+}
+```"
+94,F2_A,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The image contains impossible geometry — stairs appear on multiple surfaces including the ceiling and floor simultaneously, the conversation pit seems to descend into an impossible lower space visible beneath the floor, and staircases lead in contradictory directions. However, the prompt explicitly calls for 'a strange interior scene with an unusual spatial composition,' which directly permits and even invites impossible or surreal geometry as a valid interpretation of 'unusual spatial composition.' The impossible room geometry is a reasonable and coherent fulfillment of the prompt's intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\F2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image contains impossible geometry — stairs appear on multiple surfaces including the ceiling and floor simultaneously, the conversation pit seems to descend into an impossible lower space visible beneath the floor, and staircases lead in contradictory directions. However, the prompt explicitly calls for 'a strange interior scene with an unusual spatial composition,' which directly permits and even invites impossible or surreal geometry as a valid interpretation of 'unusual spatial composition.' The impossible room geometry is a reasonable and coherent fulfillment of the prompt's intent."",
+  ""confidence"": ""high""
+}
+```"
+95,F2_P,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The image displays multiple instances of impossible geometry that are explicitly required by the prompt: staircases appear to simultaneously ascend and descend in contradictory directions, the living area sits on a raised platform while steps simultaneously descend below floor level creating an Escher-like paradox, stairs are visible both above on the ceiling plane and below through the floor, and spatial transitions through doorways lead to rooms that cannot logically connect given the visible architecture. These non-Euclidean spatial violations are precisely what the prompt demands — a paradoxical impossible room where normal spatial rules break down.",,outputs\raw\claude-sonnet-4-6\permission_aware\F2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image displays multiple instances of impossible geometry that are explicitly required by the prompt: staircases appear to simultaneously ascend and descend in contradictory directions, the living area sits on a raised platform while steps simultaneously descend below floor level creating an Escher-like paradox, stairs are visible both above on the ceiling plane and below through the floor, and spatial transitions through doorways lead to rooms that cannot logically connect given the visible architecture. These non-Euclidean spatial violations are precisely what the prompt demands — a paradoxical impossible room where normal spatial rules break down."",
+  ""confidence"": ""high""
+}
+```"
+96,F2_V,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image contains multiple instances of impossible geometry that directly violate the prompt's requirements for physically possible architecture and no impossible geometry. The living area appears to be simultaneously elevated above the floor level while also having steps descending below the floor, creating an Escher-like paradox. The staircases on both the left and right sides of the room appear to lead in contradictory directions simultaneously — the left staircase descends from ceiling level without a logical connection to the floor, and the right staircase similarly defies coherent spatial logic. The floor transitions around the sunken/raised living platform are geometrically contradictory, with steps appearing to go both up and down from the same platform in ways that cannot coexist in physical space. The prompt explicitly required 'physically possible architecture,' 'coherent floor-wall transitions,' and 'no impossible geometry,' all of which are violated.",,outputs\raw\claude-sonnet-4-6\permission_aware\F2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image contains multiple instances of impossible geometry that directly violate the prompt's requirements for physically possible architecture and no impossible geometry. The living area appears to be simultaneously elevated above the floor level while also having steps descending below the floor, creating an Escher-like paradox. The staircases on both the left and right sides of the room appear to lead in contradictory directions simultaneously — the left staircase descends from ceiling level without a logical connection to the floor, and the right staircase similarly defies coherent spatial logic. The floor transitions around the sunken/raised living platform are geometrically contradictory, with steps appearing to go both up and down from the same platform in ways that cannot coexist in physical space. The prompt explicitly required 'physically possible architecture,' 'coherent floor-wall transitions,' and 'no impossible geometry,' all of which are violated."",
+  ""confidence"": ""high""
+}
+```"
+97,F3_A,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition,' which semantically invites and permits impossible or non-Euclidean geometry. The image displays stairways that loop back on themselves, a staircase on the ceiling, and curved corridors that defy physical spatial logic — all of which directly fulfill the 'strange' and 'unusual spatial composition' requirements. This is not a hallucination but rather a successful rendering of the prompt's intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\F3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'strange interior scene with an unusual spatial composition,' which semantically invites and permits impossible or non-Euclidean geometry. The image displays stairways that loop back on themselves, a staircase on the ceiling, and curved corridors that defy physical spatial logic — all of which directly fulfill the 'strange' and 'unusual spatial composition' requirements. This is not a hallucination but rather a successful rendering of the prompt's intent."",
+  ""confidence"": ""high""
+}
+```"
+98,F3_P,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The image depicts impossible room geometry explicitly as required by the prompt. Staircases curve and flow in physically impossible ways, a staircase appears on the ceiling, the carpet runner defies gravity by wrapping along impossible surfaces, and spatial depth recurses paradoxically. These are all direct fulfillments of the 'non-Euclidean impossible room' and 'paradoxical geometry' requirements stated in the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\F3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts impossible room geometry explicitly as required by the prompt. Staircases curve and flow in physically impossible ways, a staircase appears on the ceiling, the carpet runner defies gravity by wrapping along impossible surfaces, and spatial depth recurses paradoxically. These are all direct fulfillments of the 'non-Euclidean impossible room' and 'paradoxical geometry' requirements stated in the prompt."",
+  ""confidence"": ""high""
+}
+```"
+99,F3_V,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image contains extensive impossible geometry that directly contradicts the prompt's explicit requirements. The staircase curves and wraps in physically impossible ways, including a staircase appearing on the ceiling/upside-down at the top of the image. The curved carpet/pathway defies normal floor-wall transitions, walls curve and fold in non-Euclidean ways, and the overall spatial layout is impossible in physical reality. The prompt explicitly called for 'physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry' — all of which are violated.",,outputs\raw\claude-sonnet-4-6\permission_aware\F3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image contains extensive impossible geometry that directly contradicts the prompt's explicit requirements. The staircase curves and wraps in physically impossible ways, including a staircase appearing on the ceiling/upside-down at the top of the image. The curved carpet/pathway defies normal floor-wall transitions, walls curve and fold in non-Euclidean ways, and the overall spatial layout is impossible in physical reality. The prompt explicitly called for 'physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry' — all of which are violated."",
+  ""confidence"": ""high""
+}
+```"
+100,F4_A,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'a strange interior scene with an unusual spatial composition.' The impossible room geometry — featuring multiple conflicting perspective planes, rooms that fold into each other at physically impossible angles, staircases and bookshelves oriented in contradictory directions, and non-Euclidean spatial transitions — directly fulfills both 'strange' and 'unusual spatial composition.' This is not a hallucination; it is the intended output.",,outputs\raw\claude-sonnet-4-6\permission_aware\F4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'a strange interior scene with an unusual spatial composition.' The impossible room geometry — featuring multiple conflicting perspective planes, rooms that fold into each other at physically impossible angles, staircases and bookshelves oriented in contradictory directions, and non-Euclidean spatial transitions — directly fulfills both 'strange' and 'unusual spatial composition.' This is not a hallucination; it is the intended output."",
+  ""confidence"": ""high""
+}
+```"
+101,F4_P,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The image displays impossible room geometry with paradoxical spatial relationships — bookshelves and architectural elements appear at contradictory angles, rooms seem to fold into each other in ways that violate normal Euclidean geometry, and the perspective creates self-contradicting spatial logic. This is precisely what the prompt explicitly requires: a non-Euclidean impossible room with paradoxical architecture and broken spatial rules. The target anomaly is fully present and fully authorized by the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\F4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image displays impossible room geometry with paradoxical spatial relationships — bookshelves and architectural elements appear at contradictory angles, rooms seem to fold into each other in ways that violate normal Euclidean geometry, and the perspective creates self-contradicting spatial logic. This is precisely what the prompt explicitly requires: a non-Euclidean impossible room with paradoxical architecture and broken spatial rules. The target anomaly is fully present and fully authorized by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+102,F4_V,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image displays clearly impossible geometry: walls, floors, and bookshelves fold and intersect at physically impossible angles, creating an Escher-like non-Euclidean space. Multiple room sections appear to open into each other in ways that defy physical architecture — floors become walls, angles are inconsistent, and the spatial transitions are incoherent. The prompt explicitly requires 'normal perspective, physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry,' all of which are violated here.",,outputs\raw\claude-sonnet-4-6\permission_aware\F4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image displays clearly impossible geometry: walls, floors, and bookshelves fold and intersect at physically impossible angles, creating an Escher-like non-Euclidean space. Multiple room sections appear to open into each other in ways that defy physical architecture — floors become walls, angles are inconsistent, and the spatial transitions are incoherent. The prompt explicitly requires 'normal perspective, physically possible architecture, straight walls, coherent floor-wall transitions, and no impossible geometry,' all of which are violated here."",
+  ""confidence"": ""high""
+}
+```"
+103,F5_A,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'a strange interior scene with an unusual spatial composition,' which directly calls for non-standard, potentially impossible spatial arrangements. The image displays staircases going in conflicting directions, floors that open into lower levels in disorienting ways, and multi-level geometry that defies consistent physical logic — all consistent with 'impossible room geometry.' This is not a hallucination; it is a fulfillment of the prompt's requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\F5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'a strange interior scene with an unusual spatial composition,' which directly calls for non-standard, potentially impossible spatial arrangements. The image displays staircases going in conflicting directions, floors that open into lower levels in disorienting ways, and multi-level geometry that defies consistent physical logic — all consistent with 'impossible room geometry.' This is not a hallucination; it is a fulfillment of the prompt's requirements."",
+  ""confidence"": ""high""
+}
+```"
+104,F5_P,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requires a non-Euclidean impossible room with paradoxical geometry and spatial rule breakdowns. The image delivers this: staircases appear on the ceiling and floor simultaneously, multiple spatial levels intersect in physically impossible ways, rooms appear both above and below in contradictory orientations, and the architectural volumes do not resolve into a coherent real-world layout. These are exactly the impossible geometry elements demanded by the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\F5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requires a non-Euclidean impossible room with paradoxical geometry and spatial rule breakdowns. The image delivers this: staircases appear on the ceiling and floor simultaneously, multiple spatial levels intersect in physically impossible ways, rooms appear both above and below in contradictory orientations, and the architectural volumes do not resolve into a coherent real-world layout. These are exactly the impossible geometry elements demanded by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+105,F5_V,,A6,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The image exhibits multiple instances of impossible geometry that directly contradict the prompt's requirements. Staircases appear on the ceiling mirroring those on the floor, levels fold into each other in physically impossible ways (Escher-like spatial recursion), the floor opens into a lower level visible below in an incoherent spatial arrangement, and the overall multi-level layout defies consistent gravitational orientation. The prompt explicitly requires 'physically possible architecture,' 'coherent floor-wall transitions,' and 'no impossible geometry,' all of which are violated.",,outputs\raw\claude-sonnet-4-6\permission_aware\F5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image exhibits multiple instances of impossible geometry that directly contradict the prompt's requirements. Staircases appear on the ceiling mirroring those on the floor, levels fold into each other in physically impossible ways (Escher-like spatial recursion), the floor opens into a lower level visible below in an incoherent spatial arrangement, and the overall multi-level layout defies consistent gravitational orientation. The prompt explicitly requires 'physically possible architecture,' 'coherent floor-wall transitions,' and 'no impossible geometry,' all of which are violated."",
+  ""confidence"": ""high""
+}
+```"
+106,F6,,A6,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where the target anomaly is explicitly 'none'. The image depicts a well-composed living room with spatially consistent geometry. The furniture, walls, floor, ceiling, and window all align correctly with no impossible geometry, perspective errors, or spatial contradictions. All structural elements follow normal physical constraints.",,outputs\raw\claude-sonnet-4-6\permission_aware\F6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where the target anomaly is explicitly 'none'. The image depicts a well-composed living room with spatially consistent geometry. The furniture, walls, floor, ceiling, and window all align correctly with no impossible geometry, perspective errors, or spatial contradictions. All structural elements follow normal physical constraints."",
+  ""confidence"": ""high""
+}
+```"
+107,F7,,A6,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"The image depicts a well-rendered modern hallway with consistent perspective, properly converging parallel lines, correctly spaced doors, and normal spatial geometry throughout. No impossible geometry, spatial anomalies, or structural inconsistencies are present. The corridor follows standard linear perspective rules with receding lines meeting at a single vanishing point. This is a no-issue control sample and the image confirms that — no target anomaly is detected.",,outputs\raw\claude-sonnet-4-6\permission_aware\F7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a well-rendered modern hallway with consistent perspective, properly converging parallel lines, correctly spaced doors, and normal spatial geometry throughout. No impossible geometry, spatial anomalies, or structural inconsistencies are present. The corridor follows standard linear perspective rules with receding lines meeting at a single vanishing point. This is a no-issue control sample and the image confirms that — no target anomaly is detected."",
+  ""confidence"": ""high""
+}
+```"
+108,F8,,A6,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no spatial or impossible geometry anomaly is expected or present. The image depicts a well-composed home office with a wooden desk, leather chair, built-in bookshelves, and a window. All spatial relationships, perspective lines, furniture proportions, and architectural elements appear geometrically consistent and physically plausible. No impossible geometry, Escher-like contradictions, or spatial anomalies are detectable.",,outputs\raw\claude-sonnet-4-6\permission_aware\F8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no spatial or impossible geometry anomaly is expected or present. The image depicts a well-composed home office with a wooden desk, leather chair, built-in bookshelves, and a window. All spatial relationships, perspective lines, furniture proportions, and architectural elements appear geometrically consistent and physically plausible. No impossible geometry, Escher-like contradictions, or spatial anomalies are detectable."",
+  ""confidence"": ""high""
+}
+```"
+109,G1_A,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup towering over tiny people in an urban setting is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at an absurd scale relative to the surrounding pedestrians, precisely matching the prompt's intent. This is not a hallucination but a correct generation.",,outputs\raw\claude-sonnet-4-6\permission_aware\G1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup towering over tiny people in an urban setting is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at an absurd scale relative to the surrounding pedestrians, precisely matching the prompt's intent. This is not a hallucination but a correct generation."",
+  ""confidence"": ""high""
+}
+```"
+110,G1_P,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The giant teacup and tiny people are explicitly required by the prompt. The prompt specifically calls for 'tiny people and a giant teacup' with 'extreme scale distortion' described as 'intentional and central to the image.' The generated image faithfully reproduces this surreal scale contrast, with a massive ornate floral teacup dominating a city street while pedestrians appear miniaturized in comparison. This is exactly what was requested.",,outputs\raw\claude-sonnet-4-6\permission_aware\G1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The giant teacup and tiny people are explicitly required by the prompt. The prompt specifically calls for 'tiny people and a giant teacup' with 'extreme scale distortion' described as 'intentional and central to the image.' The generated image faithfully reproduces this surreal scale contrast, with a massive ornate floral teacup dominating a city street while pedestrians appear miniaturized in comparison. This is exactly what was requested."",
+  ""confidence"": ""high""
+}
+```"
+111,G1_V,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'physically normal scale' for all elements including the teacup. The image shows a massive teacup towering over buildings and tiny people, which directly contradicts the instruction for realistic, physically normal proportions. This is a clear scale violation, not an artistic choice permitted by the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\G1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'physically normal scale' for all elements including the teacup. The image shows a massive teacup towering over buildings and tiny people, which directly contradicts the instruction for realistic, physically normal proportions. This is a clear scale violation, not an artistic choice permitted by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+112,G2_A,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup with tiny people standing beside it is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at an exaggerated scale relative to the human figures, which is precisely what the prompt demands. This is not a hallucination but rather accurate prompt adherence.",,outputs\raw\claude-sonnet-4-6\permission_aware\G2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup with tiny people standing beside it is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at an exaggerated scale relative to the human figures, which is precisely what the prompt demands. This is not a hallucination but rather accurate prompt adherence."",
+  ""confidence"": ""high""
+}
+```"
+113,G2_P,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The giant teacup and tiny people are explicitly required by the prompt, which calls for a surreal scene with extreme scale distortion as the central and intentional visual element. The image faithfully delivers this: a massive ornate blue-and-white teacup dominates the frame while two human figures standing beside it appear tiny by comparison, set against an Italian lakeside café backdrop. This is not a hallucination but accurate fulfillment of the prompt's core requirement.",,outputs\raw\claude-sonnet-4-6\permission_aware\G2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The giant teacup and tiny people are explicitly required by the prompt, which calls for a surreal scene with extreme scale distortion as the central and intentional visual element. The image faithfully delivers this: a massive ornate blue-and-white teacup dominates the frame while two human figures standing beside it appear tiny by comparison, set against an Italian lakeside café backdrop. This is not a hallucination but accurate fulfillment of the prompt's core requirement."",
+  ""confidence"": ""high""
+}
+```"
+114,G2_V,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'physically normal scale' for all elements including people, furniture, and a teacup. The image shows a massively oversized teacup that dwarfs the two human figures standing beside it, directly contradicting the 'physically normal scale' requirement. The scale distortion is extreme and unambiguous.",,outputs\raw\claude-sonnet-4-6\permission_aware\G2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'physically normal scale' for all elements including people, furniture, and a teacup. The image shows a massively oversized teacup that dwarfs the two human figures standing beside it, directly contradicting the 'physically normal scale' requirement. The scale distortion is extreme and unambiguous."",
+  ""confidence"": ""high""
+}
+```"
+115,G3_A,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'unusual scale relationships between people and everyday objects' in a 'whimsical' context. A giant teacup with tiny people sitting on its rim is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at massive scale relative to the people, which is precisely what the prompt calls for. This is not a hallucination but a correct generation.",,outputs\raw\claude-sonnet-4-6\permission_aware\G3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual scale relationships between people and everyday objects' in a 'whimsical' context. A giant teacup with tiny people sitting on its rim is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at massive scale relative to the people, which is precisely what the prompt calls for. This is not a hallucination but a correct generation."",
+  ""confidence"": ""high""
+}
+```"
+116,G3_P,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The giant teacup with tiny people sitting on its rim is explicitly required by the prompt, which calls for 'tiny people and a giant teacup' with 'extreme scale distortion' described as 'intentional and central to the image.' The generated image faithfully delivers this exact surreal scale juxtaposition, with human figures appearing miniaturized relative to the massive ornate teacup placed in a park setting.",,outputs\raw\claude-sonnet-4-6\permission_aware\G3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The giant teacup with tiny people sitting on its rim is explicitly required by the prompt, which calls for 'tiny people and a giant teacup' with 'extreme scale distortion' described as 'intentional and central to the image.' The generated image faithfully delivers this exact surreal scale juxtaposition, with human figures appearing miniaturized relative to the massive ornate teacup placed in a park setting."",
+  ""confidence"": ""high""
+}
+```"
+117,G3_V,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'physically normal scale' for all elements including the teacup and people. The image shows a massive teacup acting as a landmark/monument in a park with people sitting on its rim, directly contradicting the requirement for normal, realistic proportions. This is a clear scale violation against the prompt's explicit constraint.",,outputs\raw\claude-sonnet-4-6\permission_aware\G3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'physically normal scale' for all elements including the teacup and people. The image shows a massive teacup acting as a landmark/monument in a park with people sitting on its rim, directly contradicting the requirement for normal, realistic proportions. This is a clear scale violation against the prompt's explicit constraint."",
+  ""confidence"": ""high""
+}
+```"
+118,G4_A,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup dwarfing pedestrians is a direct and faithful fulfillment of this requirement. The scale distortion is intentional and central to the prompt's intent, not an error or hallucination.",,outputs\raw\claude-sonnet-4-6\permission_aware\G4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup dwarfing pedestrians is a direct and faithful fulfillment of this requirement. The scale distortion is intentional and central to the prompt's intent, not an error or hallucination."",
+  ""confidence"": ""high""
+}
+```"
+119,G4_P,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The giant teacup and tiny people are explicitly required by the prompt, which calls for a surreal scene with extreme scale distortion as the central and intentional element. The image delivers exactly this: a massive teacup occupying a city street with pedestrians who appear tiny by comparison. This is not a hallucination but a faithful rendering of the prompt's core concept.",,outputs\raw\claude-sonnet-4-6\permission_aware\G4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The giant teacup and tiny people are explicitly required by the prompt, which calls for a surreal scene with extreme scale distortion as the central and intentional element. The image delivers exactly this: a massive teacup occupying a city street with pedestrians who appear tiny by comparison. This is not a hallucination but a faithful rendering of the prompt's core concept."",
+  ""confidence"": ""high""
+}
+```"
+120,G4_V,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'physically normal scale' for all elements including the teacup. The image shows a massive teacup occupying a city street, dwarfing the surrounding people and buildings. This directly contradicts the prompt's requirement for normal physical scale proportions between people and the teacup.",,outputs\raw\claude-sonnet-4-6\permission_aware\G4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'physically normal scale' for all elements including the teacup. The image shows a massive teacup occupying a city street, dwarfing the surrounding people and buildings. This directly contradicts the prompt's requirement for normal physical scale proportions between people and the teacup."",
+  ""confidence"": ""high""
+}
+```"
+121,G5_A,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup towering over tiny people in a city square is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at massive scale relative to the human figures, which is precisely what the prompt demands. This is not a hallucination but rather accurate prompt compliance.",,outputs\raw\claude-sonnet-4-6\permission_aware\G5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'unusual scale relationships between people and everyday objects' in a 'whimsical street scene.' A giant teacup towering over tiny people in a city square is a direct and faithful fulfillment of this requirement. The teacup is an everyday object rendered at massive scale relative to the human figures, which is precisely what the prompt demands. This is not a hallucination but rather accurate prompt compliance."",
+  ""confidence"": ""high""
+}
+```"
+122,G5_P,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The giant teacup and tiny people are explicitly required by the prompt, which calls for a surreal scene with extreme scale distortion described as intentional and central to the image. The generated image faithfully depicts a massive ornate teacup dominating a European city square filled with tiny human figures, directly fulfilling the prompt's requirements.",,outputs\raw\claude-sonnet-4-6\permission_aware\G5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The giant teacup and tiny people are explicitly required by the prompt, which calls for a surreal scene with extreme scale distortion described as intentional and central to the image. The generated image faithfully depicts a massive ornate teacup dominating a European city square filled with tiny human figures, directly fulfilling the prompt's requirements."",
+  ""confidence"": ""high""
+}
+```"
+123,G5_V,,A7,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires all elements — people, furniture, and a teacup — to be shown at 'physically normal scale.' The image depicts a massively oversized teacup dominating a city square, dwarfing surrounding people and buildings. This directly contradicts the prompt's requirement for realistic, physically normal proportions.",,outputs\raw\claude-sonnet-4-6\permission_aware\G5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires all elements — people, furniture, and a teacup — to be shown at 'physically normal scale.' The image depicts a massively oversized teacup dominating a city square, dwarfing surrounding people and buildings. This directly contradicts the prompt's requirement for realistic, physically normal proportions."",
+  ""confidence"": ""high""
+}
+```"
+124,G6,,A7,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The image shows a cafe scene with a tea cup on a saucer, a small vase with flowers, a sugar bowl, and blurred background patrons. All elements appear proportionally correct and to scale — the cup, saucer, spoon, vase, sugar bowl, chairs, tables, and people all exhibit normal, realistic scale relationships. No scale or proportion anomalies are detectable.",,outputs\raw\claude-sonnet-4-6\permission_aware\G6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The image shows a cafe scene with a tea cup on a saucer, a small vase with flowers, a sugar bowl, and blurred background patrons. All elements appear proportionally correct and to scale — the cup, saucer, spoon, vase, sugar bowl, chairs, tables, and people all exhibit normal, realistic scale relationships. No scale or proportion anomalies are detectable."",
+  ""confidence"": ""high""
+}
+```"
+125,G7,,A7,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where no target anomaly is specified. The image depicts a realistic street café scene with a marble-topped table, coffee cup, flower vase, pedestrians, and urban architecture. All scale and proportion relationships appear normal and consistent — the table, cup, saucer, chairs, people, vehicles, and buildings are all rendered at appropriate relative sizes. No scale or proportion anomalies are present.",,outputs\raw\claude-sonnet-4-6\permission_aware\G7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where no target anomaly is specified. The image depicts a realistic street café scene with a marble-topped table, coffee cup, flower vase, pedestrians, and urban architecture. All scale and proportion relationships appear normal and consistent — the table, cup, saucer, chairs, people, vehicles, and buildings are all rendered at appropriate relative sizes. No scale or proportion anomalies are present."",
+  ""confidence"": ""high""
+}
+```"
+126,G8,,A7,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"This is a no-issue control sample where the target anomaly is 'none'. The image depicts an outdoor café scene in a park with people sitting at tables, a cup of tea/coffee in the foreground, flowers in a vase, and lush trees in the background. All scale and proportion relationships appear normal and consistent — the cup, saucer, table, chairs, people, trees, and lamp post all appear at expected sizes relative to one another. No scale or proportion anomalies are present.",,outputs\raw\claude-sonnet-4-6\permission_aware\G8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""This is a no-issue control sample where the target anomaly is 'none'. The image depicts an outdoor café scene in a park with people sitting at tables, a cup of tea/coffee in the foreground, flowers in a vase, and lush trees in the background. All scale and proportion relationships appear normal and consistent — the cup, saucer, table, chairs, people, trees, and lamp post all appear at expected sizes relative to one another. No scale or proportion anomalies are present."",
+  ""confidence"": ""high""
+}
+```"
+127,H1_A,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting.' The soft, melting clocks draped over rocks and tree branches are a direct fulfillment of this requirement, evoking the surrealist style reminiscent of Salvador Dalí's 'The Persistence of Memory.' The deformation is not an anomaly but a core, required element of the artistic concept described in the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\H1_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting.' The soft, melting clocks draped over rocks and tree branches are a direct fulfillment of this requirement, evoking the surrealist style reminiscent of Salvador Dalí's 'The Persistence of Memory.' The deformation is not an anomaly but a core, required element of the artistic concept described in the prompt."",
+  ""confidence"": ""high""
+}
+```"
+128,H1_P,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The soft melting and deformed clocks are explicitly required by the prompt, which specifically calls for 'soft melting clocks' and 'deformed clocks' as intentional symbolic elements representing distorted time in a surreal dream scene. The image faithfully reproduces this element, showing multiple clocks draping over rocks and tree branches in a Dalí-esque surrealist style consistent with the prompt's intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\H1_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The soft melting and deformed clocks are explicitly required by the prompt, which specifically calls for 'soft melting clocks' and 'deformed clocks' as intentional symbolic elements representing distorted time in a surreal dream scene. The image faithfully reproduces this element, showing multiple clocks draping over rocks and tree branches in a Dalí-esque surrealist style consistent with the prompt's intent."",
+  ""confidence"": ""high""
+}
+```"
+129,H1_V,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires solid, functional, intact, rigid, and non-deformed clocks in a realistic setting. The image shows multiple clocks that are visibly melting, drooping, and deformed — a surrealist aesthetic directly inspired by Salvador Dalí's 'The Persistence of Memory.' This directly contradicts every constraint specified in the prompt: the clocks are neither rigid, intact, nor realistically functional. The deformation is pervasive across all clock instances in the image.",,outputs\raw\claude-sonnet-4-6\permission_aware\H1_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires solid, functional, intact, rigid, and non-deformed clocks in a realistic setting. The image shows multiple clocks that are visibly melting, drooping, and deformed — a surrealist aesthetic directly inspired by Salvador Dalí's 'The Persistence of Memory.' This directly contradicts every constraint specified in the prompt: the clocks are neither rigid, intact, nor realistically functional. The deformation is pervasive across all clock instances in the image."",
+  ""confidence"": ""high""
+}
+```"
+130,H2_A,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' as part of an artistic scene about time and memory. The melting/soft clocks visible in the image are a direct fulfillment of this requirement, evoking the Surrealist tradition (à la Dalí). These elements are not anomalous or hallucinatory — they are precisely what the prompt calls for.",,outputs\raw\claude-sonnet-4-6\permission_aware\H2_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' as part of an artistic scene about time and memory. The melting/soft clocks visible in the image are a direct fulfillment of this requirement, evoking the Surrealist tradition (à la Dalí). These elements are not anomalous or hallucinatory — they are precisely what the prompt calls for."",
+  ""confidence"": ""high""
+}
+```"
+131,H2_P,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The soft melting clocks are explicitly required by the prompt, which directly asks for 'soft melting clocks' and 'deformed clocks' symbolizing distorted time. The image clearly depicts multiple clocks drooping and melting over a wooden table and chair, directly fulfilling the surrealist visual concept described. This is a deliberate artistic deformation in the tradition of Salvador Dalí's 'The Persistence of Memory,' and is entirely consistent with the prompt's intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\H2_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The soft melting clocks are explicitly required by the prompt, which directly asks for 'soft melting clocks' and 'deformed clocks' symbolizing distorted time. The image clearly depicts multiple clocks drooping and melting over a wooden table and chair, directly fulfilling the surrealist visual concept described. This is a deliberate artistic deformation in the tradition of Salvador Dalí's 'The Persistence of Memory,' and is entirely consistent with the prompt's intent."",
+  ""confidence"": ""high""
+}
+```"
+132,H2_V,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires clocks that are 'intact, rigid, and not deformed.' The image clearly shows three clocks that are soft, melting, and draped over surfaces in the style of Salvador Dalí's surrealist paintings — directly contradicting the stated requirement for solid, functional, non-deformed clocks.",,outputs\raw\claude-sonnet-4-6\permission_aware\H2_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires clocks that are 'intact, rigid, and not deformed.' The image clearly shows three clocks that are soft, melting, and draped over surfaces in the style of Salvador Dalí's surrealist paintings — directly contradicting the stated requirement for solid, functional, non-deformed clocks."",
+  ""confidence"": ""high""
+}
+```"
+133,H3_A,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'deformed clock-like objects in a dreamlike setting,' which directly requires the melting/soft clocks visible throughout the image. These Dalí-inspired melting clocks draped over benches, walls, and lamp posts are exactly what the prompt mandates. The element is not anomalous or hallucinatory — it is the primary required visual content.",,outputs\raw\claude-sonnet-4-6\permission_aware\H3_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'deformed clock-like objects in a dreamlike setting,' which directly requires the melting/soft clocks visible throughout the image. These Dalí-inspired melting clocks draped over benches, walls, and lamp posts are exactly what the prompt mandates. The element is not anomalous or hallucinatory — it is the primary required visual content."",
+  ""confidence"": ""high""
+}
+```"
+134,H3_P,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The soft melting and deformed clocks are explicitly required by the prompt, which directly calls for 'soft melting clocks' and 'deformed clocks' as intentional symbolic elements representing distorted time. The image clearly depicts multiple clocks in various states of melting and deformation — draped over a bench, sliding down walls, and dripping from a lamp post — consistent with the Dalí-inspired surrealist aesthetic described. This is a faithful and intentional rendering of the prompt's core visual requirement.",,outputs\raw\claude-sonnet-4-6\permission_aware\H3_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The soft melting and deformed clocks are explicitly required by the prompt, which directly calls for 'soft melting clocks' and 'deformed clocks' as intentional symbolic elements representing distorted time. The image clearly depicts multiple clocks in various states of melting and deformation — draped over a bench, sliding down walls, and dripping from a lamp post — consistent with the Dalí-inspired surrealist aesthetic described. This is a faithful and intentional rendering of the prompt's core visual requirement."",
+  ""confidence"": ""high""
+}
+```"
+135,H3_V,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires solid, intact, rigid, and non-deformed clocks in a realistic scene. The image contains multiple clocks that are clearly melting and deforming in a Dalí-surrealist style — dripping off walls, a lamp post, and a bench. This directly contradicts the prompt's explicit requirement for functional, rigid clocks. The melting/deformed clocks are not permitted by the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\H3_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires solid, intact, rigid, and non-deformed clocks in a realistic scene. The image contains multiple clocks that are clearly melting and deforming in a Dalí-surrealist style — dripping off walls, a lamp post, and a bench. This directly contradicts the prompt's explicit requirement for functional, rigid clocks. The melting/deformed clocks are not permitted by the prompt."",
+  ""confidence"": ""high""
+}
+```"
+136,H4_A,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly calls for 'deformed clock-like objects in a dreamlike setting.' The melting/soft clocks draped over tree branches are a direct fulfillment of this requirement, clearly evoking the Dalí-inspired surrealist aesthetic associated with time and memory. The element is not anomalous or hallucinatory — it is the central required visual feature of the prompt.",,outputs\raw\claude-sonnet-4-6\permission_aware\H4_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly calls for 'deformed clock-like objects in a dreamlike setting.' The melting/soft clocks draped over tree branches are a direct fulfillment of this requirement, clearly evoking the Dalí-inspired surrealist aesthetic associated with time and memory. The element is not anomalous or hallucinatory — it is the central required visual feature of the prompt."",
+  ""confidence"": ""high""
+}
+```"
+137,H4_P,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The soft melting clocks draped over tree branches are explicitly required by the prompt, which calls for 'soft melting clocks' and 'deformed clocks intentionally symbolizing distorted time.' The image faithfully renders this Dalí-inspired surrealist motif in a forest dream setting, fully conforming to the prompt's artistic and semantic intent.",,outputs\raw\claude-sonnet-4-6\permission_aware\H4_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The soft melting clocks draped over tree branches are explicitly required by the prompt, which calls for 'soft melting clocks' and 'deformed clocks intentionally symbolizing distorted time.' The image faithfully renders this Dalí-inspired surrealist motif in a forest dream setting, fully conforming to the prompt's artistic and semantic intent."",
+  ""confidence"": ""high""
+}
+```"
+138,H4_V,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires clocks that are 'intact, rigid, and not deformed' in a realistic scene. The image clearly shows multiple Salvador Dalí-style melting/soft clocks draped over tree branches, which directly contradicts the prompt's requirement for solid, functional, non-deformed clocks. This is a clear violation of the stated constraints.",,outputs\raw\claude-sonnet-4-6\permission_aware\H4_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires clocks that are 'intact, rigid, and not deformed' in a realistic scene. The image clearly shows multiple Salvador Dalí-style melting/soft clocks draped over tree branches, which directly contradicts the prompt's requirement for solid, functional, non-deformed clocks. This is a clear violation of the stated constraints."",
+  ""confidence"": ""high""
+}
+```"
+139,H5_A,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' about 'time and memory.' The melting, soft, Dalí-esque clocks draped over park benches and steps are a direct fulfillment of this requirement. The visual element is not anomalous or hallucinatory — it is the intended core subject of the image.",,outputs\raw\claude-sonnet-4-6\permission_aware\H5_A.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects in a dreamlike setting' about 'time and memory.' The melting, soft, Dalí-esque clocks draped over park benches and steps are a direct fulfillment of this requirement. The visual element is not anomalous or hallucinatory — it is the intended core subject of the image."",
+  ""confidence"": ""high""
+}
+```"
+140,H5_P,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_required,no,high,"The soft melting/deformed clocks are explicitly required by the prompt, which calls for 'soft melting clocks' and 'deformed clocks intentionally symbolizing distorted time.' The image clearly depicts clocks with fluid, melting forms draped over park benches and steps in a surreal European plaza setting, directly fulfilling the prompt's central visual and symbolic requirement. This is a deliberate Dalí-inspired surrealist aesthetic, not an unintended anomaly.",,outputs\raw\claude-sonnet-4-6\permission_aware\H5_P.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The soft melting/deformed clocks are explicitly required by the prompt, which calls for 'soft melting clocks' and 'deformed clocks intentionally symbolizing distorted time.' The image clearly depicts clocks with fluid, melting forms draped over park benches and steps in a surreal European plaza setting, directly fulfilling the prompt's central visual and symbolic requirement. This is a deliberate Dalí-inspired surrealist aesthetic, not an unintended anomaly."",
+  ""confidence"": ""high""
+}
+```"
+141,H5_V,,A8,,claude-sonnet-4-6,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'solid functional clocks' that are 'intact, rigid, and not deformed.' The image clearly shows Dalí-style melting/soft clocks draped over park benches and steps, which directly contradicts the prompt's requirement for rigid, non-deformed clocks. This is a clear violation of the stated constraints.",,outputs\raw\claude-sonnet-4-6\permission_aware\H5_V.json,"```json
+{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'solid functional clocks' that are 'intact, rigid, and not deformed.' The image clearly shows Dalí-style melting/soft clocks draped over park benches and steps, which directly contradicts the prompt's requirement for rigid, non-deformed clocks. This is a clear violation of the stated constraints."",
+  ""confidence"": ""high""
+}
+```"
+142,H6,,A8,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"The target anomaly is explicitly 'none', meaning this is a no-issue control sample. The image shows five clocks arranged on a wooden surface with a plant in the background. The clocks appear normally rendered with no artistic deformation, distortion, or unusual visual anomalies present. The image is consistent with a standard product or decorative photography composition.",,outputs\raw\claude-sonnet-4-6\permission_aware\H6.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The target anomaly is explicitly 'none', meaning this is a no-issue control sample. The image shows five clocks arranged on a wooden surface with a plant in the background. The clocks appear normally rendered with no artistic deformation, distortion, or unusual visual anomalies present. The image is consistent with a standard product or decorative photography composition."",
+  ""confidence"": ""high""
+}
+```"
+143,H7,,A8,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"The target anomaly is explicitly set to 'none', meaning this is a no-issue control sample. The image depicts a realistic train station interior with classical architecture and multiple wall-mounted clocks, all rendered in a naturalistic style without any artistic deformation or unusual visual anomalies present.",,outputs\raw\claude-sonnet-4-6\permission_aware\H7.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The target anomaly is explicitly set to 'none', meaning this is a no-issue control sample. The image depicts a realistic train station interior with classical architecture and multiple wall-mounted clocks, all rendered in a naturalistic style without any artistic deformation or unusual visual anomalies present."",
+  ""confidence"": ""high""
+}
+```"
+144,H8,,A8,,claude-sonnet-4-6,permission_aware,False,no_issue,no,high,"The target anomaly is explicitly 'none', meaning this is a no-issue control sample. The image shows a realistic, well-composed photograph of a clock on a wooden table with a chair and plant nearby. No artistic deformation or unusual visual anomalies are present. The clock reads approximately 10:10, and all elements appear natural and properly rendered.",,outputs\raw\claude-sonnet-4-6\permission_aware\H8.json,"```json
+{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The target anomaly is explicitly 'none', meaning this is a no-issue control sample. The image shows a realistic, well-composed photograph of a clock on a wooden table with a chair and plant nearby. No artistic deformation or unusual visual anomalies are present. The clock reads approximately 10:10, and all elements appear natural and properly rendered."",
+  ""confidence"": ""high""
+}
+```"

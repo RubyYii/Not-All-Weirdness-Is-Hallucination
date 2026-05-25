@@ -1,0 +1,57 @@
+{
+  "sample_id": "B5_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B5.png",
+  "evaluation_prompt_text": "A creative poster using expressive typography and distorted letterforms.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms', which directly accounts for the presence of illegible or distorted text in the image.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'distorted letterforms', which directly accounts for the presence of illegible or distorted text in the image.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms', which directly accounts for the presence of illegible or distorted text in the image.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1442,
+      "candidatesTokenCount": 82,
+      "totalTokenCount": 1996,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 353
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 472,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "_DIKaoitLfW4vdIP7bv9kAw"
+  }
+}

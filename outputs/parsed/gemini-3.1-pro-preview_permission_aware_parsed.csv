@@ -1,0 +1,1009 @@
+line_number,sample_id,image_id,axis_code,condition,model,audit_setting,target_anomaly_detected,permission_status_pred,hallucination_pred,confidence,reason,parse_error,output_path,raw_response
+1,A1_A,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests 'unusual hands'. The presence of extra fingers is a valid interpretation of this request and therefore is permitted by the prompt, not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual hands'. The presence of extra fingers is a valid interpretation of this request and therefore is permitted by the prompt, not a hallucination."",
+  ""confidence"": ""high""
+}"
+2,A1_P,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'six elegant fingers on each hand' as an intentional part of the character design, which the image accurately depicts.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'six elegant fingers on each hand' as an intentional part of the character design, which the image accurately depicts."",
+  ""confidence"": ""high""
+}"
+3,A1_V,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image displays a character with six fingers on each hand, directly contradicting the prompt's explicit instruction that 'each hand should have exactly five fingers' and 'natural anatomy'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image displays a character with six fingers on each hand, directly contradicting the prompt's explicit instruction that 'each hand should have exactly five fingers' and 'natural anatomy'."",
+  ""confidence"": ""high""
+}"
+4,A2_A,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly shows the performer with six fingers on their left hand. However, because the prompt explicitly requests 'unusual hands', this anatomical anomaly is a valid interpretation of the prompt and should not be labeled as a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows the performer with six fingers on their left hand. However, because the prompt explicitly requests 'unusual hands', this anatomical anomaly is a valid interpretation of the prompt and should not be labeled as a hallucination."",
+  ""confidence"": ""high""
+}"
+5,A2_P,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The text prompt explicitly requests 'six elegant fingers on each hand' as an intentional part of the character design. The image accurately reflects this requirement, so the extra fingers are not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The text prompt explicitly requests 'six elegant fingers on each hand' as an intentional part of the character design. The image accurately reflects this requirement, so the extra fingers are not a hallucination."",
+  ""confidence"": ""high""
+}"
+6,A2_V,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests a human performer with natural anatomy and exactly five fingers on each hand. The generated image features a non-human entity, and the hand holding the neck of the instrument clearly has six digits, directly violating the prompt's constraints.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests a human performer with natural anatomy and exactly five fingers on each hand. The generated image features a non-human entity, and the hand holding the neck of the instrument clearly has six digits, directly violating the prompt's constraints."",
+  ""confidence"": ""high""
+}"
+7,A3_A,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly shows hands with six fingers. However, because the prompt explicitly requests 'unusual hands', this anatomical anomaly is a valid interpretation of the prompt and should not be considered a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows hands with six fingers. However, because the prompt explicitly requests 'unusual hands', this anatomical anomaly is a valid interpretation of the prompt and should not be considered a hallucination."",
+  ""confidence"": ""high""
+}"
+8,A3_P,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'six elegant fingers on each hand', which is accurately depicted in the image. Therefore, the extra fingers are an intended feature, not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'six elegant fingers on each hand', which is accurately depicted in the image. Therefore, the extra fingers are an intended feature, not a hallucination."",
+  ""confidence"": ""high""
+}"
+9,A3_V,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image clearly shows six fingers on both hands, which directly violates the prompt's explicit instruction that each hand should have exactly five fingers and natural anatomy.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly shows six fingers on both hands, which directly violates the prompt's explicit instruction that each hand should have exactly five fingers and natural anatomy."",
+  ""confidence"": ""high""
+}"
+10,A4_A,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests 'unusual hands'. The presence of extra fingers is a direct and valid interpretation of this request, so it should not be labeled as a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual hands'. The presence of extra fingers is a direct and valid interpretation of this request, so it should not be labeled as a hallucination."",
+  ""confidence"": ""high""
+}"
+11,A4_P,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,The prompt explicitly requests an alien-human performer with six fingers on each hand. The image accurately depicts this intentional character design element.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\A4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests an alien-human performer with six fingers on each hand. The image accurately depicts this intentional character design element."",
+  ""confidence"": ""high""
+}"
+12,A4_V,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requires 'exactly five fingers' on each hand. However, the hand holding the paintbrush in the generated image clearly has six digits (a thumb and five fingers), which directly violates the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requires 'exactly five fingers' on each hand. However, the hand holding the paintbrush in the generated image clearly has six digits (a thumb and five fingers), which directly violates the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+13,A5_A,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,The prompt explicitly requests 'unusual hands'. The presence of six fingers on each hand directly fulfills this stylistic requirement and is therefore not a hallucination.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\A5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual hands'. The presence of six fingers on each hand directly fulfills this stylistic requirement and is therefore not a hallucination."",
+  ""confidence"": ""high""
+}"
+14,A5_P,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'six elegant fingers on each hand'. The image accurately reflects this requirement, so the extra fingers are an intended design element and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'six elegant fingers on each hand'. The image accurately reflects this requirement, so the extra fingers are an intended design element and not a hallucination."",
+  ""confidence"": ""high""
+}"
+15,A5_V,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image clearly shows six fingers on both hands, which directly contradicts the prompt's explicit instruction that each hand should have exactly five fingers.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly shows six fingers on both hands, which directly contradicts the prompt's explicit instruction that each hand should have exactly five fingers."",
+  ""confidence"": ""high""
+}"
+16,A6,,A1,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image is a control sample for hand anatomy and displays normal hands with five digits each. No anatomical anomalies are present.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\A6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image is a control sample for hand anatomy and displays normal hands with five digits each. No anatomical anomalies are present."",
+  ""confidence"": ""high""
+}"
+17,A7,,A1,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The right hand holding the bow exhibits severe anatomical deformities, including merged fingers and an unnatural, physically impossible grip, which violates the prompt's requirement for a no-issue control image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A7.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The right hand holding the bow exhibits severe anatomical deformities, including merged fingers and an unnatural, physically impossible grip, which violates the prompt's requirement for a no-issue control image."",
+  ""confidence"": ""high""
+}"
+18,A8,,A1,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image is a control sample intended to have no anomalies. The hands of the subject appear anatomically correct without any obvious extra or missing fingers, or severe distortions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\A8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image is a control sample intended to have no anomalies. The hands of the subject appear anatomically correct without any obvious extra or missing fingers, or severe distortions."",
+  ""confidence"": ""high""
+}"
+19,B1_A,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'distorted letterforms' and 'expressive typography', making the illegible and distorted text an intended and required element of the image rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'distorted letterforms' and 'expressive typography', making the illegible and distorted text an intended and required element of the image rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+20,B1_P,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks', making the presence of illegible or distorted text a required element rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks', making the presence of illegible or distorted text a required element rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+21,B1_V,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests clear, readable, and correctly formed text. The generated image contains abstract, distorted, and completely illegible characters, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests clear, readable, and correctly formed text. The generated image contains abstract, distorted, and completely illegible characters, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+22,B2_A,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'distorted letterforms' and 'expressive typography', which directly accounts for the illegible and distorted text present in the generated poster. Therefore, it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'distorted letterforms' and 'expressive typography', which directly accounts for the illegible and distorted text present in the generated poster. Therefore, it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+23,B2_P,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks', making the presence of illegible or distorted text a required element rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks', making the presence of illegible or distorted text a required element rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+24,B2_V,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests clear, correctly formed, and easy-to-read text, but the generated image contains highly distorted and completely illegible text.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests clear, correctly formed, and easy-to-read text, but the generated image contains highly distorted and completely illegible text."",
+  ""confidence"": ""high""
+}"
+25,B3_A,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'distorted letterforms', which directly accounts for the highly distorted and illegible text-like shapes seen in the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'distorted letterforms', which directly accounts for the highly distorted and illegible text-like shapes seen in the image."",
+  ""confidence"": ""high""
+}"
+26,B3_P,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text-like shapes is a required element of the image and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text-like shapes is a required element of the image and not a hallucination."",
+  ""confidence"": ""high""
+}"
+27,B3_V,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests clear, readable, and correctly formed text. The image contains abstract black shapes that either represent completely distorted and illegible text or a total absence of text, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests clear, readable, and correctly formed text. The image contains abstract black shapes that either represent completely distorted and illegible text or a total absence of text, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+28,B4_A,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'distorted letterforms', so the presence of illegible or distorted text is a direct fulfillment of the prompt and should not be considered a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'distorted letterforms', so the presence of illegible or distorted text is a direct fulfillment of the prompt and should not be considered a hallucination."",
+  ""confidence"": ""high""
+}"
+29,B4_P,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt and should not be considered a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt and should not be considered a hallucination."",
+  ""confidence"": ""high""
+}"
+30,B4_V,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests clear, correctly formed, and readable text. The generated image contains abstract, distorted, and completely illegible letter-like shapes, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests clear, correctly formed, and readable text. The generated image contains abstract, distorted, and completely illegible letter-like shapes, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+31,B5_A,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'distorted letterforms', which directly accounts for the presence of illegible or distorted text in the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'distorted letterforms', which directly accounts for the presence of illegible or distorted text in the image."",
+  ""confidence"": ""high""
+}"
+32,B5_P,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt's instructions and should not be considered a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'illegible dreamlike typography' and 'distorted letter-like marks'. Therefore, the presence of illegible or distorted text is a direct fulfillment of the prompt's instructions and should not be considered a hallucination."",
+  ""confidence"": ""high""
+}"
+33,B5_V,,A2,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests clear, correctly formed, and readable text. However, the text on the perfume bottle label is abstract, distorted, and completely illegible, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests clear, correctly formed, and readable text. However, the text on the perfume bottle label is abstract, distorted, and completely illegible, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+34,B6,,A2,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image is a control sample and does not contain any target anomalies. The text 'PURE WATER' is rendered correctly and the overall image is coherent.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\B6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image is a control sample and does not contain any target anomalies. The text 'PURE WATER' is rendered correctly and the overall image is coherent."",
+  ""confidence"": ""high""
+}"
+35,B7,,A2,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image contains clear, correctly spelled text ('SUMMER SALE') with no anomalies.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\B7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image contains clear, correctly spelled text ('SUMMER SALE') with no anomalies."",
+  ""confidence"": ""high""
+}"
+36,B8,,A2,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image contains correctly spelled and coherent text related to green tea. There are no text anomalies present.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\B8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image contains correctly spelled and coherent text related to green tea. There are no text anomalies present."",
+  ""confidence"": ""high""
+}"
+37,C1_A,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image features a prominent column of water flowing upwards from the river into the sky, which clearly represents upward-flowing water or reversed gravity. The prompt explicitly requests 'unusual water movement' within a 'strange poetic landscape' and 'dreamlike atmosphere'. The upward-flowing water is a direct and creative fulfillment of this request, making it permitted by the prompt and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image features a prominent column of water flowing upwards from the river into the sky, which clearly represents upward-flowing water or reversed gravity. The prompt explicitly requests 'unusual water movement' within a 'strange poetic landscape' and 'dreamlike atmosphere'. The upward-flowing water is a direct and creative fulfillment of this request, making it permitted by the prompt and not a hallucination."",
+  ""confidence"": ""high""
+}"
+38,C1_P,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The image clearly shows a massive column of water flowing upwards from the river into the sky, which directly fulfills the prompt's explicit requirement for 'water flows upward' and 'reversed gravity'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows a massive column of water flowing upwards from the river into the sky, which directly fulfills the prompt's explicit requirement for 'water flows upward' and 'reversed gravity'."",
+  ""confidence"": ""high""
+}"
+39,C1_V,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features a massive column of water flowing upwards from the ground into the sky, which directly contradicts the prompt's explicit instructions for normal gravity and physically plausible, downward-moving water.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features a massive column of water flowing upwards from the ground into the sky, which directly contradicts the prompt's explicit instructions for normal gravity and physically plausible, downward-moving water."",
+  ""confidence"": ""high""
+}"
+40,C2_A,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly shows a massive column of water flowing upwards from the lake into the clouds, which matches the target anomaly of upward-flowing water. The prompt explicitly asks for 'unusual water movement' in a 'strange poetic landscape' with a 'dreamlike atmosphere'. The upward-flowing water is a direct and valid interpretation of this prompt, making it a permitted stylistic choice rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows a massive column of water flowing upwards from the lake into the clouds, which matches the target anomaly of upward-flowing water. The prompt explicitly asks for 'unusual water movement' in a 'strange poetic landscape' with a 'dreamlike atmosphere'. The upward-flowing water is a direct and valid interpretation of this prompt, making it a permitted stylistic choice rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+41,C2_P,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a dream world with reversed gravity where water flows upward, which is exactly what is depicted in the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a dream world with reversed gravity where water flows upward, which is exactly what is depicted in the image."",
+  ""confidence"": ""high""
+}"
+42,C2_V,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features a massive, surreal column of water connecting the lake to the clouds, which defies normal gravity and physically plausible water movement. This directly contradicts the prompt's explicit instructions for a realistic landscape where water moves naturally downward.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features a massive, surreal column of water connecting the lake to the clouds, which defies normal gravity and physically plausible water movement. This directly contradicts the prompt's explicit instructions for a realistic landscape where water moves naturally downward."",
+  ""confidence"": ""high""
+}"
+43,C3_A,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image features water droplets that appear to be suspended or moving upwards, defying normal gravity. This directly fulfills the prompt's request for 'unusual water movement' within a 'dreamlike atmosphere', so it is a permitted stylistic choice rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image features water droplets that appear to be suspended or moving upwards, defying normal gravity. This directly fulfills the prompt's request for 'unusual water movement' within a 'dreamlike atmosphere', so it is a permitted stylistic choice rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+44,C3_P,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a dream world with reversed gravity where water flows upward. The image depicts water droplets with trails pointing downwards, visually suggesting that the water is moving upwards, which directly fulfills the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a dream world with reversed gravity where water flows upward. The image depicts water droplets with trails pointing downwards, visually suggesting that the water is moving upwards, which directly fulfills the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+45,C3_V,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image depicts rain droplets with their round parts at the top and tails pointing downwards, which visually indicates upward movement. This directly violates the prompt's explicit instruction for normal gravity and downward-moving rain.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image depicts rain droplets with their round parts at the top and tails pointing downwards, which visually indicates upward movement. This directly violates the prompt's explicit instruction for normal gravity and downward-moving rain."",
+  ""confidence"": ""high""
+}"
+46,C4_A,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly shows water flowing upwards in massive, gravity-defying waves on either side. This directly fulfills the prompt's request for 'unusual water movement' and contributes to the 'strange poetic landscape' and 'dreamlike atmosphere'. Therefore, it is a permitted stylistic choice and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows water flowing upwards in massive, gravity-defying waves on either side. This directly fulfills the prompt's request for 'unusual water movement' and contributes to the 'strange poetic landscape' and 'dreamlike atmosphere'. Therefore, it is a permitted stylistic choice and not a hallucination."",
+  ""confidence"": ""high""
+}"
+47,C4_P,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The image clearly shows massive waves of water flowing upwards towards the sky, which directly fulfills the prompt's explicit requirement for 'reversed gravity' and 'water flows upward'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows massive waves of water flowing upwards towards the sky, which directly fulfills the prompt's explicit requirement for 'reversed gravity' and 'water flows upward'."",
+  ""confidence"": ""high""
+}"
+48,C4_V,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image shows massive walls of water curving upwards into the sky, which clearly depicts upward-flowing water or reversed gravity. This directly violates the prompt's explicit requirement for normal gravity and physically plausible water movement where water moves naturally downward.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image shows massive walls of water curving upwards into the sky, which clearly depicts upward-flowing water or reversed gravity. This directly violates the prompt's explicit requirement for normal gravity and physically plausible water movement where water moves naturally downward."",
+  ""confidence"": ""high""
+}"
+49,C5_A,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere'. The upward-flowing water from the fountain directly fulfills these stylistic requirements and is therefore an intended element, not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere'. The upward-flowing water from the fountain directly fulfills these stylistic requirements and is therefore an intended element, not a hallucination."",
+  ""confidence"": ""high""
+}"
+50,C5_P,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a dream world with reversed gravity where water flows upward. The image accurately depicts water flowing upward from a fountain into the sky, fulfilling the prompt's requirement.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a dream world with reversed gravity where water flows upward. The image accurately depicts water flowing upward from a fountain into the sky, fulfilling the prompt's requirement."",
+  ""confidence"": ""high""
+}"
+51,C5_V,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features a massive column of water flowing upwards from the fountain into the sky, directly contradicting the prompt's explicit instructions for normal gravity and physically plausible, downward water movement.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features a massive column of water flowing upwards from the fountain into the sky, directly contradicting the prompt's explicit instructions for normal gravity and physically plausible, downward water movement."",
+  ""confidence"": ""high""
+}"
+52,C6,,A3,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image is a normal landscape with a river and mountains, and does not contain any physics anomalies.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image is a normal landscape with a river and mountains, and does not contain any physics anomalies."",
+  ""confidence"": ""high""
+}"
+53,C7,,A3,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image depicts a natural-looking waterfall with no apparent physics anomalies. The water falls downwards as expected, creating mist at the bottom, and the surrounding rocks and vegetation appear normal.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a natural-looking waterfall with no apparent physics anomalies. The water falls downwards as expected, creating mist at the bottom, and the surrounding rocks and vegetation appear normal."",
+  ""confidence"": ""high""
+}"
+54,C8,,A3,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The reflection of the person on the left contains a physics error: their left foot is lifted off the ground, but the reflection of the foot is attached directly to the bottom of the shoe without the physical gap that should exist between an elevated object and its reflection on the ground.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\C8.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The reflection of the person on the left contains a physics error: their left foot is lifted off the ground, but the reflection of the foot is attached directly to the bottom of the shoe without the physical gap that should exist between an elevated object and its reflection on the ground."",
+  ""confidence"": ""high""
+}"
+55,D1_A,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly shows a fusion between a human figure and a wooden chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair in an artistic context. Therefore, it is an intended element and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly shows a fusion between a human figure and a wooden chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair in an artistic context. Therefore, it is an intended element and not a hallucination."",
+  ""confidence"": ""high""
+}"
+56,D1_P,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this fusion, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this fusion, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+57,D1_V,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests a realistic scene where the person and the chair are clearly separate objects with normal structure. The image shows a surreal fusion of a human and a chair, directly contradicting the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests a realistic scene where the person and the chair are clearly separate objects with normal structure. The image shows a surreal fusion of a human and a chair, directly contradicting the prompt."",
+  ""confidence"": ""high""
+}"
+58,D2_A,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly depicts a fusion between the person's body and the chair, with shared textures and structural elements. The prompt explicitly requests an 'unusual visual relationship' between a person and a chair. The human-chair fusion is a direct and creative interpretation of this request, making it semantically and stylistically permitted by the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly depicts a fusion between the person's body and the chair, with shared textures and structural elements. The prompt explicitly requests an 'unusual visual relationship' between a person and a chair. The human-chair fusion is a direct and creative interpretation of this request, making it semantically and stylistically permitted by the prompt."",
+  ""confidence"": ""high""
+}"
+59,D2_P,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a 'human-chair hybrid sculpture' where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'human-chair hybrid sculpture' where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+60,D2_V,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image clearly depicts the person's body merging with the structure and texture of the chair, which directly violates the prompt's explicit instruction that the person and chair must be clearly separate objects with normal structure.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image clearly depicts the person's body merging with the structure and texture of the chair, which directly violates the prompt's explicit instruction that the person and chair must be clearly separate objects with normal structure."",
+  ""confidence"": ""high""
+}"
+61,D3_A,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly depicts a fusion between a human torso and a chair. This directly satisfies the prompt's request for an 'artistic scene' featuring an 'unusual visual relationship' between a person and a chair. Therefore, it is a valid interpretation and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly depicts a fusion between a human torso and a chair. This directly satisfies the prompt's request for an 'artistic scene' featuring an 'unusual visual relationship' between a person and a chair. Therefore, it is a valid interpretation and not a hallucination."",
+  ""confidence"": ""high""
+}"
+62,D3_P,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair merge into a single form. The image accurately depicts this requested fusion, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+63,D3_V,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests a realistic scene where a person and a chair are clearly separate objects with normal structure. The image shows a surreal sculpture where a human torso is fused with a chair, directly contradicting the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests a realistic scene where a person and a chair are clearly separate objects with normal structure. The image shows a surreal sculpture where a human torso is fused with a chair, directly contradicting the prompt."",
+  ""confidence"": ""high""
+}"
+64,D4_A,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image clearly depicts the person's body fusing with the material and structure of the chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between the person and the chair, so it is a permitted artistic interpretation rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image clearly depicts the person's body fusing with the material and structure of the chair. This directly fulfills the prompt's request for an 'unusual visual relationship' between the person and the chair, so it is a permitted artistic interpretation rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+65,D4_P,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this requested fusion, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair intentionally merge. The image accurately depicts this requested fusion, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+66,D4_V,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image depicts a person whose body is physically fused with the material and structure of the chair, which directly violates the prompt's explicit instruction that the person and chair must be 'clearly separate objects' in a 'realistic' scene.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image depicts a person whose body is physically fused with the material and structure of the chair, which directly violates the prompt's explicit instruction that the person and chair must be 'clearly separate objects' in a 'realistic' scene."",
+  ""confidence"": ""high""
+}"
+67,D5_A,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The image shows a human figure and a chair made of the same glossy, marble-like material, visually blending their forms. This fusion directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair, and is therefore permitted.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image shows a human figure and a chair made of the same glossy, marble-like material, visually blending their forms. This fusion directly fulfills the prompt's request for an 'unusual visual relationship' between a person and a chair, and is therefore permitted."",
+  ""confidence"": ""high""
+}"
+68,D5_P,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair merge into a single form. The image accurately depicts this intentional fusion, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal human-chair hybrid sculpture where the human body and chair merge into a single form. The image accurately depicts this intentional fusion, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+69,D5_V,,A4,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image shows a figure and a chair that are fused together, sharing the same material and blending into a single continuous form. This directly violates the prompt's explicit instruction that the person and chair must be 'clearly separate objects'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image shows a figure and a chair that are fused together, sharing the same material and blending into a single continuous form. This directly violates the prompt's explicit instruction that the person and chair must be 'clearly separate objects'."",
+  ""confidence"": ""high""
+}"
+70,D6,,A4,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image is a control sample and does not contain any obvious object fusion anomalies. The person, chair, desk, and other objects are visually distinct and do not inappropriately merge into one another.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\D6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image is a control sample and does not contain any obvious object fusion anomalies. The person, chair, desk, and other objects are visually distinct and do not inappropriately merge into one another."",
+  ""confidence"": ""high""
+}"
+71,D7,,A4,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image displays a normal wooden chair in an art gallery setting. There are no unusual visual elements or object fusion anomalies present.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\D7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image displays a normal wooden chair in an art gallery setting. There are no unusual visual elements or object fusion anomalies present."",
+  ""confidence"": ""high""
+}"
+72,D8,,A4,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image is a control sample and does not contain any obvious object fusion anomalies. The scene and objects appear normal.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\D8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image is a control sample and does not contain any obvious object fusion anomalies. The scene and objects appear normal."",
+  ""confidence"": ""high""
+}"
+73,E1_A,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes', which directly accounts for the duplicated cups and excessive repetition seen in the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes', which directly accounts for the duplicated cups and excessive repetition seen in the image."",
+  ""confidence"": ""high""
+}"
+74,E1_P,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts."",
+  ""confidence"": ""high""
+}"
+75,E1_V,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests 'exactly three white cups and no additional cups', but the image contains a large grid of many duplicated cups, directly violating the prompt's constraint.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests 'exactly three white cups and no additional cups', but the image contains a large grid of many duplicated cups, directly violating the prompt's constraint."",
+  ""confidence"": ""high""
+}"
+76,E2_A,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+77,E2_P,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal effect. The image accurately reflects this by showing numerous identical cups on the table.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\E2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal effect. The image accurately reflects this by showing numerous identical cups on the table."",
+  ""confidence"": ""high""
+}"
+78,E2_V,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests exactly three white cups and no additional cups, but the image contains a large number of duplicated cups, violating the prompt's constraint.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests exactly three white cups and no additional cups, but the image contains a large number of duplicated cups, violating the prompt's constraint."",
+  ""confidence"": ""high""
+}"
+79,E3_A,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes', which justifies the excessive duplication and repetition of cups throughout the scene. Therefore, it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes', which justifies the excessive duplication and repetition of cups throughout the scene. Therefore, it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+80,E3_P,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal repetition effect. The excessive number of cups in the image directly fulfills this requirement.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\E3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal repetition effect. The excessive number of cups in the image directly fulfills this requirement."",
+  ""confidence"": ""high""
+}"
+81,E3_V,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests 'exactly three white cups and no additional cups', but the image contains hundreds of cups scattered across the tables, floor, and shelves, directly violating the prompt's constraint.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests 'exactly three white cups and no additional cups', but the image contains hundreds of cups scattered across the tables, floor, and shelves, directly violating the prompt's constraint."",
+  ""confidence"": ""high""
+}"
+82,E4_A,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes', making the duplicated cups and excessive repetition a direct fulfillment of the prompt rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+83,E4_P,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a dreamlike scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a dreamlike scene filled with repeated duplicated cups as an intentional surreal effect, which is exactly what the image depicts."",
+  ""confidence"": ""high""
+}"
+84,E4_V,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly specifies 'exactly three white cups and no additional cups'. The image contains a large number of cups, far exceeding the requested count, which directly violates the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly specifies 'exactly three white cups and no additional cups'. The image contains a large number of cups, far exceeding the requested count, which directly violates the prompt."",
+  ""confidence"": ""high""
+}"
+85,E5_A,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'repeated cup-like shapes', so the duplicated cups are a direct fulfillment of the prompt's instructions and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'repeated cup-like shapes', so the duplicated cups are a direct fulfillment of the prompt's instructions and not a hallucination."",
+  ""confidence"": ""high""
+}"
+86,E5_P,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal effect. The image accurately reflects this request, so the repetition is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a scene filled with repeated duplicated cups as an intentional surreal effect. The image accurately reflects this request, so the repetition is not a hallucination."",
+  ""confidence"": ""high""
+}"
+87,E5_V,,A5,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requested exactly three white cups and no additional cups, but the image displays a large grid of many duplicated cups, directly violating the prompt's constraint.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requested exactly three white cups and no additional cups, but the image displays a large grid of many duplicated cups, directly violating the prompt's constraint."",
+  ""confidence"": ""high""
+}"
+88,E6,,A5,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image displays three normal mugs with different beverages on a wooden table. No anomalies related to count or repetition are present.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\E6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image displays three normal mugs with different beverages on a wooden table. No anomalies related to count or repetition are present."",
+  ""confidence"": ""high""
+}"
+89,E7,,A5,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image shows three cups of coffee/tea on a table, which is a normal scene. There is no target anomaly to detect.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\E7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image shows three cups of coffee/tea on a table, which is a normal scene. There is no target anomaly to detect."",
+  ""confidence"": ""high""
+}"
+90,E8,,A5,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image shows three normal-looking mugs. There is no target anomaly to detect.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\E8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image shows three normal-looking mugs. There is no target anomaly to detect."",
+  ""confidence"": ""high""
+}"
+91,F1_A,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as the upside-down chair and stairs leading nowhere, directly fulfills this stylistic requirement and should not be considered a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as the upside-down chair and stairs leading nowhere, directly fulfills this stylistic requirement and should not be considered a hallucination."",
+  ""confidence"": ""high""
+}"
+92,F1_P,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts with its confusing stairs, upside-down furniture, and Escher-like spatial layout.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts with its confusing stairs, upside-down furniture, and Escher-like spatial layout."",
+  ""confidence"": ""high""
+}"
+93,F1_V,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features highly surreal, Escher-like architecture with impossible spatial relationships, such as an upside-down chair on the ceiling and stairs leading nowhere. This directly violates the prompt's explicit instructions for a realistic room with physically possible architecture and no impossible geometry.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features highly surreal, Escher-like architecture with impossible spatial relationships, such as an upside-down chair on the ceiling and stairs leading nowhere. This directly violates the prompt's explicit instructions for a realistic room with physically possible architecture and no impossible geometry."",
+  ""confidence"": ""high""
+}"
+94,F2_A,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as stairs leading into walls or confusing floor levels, directly fulfills this stylistic requirement and is therefore not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as stairs leading into walls or confusing floor levels, directly fulfills this stylistic requirement and is therefore not a hallucination."",
+  ""confidence"": ""high""
+}"
+95,F2_P,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests an impossible room with paradoxical geometry, which is exactly what the image depicts with its nonsensical staircases and spatial layout.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests an impossible room with paradoxical geometry, which is exactly what the image depicts with its nonsensical staircases and spatial layout."",
+  ""confidence"": ""high""
+}"
+96,F2_V,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image contains multiple instances of impossible geometry, such as stairs that lead into solid walls, confusing floor levels that do not align logically, and Escher-like structural transitions. This directly violates the prompt's explicit requirements for 'physically possible architecture', 'coherent floor-wall transitions', and 'no impossible geometry'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image contains multiple instances of impossible geometry, such as stairs that lead into solid walls, confusing floor levels that do not align logically, and Escher-like structural transitions. This directly violates the prompt's explicit requirements for 'physically possible architecture', 'coherent floor-wall transitions', and 'no impossible geometry'."",
+  ""confidence"": ""high""
+}"
+97,F3_A,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as doors on the ceiling and floors curving into walls, directly fulfills this stylistic requirement and is therefore not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, such as doors on the ceiling and floors curving into walls, directly fulfills this stylistic requirement and is therefore not a hallucination."",
+  ""confidence"": ""high""
+}"
+98,F3_P,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a 'non-Euclidean impossible room' with 'paradoxical geometry'. The unusual spatial features in the image are a direct fulfillment of this request, not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'non-Euclidean impossible room' with 'paradoxical geometry'. The unusual spatial features in the image are a direct fulfillment of this request, not a hallucination."",
+  ""confidence"": ""high""
+}"
+99,F3_V,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features highly surreal, Escher-like architecture with curving floors that transition into walls and ceilings, upside-down doors, and stairs leading nowhere. This directly contradicts the prompt's explicit requirements for 'physically possible architecture', 'straight walls', and 'no impossible geometry'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features highly surreal, Escher-like architecture with curving floors that transition into walls and ceilings, upside-down doors, and stairs leading nowhere. This directly contradicts the prompt's explicit requirements for 'physically possible architecture', 'straight walls', and 'no impossible geometry'."",
+  ""confidence"": ""high""
+}"
+100,F4_A,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly asks for a 'strange interior scene' with an 'unusual spatial composition'. The impossible room geometry directly fulfills this stylistic and semantic requirement, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly asks for a 'strange interior scene' with an 'unusual spatial composition'. The impossible room geometry directly fulfills this stylistic and semantic requirement, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+101,F4_P,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts."",
+  ""confidence"": ""high""
+}"
+102,F4_V,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features highly complex, Escher-like impossible geometry with multiple gravity orientations and intersecting planes. This directly contradicts the prompt, which explicitly requests a realistic room with physically possible architecture and no impossible geometry.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features highly complex, Escher-like impossible geometry with multiple gravity orientations and intersecting planes. This directly contradicts the prompt, which explicitly requests a realistic room with physically possible architecture and no impossible geometry."",
+  ""confidence"": ""high""
+}"
+103,F5_A,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly asks for a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, reminiscent of an Escher painting, directly fulfills this request and is therefore stylistically and semantically permitted.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly asks for a 'strange interior scene with an unusual spatial composition'. The impossible room geometry, reminiscent of an Escher painting, directly fulfills this request and is therefore stylistically and semantically permitted."",
+  ""confidence"": ""high""
+}"
+104,F5_P,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a 'non-Euclidean impossible room' with 'paradoxical geometry'. The image successfully depicts this with stairs and levels that defy normal spatial rules, making the unusual geometry an intended feature rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a 'non-Euclidean impossible room' with 'paradoxical geometry'. The image successfully depicts this with stairs and levels that defy normal spatial rules, making the unusual geometry an intended feature rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+105,F5_V,,A6,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features Escher-like, physically impossible architecture with intersecting floor levels and stairs that defy normal perspective and gravity. This directly contradicts the prompt's explicit instructions for a 'realistic interior room', 'physically possible architecture', and 'no impossible geometry'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features Escher-like, physically impossible architecture with intersecting floor levels and stairs that defy normal perspective and gravity. This directly contradicts the prompt's explicit instructions for a 'realistic interior room', 'physically possible architecture', and 'no impossible geometry'."",
+  ""confidence"": ""high""
+}"
+106,F6,,A6,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image depicts a normal living room with consistent and possible geometry. No spatial anomalies are detected.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\F6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a normal living room with consistent and possible geometry. No spatial anomalies are detected."",
+  ""confidence"": ""high""
+}"
+107,F7,,A6,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image depicts a standard hallway with consistent perspective, lighting, and architectural elements. No spatial anomalies or impossible geometry are detected.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a standard hallway with consistent perspective, lighting, and architectural elements. No spatial anomalies or impossible geometry are detected."",
+  ""confidence"": ""high""
+}"
+108,F8,,A6,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image depicts a normal home office with consistent perspective and geometry. There are no spatial or impossible geometry anomalies detected, which aligns with the prompt's request for a no-issue control.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\F8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image depicts a normal home office with consistent perspective and geometry. There are no spatial or impossible geometry anomalies detected, which aligns with the prompt's request for a no-issue control."",
+  ""confidence"": ""high""
+}"
+109,G1_A,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and the relatively tiny people in the street scene directly fulfill this requirement, making it a permitted and intended element rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and the relatively tiny people in the street scene directly fulfill this requirement, making it a permitted and intended element rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+110,G1_P,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion a required element rather than a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion a required element rather than a hallucination."",
+  ""confidence"": ""high""
+}"
+111,G1_V,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests that the teacup and people be shown at a physically normal scale. However, the image features a giant teacup that towers over the people on the street, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests that the teacup and people be shown at a physically normal scale. However, the image features a giant teacup that towers over the people on the street, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+112,G2_A,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly asks for unusual scale relationships between people and everyday objects, which is exactly what the giant teacup and tiny people depict.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly asks for unusual scale relationships between people and everyday objects, which is exactly what the giant teacup and tiny people depict."",
+  ""confidence"": ""high""
+}"
+113,G2_P,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal scene with a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal scene with a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image."",
+  ""confidence"": ""high""
+}"
+114,G2_V,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests that all elements, including the teacup, be shown at a physically normal scale. The image features a giant teacup that dwarfs the people and furniture, directly violating the prompt's scale constraint.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests that all elements, including the teacup, be shown at a physically normal scale. The image features a giant teacup that dwarfs the people and furniture, directly violating the prompt's scale constraint."",
+  ""confidence"": ""high""
+}"
+115,G3_A,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_permitted,no,high,"The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and tiny people perfectly fulfill this requirement and fit the whimsical theme, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_permitted"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and tiny people perfectly fulfill this requirement and fit the whimsical theme, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+116,G3_P,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image."",
+  ""confidence"": ""high""
+}"
+117,G3_V,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests that the teacup and people be shown at a physically normal scale. The image features a giant teacup, which directly contradicts the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests that the teacup and people be shown at a physically normal scale. The image features a giant teacup, which directly contradicts the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+118,G4_A,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a whimsical street scene with unusual scale relationships between people and everyday objects. The giant teacup and relatively tiny people perfectly fulfill this requirement, so it is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a whimsical street scene with unusual scale relationships between people and everyday objects. The giant teacup and relatively tiny people perfectly fulfill this requirement, so it is not a hallucination."",
+  ""confidence"": ""high""
+}"
+119,G4_P,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal scene featuring a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal scene featuring a giant teacup and tiny people, making the extreme scale distortion an intentional and required element of the image."",
+  ""confidence"": ""high""
+}"
+120,G4_V,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests that the teacup and people be shown at a physically normal scale. However, the image features a giant teacup that is disproportionately large compared to the people and the street, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests that the teacup and people be shown at a physically normal scale. However, the image features a giant teacup that is disproportionately large compared to the people and the street, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+121,G5_A,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,The prompt explicitly requests a whimsical street scene with unusual scale relationships between people and everyday objects. The giant teacup and tiny people directly fulfill this requirement.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\G5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a whimsical street scene with unusual scale relationships between people and everyday objects. The giant teacup and tiny people directly fulfill this requirement."",
+  ""confidence"": ""high""
+}"
+122,G5_P,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion an intentional and required element of the image."",
+  ""confidence"": ""high""
+}"
+123,G5_V,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests that the teacup, people, and furniture be shown at a physically normal scale. The image, however, features a giant teacup that towers over the people and buildings, directly violating the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests that the teacup, people, and furniture be shown at a physically normal scale. The image, however, features a giant teacup that towers over the people and buildings, directly violating the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+124,G6,,A7,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The spoon resting on the saucer is disproportionately small compared to the size of the cup and saucer, creating a clear scale and proportion anomaly. Since the prompt specifies that the image should not contain the target anomaly, this violates the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G6.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The spoon resting on the saucer is disproportionately small compared to the size of the cup and saucer, creating a clear scale and proportion anomaly. Since the prompt specifies that the image should not contain the target anomaly, this violates the prompt."",
+  ""confidence"": ""high""
+}"
+125,G7,,A7,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image shows a realistic street scene with a cafe table in the foreground. The scale and proportions of the objects, such as the coffee cup, table, people, and cars, are consistent with natural perspective and do not exhibit any anomalies.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\G7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image shows a realistic street scene with a cafe table in the foreground. The scale and proportions of the objects, such as the coffee cup, table, people, and cars, are consistent with natural perspective and do not exhibit any anomalies."",
+  ""confidence"": ""high""
+}"
+126,G8,,A7,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image does not contain any obvious scale or proportion anomalies. The objects in the foreground and the people in the midground and background appear to be in normal proportion to each other given the perspective of the scene.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\G8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image does not contain any obvious scale or proportion anomalies. The objects in the foreground and the people in the midground and background appear to be in normal proportion to each other given the perspective of the scene."",
+  ""confidence"": ""high""
+}"
+127,H1_A,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects'. The soft, melting clocks in the image directly fulfill this requirement and fit the requested 'dreamlike setting'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H1_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects'. The soft, melting clocks in the image directly fulfill this requirement and fit the requested 'dreamlike setting'."",
+  ""confidence"": ""high""
+}"
+128,H1_P,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' as part of a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H1_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' as part of a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations."",
+  ""confidence"": ""high""
+}"
+129,H1_V,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features soft, melting clocks, which directly contradicts the prompt's explicit instructions for the clocks to be 'solid', 'intact, rigid, and not deformed'.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H1_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features soft, melting clocks, which directly contradicts the prompt's explicit instructions for the clocks to be 'solid', 'intact, rigid, and not deformed'."",
+  ""confidence"": ""high""
+}"
+130,H2_A,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects'. The soft, melting clocks in the image directly fulfill this requirement and are a standard artistic interpretation of the prompt's theme. Therefore, they are not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H2_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects'. The soft, melting clocks in the image directly fulfill this requirement and are a standard artistic interpretation of the prompt's theme. Therefore, they are not a hallucination."",
+  ""confidence"": ""high""
+}"
+131,H2_P,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks', which are clearly depicted in the image. Therefore, this unusual visual element is not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H2_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'soft melting clocks' and 'deformed clocks', which are clearly depicted in the image. Therefore, this unusual visual element is not a hallucination."",
+  ""confidence"": ""high""
+}"
+132,H2_V,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests solid, rigid, and not deformed clocks. The image clearly shows soft, melting clocks, which directly contradicts the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H2_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests solid, rigid, and not deformed clocks. The image clearly shows soft, melting clocks, which directly contradicts the prompt."",
+  ""confidence"": ""high""
+}"
+133,H3_A,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects', which directly corresponds to the soft, melting clocks present in the image. Therefore, this is an intended artistic element and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H3_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects', which directly corresponds to the soft, melting clocks present in the image. Therefore, this is an intended artistic element and not a hallucination."",
+  ""confidence"": ""high""
+}"
+134,H3_P,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' to symbolize distorted time in a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H3_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' to symbolize distorted time in a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations."",
+  ""confidence"": ""high""
+}"
+135,H3_V,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The image features melting and deformed clocks, which directly contradicts the prompt's explicit requirement for the clocks to be solid, intact, rigid, and not deformed.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H3_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The image features melting and deformed clocks, which directly contradicts the prompt's explicit requirement for the clocks to be solid, intact, rigid, and not deformed."",
+  ""confidence"": ""high""
+}"
+136,H4_A,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft, melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H4_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft, melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination."",
+  ""confidence"": ""high""
+}"
+137,H4_P,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' as part of a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations but rather a direct fulfillment of the prompt's instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H4_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' as part of a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations but rather a direct fulfillment of the prompt's instructions."",
+  ""confidence"": ""high""
+}"
+138,H4_V,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests solid, intact, rigid, and not deformed clocks. The image features soft, melting clocks, which directly contradicts the prompt.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H4_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests solid, intact, rigid, and not deformed clocks. The image features soft, melting clocks, which directly contradicts the prompt."",
+  ""confidence"": ""high""
+}"
+139,H5_A,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H5_A.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'deformed clock-like objects', which perfectly describes the soft melting clocks present in the image. Therefore, this is a faithful rendering of the prompt and not a hallucination."",
+  ""confidence"": ""high""
+}"
+140,H5_P,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_required,no,high,"The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' as part of a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations but rather a direct fulfillment of the prompt's requirements.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H5_P.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_required"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The prompt explicitly requests 'soft melting clocks' and 'deformed clocks' as part of a surreal dream scene. The image accurately depicts these elements, so they are not hallucinations but rather a direct fulfillment of the prompt's requirements."",
+  ""confidence"": ""high""
+}"
+141,H5_V,,A8,,gemini-3.1-pro-preview,permission_aware,True,prompt_violating,yes,high,"The prompt explicitly requests solid, intact, rigid, and not deformed clocks, but the image features soft, melting clocks that directly contradict these instructions.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H5_V.json,"{
+  ""target_anomaly_detected"": true,
+  ""permission_status"": ""prompt_violating"",
+  ""should_label_as_hallucination"": ""yes"",
+  ""reason"": ""The prompt explicitly requests solid, intact, rigid, and not deformed clocks, but the image features soft, melting clocks that directly contradict these instructions."",
+  ""confidence"": ""high""
+}"
+142,H6,,A8,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,"The image displays a collection of clocks with normal, expected features. No artistic deformation or unusual visual elements are detected.",,outputs\raw\gemini-3.1-pro-preview\permission_aware\H6.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image displays a collection of clocks with normal, expected features. No artistic deformation or unusual visual elements are detected."",
+  ""confidence"": ""high""
+}"
+143,H7,,A8,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image shows three clocks hanging in a train station. The clocks appear normal and do not exhibit any artistic deformation or unusual visual elements. The numbers on the clock faces are correctly ordered and positioned.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\H7.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image shows three clocks hanging in a train station. The clocks appear normal and do not exhibit any artistic deformation or unusual visual elements. The numbers on the clock faces are correctly ordered and positioned."",
+  ""confidence"": ""high""
+}"
+144,H8,,A8,,gemini-3.1-pro-preview,permission_aware,False,no_issue,no,high,The image displays a normal clock on a table with no apparent artistic deformation or anomalies.,,outputs\raw\gemini-3.1-pro-preview\permission_aware\H8.json,"{
+  ""target_anomaly_detected"": false,
+  ""permission_status"": ""no_issue"",
+  ""should_label_as_hallucination"": ""no"",
+  ""reason"": ""The image displays a normal clock on a table with no apparent artistic deformation or anomalies."",
+  ""confidence"": ""high""
+}"

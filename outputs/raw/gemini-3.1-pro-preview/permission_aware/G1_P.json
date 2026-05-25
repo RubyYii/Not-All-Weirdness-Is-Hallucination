@@ -1,0 +1,57 @@
+{
+  "sample_id": "G1_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G1.png",
+  "evaluation_prompt_text": "A surreal scene with tiny people and a giant teacup. The extreme scale distortion is intentional and central to the image.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion a required element rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion a required element rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a surreal scene with tiny people and a giant teacup, making the extreme scale distortion a required element rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Eo4JCosJAQw51scu6wovhH5TXvGngi6qSm/k0aQV7pyjByc5NkJeOe6fOSPI8V6eT5rJYmJC9CSuFimHx3rDihys6UHkD7BnpOeNBIX8UEWtNf6kNdNqh3xzbt+mkyGMrtig45qnV8DpH5IJY4VOM7FAvAnHVkPq/6VXMGwsKhPPw0ElFYwv3+Dp0JXayQa5ZZNBmxiWwTikVIzichw7ZW2Wiv6OuzqjEd+9dOEnOvdY3wDm6kC/IoUg2woqmPqs6cnxuH3rWpV8EpHtseXjFOx7Fom0f0k93qNpC7rqySRv+mZEQo+6EG12lXfSRUUqDxX025qrKYrbi0TsQcJ3bHOBB6mU5/vgK+BFD7TkfRSq7va7zysTZJCLunKYIF1UIpmV1j2qxddPhG4/LJoew4ybNuuTDEPTsM3j3Bm71bi1HV+3bh2N/+VALZenH7+g1QYdfud/ev7oH3u5dBBU0SZDC2UCe56wZSdqvK+AvTYEE6aFRJd9GFyjTeW/xk9aWbsTfsfibvFHeXhMtLMA/KnlyM7eQfup5KaOzhVjtPU6OvVXriGAEtP+nf7D3Pnzk5vFt5Y0fPw9820CrXms1W3JlZVnZG4vo1sPhOF4LAVSVTrQuByQRUuQOuUKQabjSz1nIzVF2rTdtv3ppYvxEz8Kual8T2ycav7RXWNG1tUezOOcZVmjhwJ7PgLIUxoId1rnXq9ztPsoMBonx+i9e3sqhi4g12WZUOaMLPgJJ6e75Pnep3YbKUfJdQpKnukw2i4O6OR9V0FN4rJWdk1lrfI9HFaQLxoCGrihaetqaoXe7dvjy/YtthinLmpm23zURyyal1XyMpPjFE//9a1E1QcdF8LMv8mgtljMtc19K/XcWG7tzOT3hPWYJUvIP42+HH7ZOwymG/QGvTyCv5vqFgcWWi4ZHce0NUYvxXtUVJTaoVqfd0kBHP4HCuhoQ6pD3hLhedWe2MUpiRXOxOqWwI/qVwOIWQnRzzhYYU3WB46ueQV/Gl6WXul1VnQmzLxQen2A1fJElMMLZnBFbKft3lKZp2iauXUnhPn7AUijeZZ8iWoXS6nDOujH+vIfwJ2ge9iUJotRbTXmaL+31+sqNMvZL5B4/e1hsfsuZ/YDPZBsOZ0ODoYeV42cPdwGbXObR8nEqWkzgLdHlknItavl3nAyVvpkOeBjTjI1zYZr/l+GyfDL+0uXAb8/6iiaNLzFxdzS9+raZvnki2Vbg2BDlkp/ugQkUzKCkjECFIuafoamR/khVGF6BfnDbKGMe3cXMA9uyJ9e0Nd3x8AbCs+EvjFwqDqVic3kgc3O5mirm36OQUEKF5rtBGKlG9dYKz4nOMahdCSmXaibC4JZ/hEUWyVLFZR7/O4MICJTwlFaHCMZADtzLJKXIlKFSH6tsLFM8GZ54eL7UZkSwOYXVUijYyDg1ewW93uZOpmj0uAoX9ooLKLwVeIp7R4isM/aAOrVXix7ox0P2+5k5KVpgblYo3sDA2VEUNN2/mG7XWNCcG9cDDb2nhyjZiX+qdq1GvWTiR/D4sPOvebDvswdls5bXc0="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1471,
+      "candidatesTokenCount": 86,
+      "totalTokenCount": 1805,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 382
+        }
+      ],
+      "thoughtsTokenCount": 248,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "NzUKarGBOYjkkdUPwcyB4A4"
+  }
+}

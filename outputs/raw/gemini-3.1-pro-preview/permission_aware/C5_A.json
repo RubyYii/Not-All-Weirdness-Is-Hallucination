@@ -1,0 +1,57 @@
+{
+  "sample_id": "C5_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\C5.png",
+  "evaluation_prompt_text": "A strange poetic landscape with unusual water movement and dreamlike atmosphere.",
+  "target_anomaly": "upward-flowing water or reversed gravity",
+  "axis": {
+    "axis_code": "A3",
+    "axis_en": "Physics"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere'. The upward-flowing water from the fountain directly fulfills these stylistic requirements and is therefore an intended element, not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere'. The upward-flowing water from the fountain directly fulfills these stylistic requirements and is therefore an intended element, not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual water movement' and a 'dreamlike atmosphere'. The upward-flowing water from the fountain directly fulfills these stylistic requirements and is therefore an intended element, not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EssLCsgLAQw51scZ36kVOZAy7h7CGz3ynDuaaz9jLO6R+V1B1QfumwykTieOIi5zHVi6TCNWCVe5gutaPtnWlKgkOSGm1aXcldFrOTFepZMJk7Z3mcRTzOmWqJxhpfvZVdVrnMV/++6YG59FDAoiNekhwG87+zSQOQcTpJFTJrUOsgcuQBa+iaKsIP1R0G3a0LhbNCjBkb5sn6xTSWGXe4cLr7ohFWiyels1XF9R3tYuT82jpqhdwWCJMYSbQ4gcshoqUZek1THlahnywGXMlHOwRhrJYRCTd2RuiYGDnqCwWfXNQpcbNhFCWUimIwO9+6/46sI7WDS3ZcEiWJttgnoFbqNtUHRczILH1UfTgRLvvPwJcgNNTBZhafhF8w2IvEdyWKjXfe8fLHP70+QwJkmujTxBv7jlq8PJsOo77TjJ8QdhtTDVcEoYPSaGyez4vtl3Yoy9aZZkyaLLdMdVbJneQrK9mT8upXVd7cP/zyDSBzxrXFuFT/pVYxhVMEaJZE48vEadv6KqR018UMFvg9mocL8PJ1WfcD8MwQbNqi5rPI9wXQ35i7rRWGami9emszf8xE306iAwap6D6S3H0QeGrtJ1ZDmjWbK5E5Ieh78Nt0td3aU86GXY+p3C+YBKvpp8lUcF1hgM0ZXafFmN6WKa91NY12tYunuRU7lsBjaJ0KPUYRvOkrhTaFV7QygyPr5D7gHfaj39GYiFZRJAsWtx0u2Hu8ICrtb6MHm5VqJP9Tvfcqp1mX9/fvzKYLJnWURJfQOV+rj9e+pfgY0LNVeJoccfK6ucqS/VaUYI3P0+imyJHa4CV4izRn8QXF2+SP+/NrNNzbUmprzwAgd/l1NB0h44LDo6McXRYrZbfzWKwbv/CgM0q0i88yXHpXAVIzs8YRCvJo5uusp91GMcTzNnOwB8wDJZ6/Uovs0EVSlyYpi8OhcPbMRB0SgVvwTkciLIFlMSt1MXoRt1WQEJhK4XU/WUNXK5Ljn+VVQhWt60IuS3yYmcTg2J0RdzJH1SiYSsd+8SDIlmMAPPkyIA1gSvleJt6SxxNXtGPHVEbYRKB1UcaqVC8naT2qmLKWCDUElhwwfwuXHstSfizyVyZ5DNh5nbtTIat9elCl4pzFnyajqilZ1aynknaEdm0+0H82n41uhWrMI8uJIjJkhgMxcdaSD7X2Tuh/18AE0xoXrVNgjj5V0MW/AQqp6uz0RTiGJdQLOgPzjVKMgZ9DOtj9IgNSzExuGf5OOnoWVz8T0ZDnZBiRv48OHUQZRgq6H7H9Lg4C9GatBl6eVHjEQ7T6W099rVyu9EoZWeBxH5t3aetBRZt8ARDaDQW1j1U2CZCxUptdxUFWuK+lMOtNKu+c1QoucKApzEWZY8Ox/ZUBsVNsj/8VMyLPxw2LCnFfFEzcoh5W+WoDIDDG/+Cing9n4BNecXiIhfEpHpuEVrWykdtCNICVshwWPcBK0U2AoyCADwDsHJO6Gct58T2pL5fQMaPzfBpYYXHh2WfkoQMVhm2vEk1C7C4yHFY8ldNC1KvvZSotjgIqpsbwjwZr9N1gdZbkNVWjP0/1pBPbBC+7cM95cvIiJ0dIaOpIuiId78AJE+uUVzIx0GUiWIWr7I5PE7D2O7Ukvo6LKNqrNEGJfGl1LCx5aBaJTGOOqhkVaqrp1MrHQVJdHxfQ1rUW4ooNTeBKtZ8ukAXIx0nYjKyd+ZeELWPx4klh08BwTnoxH9h592Ptfltsyf7ECmldbSLjGtum0EOTRXRiFuMSJJ/4h/RFlgr7BwGHi7jiyLqH/1S9VkdeFOrroa3asi7kBOHTTIj5t1AZSEpM1luTbpFwKUUIuv4QIK5QGactvWgY5N93rBAhI8Kwpxln7sj/POqpkZTrZMidEGsNs16YlkLhMuQWHLo2ADAVsMaUcSh4L2n4KVThvc5kLUp+0nxBiaaQnvyiBn9+O3hatfuGJDCi3c5Ow0NKJvTSDV29GSbw=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1450,
+      "candidatesTokenCount": 98,
+      "totalTokenCount": 1874,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 361
+        }
+      ],
+      "thoughtsTokenCount": 326,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "kDMKaqyNDcGB3boP3-PPyA4"
+  }
+}

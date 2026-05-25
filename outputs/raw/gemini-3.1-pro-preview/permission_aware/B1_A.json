@@ -1,0 +1,57 @@
+{
+  "sample_id": "B1_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B1.png",
+  "evaluation_prompt_text": "A creative poster using expressive typography and distorted letterforms.",
+  "target_anomaly": "illegible or distorted text",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms' and 'expressive typography', making the illegible and distorted text an intended and required element of the image rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'distorted letterforms' and 'expressive typography', making the illegible and distorted text an intended and required element of the image rather than a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'distorted letterforms' and 'expressive typography', making the illegible and distorted text an intended and required element of the image rather than a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EqwLCqkLAQw51sfsDZImlHx0rieDXlJ9c9IagJuNvmmWb+8rqS/AnFGsT4yoafX/Cfr9A28Lkp9wXzW3wCZogDgysGSkV6ZePTn1yZHVI27Z3R/XizdkP983dYGMkNDXt9I83vnB6PIYztPwQwhenyUZMlEekYn/HOsS30sbhWHirLwmQ6KPXN8WuKGpHWjGOMhQTbPjfmhHPlgAxhcm1xjgsiOffuz29QAHT5Ow5LdKo+HSFG3q6XkQejF970x6s1lB9RL7ZfpIlDgSdoGsO4JPgDK8UEhC/G9Bw4uYYsoR67kh1foA0wj2t96smM1rnjCyHT/RJfLVRomXyw0KsVrAXDJS4RUxoauifXkPmf2LEET5OZYCyS/Xs+r9DER5HSmC0+shuW8V+uZd72A+MJyM78ayZbQ9VN511LaqnfU4B635m1kRgoqiH0FN+4V/aUiWWHCrnw5u2tJs77LzN/IVHYC11siMOefFvWWgzr0oxMSa9RFBhyQRFSl+44Jztt2pcDgYRSDaXxKlDk2b7ZKyfqTqORj9ipYU3gAkwMflIirqibFxdGWIkrGD472fOWZrNzbJoTPCxDkdMj15G2ZOskcjuc6UWpUiWQTZszgR6s2HPZ8EfXN0QJbjA5vBZjgl/zxNXSaQ8LZDAr5WcsjsnPkpnyDlCHM5UCi3MlRvrcQ+8GTKFd3V6Q4PoLNLBXeBw8j30OCknDH+r+xult1FCElWXmx1xElhz6RPneS5dSfl+KhhisrmzbIG0T2jm53cVp4RYhHcvuS/4hpdRN0Pj+PS/qmRdojPgZk4kH4yn+vlmY6Ne6KXL7z8loCVgy5EYmt8+T2fTg+PyRGv34vFSNtBPqlmjfWZyjd51DRTrIllN9CqUn7OZo8TfO1vF9mfHWWkwo0kv9eIkxDakkVtSgXz2x9C9rYr5i2et3464ULiiGpAEOZF3scJ0AzrIJFW3nIVDBfg6paUZfERnPUMwBdjPH7yPjA1rQSd6DE8uMgQ1y4gIpAvZIB3NXEUCLMCx9JaILPLfkKmwoQX0ytNmML0ALTc6gtkourH1NeF1coD+LGIIzm4/ZLvkNbH//Lrfekatjl5isJfFdxVcbQrL2iQ7N152b3XLCdxV1ZkytaxE9uPZun3Jr0yLE91Byf8A/gGy+G8aNjpQ39tKnCU447JhOd0QSqFqa3oz0ZEXz07O6i5FNSNYvn9FvqemAcv9PIG92fdGj9ivksyRPxbQUVpb9E+Wj4jschrekHPLpuDGw0a1ieIO26Ox/OGa/VvYNTtdio7vsBCnY4SGJFNDvJjI5curlcwcXKN2C/5NG9V8V9/OutN8ELR/pZUM2Fk2R8QQ6uU/faAEG9oZik1DME14PqG6cm8xrnOuTy9wttjHL3ngfrmADuEECaxvkojkaRH6HOp3OIIyg9rRRqHZAEw4VfsVXcQH7ey5mJWpRBzEcxCFJ2x1MOJia/RaeWhtrUNzyLJA/cKWc5pS1PcDeo8rf6cE67MKpjK4dTued/MfrxGQq8VS+1DOy/BCWpqr4/l+ze6i3M/35Eh5mB8ocwD+jc7EwBwXiL1uD71m6rY/wGPI58/ZsTzOO4mIGFkVmHAxjYVMX0Z9oRqHn+rHl8TLaseDX1rTwrVFLGbUThaL46LcUmLN5w3GA4GURLTGkb2rtkRASb2Iv2lamCKsgPSaxtLBqqR57+juTq6fJzKWibxSOiiEqoHdIdQalvjNtQoe0/iY6TeRpGjAKKJmJoZZtfGQdNJsB0OjUfX03s4UwMc5qNKmPbuuVci85BkY7jLuwHkA1SUa7PE9LqgTlyUu5sa+og8Z7op/0UXJRq3wxKvXYScvooCH8qvq7ZP+0VBnbXAgNTQgG8iRu0zDtwoMqGcCMAzXwZ3U0WDHa5914sLwNpcqTBYe01KE1/cLIrgX1SEb3XVfXUH"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1442,
+      "candidatesTokenCount": 93,
+      "totalTokenCount": 1831,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 353
+        }
+      ],
+      "thoughtsTokenCount": 296,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "rDIKapLmBtPcxs0PqPqcqQ4"
+  }
+}

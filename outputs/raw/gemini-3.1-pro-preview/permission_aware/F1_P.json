@@ -1,0 +1,57 @@
+{
+  "sample_id": "F1_P",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\F1.png",
+  "evaluation_prompt_text": "A non-Euclidean impossible room where normal spatial rules break down and the architecture intentionally forms paradoxical geometry.",
+  "target_anomaly": "impossible room geometry",
+  "axis": {
+    "axis_code": "A6",
+    "axis_en": "Spatial / Impossible Geometry"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts with its confusing stairs, upside-down furniture, and Escher-like spatial layout.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_required",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts with its confusing stairs, upside-down furniture, and Escher-like spatial layout.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_required\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests a non-Euclidean impossible room with paradoxical geometry, which is exactly what the image depicts with its confusing stairs, upside-down furniture, and Escher-like spatial layout.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "Es0JCsoJAQw51scTT0mzNQiIEiI7tDOmuItSfJRLM3wYnKyvAOMjDefwmU6KkavXF84fJ27piMH7gmuj8hyPj3d2YN781NgnZMArv/8Wco7WumruwD6OhEyffo63RiZ74sbUOalPnnxJ4/1NelKdUrChzzMgnh7X0Manf2A64z+KTgJ4pRh7UZnUKeMSqx24qXOzSL/0ahvqQELAkR4fdpSNLxxnTovWQg1Rz1Pco4ch5oDpzJB4vfxjUlzDCFBnbgdGM4Nv2GGfJCYr/JRvhaKuUxN9TI7HhcTGb9AnGAcwPujvM2rW9LaEd4XoW1iuDVARFhqcMQnOSAHOkl2gOEU1CXxktn2+p8tlMcZ9Swy7UHzr/s/RcCbD3n5vc+aSi94S58Ge/lXusqokb5IDEv6Gjq+DilhqGnowSTQzR8zyL+x1cGNnDUNtJzdQNWom/mnAq8lEboDApgq6HjvjLrhUekw4+DUj1R7Q6KUxLhSCU3foLczkk4GYswHLS1NQR4W0m/usjr/d7dU1+ZwCakGmONx33vbtTjHFTdyx3qLgOiCaIJGXf11zJJyeobu2Zuz2B7Obkq0O/PTQi6PbHwoiv8w7OY6nd28QUp7ypzPqarX+Ol8djaEDpa7QrAY4kyDt6Y0oZyqwM1rmhywvSgUmzeavZaUt6khW2WWct5lLZqmpT2Evlb02ISY4cLn/iJaqwPyoEqBOYYCJLHXeTBVZfz1WfroNq2YSZEleZRY6TCyFC2X1FT0aqdNKolsId4fTd89OJXUTBd3xPGuyaBqeUY5QCdF59lM6wrxRFmejmEJD96PBnQCO3OAzfstfCAd5ZIOlFd4AS779tSYhZYyU9QyjtG0qR5xVH2sqgp8f8eIFcukq1GH8bCg0Hyj1JvgV+N+ztwy3YWvQUkwIV3yqifQC6pDa0c9LcSt7uTpw1YYWS3pa+4GNkpk/+cXA/N85CEb1OlR8U0R5z4tG+PiLoMyj0Nj4+tQ26Bm7F069x5DKJhctIFpoEU2hsZR7rhyXC4kAQrMUvNjey/9bd80VQUeW/VGBz+vlUVJZNzgo230Bg/o5l9a0UEj47QoEugqvLLvrDxfdGIn5LXLgaDssfbUGclZ1MrWQsdKiBL4ELlQfaszj5wLwIa22JyppaZy1s2Nc1krOmilcTYyDH/4mMCrSIxIEsKcYvMCPkaSIPlI/d62FnGaV0FvC/hvktpM+Yl3gb3kGpMgASxr9YGyBKwZ9FPM3XBSdyOFrmN2t7RXz8+3pFbSUwpHx7z3fyFvhpkZ29f/YG8ubSHOqyFCbovXjiGm13n2SRF/uSFKZ4cSl5iTimlTgC/+5+kQzxrLuJ+6E7DjXu7t7tDkaPFpeQElqEQxT38cB0w2xgVnotai9v2K5HKQN2M9tmZc1kKhlL5stQpmQlvFg0dg4BB7FdFA0DSfllrBeqyHiQBsFfAHowUeTP0UXxTaaBN4YeRaUlf1EOvQl/fZ8O4z5XQeHg9oMfuehMFd3kPFrHMrXAFf9qZ1YX9o3cWmXhmprucnEJQh6BrD9CKuNn4Jm/fP2437ycAvWMJ9bKav6WU+sZ7xcup1IbGwNn0/mhOcvoemaid4ShobYRvw1Rg98tJuRD8EpJPv1Zp2m45tt4Fs="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1460,
+      "candidatesTokenCount": 97,
+      "totalTokenCount": 1805,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 371
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 248,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "qjQKaoqHIcmPkdUPm6TlmAE"
+  }
+}

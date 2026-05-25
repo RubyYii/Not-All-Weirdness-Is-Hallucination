@@ -1,0 +1,57 @@
+{
+  "sample_id": "B8",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\B8.png",
+  "evaluation_prompt_text": "No-issue control for Text. The image should not contain the target anomaly.",
+  "target_anomaly": "none",
+  "axis": {
+    "axis_code": "A2",
+    "axis_en": "Text"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image contains correctly spelled and coherent text related to green tea. There are no text anomalies present.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": false,
+    "permission_status": "no_issue",
+    "should_label_as_hallucination": "no",
+    "reason": "The image contains correctly spelled and coherent text related to green tea. There are no text anomalies present.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": false,\n  \"permission_status\": \"no_issue\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The image contains correctly spelled and coherent text related to green tea. There are no text anomalies present.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "EvoICvcIAQw51sc/tSVWkeDGtFiU6IVg7MZg/6mP2D2guozzg20ViRYzzd8GY6QvwTJXPy5744JL+8wLNwO0LyiwZ4GzogW00ja9ubQ3VvQxojgKX7rGNvCs2SznRkpabEiwcwso9UrSF0aFCJ5wWZqac6cWoqKwfn8K5JAi4J+rTydbyWA6/KrERFP3z8T3k7+ss7AV2k39UOcX+rrCjOMTGHFqT21yy7cUkTyeY+6KIJmw3E7NrME6N2aFmg21Lgn/Ol8uu2DB8omwh5tovWBKXcl1XB6HvoFGehWGiGBXpBZwpCAU5bnrVwJxKGW//22ryHJM5opyCxT0U6hynsELHvjVMmNKFcuFqx3do8CfhhuIzDu27RTYyYGZeLtpc7QH67MxfjJx5PeISNVEcb63MBRnr8c6F341c8GYyLxXXYDXLgjC5TB5cviaGdtd//aHuAsg2dRRyUM0rNi7JHN8srBxFZ1DPJo9a2n01IqnAZsEBVBcSFaEpKwLaA1J/orlgAGdcR7Xridj8T2OwwD/821LJsW0YiZx5I7ZVCHiXmItyFkj/eFIy+hKDEU9hHWuHhcDgjwc31GmragkZuronExBQgWVm56mzKsq7m8S+dkAw/j1FTopb6e/ZvjphStLpMLQVBnGS6+KdPAJ5K0XXfHTOpW2BaIczFMZWcFljNlrTlbx6FB9ilhx+GezLpQxYzcMMxonM0nJi+FINKpayKjiULtTbazhiH2RtBat7uXQiRkTNI3SEdUJaAPeow2jf/9jfwTPpQFKX1cjTE5MWhA8ulLrKaWBRKuh9l4oIDla9ruw9TMUnEyg4H6fkFkuCyjppnfcmvbYqFgy8LddJ7b9M6hf6il3x2RoRO7aKyiND4rCUkPMHiEcoN/fSxvSPsjJXOig2S134QDs5HVqsVEt+Izm0iff8O3lbg27VuPc5Erwh/CQBBwwLoXIN97nNL3LnEmFoAyaFdjpl38B1ayMgsI6gQoGz4TfdbJXsWqAW5I3BeVyw3frJ7RD3vWVd+k6S/HiuHEevZ1OOXlEoouM4tWefHJgwVaHkbYpButnFYYPE0+7h40Yivx2uFTBqxHbjYABNXxzdtu+kOsSgq3jiY9RixUwrbHULExP+F+A6m65dO2H93v7FzWneiWgLZ7/4pjVjx8pGR42lwoPjeidMEC6x9lKj3i7S4Z3QAhWCCSLxAPtLHj9lvpCQF9myRd7CF4DkBdd6kt6EttVmPDiQVo5Rqyb+hpSxqfMHzag1fB5rrjGlWEq5g1VgEook2KM7sLSds3E9oj3t9T2j8EnnmGUgRWriynoBAJ4lveXzFj019+KdNljNtCJS7foYSdA5msvJIOjjtOLiEollM8HomvPHED1+4XFkH36jX9IR3HXRJeei9lvHDOJqM1eJU4xKNz95blR3EZElHq5i8UXVmPeYBoqaJXLsNy3LvkbvRpp0PjPEyowW+6sYdKrTl89VCoI9HWp0KWm5MnuPT1kL2NPCL133RDs3s3KAGx92MMCpBaBqZLA"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1441,
+      "candidatesTokenCount": 76,
+      "totalTokenCount": 1809,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 352
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        }
+      ],
+      "thoughtsTokenCount": 292,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "DzMKaraGFpfp7M8PtMjM-A0"
+  }
+}

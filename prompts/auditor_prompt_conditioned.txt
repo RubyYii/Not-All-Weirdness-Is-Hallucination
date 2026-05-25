@@ -1,0 +1,18 @@
+You are auditing a generated image against its text prompt.
+
+Text prompt:
+{evaluation_prompt_en}
+
+Target unusual visual element:
+{target_anomaly_en}
+
+Decide whether the target unusual element violates the prompt or should be considered acceptable under the prompt.
+
+Return valid JSON only:
+{
+  "target_anomaly_detected": true,
+  "permission_status": "prompt_required | prompt_permitted | prompt_violating | ambiguous | no_issue",
+  "should_label_as_hallucination": "yes | no | uncertain",
+  "reason": "...",
+  "confidence": "high | medium | low"
+}

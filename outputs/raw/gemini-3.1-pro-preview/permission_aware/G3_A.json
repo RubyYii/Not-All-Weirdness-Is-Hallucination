@@ -1,0 +1,57 @@
+{
+  "sample_id": "G3_A",
+  "model": "gemini-3.1-pro-preview",
+  "provider": "gemini",
+  "audit_prompt_type": "permission_aware",
+  "image_path": "E:\\project\\Not All Weirdness Is Hallucination\\image\\G3.png",
+  "evaluation_prompt_text": "A whimsical street scene with unusual scale relationships between people and everyday objects.",
+  "target_anomaly": "giant teacup and tiny people",
+  "axis": {
+    "axis_code": "A7",
+    "axis_en": "Scale / Proportion"
+  },
+  "response_text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and tiny people perfectly fulfill this requirement and fit the whimsical theme, so it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+  "response_json": {
+    "target_anomaly_detected": true,
+    "permission_status": "prompt_permitted",
+    "should_label_as_hallucination": "no",
+    "reason": "The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and tiny people perfectly fulfill this requirement and fit the whimsical theme, so it is not a hallucination.",
+    "confidence": "high"
+  },
+  "api_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"target_anomaly_detected\": true,\n  \"permission_status\": \"prompt_permitted\",\n  \"should_label_as_hallucination\": \"no\",\n  \"reason\": \"The prompt explicitly requests 'unusual scale relationships between people and everyday objects'. The giant teacup and tiny people perfectly fulfill this requirement and fit the whimsical theme, so it is not a hallucination.\",\n  \"confidence\": \"high\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1451,
+      "candidatesTokenCount": 97,
+      "totalTokenCount": 2036,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1089
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 362
+        }
+      ],
+      "thoughtsTokenCount": 488,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.1-pro-preview",
+    "responseId": "ajUKar-aDq-4vdIPktSdUQ"
+  }
+}

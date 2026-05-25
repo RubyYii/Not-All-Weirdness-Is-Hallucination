@@ -1,0 +1,15 @@
+You are auditing a generated image.
+
+Target unusual visual element:
+{target_anomaly_en}
+
+Inspect the image and decide whether this target element should be labelled as a visual hallucination, artifact, or defect.
+
+Return valid JSON only:
+{
+  "target_anomaly_detected": true,
+  "permission_status": "prompt_required | prompt_permitted | prompt_violating | ambiguous | no_issue",
+  "should_label_as_hallucination": "yes | no | uncertain",
+  "reason": "...",
+  "confidence": "high | medium | low"
+}
