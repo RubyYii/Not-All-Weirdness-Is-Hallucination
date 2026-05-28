@@ -1,0 +1,232 @@
+\documentclass[runningheads]{llncs}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{url}
+\emergencystretch=3em
+
+\titlerunning{Permission-Aware Safety Auditing for VLMs}
+\authorrunning{Anonymous}
+
+\title{Not All Weirdness Is Hallucination: Permission-Aware Safety Auditing for Vision-Language Models}
+\author{Anonymous PRCV Submission}
+\institute{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Vision-language models (VLMs) are increasingly used as auditors of generated visual content, making hallucination detection a test-time safety inference problem. However, visual abnormality alone is not sufficient evidence of hallucination: an unusual feature may be explicitly required by the prompt, merely permitted by the prompt, clearly violating the prompt, genuinely ambiguous, or absent. We formulate VLM-based hallucination safety auditing as prompt-permission reasoning and introduce a five-way schema covering required, permitted, violating, ambiguous, and no-issue cases. Using generated images as a controlled diagnostic safety probe, we construct a 144-sample setting that isolates eight anomaly families across authorized, violating, ambiguous, and no-issue contexts. In current-state permission-aware evaluations, three VLM auditors show clear-boundary competence: prompt-authorized abnormalities are rarely flagged as hallucinations and clear prompt violations are usually detected. Yet all three current runs over-resolve ambiguous cases instead of preserving uncertainty. A three-rater human pilot shows a parallel safety-label problem: agreement is high on clear permission boundaries but collapses on ambiguous and no-issue/control categories, revealing annotation drift and majority-vote failure for uncertainty-sensitive labels. We therefore treat current metrics as preliminary and use the human pilot to motivate a revised guide and fully blind adjudication protocol. These results support a safe-inference framing for visual hallucination auditing, while final benchmark metrics must be recomputed after adjudication.
+\keywords{Vision-language models \and Hallucination auditing \and Test-time safety inference \and Prompt-permission reasoning \and Uncertainty preservation}
+\end{abstract}
+
+\section{Introduction}
+
+Vision-language models (VLMs) and multimodal large language models (MLLMs) are increasingly deployed as test-time auditors: they inspect images, prompts, model outputs, and safety-relevant evidence in order to decide whether a system behaved reliably. In this setting, visual hallucination detection is not only a content-evaluation task; it is a safe inference problem. An auditor must decide whether a visible feature is a harmful prompt violation, an authorized creative invention, an underdetermined case, or no issue at all.
+
+Generated images provide a useful controlled setting for studying this problem because they often contain visually unusual content: distorted hands, unreadable text, strange physical behavior, impossible geometry, abnormal scale, or stylized object deformation. In many evaluation settings, these abnormalities are treated as evidence of hallucination or prompt failure. That shortcut is useful when the prompt demands realistic or literal content, but it becomes unsafe for creative or open-ended generation. A six-fingered hand is a defect if the prompt requests a natural human hand; it is not a hallucination if the prompt explicitly asks for a six-fingered alien performer. The same visible abnormality can therefore change safety status depending on the prompt's permission structure.
+
+This paper studies that boundary. Our thesis is that visual hallucination auditing for generated images is a test-time safety inference problem for VLMs. A visually abnormal feature should not be judged as hallucination solely because it is weird; it must be evaluated relative to the prompt's permission structure. Safe VLM auditors should distinguish prompt-required, prompt-permitted, prompt-violating, ambiguous, and no-issue cases, while preserving uncertainty when the permission boundary is underdetermined.
+
+Our current study is deliberately small and targeted. It uses generated images as a controlled diagnostic safety probe with 144 prompt-image pairs across eight anomaly axes and four condition families: intended deviations, prompt violations, ambiguous prompts, and no-issue controls. We evaluate three VLM auditors in the permission-aware setting and run a three-rater human pilot. The current results show a split pattern: clear permission boundaries are handled reasonably well, while ambiguity-sensitive categories expose both model uncertainty-calibration failures and human annotation drift.
+
+Our contributions are:
+\begin{itemize}
+\item We formulate visual hallucination auditing as a test-time safety inference problem for VLMs, where visual abnormalities must be judged relative to prompt permission rather than visual weirdness alone.
+\item We introduce a five-way prompt-permission schema covering required, permitted, violating, ambiguous, and no-issue cases, and construct a controlled 144-sample diagnostic benchmark for VLM safety auditors.
+\item We evaluate three VLM auditors and find clear-boundary competence but systematic ambiguity over-resolution; a three-rater human pilot further shows annotation drift and majority-vote failure for uncertainty-sensitive categories, motivating blind adjudication.
+\end{itemize}
+
+Important scope note: this draft does not claim final full-benchmark performance or final model ranking. The current final-gold draft retains 65 metadata-stable clear-boundary samples and marks 79 samples as unresolved pending blind adjudication. Majority vote is not used as final gold, and final benchmark metrics will be recomputed after adjudication.
+
+\section{Related Work}
+
+\paragraph{VLM hallucination and safe inference.}
+Safe inference for large vision models increasingly concerns what a pretrained VLM should do at deployment time, after retraining is expensive or unavailable. In this setting, hallucination detection, safety alignment, prompt defense, and uncertainty calibration become test-time behaviors. Existing VLM hallucination probes such as POPE~\cite{li2023pope} and HallusionBench~\cite{guan2024hallusionbench} show that hallucination and visual-context reasoning failures remain central safety concerns. Our work targets this inference-time layer: rather than changing the generator or retraining the auditor, we ask whether a VLM auditor can make a safe permission-aware judgment about a visible anomaly.
+
+\paragraph{Generated-image evaluation.}
+Text-to-image faithfulness evaluation has increasingly moved beyond global image-text similarity. TIFA~\cite{hu2023tifa} evaluates faithfulness through question answering over generated images, improving interpretability by decomposing prompts into checkable questions. VQAScore and related GenAI-Bench work~\cite{lin2024vqascore} similarly use image-to-text or VQA-style scoring to evaluate whether visual content matches complex prompts. Compositional generation benchmarks such as GenEval~\cite{ghosh2023geneval} and T2I-CompBench~\cite{huang2023t2icompbench} focus on object presence, count, color, spatial relations, and attribute binding. Our work is complementary: rather than measuring general image-prompt alignment, we isolate one visible anomaly and ask how its hallucination safety status changes across required, permitted, violating, ambiguous, and no-issue contexts.
+
+\paragraph{Disagreement in safety annotation.}
+Annotation-disagreement research warns against flattening subjective labels into majority-vote gold. Davani et al.~\cite{davani2022dealing} show that disagreement may encode systematic rater perspectives and uncertainty rather than noise. Our v1 human pilot shows the same problem in a multimodal safety-labeling task: majority vote is relatively stable for clear violations and required abnormalities, but it fails for the uncertainty-sensitive labels that define this diagnostic probe.
+
+\section{Task Formulation}
+
+Each sample consists of an image $x$, evaluation prompt $p$, target anomaly $a$, anomaly axis $k$, and auditor instruction $I$. The auditor returns whether the target anomaly is detected, one permission label, one hallucination label, a short reason, and a confidence level. The central task is not aesthetic evaluation, general image quality scoring, or broad image-prompt alignment checking. The task is a test-time safety inference problem: judge the target anomaly relative to the evaluation prompt's permission structure.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_pipeline.png}
+\caption{Permission-aware VLM safety auditing pipeline. The auditor receives an image, prompt, and target anomaly at test time, then returns a permission label, hallucination decision, rationale, and confidence.}
+\label{fig:pipeline}
+\end{figure}
+
+The permission label space contains five cases. \texttt{prompt\_required} means that the prompt explicitly requires the target anomaly. \texttt{prompt\_permitted} means that the prompt licenses the anomaly without requiring it. \texttt{prompt\_violating} means that the target anomaly contradicts the prompt. \texttt{ambiguous} means that the permission boundary is underdetermined. \texttt{no\_issue} means that no target anomaly is visible or that the sample is a target-anomaly-free control. These labels map to hallucination decisions as follows: violation is hallucination; required, permitted, and no-issue cases are not hallucinations; ambiguous cases should remain uncertain.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_boundary_schema.png}
+\caption{Prompt-permission schema. The same visible abnormality can be safe, unsafe, or uncertain depending on whether the prompt requires, permits, forbids, underdetermines, or lacks the target anomaly.}
+\label{fig:schema}
+\end{figure}
+
+\section{Controlled Diagnostic Safety Probe}
+
+We use generated images as a controlled diagnostic safety probe for VLM auditors. The current dataset has 144 prompt-image pairs, built from 64 unique images. It covers eight anomaly axes: Anatomy/Hands, Text, Physics, Object Fusion, Count/Repetition, Spatial/Impossible Geometry, Scale/Proportion, and Artistic Deformation. For each axis, five target-anomaly images are evaluated under three prompt contexts: violating, intended/required, and ambiguous. Three additional control images per axis are included as no-issue controls. This yields 18 prompt-image pairs per axis and 144 total rows. The goal is not to claim broad coverage of all generated-image failures, but to create a controlled safety probe where the same kind of abnormality can change hallucination status under different prompt-permission conditions.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_generated_examples.png}
+\caption{Representative generated images used as controlled visual stimuli. Each panel shows one target-anomaly image from one axis. These images are not standalone hallucination labels: target-anomaly images are reused under required, violating, and ambiguous evaluation prompts, while separate control images test \texttt{no\_issue} behavior.}
+\label{fig:generated-examples}
+\end{figure}
+
+Figure~\ref{fig:generated-examples} illustrates why the generated-image setting is useful for test-time safety auditing. The visible abnormality is fixed, but the audit prompt changes the permission boundary. For example, an extra-finger image can be a clear defect under a natural-human prompt, an authorized invention under an alien-character prompt, or an underdetermined case under an open artistic prompt. The image therefore supplies controlled visual evidence, while the final safety label must be inferred from the image--prompt--target-anomaly relation.
+
+\begin{table}[t]
+\centering
+\caption{Current controlled diagnostic safety-probe composition.}
+\label{tab:composition}
+\begin{tabular}{lrrl}
+\toprule
+Condition & Count & Metadata permission & Hallucination \\
+\midrule
+Intended / required & 40 & \texttt{prompt\_required} & no \\
+Violating & 40 & \texttt{prompt\_violating} & yes \\
+Ambiguous & 40 & \texttt{ambiguous} & uncertain \\
+No-issue / control & 24 & \texttt{no\_issue} & no \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Important limitation of the current metadata: the intended-deviation rows are currently labeled \texttt{prompt\_required}, not \texttt{prompt\_permitted}. Therefore, current results support claims about preserving intended abnormalities, but they do not yet support strong claims about distinguishing required from merely permitted abnormalities.
+
+\section{Experimental Setup}
+
+The repository contains three auditor prompt templates: image-only, prompt-conditioned, and permission-aware. The current result set reported here uses only the permission-aware setting. Therefore, this draft does not claim that permission-aware prompting outperforms the other prompting settings.
+
+The current models are GPT-5.4, Claude Sonnet 4.6, and Gemini 3.1 Pro Preview. The runner sends each sample's image, evaluation prompt text, target anomaly, axis, and auditor instruction. The model is required to return JSON with the permission status, hallucination label, reason, and confidence. Raw outputs are saved one file per model call, and parsed outputs are stored as CSV files. These outputs are interpreted as test-time safety decisions made by the VLM auditor, not as training-time robustness improvements.
+
+\begin{table}[t]
+\centering
+\caption{Safety metrics used in the current-state analysis. UP replaces the visually confusing ACR label and means the same quantity: preserving \texttt{uncertain} for ambiguous cases.}
+\label{tab:metric-definitions}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Metric & Definition \\
+\midrule
+FHR\textsubscript{auth} & False hallucination risk on prompt-authorized abnormalities. \\
+Creative Preservation & $1-\mathrm{FHR}_{auth}$; safe preservation of authorized abnormality. \\
+MVR\textsubscript{violating} & Missed prompt-violation risk on \texttt{prompt\_violating} samples. \\
+Defect Sensitivity & $1-\mathrm{MVR}_{violating}$; sensitivity to clear prompt violations. \\
+UP & Uncertainty Preservation: fraction of \texttt{ambiguous} samples labeled \texttt{uncertain}. \\
+PBA & Permission Boundary Accuracy: exact permission-label match against current metadata. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Results}
+
+Table~\ref{tab:vlm-results} reports current permission-aware VLM safety-auditor results against metadata-defined labels. These are current-state results, not final adjudicated benchmark results or final model rankings.
+
+\begin{table}[t]
+\centering
+\caption{Current permission-aware VLM safety-auditor results. Higher is better for Creative Preservation, Defect Sensitivity, UP, and PBA; lower is better for FHR\textsubscript{auth} and MVR\textsubscript{violating}.}
+\label{tab:vlm-results}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & FHR\textsubscript{auth} & Creative & MVR & Defect & UP & PBA \\
+\midrule
+GPT-5.4 & 0.000 & 1.000 & 0.025 & 0.975 & 0.000 & 0.715 \\
+Claude Sonnet 4.6 & 0.025 & 0.975 & 0.000 & 1.000 & 0.000 & 0.722 \\
+Gemini 3.1 Pro Preview & 0.000 & 1.000 & 0.000 & 1.000 & 0.000 & 0.701 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The current permission-aware auditors mostly preserve prompt-authorized abnormalities: FHR\textsubscript{auth} is 0.000 for GPT-5.4 and Gemini and 0.025 for Claude. They also detect clear prompt violations with high sensitivity: MVR\textsubscript{violating} is 0.025 for GPT-5.4 and 0.000 for Claude and Gemini.
+
+The dominant current failure mode is uncertainty preservation. All three models have UP = 0.000. This does not mean that overall model accuracy is zero. Rather, it means that none of the three current permission-aware runs preserved the \texttt{uncertain} hallucination label for metadata-ambiguous samples. The auditors over-resolved ambiguous permission boundaries into yes/no decisions. This result should remain cautious: it is a finding for the current prompt, dataset, and metadata-defined ambiguous rows, not a claim that VLMs cannot handle ambiguity in general.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_vlm_metrics.png}
+\caption{Current-state clear-boundary safety metrics. UP is not plotted as a positive competency bar because UP = 0.000 for all three current runs; it is reported in Table~\ref{tab:vlm-results} and discussed in the text.}
+\label{fig:vlm-metrics}
+\end{figure}
+
+\section{Human Pilot and Adjudication}
+
+Three human raters completed the v1 rating sheet for all 144 samples. The v1 human ratings are treated as a calibration pilot for the safety-label ontology, not as final gold. After inspecting rater behavior, we revised the label guide into a v2 adjudication guide. The guide clarifies that \texttt{prompt\_required} means the prompt explicitly requires the target anomaly, not that the image generally follows the prompt. It also clarifies that \texttt{no\_issue} must be used for target-anomaly-free controls, and that broad style words do not automatically imply \texttt{prompt\_required}.
+
+\begin{table}[t]
+\centering
+\caption{Human v1 agreement summary.}
+\label{tab:human-agreement}
+\begin{tabular}{lr}
+\toprule
+Metric & Result \\
+\midrule
+Three-rater exact permission agreement & 69/144 = 47.9\% \\
+Three-rater anomaly-visible agreement & 95/144 = 66.0\% \\
+Three-rater binary hallucination agreement & 107/144 = 74.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Condition-level exact permission agreement in the human pilot.}
+\label{tab:condition-agreement}
+\begin{tabular}{lr}
+\toprule
+Condition & Three-rater exact agreement \\
+\midrule
+Violating & 34/40 = 85.0\% \\
+Permitted / required clear-boundary & 35/40 = 87.5\% \\
+Ambiguous & 0/40 = 0.0\% \\
+No-issue / control & 0/24 = 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The pattern is clear: humans agree on clear permission boundaries and drift on uncertainty-sensitive categories. Rater A almost never uses \texttt{ambiguous} and tends to map metadata-ambiguous cases to \texttt{prompt\_permitted}. Rater B uses \texttt{prompt\_required} broadly, apparently interpreting it as general prompt compliance. Rater C uses no \texttt{no\_issue}, often mapping controls to \texttt{prompt\_required}. These patterns are best understood as annotation drift or semantic drift in the label ontology, not as individual rater error.
+
+Majority vote is therefore unsafe for uncertainty-sensitive safety labels. It works relatively well for clear cases, but it fails exactly where the safety audit needs to preserve uncertainty and no-issue distinctions. In the v1 ratings, majority vote matches metadata gold for 0/40 ambiguous cases and only 3/24 no-issue/control cases. Majority vote is therefore not used as final gold.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_human_drift.png}
+\caption{Human pilot drift by condition. Clear permission boundaries have high agreement, while ambiguous and no-issue/control categories expose semantic drift and majority-vote failure.}
+\label{fig:human-drift}
+\end{figure}
+
+The current final-gold draft is conservative: 65 samples are retained as stable metadata rows, and 79 are marked unresolved pending adjudication. The unresolved rows include 40 ambiguous samples, 24 no-issue/control samples, 11 violating-disagreement samples, and 4 permitted-disagreement samples. These 79 blind adjudication items remain pending for final gold construction. The blind packets remove sample IDs, condition labels, majority labels, v1 rater labels, model outputs, and priority text that might reveal the intended condition.
+
+\section{Discussion}
+
+The current study supports a methodological claim for the PRCV safe-inference setting: VLM-based hallucination safety auditing should separate visual abnormality from prompt violation. This distinction matters for creative generation because prompts often intentionally request strange or impossible content. A permission-aware schema allows an auditor to preserve creative deviations while still detecting clear defects.
+
+This work should be viewed as a first step from binary correctness checking toward permission-aware safety auditing. Generated images often contain visual inventions beyond the prompt; safe auditors should distinguish authorized invention, prompt violation, and underdetermined cases rather than collapsing all abnormality into hallucination. This is a future-looking safe-inference direction rather than a completed claim-entitlement system.
+
+The VLM results and human pilot point to the same pressure point. Clear permission boundaries are relatively easy: models and humans both handle required/intended abnormalities and violations reasonably well. Ambiguous and no-issue/control cases are harder. Models over-resolve ambiguity by avoiding the uncertain label; humans drift because some raters treat prompt compliance as prompt-required and some do not preserve no-issue.
+
+\section{Limitations}
+
+This is a small controlled diagnostic safety probe with 144 prompt-image pairs. The current images and prompts are targeted rather than naturally sampled from deployed text-to-image systems. The metadata contains intended rows labeled as \texttt{prompt\_required}; it does not yet include a balanced set of \texttt{prompt\_permitted} gold rows. This limits conclusions about the required/permitted distinction.
+
+The current VLM results are permission-aware safety-auditor evaluations, but an implementation audit found that the VLM prompt is not fully manual-faithful. It uses the same broad schema but omits some operational guidance from the human label guide. Therefore, the current results should not be described as models following the full human annotation manual, and they should not be used to claim that permission-aware prompting outperforms image-only or prompt-conditioned prompting.
+
+The current metrics are pre-adjudication. Final benchmark metrics, model ranking, Control\_FPR, non-ambiguous PBA, final UP, and adjudicator agreement must be updated after the 79 blind adjudication items are resolved. Current results support the safe-inference framing, but they should not be overclaimed as final full-benchmark results.
+
+\section{Conclusion}
+
+This work argues that not all visual weirdness is hallucination. Visual hallucination auditing for generated images should be treated as test-time safety inference for VLMs: the hallucination status of an abnormality depends on whether the prompt requires, permits, forbids, underdetermines, or lacks the target anomaly. Current permission-aware VLM auditors perform well on clear intended deviations and clear violations, but they fail to preserve uncertainty in the current run. A three-rater human pilot shows a parallel problem: clear-boundary agreement is high, while ambiguous and no-issue/control labels suffer from annotation drift and semantic instability. These current-state findings motivate permission-aware safety auditing and a blind adjudication protocol for final gold construction. Final results will be reported after adjudication.
+
+\bibliographystyle{splncs04}
+\bibliography{references}
+
+\end{document}
