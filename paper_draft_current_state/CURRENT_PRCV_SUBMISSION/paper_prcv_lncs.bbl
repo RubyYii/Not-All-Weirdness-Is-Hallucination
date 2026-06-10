@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{chen2024mllmjudge}
+Chen, D., Chen, R., Zhang, S., Liu, Y., Wang, Y., Zhou, H., Zhang, Q., Wan, Y.,
+  Zhou, P., Sun, L.: {MLLM-as-a-Judge}: Assessing multimodal {LLM}-as-a-judge
+  with vision-language benchmark. In: International Conference on Machine
+  Learning (ICML) (2024)
+
+\bibitem{cho2023dsg}
+Cho, J., Hu, Y., Garg, R., Anderson, P., Krishna, R., Baldridge, J., Bansal,
+  M., Pont-Tuset, J., Wang, S.: Davidsonian scene graph: Improving reliability
+  in fine-grained evaluation for text-to-image generation. In: International
+  Conference on Learning Representations (ICLR) (2024)
+
+\bibitem{davani2022dealing}
+Davani, A.M., Diaz, M., Prabhakaran, V.: Dealing with disagreements: Looking
+  beyond the majority vote in subjective annotations. Transactions of the
+  Association for Computational Linguistics  \textbf{10},  92--110 (2022).
+  \doi{10.1162/tacl_a_00449}
+
+\bibitem{fu2023mme}
+Fu, C., Chen, P., Shen, Y., Qin, Y., Zhang, M., Lin, X., Yang, J., Zheng, X.,
+  Li, K., Sun, X., Wu, Y., Ji, R., Shan, C., He, R.: Mme: A comprehensive
+  evaluation benchmark for multimodal large language models. arXiv preprint
+  arXiv:2306.13394  (2023)
+
+\bibitem{ghosh2023geneval}
+Ghosh, D., Hajishirzi, H., Schmidt, L.: Geneval: An object-focused framework
+  for evaluating text-to-image alignment. In: Advances in Neural Information
+  Processing Systems 36 (NeurIPS) (2023)
+
+\bibitem{guan2024hallusionbench}
+Guan, T., Liu, F., Wu, X., Xian, R., Li, Z., Liu, X., Wang, X., Chen, L.,
+  Huang, F., Yacoob, Y., Manocha, D., Zhou, T.: Hallusionbench: An advanced
+  diagnostic suite for entangled language hallucination and visual illusion in
+  large vision-language models. In: Proceedings of the IEEE/CVF Conference on
+  Computer Vision and Pattern Recognition (CVPR). pp. 14375--14385 (2024)
+
+\bibitem{hu2023tifa}
+Hu, Y., Liu, B., Kasai, J., Wang, Y., Ostendorf, M., Krishna, R., Smith, N.A.:
+  Tifa: Accurate and interpretable text-to-image faithfulness evaluation with
+  question answering. In: Proceedings of the IEEE/CVF International Conference
+  on Computer Vision (ICCV). pp. 20406--20417 (2023)
+
+\bibitem{huang2023t2icompbench}
+Huang, K., Sun, K., Xie, E., Li, Z., Liu, X.: T2i-compbench: A comprehensive
+  benchmark for open-world compositional text-to-image generation. In: Advances
+  in Neural Information Processing Systems 36 (NeurIPS) (2023)
+
+\bibitem{jing2023faithscore}
+Jing, L., Li, R., Chen, Y., Du, X.: {FaithScore}: Fine-grained evaluations of
+  hallucinations in large vision-language models. In: Findings of the
+  Association for Computational Linguistics: EMNLP (2024)
+
+\bibitem{li2024genaibench}
+Li, B., Lin, Z., Pathak, D., Li, J., Fei, Y., Wu, K., Ling, T., Xia, X., Zhang,
+  P., Neubig, G., Ramanan, D.: {GenAI-Bench}: Evaluating and improving
+  compositional text-to-visual generation. arXiv preprint arXiv:2406.13743
+  (2024)
+
+\bibitem{li2023pope}
+Li, Y., Du, Y., Zhou, K., Wang, J., Zhao, W.X., Wen, J.R.: Evaluating object
+  hallucination in large vision-language models. In: Proceedings of the 2023
+  Conference on Empirical Methods in Natural Language Processing (EMNLP) (2023)
+
+\bibitem{lin2024vqascore}
+Lin, Z., Pathak, D., Li, B., Li, J., Xia, X., Neubig, G., Zhang, P., Ramanan,
+  D.: Evaluating text-to-visual generation with image-to-text generation. arXiv
+  preprint arXiv:2404.01291  (2024)
+
+\bibitem{liu2023mmbench}
+Liu, Y., Duan, H., Zhang, Y., Li, B., Zhang, S., Zhao, W., Yuan, Y., Wang, J.,
+  He, C., Liu, Z., Chen, K., Lin, D.: Mmbench: Is your multi-modal model an
+  all-around player? arXiv preprint arXiv:2307.06281  (2023)
+
+\bibitem{rohrbach2018object}
+Rohrbach, A., Hendricks, L.A., Burns, K., Darrell, T., Saenko, K.: Object
+  hallucination in image captioning. In: Proceedings of the 2018 Conference on
+  Empirical Methods in Natural Language Processing (EMNLP). pp. 4035--4045
+  (2018)
+
+\bibitem{saxon2024t2iscorescore}
+Saxon, M., Jahara, F., Khoshnoodi, M., Lu, Y., Sharma, A., Wang, W.Y.: Who
+  evaluates the evaluations? objectively scoring text-to-image prompt coherence
+  metrics with {T2IScoreScore} ({TS2}). In: Advances in Neural Information
+  Processing Systems 37 (NeurIPS) (2024). \doi{10.52202/079017-2719}
+
+\bibitem{wang2023amber}
+Wang, J., Wang, Y., Xu, G., Zhang, J., Gu, Y., Jia, H., Wang, J., Xu, H., Yan,
+  M., Zhang, J., Sang, J.: {AMBER}: An {LLM}-free multi-dimensional benchmark
+  for {MLLMs} hallucination evaluation. arXiv preprint arXiv:2311.07397  (2023)
+
+\end{thebibliography}
