@@ -1,0 +1,13 @@
+﻿task_order,task_id,axis_code,condition,lineage,old_R2_state,confirmed_R2_state,majority_before,majority_after,outcome_before,outcome_after,majority_changed,exact_before,exact_after,blindness_status
+34,V-17AD7A994DDD9B69,A4,target_present,expansion,target_absent,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+50,V-7A278CC7FAC4223D,A1,target_present,pilot,uncertain,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+58,V-64A3CBD6F92C9971,A1,target_absent,expansion,target_present,target_absent,target_absent,target_absent,match,match,false,false,true,not_established_after_prompt_reveal
+76,V-0E2938A74D5026DB,A1,target_absent,pilot,uncertain,target_absent,uncertain,target_absent,not_judgeable,match,true,false,false,not_established_after_prompt_reveal
+81,V-D85E3E84D5BC914B,A1,target_present,expansion,target_absent,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+83,V-1C371F3FDA42B8B2,A1,target_present,expansion,uncertain,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+100,V-EC4153FFC4F7E07C,A5,target_absent,expansion,target_absent,target_present,target_present,target_present,mismatch,mismatch,false,false,true,not_established_after_prompt_reveal
+115,V-7AE8161E1C0A8B98,A5,target_present,expansion,uncertain,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+126,V-333814584F9559A9,A1,target_present,pilot,uncertain,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+165,V-F9EC4E0145CCB6BD,A5,target_present,expansion,uncertain,target_present,target_present,target_present,match,match,false,false,true,not_established_after_prompt_reveal
+174,V-CADA52157C62A074,A8,target_present,expansion,target_absent,target_present,target_absent,target_present,mismatch,match,true,false,false,not_established_after_prompt_reveal
+200,V-BFCFF8E66830ADED,A6,target_absent,expansion,uncertain,target_absent,target_absent,target_absent,match,match,false,false,true,not_established_after_prompt_reveal

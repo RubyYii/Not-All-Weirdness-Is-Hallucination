@@ -1,0 +1,7 @@
+# Local secrets and generated checks
+.env
+.env.*
+__pycache__/
+*.pyc
+.gemini-agent/
+cac2026/reproduction_check.json

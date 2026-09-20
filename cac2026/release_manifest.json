@@ -1,0 +1,47 @@
+{
+  "study": "CAC2026 / Paper 124973 / 200 images",
+  "source": "Camera-ready analysis supplement, 19 September 2026",
+  "manuscript_sha256": "78645ccf21e4f78ad7ce209795ee09749106cf1346b3f9b0f6fa728c9d0aa69d",
+  "analysis_files_copied_byte_for_byte": {
+    "analysis_results.json": {
+      "sha256": "a3981f43b001a938647209c1700d58ccfd6203d716057ef6ed4ea3c15c84067b",
+      "bytes": 59026
+    },
+    "coordinator_state_map.csv": {
+      "sha256": "e842bca3a0040f6910e3e82793a596645f3c59aa9d84e1fa84d8135bb4891c0b",
+      "bytes": 30172
+    },
+    "correction_audit.csv": {
+      "sha256": "629b7abd0fe67a2609da451d64d544cecc397a7d20e2cb94158653537b2f911d",
+      "bytes": 2268
+    },
+    "locked_primary_ratings.csv": {
+      "sha256": "f8ac39bc17147b8cb72c133444c986d4e7b49d95d776dac93415d49284de0037",
+      "bytes": 48594
+    },
+    "rater_confirmed_sensitivity_ratings.csv": {
+      "sha256": "322ba5b0595a4b03527242d2c7e4c363f0aac196585db9818586c08d11c69de1",
+      "bytes": 48614
+    },
+    "README.md": {
+      "sha256": "1a1612bdbccec691805d8fed08ce9f8d1cb631f28f4faf57e811abdf8f764652",
+      "bytes": 3293
+    },
+    "reproduce_public.py": {
+      "sha256": "97173a408d49d9ae4d5400dfddedcead2e1f5d03e6ae1457615fb2d7e4cdd38d",
+      "bytes": 18044
+    },
+    "stratified_counts.csv": {
+      "sha256": "165d50719be785282e0c808870e7e047e9d72b87be59d3ad75d182b812a2285c",
+      "bytes": 6604
+    }
+  },
+  "images_and_full_generation_prompts_included": false,
+  "historical_private_input_hashes": "Retained in analysis_results.json; they are not newly verified by this public reproduction.",
+  "overview_figure": {
+    "source": "Accepted camera-ready Figure1_label_validation_academic",
+    "png": "assets/validation-workflow.png",
+    "svg": "assets/validation-workflow.svg",
+    "svg_adjustment": "Trailing line whitespace only; all XML content is equal after whitespace normalization. The manuscript source is unchanged."
+  }
+}

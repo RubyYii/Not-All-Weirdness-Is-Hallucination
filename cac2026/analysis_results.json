@@ -1,0 +1,2165 @@
+{
+  "analysis_policy": {
+    "primary": "original locked prompt-hidden ratings",
+    "sensitivity": "post-return rater-confirmed ratings",
+    "reason": "blindness after prompt reveal is not established"
+  },
+  "input_sha256": {
+    "raw_ratings": "E7EDA0D66070CFAD5DA1150D1B09D8F22C18C335DA8F597C5C0D7DE1B0A9A96A",
+    "corrected_ratings": "5A34D75F900B9E91FF34D8F4512675342CF4695F633916E9164DA29291CD109E",
+    "coordinator_map": "3F0BE34384A741BD388E9E3CF852FDE1F63D1C35DC5B16A15EF2146AFBE2497B",
+    "correction_log": "FF1C3004D7D8374BA92916072320BCB4BF5F131FE14A9C9CCCF1F8882BC46981"
+  },
+  "locked_primary": {
+    "overall": {
+      "n": 200,
+      "match": 174,
+      "mismatch": 15,
+      "uncertain_majority": 5,
+      "no_majority": 6,
+      "unresolved": 11,
+      "judgeable": 189,
+      "all_sample_rate": 0.87,
+      "all_sample_wilson_95": {
+        "estimate": 0.87,
+        "lower": 0.8163364812775159,
+        "upper": 0.9097179772033067
+      },
+      "judgeable_rate": 0.9206349206349206,
+      "judgeable_wilson_95": {
+        "estimate": 0.9206349206349206,
+        "lower": 0.8731953842935405,
+        "upper": 0.9513161132462067
+      }
+    },
+    "reliability": {
+      "exact_agreement_n": 150,
+      "exact_agreement_rate": 0.75,
+      "mean_pairwise_agreement": 0.8233333333333333,
+      "pairwise_agreement_n": {
+        "R1_R2": 160,
+        "R1_R3": 171,
+        "R2_R3": 163
+      },
+      "uncertain_by_rater": {
+        "R1": 17,
+        "R2": 17,
+        "R3": 4
+      },
+      "category_totals": {
+        "target_absent": 231,
+        "target_present": 331,
+        "uncertain": 38
+      },
+      "fleiss_kappa": 0.6749031354468035,
+      "gwet_ac1": 0.7574213431076766
+    },
+    "by_condition": {
+      "target_absent": {
+        "n": 80,
+        "match": 66,
+        "mismatch": 6,
+        "uncertain_majority": 4,
+        "no_majority": 4,
+        "unresolved": 8,
+        "judgeable": 72,
+        "all_sample_rate": 0.825,
+        "all_sample_wilson_95": {
+          "estimate": 0.825,
+          "lower": 0.7274245802116865,
+          "upper": 0.8927936355902206
+        },
+        "judgeable_rate": 0.9166666666666666,
+        "judgeable_wilson_95": {
+          "estimate": 0.9166666666666666,
+          "lower": 0.8298764477932348,
+          "upper": 0.9612475750430503
+        }
+      },
+      "target_present": {
+        "n": 120,
+        "match": 108,
+        "mismatch": 9,
+        "uncertain_majority": 1,
+        "no_majority": 2,
+        "unresolved": 3,
+        "judgeable": 117,
+        "all_sample_rate": 0.9,
+        "all_sample_wilson_95": {
+          "estimate": 0.9,
+          "lower": 0.833318258891048,
+          "upper": 0.9418664079739892
+        },
+        "judgeable_rate": 0.9230769230769231,
+        "judgeable_wilson_95": {
+          "estimate": 0.9230769230769231,
+          "lower": 0.8602504244689005,
+          "upper": 0.9590048292010943
+        }
+      }
+    },
+    "condition_fisher_tests": {
+      "judgeable": {
+        "table": [
+          [
+            108,
+            9
+          ],
+          [
+            66,
+            6
+          ]
+        ],
+        "odds_ratio": 1.0909090909090908,
+        "p_two_sided": 1.0
+      },
+      "all_sample": {
+        "table": [
+          [
+            108,
+            12
+          ],
+          [
+            66,
+            14
+          ]
+        ],
+        "odds_ratio": 1.9090909090909092,
+        "p_two_sided": 0.13687905568285572
+      }
+    },
+    "by_family": {
+      "A1": {
+        "n": 25,
+        "match": 23,
+        "mismatch": 0,
+        "uncertain_majority": 2,
+        "no_majority": 0,
+        "unresolved": 2,
+        "judgeable": 23,
+        "all_sample_rate": 0.92,
+        "all_sample_wilson_95": {
+          "estimate": 0.92,
+          "lower": 0.7503389104960468,
+          "upper": 0.9777795987151524
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8568833815495731,
+          "upper": 1.0
+        }
+      },
+      "A2": {
+        "n": 25,
+        "match": 20,
+        "mismatch": 4,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 24,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.6086904963045967,
+          "upper": 0.9113941531319742
+        },
+        "judgeable_rate": 0.8333333333333334,
+        "judgeable_wilson_95": {
+          "estimate": 0.8333333333333334,
+          "lower": 0.6414692935030095,
+          "upper": 0.9332132367136705
+        }
+      },
+      "A3": {
+        "n": 25,
+        "match": 22,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 3,
+        "unresolved": 3,
+        "judgeable": 22,
+        "all_sample_rate": 0.88,
+        "all_sample_wilson_95": {
+          "estimate": 0.88,
+          "lower": 0.7004420607907267,
+          "upper": 0.9583318284955964
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8513451253913791,
+          "upper": 1.0
+        }
+      },
+      "A4": {
+        "n": 25,
+        "match": 24,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 24,
+        "all_sample_rate": 0.96,
+        "all_sample_wilson_95": {
+          "estimate": 0.96,
+          "lower": 0.8045593626380625,
+          "upper": 0.9929037664980127
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8620237953250198,
+          "upper": 1.0
+        }
+      },
+      "A5": {
+        "n": 25,
+        "match": 15,
+        "mismatch": 6,
+        "uncertain_majority": 2,
+        "no_majority": 2,
+        "unresolved": 4,
+        "judgeable": 21,
+        "all_sample_rate": 0.6,
+        "all_sample_wilson_95": {
+          "estimate": 0.6,
+          "lower": 0.40739457358967,
+          "upper": 0.7659669762225203
+        },
+        "judgeable_rate": 0.7142857142857143,
+        "judgeable_wilson_95": {
+          "estimate": 0.7142857142857143,
+          "lower": 0.5004361928391441,
+          "upper": 0.8618613704787788
+        }
+      },
+      "A6": {
+        "n": 25,
+        "match": 22,
+        "mismatch": 3,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 25,
+        "all_sample_rate": 0.88,
+        "all_sample_wilson_95": {
+          "estimate": 0.88,
+          "lower": 0.7004420607907267,
+          "upper": 0.9583318284955964
+        },
+        "judgeable_rate": 0.88,
+        "judgeable_wilson_95": {
+          "estimate": 0.88,
+          "lower": 0.7004420607907267,
+          "upper": 0.9583318284955964
+        }
+      },
+      "A7": {
+        "n": 25,
+        "match": 25,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 25,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8668077490609515,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8668077490609515,
+          "upper": 0.9999999999999999
+        }
+      },
+      "A8": {
+        "n": 25,
+        "match": 23,
+        "mismatch": 2,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 25,
+        "all_sample_rate": 0.92,
+        "all_sample_wilson_95": {
+          "estimate": 0.92,
+          "lower": 0.7503389104960468,
+          "upper": 0.9777795987151524
+        },
+        "judgeable_rate": 0.92,
+        "judgeable_wilson_95": {
+          "estimate": 0.92,
+          "lower": 0.7503389104960468,
+          "upper": 0.9777795987151524
+        }
+      }
+    },
+    "by_lineage": {
+      "expansion": {
+        "n": 136,
+        "match": 116,
+        "mismatch": 15,
+        "uncertain_majority": 1,
+        "no_majority": 4,
+        "unresolved": 5,
+        "judgeable": 131,
+        "all_sample_rate": 0.8529411764705882,
+        "all_sample_wilson_95": {
+          "estimate": 0.8529411764705882,
+          "lower": 0.7837509447804334,
+          "upper": 0.9027407495252731
+        },
+        "judgeable_rate": 0.8854961832061069,
+        "judgeable_wilson_95": {
+          "estimate": 0.8854961832061069,
+          "lower": 0.8196581083613613,
+          "upper": 0.9293696823740171
+        }
+      },
+      "pilot": {
+        "n": 64,
+        "match": 58,
+        "mismatch": 0,
+        "uncertain_majority": 4,
+        "no_majority": 2,
+        "unresolved": 6,
+        "judgeable": 58,
+        "all_sample_rate": 0.90625,
+        "all_sample_wilson_95": {
+          "estimate": 0.90625,
+          "lower": 0.810171204003544,
+          "upper": 0.9563217474148016
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.9378821442127971,
+          "upper": 1.0
+        }
+      }
+    },
+    "family_by_condition": [
+      {
+        "axis_code": "A1",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 2,
+        "no_majority": 0,
+        "unresolved": 2,
+        "judgeable": 8,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.49016247153664183,
+          "upper": 0.9433178485456247
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A1",
+        "condition": "target_present",
+        "n": 15,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A2",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A2",
+        "condition": "target_present",
+        "n": 15,
+        "match": 10,
+        "mismatch": 4,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 14,
+        "all_sample_rate": 0.6666666666666666,
+        "all_sample_wilson_95": {
+          "estimate": 0.6666666666666666,
+          "lower": 0.41713547738519774,
+          "upper": 0.8482367556028526
+        },
+        "judgeable_rate": 0.7142857142857143,
+        "judgeable_wilson_95": {
+          "estimate": 0.7142857142857143,
+          "lower": 0.4535091567010681,
+          "upper": 0.8827862135542308
+        }
+      },
+      {
+        "axis_code": "A3",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 2,
+        "unresolved": 2,
+        "judgeable": 8,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.49016247153664183,
+          "upper": 0.9433178485456247
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A3",
+        "condition": "target_present",
+        "n": 15,
+        "match": 14,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 14,
+        "all_sample_rate": 0.9333333333333333,
+        "all_sample_wilson_95": {
+          "estimate": 0.9333333333333333,
+          "lower": 0.7018347012621998,
+          "upper": 0.9881331045067315
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7846891972623643,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A4",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A4",
+        "condition": "target_present",
+        "n": 15,
+        "match": 14,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 14,
+        "all_sample_rate": 0.9333333333333333,
+        "all_sample_wilson_95": {
+          "estimate": 0.9333333333333333,
+          "lower": 0.7018347012621998,
+          "upper": 0.9881331045067315
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7846891972623643,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A5",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 0,
+        "mismatch": 6,
+        "uncertain_majority": 2,
+        "no_majority": 2,
+        "unresolved": 4,
+        "judgeable": 6,
+        "all_sample_rate": 0.0,
+        "all_sample_wilson_95": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.2775327998628892
+        },
+        "judgeable_rate": 0.0,
+        "judgeable_wilson_95": {
+          "estimate": 0.0,
+          "lower": 2.7755575615628914e-17,
+          "upper": 0.3903342879021653
+        }
+      },
+      {
+        "axis_code": "A5",
+        "condition": "target_present",
+        "n": 15,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A6",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A6",
+        "condition": "target_present",
+        "n": 15,
+        "match": 12,
+        "mismatch": 3,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.5481455128483065,
+          "upper": 0.9295245065301844
+        },
+        "judgeable_rate": 0.8,
+        "judgeable_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.5481455128483065,
+          "upper": 0.9295245065301844
+        }
+      },
+      {
+        "axis_code": "A7",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A7",
+        "condition": "target_present",
+        "n": 15,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A8",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A8",
+        "condition": "target_present",
+        "n": 15,
+        "match": 13,
+        "mismatch": 2,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 0.8666666666666667,
+        "all_sample_wilson_95": {
+          "estimate": 0.8666666666666667,
+          "lower": 0.6211801716767764,
+          "upper": 0.9626387408969346
+        },
+        "judgeable_rate": 0.8666666666666667,
+        "judgeable_wilson_95": {
+          "estimate": 0.8666666666666667,
+          "lower": 0.6211801716767764,
+          "upper": 0.9626387408969346
+        }
+      }
+    ],
+    "family_by_lineage": [
+      {
+        "axis_code": "A1",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 17,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A1",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 6,
+        "mismatch": 0,
+        "uncertain_majority": 2,
+        "no_majority": 0,
+        "unresolved": 2,
+        "judgeable": 6,
+        "all_sample_rate": 0.75,
+        "all_sample_wilson_95": {
+          "estimate": 0.75,
+          "lower": 0.40927543031016883,
+          "upper": 0.9285207872478909
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6096657120978346,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A2",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 12,
+        "mismatch": 4,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 16,
+        "all_sample_rate": 0.7058823529411765,
+        "all_sample_wilson_95": {
+          "estimate": 0.7058823529411765,
+          "lower": 0.4686688993346016,
+          "upper": 0.8672001038970478
+        },
+        "judgeable_rate": 0.75,
+        "judgeable_wilson_95": {
+          "estimate": 0.75,
+          "lower": 0.5050168346449122,
+          "upper": 0.8981793250878696
+        }
+      },
+      {
+        "axis_code": "A2",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A3",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 2,
+        "unresolved": 2,
+        "judgeable": 15,
+        "all_sample_rate": 0.8823529411764706,
+        "all_sample_wilson_95": {
+          "estimate": 0.8823529411764706,
+          "lower": 0.6566364940511412,
+          "upper": 0.9671202262362074
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A3",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 7,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 7,
+        "all_sample_rate": 0.875,
+        "all_sample_wilson_95": {
+          "estimate": 0.875,
+          "lower": 0.5291118177871464,
+          "upper": 0.9775825085499433
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6456695649333126,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A4",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 16,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 16,
+        "all_sample_rate": 0.9411764705882353,
+        "all_sample_wilson_95": {
+          "estimate": 0.9411764705882353,
+          "lower": 0.7301796936242461,
+          "upper": 0.9895395990150025
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8063923194655637,
+          "upper": 1.0000000000000002
+        }
+      },
+      {
+        "axis_code": "A4",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A5",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 10,
+        "mismatch": 6,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 16,
+        "all_sample_rate": 0.5882352941176471,
+        "all_sample_wilson_95": {
+          "estimate": 0.5882352941176471,
+          "lower": 0.3600544264299978,
+          "upper": 0.7838894320978518
+        },
+        "judgeable_rate": 0.625,
+        "judgeable_wilson_95": {
+          "estimate": 0.625,
+          "lower": 0.38641040545502714,
+          "upper": 0.8151876744113636
+        }
+      },
+      {
+        "axis_code": "A5",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 5,
+        "mismatch": 0,
+        "uncertain_majority": 2,
+        "no_majority": 1,
+        "unresolved": 3,
+        "judgeable": 5,
+        "all_sample_rate": 0.625,
+        "all_sample_wilson_95": {
+          "estimate": 0.625,
+          "lower": 0.30574239460262737,
+          "upper": 0.8631557141764026
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.5655175352168251,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A6",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 14,
+        "mismatch": 3,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 0.8235294117647058,
+        "all_sample_wilson_95": {
+          "estimate": 0.8235294117647058,
+          "lower": 0.5897054143116588,
+          "upper": 0.9380887336237901
+        },
+        "judgeable_rate": 0.8235294117647058,
+        "judgeable_wilson_95": {
+          "estimate": 0.8235294117647058,
+          "lower": 0.5897054143116588,
+          "upper": 0.9380887336237901
+        }
+      },
+      {
+        "axis_code": "A6",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A7",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 17,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A7",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A8",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 15,
+        "mismatch": 2,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 0.8823529411764706,
+        "all_sample_wilson_95": {
+          "estimate": 0.8823529411764706,
+          "lower": 0.6566364940511412,
+          "upper": 0.9671202262362074
+        },
+        "judgeable_rate": 0.8823529411764706,
+        "judgeable_wilson_95": {
+          "estimate": 0.8823529411764706,
+          "lower": 0.6566364940511412,
+          "upper": 0.9671202262362074
+        }
+      },
+      {
+        "axis_code": "A8",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      }
+    ]
+  },
+  "rater_confirmed_sensitivity": {
+    "overall": {
+      "n": 200,
+      "match": 176,
+      "mismatch": 14,
+      "uncertain_majority": 4,
+      "no_majority": 6,
+      "unresolved": 10,
+      "judgeable": 190,
+      "all_sample_rate": 0.88,
+      "all_sample_wilson_95": {
+        "estimate": 0.88,
+        "lower": 0.8276574790170326,
+        "upper": 0.9180200729362449
+      },
+      "judgeable_rate": 0.9263157894736842,
+      "judgeable_wilson_95": {
+        "estimate": 0.9263157894736842,
+        "lower": 0.8801310736896368,
+        "upper": 0.9556034538236549
+      }
+    },
+    "reliability": {
+      "exact_agreement_n": 160,
+      "exact_agreement_rate": 0.8,
+      "mean_pairwise_agreement": 0.8566666666666666,
+      "pairwise_agreement_n": {
+        "R1_R2": 170,
+        "R1_R3": 171,
+        "R2_R3": 173
+      },
+      "uncertain_by_rater": {
+        "R1": 17,
+        "R2": 10,
+        "R3": 4
+      },
+      "category_totals": {
+        "target_absent": 230,
+        "target_present": 339,
+        "uncertain": 31
+      },
+      "fleiss_kappa": 0.7301509272139651,
+      "gwet_ac1": 0.8048345064695847
+    },
+    "by_condition": {
+      "target_absent": {
+        "n": 80,
+        "match": 67,
+        "mismatch": 6,
+        "uncertain_majority": 3,
+        "no_majority": 4,
+        "unresolved": 7,
+        "judgeable": 73,
+        "all_sample_rate": 0.8375,
+        "all_sample_wilson_95": {
+          "estimate": 0.8375,
+          "lower": 0.7415709565930229,
+          "upper": 0.9025018059704963
+        },
+        "judgeable_rate": 0.9178082191780822,
+        "judgeable_wilson_95": {
+          "estimate": 0.9178082191780822,
+          "lower": 0.8320560452006283,
+          "upper": 0.961786249521295
+        }
+      },
+      "target_present": {
+        "n": 120,
+        "match": 109,
+        "mismatch": 8,
+        "uncertain_majority": 1,
+        "no_majority": 2,
+        "unresolved": 3,
+        "judgeable": 117,
+        "all_sample_rate": 0.9083333333333333,
+        "all_sample_wilson_95": {
+          "estimate": 0.9083333333333333,
+          "lower": 0.843291530273291,
+          "upper": 0.9480428171514347
+        },
+        "judgeable_rate": 0.9316239316239316,
+        "judgeable_wilson_95": {
+          "estimate": 0.9316239316239316,
+          "lower": 0.8708575754228228,
+          "upper": 0.9649482894324245
+        }
+      }
+    },
+    "condition_fisher_tests": {
+      "judgeable": {
+        "table": [
+          [
+            109,
+            8
+          ],
+          [
+            67,
+            6
+          ]
+        ],
+        "odds_ratio": 1.2201492537313432,
+        "p_two_sided": 0.778908082657276
+      },
+      "all_sample": {
+        "table": [
+          [
+            109,
+            11
+          ],
+          [
+            67,
+            13
+          ]
+        ],
+        "odds_ratio": 1.9226594301221167,
+        "p_two_sided": 0.18178949891527202
+      }
+    },
+    "by_family": {
+      "A1": {
+        "n": 25,
+        "match": 24,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 24,
+        "all_sample_rate": 0.96,
+        "all_sample_wilson_95": {
+          "estimate": 0.96,
+          "lower": 0.8045593626380625,
+          "upper": 0.9929037664980127
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8620237953250198,
+          "upper": 1.0
+        }
+      },
+      "A2": {
+        "n": 25,
+        "match": 20,
+        "mismatch": 4,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 24,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.6086904963045967,
+          "upper": 0.9113941531319742
+        },
+        "judgeable_rate": 0.8333333333333334,
+        "judgeable_wilson_95": {
+          "estimate": 0.8333333333333334,
+          "lower": 0.6414692935030095,
+          "upper": 0.9332132367136705
+        }
+      },
+      "A3": {
+        "n": 25,
+        "match": 22,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 3,
+        "unresolved": 3,
+        "judgeable": 22,
+        "all_sample_rate": 0.88,
+        "all_sample_wilson_95": {
+          "estimate": 0.88,
+          "lower": 0.7004420607907267,
+          "upper": 0.9583318284955964
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8513451253913791,
+          "upper": 1.0
+        }
+      },
+      "A4": {
+        "n": 25,
+        "match": 24,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 24,
+        "all_sample_rate": 0.96,
+        "all_sample_wilson_95": {
+          "estimate": 0.96,
+          "lower": 0.8045593626380625,
+          "upper": 0.9929037664980127
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8620237953250198,
+          "upper": 1.0
+        }
+      },
+      "A5": {
+        "n": 25,
+        "match": 15,
+        "mismatch": 6,
+        "uncertain_majority": 2,
+        "no_majority": 2,
+        "unresolved": 4,
+        "judgeable": 21,
+        "all_sample_rate": 0.6,
+        "all_sample_wilson_95": {
+          "estimate": 0.6,
+          "lower": 0.40739457358967,
+          "upper": 0.7659669762225203
+        },
+        "judgeable_rate": 0.7142857142857143,
+        "judgeable_wilson_95": {
+          "estimate": 0.7142857142857143,
+          "lower": 0.5004361928391441,
+          "upper": 0.8618613704787788
+        }
+      },
+      "A6": {
+        "n": 25,
+        "match": 22,
+        "mismatch": 3,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 25,
+        "all_sample_rate": 0.88,
+        "all_sample_wilson_95": {
+          "estimate": 0.88,
+          "lower": 0.7004420607907267,
+          "upper": 0.9583318284955964
+        },
+        "judgeable_rate": 0.88,
+        "judgeable_wilson_95": {
+          "estimate": 0.88,
+          "lower": 0.7004420607907267,
+          "upper": 0.9583318284955964
+        }
+      },
+      "A7": {
+        "n": 25,
+        "match": 25,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 25,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8668077490609515,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8668077490609515,
+          "upper": 0.9999999999999999
+        }
+      },
+      "A8": {
+        "n": 25,
+        "match": 24,
+        "mismatch": 1,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 25,
+        "all_sample_rate": 0.96,
+        "all_sample_wilson_95": {
+          "estimate": 0.96,
+          "lower": 0.8045593626380625,
+          "upper": 0.9929037664980127
+        },
+        "judgeable_rate": 0.96,
+        "judgeable_wilson_95": {
+          "estimate": 0.96,
+          "lower": 0.8045593626380625,
+          "upper": 0.9929037664980127
+        }
+      }
+    },
+    "by_lineage": {
+      "expansion": {
+        "n": 136,
+        "match": 117,
+        "mismatch": 14,
+        "uncertain_majority": 1,
+        "no_majority": 4,
+        "unresolved": 5,
+        "judgeable": 131,
+        "all_sample_rate": 0.8602941176470589,
+        "all_sample_wilson_95": {
+          "estimate": 0.8602941176470589,
+          "lower": 0.7920912512362258,
+          "upper": 0.9087023533675164
+        },
+        "judgeable_rate": 0.8931297709923665,
+        "judgeable_wilson_95": {
+          "estimate": 0.8931297709923665,
+          "lower": 0.8285947262262152,
+          "upper": 0.9352652979890717
+        }
+      },
+      "pilot": {
+        "n": 64,
+        "match": 59,
+        "mismatch": 0,
+        "uncertain_majority": 3,
+        "no_majority": 2,
+        "unresolved": 5,
+        "judgeable": 59,
+        "all_sample_rate": 0.921875,
+        "all_sample_wilson_95": {
+          "estimate": 0.921875,
+          "lower": 0.8298046264583709,
+          "upper": 0.9661688230914496
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.9388706294732116,
+          "upper": 1.0
+        }
+      }
+    },
+    "family_by_condition": [
+      {
+        "axis_code": "A1",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 9,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 9,
+        "all_sample_rate": 0.9,
+        "all_sample_wilson_95": {
+          "estimate": 0.9,
+          "lower": 0.5958499732047615,
+          "upper": 0.9821237869049271
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7008549515804559,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A1",
+        "condition": "target_present",
+        "n": 15,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A2",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A2",
+        "condition": "target_present",
+        "n": 15,
+        "match": 10,
+        "mismatch": 4,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 14,
+        "all_sample_rate": 0.6666666666666666,
+        "all_sample_wilson_95": {
+          "estimate": 0.6666666666666666,
+          "lower": 0.41713547738519774,
+          "upper": 0.8482367556028526
+        },
+        "judgeable_rate": 0.7142857142857143,
+        "judgeable_wilson_95": {
+          "estimate": 0.7142857142857143,
+          "lower": 0.4535091567010681,
+          "upper": 0.8827862135542308
+        }
+      },
+      {
+        "axis_code": "A3",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 2,
+        "unresolved": 2,
+        "judgeable": 8,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.49016247153664183,
+          "upper": 0.9433178485456247
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A3",
+        "condition": "target_present",
+        "n": 15,
+        "match": 14,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 14,
+        "all_sample_rate": 0.9333333333333333,
+        "all_sample_wilson_95": {
+          "estimate": 0.9333333333333333,
+          "lower": 0.7018347012621998,
+          "upper": 0.9881331045067315
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7846891972623643,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A4",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A4",
+        "condition": "target_present",
+        "n": 15,
+        "match": 14,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 14,
+        "all_sample_rate": 0.9333333333333333,
+        "all_sample_wilson_95": {
+          "estimate": 0.9333333333333333,
+          "lower": 0.7018347012621998,
+          "upper": 0.9881331045067315
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7846891972623643,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A5",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 0,
+        "mismatch": 6,
+        "uncertain_majority": 2,
+        "no_majority": 2,
+        "unresolved": 4,
+        "judgeable": 6,
+        "all_sample_rate": 0.0,
+        "all_sample_wilson_95": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.2775327998628892
+        },
+        "judgeable_rate": 0.0,
+        "judgeable_wilson_95": {
+          "estimate": 0.0,
+          "lower": 2.7755575615628914e-17,
+          "upper": 0.3903342879021653
+        }
+      },
+      {
+        "axis_code": "A5",
+        "condition": "target_present",
+        "n": 15,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A6",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A6",
+        "condition": "target_present",
+        "n": 15,
+        "match": 12,
+        "mismatch": 3,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 0.8,
+        "all_sample_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.5481455128483065,
+          "upper": 0.9295245065301844
+        },
+        "judgeable_rate": 0.8,
+        "judgeable_wilson_95": {
+          "estimate": 0.8,
+          "lower": 0.5481455128483065,
+          "upper": 0.9295245065301844
+        }
+      },
+      {
+        "axis_code": "A7",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A7",
+        "condition": "target_present",
+        "n": 15,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A8",
+        "condition": "target_absent",
+        "n": 10,
+        "match": 10,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 10,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7224672001371107,
+          "upper": 0.9999999999999999
+        }
+      },
+      {
+        "axis_code": "A8",
+        "condition": "target_present",
+        "n": 15,
+        "match": 14,
+        "mismatch": 1,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 15,
+        "all_sample_rate": 0.9333333333333333,
+        "all_sample_wilson_95": {
+          "estimate": 0.9333333333333333,
+          "lower": 0.7018347012621998,
+          "upper": 0.9881331045067315
+        },
+        "judgeable_rate": 0.9333333333333333,
+        "judgeable_wilson_95": {
+          "estimate": 0.9333333333333333,
+          "lower": 0.7018347012621998,
+          "upper": 0.9881331045067315
+        }
+      }
+    ],
+    "family_by_lineage": [
+      {
+        "axis_code": "A1",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 17,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A1",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 7,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 7,
+        "all_sample_rate": 0.875,
+        "all_sample_wilson_95": {
+          "estimate": 0.875,
+          "lower": 0.5291118177871464,
+          "upper": 0.9775825085499433
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6456695649333126,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A2",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 12,
+        "mismatch": 4,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 16,
+        "all_sample_rate": 0.7058823529411765,
+        "all_sample_wilson_95": {
+          "estimate": 0.7058823529411765,
+          "lower": 0.4686688993346016,
+          "upper": 0.8672001038970478
+        },
+        "judgeable_rate": 0.75,
+        "judgeable_wilson_95": {
+          "estimate": 0.75,
+          "lower": 0.5050168346449122,
+          "upper": 0.8981793250878696
+        }
+      },
+      {
+        "axis_code": "A2",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A3",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 15,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 2,
+        "unresolved": 2,
+        "judgeable": 15,
+        "all_sample_rate": 0.8823529411764706,
+        "all_sample_wilson_95": {
+          "estimate": 0.8823529411764706,
+          "lower": 0.6566364940511412,
+          "upper": 0.9671202262362074
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.7961166989641515,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A3",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 7,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 7,
+        "all_sample_rate": 0.875,
+        "all_sample_wilson_95": {
+          "estimate": 0.875,
+          "lower": 0.5291118177871464,
+          "upper": 0.9775825085499433
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6456695649333126,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A4",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 16,
+        "mismatch": 0,
+        "uncertain_majority": 1,
+        "no_majority": 0,
+        "unresolved": 1,
+        "judgeable": 16,
+        "all_sample_rate": 0.9411764705882353,
+        "all_sample_wilson_95": {
+          "estimate": 0.9411764705882353,
+          "lower": 0.7301796936242461,
+          "upper": 0.9895395990150025
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8063923194655637,
+          "upper": 1.0000000000000002
+        }
+      },
+      {
+        "axis_code": "A4",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A5",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 10,
+        "mismatch": 6,
+        "uncertain_majority": 0,
+        "no_majority": 1,
+        "unresolved": 1,
+        "judgeable": 16,
+        "all_sample_rate": 0.5882352941176471,
+        "all_sample_wilson_95": {
+          "estimate": 0.5882352941176471,
+          "lower": 0.3600544264299978,
+          "upper": 0.7838894320978518
+        },
+        "judgeable_rate": 0.625,
+        "judgeable_wilson_95": {
+          "estimate": 0.625,
+          "lower": 0.38641040545502714,
+          "upper": 0.8151876744113636
+        }
+      },
+      {
+        "axis_code": "A5",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 5,
+        "mismatch": 0,
+        "uncertain_majority": 2,
+        "no_majority": 1,
+        "unresolved": 3,
+        "judgeable": 5,
+        "all_sample_rate": 0.625,
+        "all_sample_wilson_95": {
+          "estimate": 0.625,
+          "lower": 0.30574239460262737,
+          "upper": 0.8631557141764026
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.5655175352168251,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A6",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 14,
+        "mismatch": 3,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 0.8235294117647058,
+        "all_sample_wilson_95": {
+          "estimate": 0.8235294117647058,
+          "lower": 0.5897054143116588,
+          "upper": 0.9380887336237901
+        },
+        "judgeable_rate": 0.8235294117647058,
+        "judgeable_wilson_95": {
+          "estimate": 0.8235294117647058,
+          "lower": 0.5897054143116588,
+          "upper": 0.9380887336237901
+        }
+      },
+      {
+        "axis_code": "A6",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A7",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 17,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.8156818649911483,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A7",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      },
+      {
+        "axis_code": "A8",
+        "lineage": "expansion",
+        "n": 17,
+        "match": 16,
+        "mismatch": 1,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 17,
+        "all_sample_rate": 0.9411764705882353,
+        "all_sample_wilson_95": {
+          "estimate": 0.9411764705882353,
+          "lower": 0.7301796936242461,
+          "upper": 0.9895395990150025
+        },
+        "judgeable_rate": 0.9411764705882353,
+        "judgeable_wilson_95": {
+          "estimate": 0.9411764705882353,
+          "lower": 0.7301796936242461,
+          "upper": 0.9895395990150025
+        }
+      },
+      {
+        "axis_code": "A8",
+        "lineage": "pilot",
+        "n": 8,
+        "match": 8,
+        "mismatch": 0,
+        "uncertain_majority": 0,
+        "no_majority": 0,
+        "unresolved": 0,
+        "judgeable": 8,
+        "all_sample_rate": 1.0,
+        "all_sample_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        },
+        "judgeable_rate": 1.0,
+        "judgeable_wilson_95": {
+          "estimate": 1.0,
+          "lower": 0.6755924351161198,
+          "upper": 1.0
+        }
+      }
+    ]
+  },
+  "correction_audit_summary": {
+    "changed_rows": 12,
+    "exact_disagreement_to_agreement": 10,
+    "majority_changed": 2,
+    "nonmatch_to_match": 2
+  }
+}

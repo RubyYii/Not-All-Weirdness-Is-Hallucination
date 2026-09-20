@@ -1,160 +1,79 @@
-# Not All Weirdness Is Hallucination
+# A Prompt Is Not Ground Truth
+### Human Validation of Local Target States in Generated Images
 
-Small PRCV 2026 special-session experiment repository for auditing prompt-permission boundaries in generated images.
+**CAC 2026 · Accepted paper · Paper ID 124973**
 
-The central claim is that a visual anomaly is not automatically a hallucination. It should be labelled as hallucination only when the anomaly violates the prompt's explicit or implicit permission boundary.
+Haorui Yu · Hanwen Chen · **Qiufeng Yi***
 
-## Dataset Design
+University of Dundee · Shenyang University of Technology · University of Birmingham
 
-- 8 anomaly axes.
-- 5 target-anomaly images per axis.
-- 3 evaluation contexts per target image: `violating`, `permitted`, `ambiguous`.
-- 3 no-issue control images per axis.
-- 64 unique images.
-- 144 prompt-image pairs.
+[Analysis & data](cac2026/) · [Poster (PDF)](cac2026/poster/CAC2026_Poster_124973.pdf) · [Reproduce](#reproduce-the-cac-results) · [Cite](#citation)
 
-The current image naming convention is flat:
+A prompt records what a person wants an AI system to generate. Does the generated image actually contain the requested local target? We examine this question with **200 images, eight target families and three human raters**. The original locked judgments confirmed **174** requested states, contradicted **15**, and left **11 unresolved**.
 
-```text
-image/A1.png ... image/H8.png
-```
+![Local target-state validation: observe the image, lock judgments, and compare with the requested state.](cac2026/assets/validation-workflow.png)
 
-Axis mapping:
+## What this study establishes
 
-| Image prefix | Axis code | Axis |
-|---|---|---|
-| A | A1 | Anatomy / Hands |
-| B | A2 | Text |
-| C | A3 | Physics |
-| D | A4 | Object Fusion |
-| E | A5 | Count / Repetition |
-| F | A6 | Spatial / Impossible Geometry |
-| G | A7 | Scale / Proportion |
-| H | A8 | Artistic Deformation |
+Raters inspected the image, the named target and the anomaly family. The full prompt and requested state were hidden at response time. Majority judgments were then compared with the design-assigned requested state. Uncertain majorities and three-way splits remain in the all-sample denominator.
 
-For each axis, images `1-5` are target-anomaly images and images `6-8` are no-issue controls.
+| Locked primary result | Count | Rate |
+| :--- | ---: | ---: |
+| Requested state confirmed | 174 / 200 | 87.0% |
+| Requested state contradicted | 15 / 200 | 7.5% |
+| Unresolved | 11 / 200 | 5.5% |
+| Confirmed among definite majorities | 174 / 189 | 92.1% |
 
-## Repository Structure
+The 11 unresolved items comprise five uncertain majorities and six three-way splits. Inter-rater agreement was Fleiss' κ = 0.675 and Gwet AC1 = 0.757. Twelve post-return R2 changes are included separately as a sensitivity analysis; they do not replace the locked primary results.
 
-```text
-data/metadata/
-  generation_prompts.csv
-  evaluation_context_prompts.csv
-  metadata_pairs.csv
-image/
-  A1.png ... H8.png
-prompts/
-  auditor_image_only.txt
-  auditor_prompt_conditioned.txt
-  auditor_permission_aware.txt
-scripts/
-  01_build_metadata.py
-  02_validate_dataset.py
-  03_run_api_audit.py
-  04_parse_outputs.py
-  05_merge_human_review.py
-  06_compute_metrics.py
-  07_make_figures.py
-score/
-  human scoring workbooks and manual
-```
+The resulting human reference separates a visible mismatch from unresolved image evidence. It can support subsequent assessment of AI image judgments. **This study does not test AI-judge accuracy or whether corrective feedback makes later outputs more controllable.**
 
-## Quick Start
+## Reproduce the CAC results
 
-Install dependencies in your preferred Python environment:
+Python 3.9 or newer; standard library only. Once the `cac2026/` folder is available, reproduction uses no network, images, API keys or paid model calls.
 
 ```bash
-pip install pandas openai matplotlib
+cd cac2026
+python reproduce_public.py --output reproduction_check.json
 ```
 
-Build metadata:
+The script validates all 200 item identities, recomputes the majority judgments and summary statistics, checks the stratified counts, and verifies the 12 sensitivity changes. A disagreement with the archived analysis raises an error.
 
-```bash
-python scripts/01_build_metadata.py
+[Download the analysis-only ZIP](cac2026/cac2026-analysis.zip) for the eight small analysis files, then run the command above from its extracted folder.
+
+See the [analysis README](cac2026/README.md) for file definitions, statistical scope and provenance. The [release manifest](cac2026/release_manifest.json) records the files copied from the camera-ready analysis package.
+
+## Scope of the release
+
+The CAC collection contains 120 target-present requests and 80 target-absent controls, with 25 images per family. All three raters were paper authors. Hiding the prompt at response time does not establish absence of prior familiarity or a causal benefit of that procedure.
+
+The rates describe this diagnostic collection. Per-family estimates are descriptive, and no stable back-end generator identifier or complete selection log is available. The analysis files support numerical reproduction; **the full CAC image collection and generation prompts are not distributed here**, so this release is not an independent revalidation of image content or historical annotation procedures. A public overview figure and the poster illustrate the study.
+
+## Two studies in this repository
+
+| Study | Evaluation unit | Location |
+| :--- | :--- | :--- |
+| **CAC 2026: A Prompt Is Not Ground Truth** | 200 images; three human local-state judgments per image | [`cac2026/`](cac2026/) |
+| Earlier prompt-permission study: *Not All Weirdness Is Hallucination* | 64 unique images; 144 prompt-image pairs | [Historical README](PRCV_README.md); existing root-level `data/`, `image/`, `prompts/`, `score/`, `scripts/` and `outputs/` |
+
+These are distinct experiments. Their image IDs, labels, denominators and model results must not be combined. The repository retains its earlier name and files; only `cac2026/` supplies the CAC paper's analysis. Historical PRCV manuscripts and coordinator mappings are not CAC materials.
+
+## Citation
+
+The paper is accepted for CAC 2026. A proceedings DOI and page range are not available in this release; no arXiv citation is required.
+
+```bibtex
+@inproceedings{yu2026prompt,
+  author    = {Yu, Haorui and Chen, Hanwen and Yi, Qiufeng},
+  title     = {A Prompt Is Not Ground Truth: Human Validation of Local Target States in Generated Images},
+  booktitle = {2026 Chinese Automation Congress (CAC)},
+  year      = {2026},
+  note      = {Accepted; Paper ID 124973}
+}
 ```
 
-Validate metadata and local image coverage:
+Machine-readable citation: [CITATION.cff](CITATION.cff). For exact numerical reproduction, also record the Git commit used.
 
-```bash
-python scripts/02_validate_dataset.py
-```
+*Corresponding author:* Qiufeng Yi — qxy953@student.bham.ac.uk.
 
-Run a dry-run for one sample without calling any API:
-
-```bash
-python scripts/03_run_api_audit.py --model gpt-4.1-mini --audit_prompt_type permission_aware --limit 1 --dry-run
-```
-
-Run a real API audit after setting `OPENAI_API_KEY`:
-
-```bash
-python scripts/03_run_api_audit.py --model gpt-4.1-mini --audit_prompt_type permission_aware
-```
-
-Run a real Claude audit after setting `ANTHROPIC_API_KEY`:
-
-```bash
-python scripts/03_run_api_audit.py \
-  --provider anthropic \
-  --model claude-sonnet-4-5 \
-  --audit_prompt_type permission_aware
-```
-
-Raw outputs are written one file per sample:
-
-Run Gemini and Qwen audits after setting `GEMINI_API_KEY` or `DASHSCOPE_API_KEY`:
-
-```bash
-python scripts/03_run_api_audit.py --model gemini-3.1-pro --audit_prompt_type permission_aware
-python scripts/03_run_api_audit.py --model qwen3-vl-32b-instruct --audit_prompt_type permission_aware
-```
-
-The runner auto-selects providers from model prefixes: `gpt` -> OpenAI, `claude` -> Anthropic, `gemini` -> Gemini, `qwen` -> DashScope/Qwen.
-
-```text
-outputs/raw/{model}/{audit_prompt_type}/{sample_id}.json
-```
-
-A run log CSV is written under `outputs/run_logs/`.
-
-## Gold Labels
-
-Permission labels:
-
-- `prompt_required`
-- `prompt_permitted`
-- `prompt_violating`
-- `ambiguous`
-- `no_issue`
-
-Hallucination labels:
-
-- `yes`
-- `no`
-- `uncertain`
-
-Mapping:
-
-| Permission label | Hallucination label |
-|---|---|
-| `prompt_required` | `no` |
-| `prompt_permitted` | `no` |
-| `prompt_violating` | `yes` |
-| `ambiguous` | `uncertain` |
-| `no_issue` | `no` |
-
-## Metrics
-
-The metric script computes:
-
-- Permission Boundary Accuracy (`PBA`)
-- False Hallucination Rate on Intended Deviations (`FHR_intended`)
-- Creative Preservation Rate (`CPR`)
-- Missed Violation Rate (`MVR`)
-- Defect Sensitivity (`DS`)
-- Ambiguity Calibration Rate (`ACR`)
-- No-issue False Alarm Rate (`NIFAR`)
-
-## Current Status
-
-The repository is scaffolded for offline dataset validation and request preparation. The next step is to choose VLM auditors and implement the API-specific runner once the dataset and human review labels are frozen.
+No repository-wide reuse license is declared. Please contact the authors for reuse permissions; institutional and conference marks remain the property of their respective owners.

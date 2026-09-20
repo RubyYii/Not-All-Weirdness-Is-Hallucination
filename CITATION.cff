@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use the CAC 2026 analysis, please cite the paper below and record the Git commit. The older PRCV experiment is a separate study."
+type: dataset
+title: "A Prompt Is Not Ground Truth: CAC 2026 analysis supplement"
+version: "cac2026-1.0.0"
+date-released: 2026-09-20
+url: "https://github.com/RubyYii/Not-All-Weirdness-Is-Hallucination"
+repository-code: "https://github.com/RubyYii/Not-All-Weirdness-Is-Hallucination"
+authors:
+  - family-names: Yu
+    given-names: Haorui
+  - family-names: Chen
+    given-names: Hanwen
+  - family-names: Yi
+    given-names: Qiufeng
+preferred-citation:
+  type: conference-paper
+  title: "A Prompt Is Not Ground Truth: Human Validation of Local Target States in Generated Images"
+  authors:
+    - family-names: Yu
+      given-names: Haorui
+    - family-names: Chen
+      given-names: Hanwen
+    - family-names: Yi
+      given-names: Qiufeng
+  year: 2026
+  collection-title: "2026 Chinese Automation Congress (CAC)"
+  notes: "Accepted; Paper ID 124973. Proceedings DOI and page range pending."
