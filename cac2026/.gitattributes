@@ -1,0 +1,9 @@
+# Keep the frozen camera-ready analysis bytes, including line endings.
+/analysis_results.json -text whitespace=cr-at-eol
+/coordinator_state_map.csv -text whitespace=cr-at-eol
+/correction_audit.csv -text whitespace=cr-at-eol
+/locked_primary_ratings.csv -text whitespace=cr-at-eol
+/rater_confirmed_sensitivity_ratings.csv -text whitespace=cr-at-eol
+/README.md -text whitespace=cr-at-eol
+/reproduce_public.py -text whitespace=cr-at-eol
+/stratified_counts.csv -text whitespace=cr-at-eol
